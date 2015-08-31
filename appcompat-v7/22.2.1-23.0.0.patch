@@ -1,0 +1,372 @@
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.AppCompatActivity appcompat-v7-23.0.0_8eefd349/android.support.v7.app.AppCompatActivity
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
+@@ -31,0 +32,2 @@
++  public boolean onMenuOpened(int, android.view.Menu);
++  public void onPanelClosed(int, android.view.Menu);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.AppCompatDelegate appcompat-v7-23.0.0_8eefd349/android.support.v7.app.AppCompatDelegate
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
+@@ -1,0 +2,3 @@
++  public static final int FEATURE_SUPPORT_ACTION_BAR;
++  public static final int FEATURE_SUPPORT_ACTION_BAR_OVERLAY;
++  public static final int FEATURE_ACTION_MODE_OVERLAY;
+@@ -20,0 +24 @@
++  public abstract boolean hasWindowFeature(int);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.AppCompatDialogFragment appcompat-v7-23.0.0_8eefd349/android.support.v7.app.AppCompatDialogFragment
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.AppCompatDialogFragment	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.app.AppCompatDialogFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.app.AppCompatDialogFragment extends android.support.v4.app.DialogFragment {
++  public android.support.v7.app.AppCompatDialogFragment();
++  public android.app.Dialog onCreateDialog(android.os.Bundle);
++  public void setupDialog(android.app.Dialog, int);
++}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.graphics.drawable.DrawableUtils appcompat-v7-23.0.0_8eefd349/android.support.v7.graphics.drawable.DrawableUtils
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.graphics.drawable.DrawableUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.graphics.drawable.DrawableUtils	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.graphics.drawable.DrawableUtils {
++  public android.support.v7.graphics.drawable.DrawableUtils();
++  public static android.graphics.PorterDuff$Mode parseTintMode(int, android.graphics.PorterDuff$Mode);
++}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.graphics.drawable.DrawerArrowDrawable appcompat-v7-23.0.0_8eefd349/android.support.v7.graphics.drawable.DrawerArrowDrawable
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.graphics.drawable.DrawerArrowDrawable	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.graphics.drawable.DrawerArrowDrawable	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,32 @@
++public class android.support.v7.graphics.drawable.DrawerArrowDrawable extends android.graphics.drawable.Drawable {
++  public static final int ARROW_DIRECTION_LEFT;
++  public static final int ARROW_DIRECTION_RIGHT;
++  public static final int ARROW_DIRECTION_START;
++  public static final int ARROW_DIRECTION_END;
++  public android.support.v7.graphics.drawable.DrawerArrowDrawable(android.content.Context);
++  public void setArrowHeadLength(float);
++  public float getArrowHeadLength();
++  public void setArrowShaftLength(float);
++  public float getArrowShaftLength();
++  public float getBarLength();
++  public void setBarLength(float);
++  public void setColor(int);
++  public int getColor();
++  public void setBarThickness(float);
++  public float getBarThickness();
++  public float getGapSize();
++  public void setGapSize(float);
++  public void setDirection(int);
++  public boolean isSpinEnabled();
++  public void setSpinEnabled(boolean);
++  public int getDirection();
++  public void setVerticalMirror(boolean);
++  public void draw(android.graphics.Canvas);
++  public void setAlpha(int);
++  public void setColorFilter(android.graphics.ColorFilter);
++  public int getIntrinsicHeight();
++  public int getIntrinsicWidth();
++  public int getOpacity();
++  public float getProgress();
++  public void setProgress(float);
++}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection appcompat-v7-23.0.0_8eefd349/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.ContextThemeWrapper appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.ContextThemeWrapper
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.ContextThemeWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.ContextThemeWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -2,0 +3 @@
++  public android.support.v7.internal.view.ContextThemeWrapper(android.content.Context, android.content.res.Resources$Theme);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-08-20 23:41:44.000000000 +0900
+@@ -3,0 +4 @@
++  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet playSequentially(android.support.v4.view.ViewPropertyAnimatorCompat, android.support.v4.view.ViewPropertyAnimatorCompat);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.WindowCallbackWrapper appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.WindowCallbackWrapper
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -19,0 +20 @@
++  public boolean onSearchRequested(android.view.SearchEvent);
+@@ -21,0 +23 @@
++  public android.view.ActionMode onWindowStartingActionMode(android.view.ActionMode$Callback, int);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.menu.MenuItemImpl appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.menu.MenuItemImpl
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.menu.MenuItemImpl	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.menu.MenuItemImpl	2015-08-20 23:41:44.000000000 +0900
+@@ -18,0 +19 @@
++  public void setSubMenu(android.support.v7.internal.view.menu.SubMenuBuilder);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.menu.MenuPopupHelper appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.menu.MenuPopupHelper
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.menu.MenuPopupHelper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.view.menu.MenuPopupHelper	2015-08-20 23:41:44.000000000 +0900
+@@ -8,0 +9 @@
++  public int getGravity();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.ActionBarContextView appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.ActionBarContextView
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.ActionBarContextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.ActionBarContextView	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.widget.ActionBarContextView extends android.support.v7.internal.widget.AbsActionBarView implements android.support.v4.view.ViewPropertyAnimatorListener {
++public class android.support.v7.internal.widget.ActionBarContextView extends android.support.v7.internal.widget.AbsActionBarView {
+@@ -6 +5,0 @@
+-  public void setSplitToolbar(boolean);
+@@ -20,3 +18,0 @@
+-  public void onAnimationStart(android.view.View);
+-  public void onAnimationEnd(android.view.View);
+-  public void onAnimationCancel(android.view.View);
+@@ -31,0 +28 @@
++  public void setVisibility(int);
+@@ -32,0 +30 @@
++  public android.support.v4.view.ViewPropertyAnimatorCompat setupAnimatorToVisibility(int, long);
+@@ -34 +31,0 @@
+-  public void setSplitView(android.view.ViewGroup);
+@@ -36 +33,2 @@
+-  public void setSplitWhenNarrow(boolean);
++  public boolean onHoverEvent(android.view.MotionEvent);
++  public boolean onTouchEvent(android.view.MotionEvent);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public class android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo implements android.view.ContextMenu$ContextMenuInfo {
+-  public android.view.View targetView;
+-  public int position;
+-  public long id;
+-  public android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo(android.view.View, int, long);
+-}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener {
+-  public abstract void onItemClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
+-}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener {
+-  public abstract boolean onItemLongClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
+-}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener {
+-  public abstract void onItemSelected(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
+-  public abstract void onNothingSelected(android.support.v7.internal.widget.AdapterViewCompat<?>);
+-}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat<T appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat<T
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AdapterViewCompat<T	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AdapterViewCompat<T	1970-01-01 09:00:00.000000000 +0900
+@@ -1,37 +0,0 @@
+-public abstract class android.support.v7.internal.widget.AdapterViewCompat<T extends android.widget.Adapter> extends android.view.ViewGroup {
+-  public static final int INVALID_POSITION;
+-  public static final long INVALID_ROW_ID;
+-  public void setOnItemClickListener(android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener);
+-  public final android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener getOnItemClickListener();
+-  public boolean performItemClick(android.view.View, int, long);
+-  public void setOnItemLongClickListener(android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener);
+-  public final android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener getOnItemLongClickListener();
+-  public void setOnItemSelectedListener(android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener);
+-  public final android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener getOnItemSelectedListener();
+-  public abstract T getAdapter();
+-  public abstract void setAdapter(T);
+-  public void addView(android.view.View);
+-  public void addView(android.view.View, int);
+-  public void addView(android.view.View, android.view.ViewGroup$LayoutParams);
+-  public void addView(android.view.View, int, android.view.ViewGroup$LayoutParams);
+-  public void removeView(android.view.View);
+-  public void removeViewAt(int);
+-  public void removeAllViews();
+-  public int getSelectedItemPosition();
+-  public long getSelectedItemId();
+-  public abstract android.view.View getSelectedView();
+-  public java.lang.Object getSelectedItem();
+-  public int getCount();
+-  public int getPositionForView(android.view.View);
+-  public int getFirstVisiblePosition();
+-  public int getLastVisiblePosition();
+-  public abstract void setSelection(int);
+-  public void setEmptyView(android.view.View);
+-  public android.view.View getEmptyView();
+-  public void setFocusable(boolean);
+-  public void setFocusableInTouchMode(boolean);
+-  public java.lang.Object getItemAtPosition(int);
+-  public long getItemIdAtPosition(int);
+-  public void setOnClickListener(android.view.View$OnClickListener);
+-  public boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
+-}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AppCompatPopupWindow appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AppCompatPopupWindow
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.AppCompatPopupWindow	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.AppCompatPopupWindow	2015-08-20 23:41:44.000000000 +0900
+@@ -5,0 +6,2 @@
++  public void setSupportOverlapAnchor(boolean);
++  public boolean getSupportOverlapAnchor();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.DecorToolbar appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.DecorToolbar
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
+@@ -4 +3,0 @@
+-  public abstract boolean isSplit();
+@@ -15,4 +13,0 @@
+-  public abstract boolean canSplit();
+-  public abstract void setSplitView(android.view.ViewGroup);
+-  public abstract void setSplitToolbar(boolean);
+-  public abstract void setSplitWhenNarrow(boolean);
+@@ -42 +37 @@
+-  public abstract void setDropdownParams(android.widget.SpinnerAdapter, android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener);
++  public abstract void setDropdownParams(android.widget.SpinnerAdapter, android.widget.AdapterView$OnItemSelectedListener);
+@@ -48,0 +44 @@
++  public abstract android.support.v4.view.ViewPropertyAnimatorCompat setupAnimatorToVisibility(int, long);
+@@ -63 +58,0 @@
+-  public abstract int getPopupTheme();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.ScrollingTabContainerView appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.ScrollingTabContainerView
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.ScrollingTabContainerView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.ScrollingTabContainerView	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.widget.ScrollingTabContainerView extends android.widget.HorizontalScrollView implements android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener {
++public class android.support.v7.internal.widget.ScrollingTabContainerView extends android.widget.HorizontalScrollView implements android.widget.AdapterView$OnItemSelectedListener {
+@@ -16 +16,2 @@
+-  public void onItemClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
++  public void onItemSelected(android.widget.AdapterView<?>, android.view.View, int, long);
++  public void onNothingSelected(android.widget.AdapterView<?>);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.ToolbarWidgetWrapper appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.ToolbarWidgetWrapper
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -8 +7,0 @@
+-  public boolean isSplit();
+@@ -19,4 +17,0 @@
+-  public boolean canSplit();
+-  public void setSplitView(android.view.ViewGroup);
+-  public void setSplitToolbar(boolean);
+-  public void setSplitWhenNarrow(boolean);
+@@ -46 +41 @@
+-  public void setDropdownParams(android.widget.SpinnerAdapter, android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener);
++  public void setDropdownParams(android.widget.SpinnerAdapter, android.widget.AdapterView$OnItemSelectedListener);
+@@ -52,0 +48 @@
++  public android.support.v4.view.ViewPropertyAnimatorCompat setupAnimatorToVisibility(int, long);
+@@ -65 +60,0 @@
+-  public int getPopupTheme();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ActionMenuPresenter appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ActionMenuPresenter
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ActionMenuPresenter	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ActionMenuPresenter	2015-08-20 23:41:44.000000000 +0900
+@@ -8,0 +9,2 @@
++  public void setOverflowIcon(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getOverflowIcon();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ActionMenuView appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ActionMenuView
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ActionMenuView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ActionMenuView	2015-08-20 23:41:44.000000000 +0900
+@@ -9,0 +10,2 @@
++  public void setOverflowIcon(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getOverflowIcon();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatAutoCompleteTextView appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatAutoCompleteTextView
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5 @@
++  public void setDropDownBackgroundResource(int);
+@@ -7 +7,0 @@
+-  public void setDropDownBackgroundResource(int);
+@@ -11,0 +12 @@
++  public void setTextAppearance(android.content.Context, int);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatButton appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatButton
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
+@@ -10,0 +11 @@
++  public void setTextAppearance(android.content.Context, int);
+@@ -13,2 +14 @@
+-  public void setAllCaps(boolean);
+-  public void setTextAppearance(android.content.Context, int);
++  public void setSupportAllCaps(boolean);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatCheckBox appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatCheckBox
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatCheckBox	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatCheckBox	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.AppCompatCheckBox extends android.widget.CheckBox {
++public class android.support.v7.widget.AppCompatCheckBox extends android.widget.CheckBox implements android.support.v4.widget.TintableCompoundButton {
+@@ -7,0 +8,4 @@
++  public void setSupportButtonTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getSupportButtonTintList();
++  public void setSupportButtonTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getSupportButtonTintMode();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatEditText appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatEditText
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
+@@ -10,0 +11 @@
++  public void setTextAppearance(android.content.Context, int);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatMultiAutoCompleteTextView appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5 @@
++  public void setDropDownBackgroundResource(int);
+@@ -7 +7,0 @@
+-  public void setDropDownBackgroundResource(int);
+@@ -11,0 +12 @@
++  public void setTextAppearance(android.content.Context, int);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatRadioButton appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatRadioButton
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatRadioButton	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatRadioButton	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.AppCompatRadioButton extends android.widget.RadioButton {
++public class android.support.v7.widget.AppCompatRadioButton extends android.widget.RadioButton implements android.support.v4.widget.TintableCompoundButton {
+@@ -7,0 +8,4 @@
++  public void setSupportButtonTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getSupportButtonTintList();
++  public void setSupportButtonTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getSupportButtonTintMode();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatSpinner appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatSpinner
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
+@@ -2,0 +3 @@
++  public android.support.v7.widget.AppCompatSpinner(android.content.Context, int);
+@@ -4,0 +6,17 @@
++  public android.support.v7.widget.AppCompatSpinner(android.content.Context, android.util.AttributeSet, int, int);
++  public android.support.v7.widget.AppCompatSpinner(android.content.Context, android.util.AttributeSet, int, int, android.content.res.Resources$Theme);
++  public android.content.Context getPopupContext();
++  public void setPopupBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setPopupBackgroundResource(int);
++  public android.graphics.drawable.Drawable getPopupBackground();
++  public void setDropDownVerticalOffset(int);
++  public int getDropDownVerticalOffset();
++  public void setDropDownHorizontalOffset(int);
++  public int getDropDownHorizontalOffset();
++  public void setDropDownWidth(int);
++  public int getDropDownWidth();
++  public void setAdapter(android.widget.SpinnerAdapter);
++  public boolean onTouchEvent(android.view.MotionEvent);
++  public boolean performClick();
++  public void setPrompt(java.lang.CharSequence);
++  public java.lang.CharSequence getPrompt();
+@@ -10,0 +29 @@
++  public void setAdapter(android.widget.Adapter);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatTextView appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatTextView
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.AppCompatTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.AppCompatTextView	2015-08-20 23:41:44.000000000 +0900
+@@ -5 +4,0 @@
+-  public void setAllCaps(boolean);
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.PopupMenu appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.PopupMenu
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.PopupMenu	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.PopupMenu	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setGravity(int);
++  public int getGravity();
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ThemedSpinnerAdapter appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ThemedSpinnerAdapter
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ThemedSpinnerAdapter	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ThemedSpinnerAdapter	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.widget.ThemedSpinnerAdapter extends android.widget.SpinnerAdapter {
++  public abstract void setDropDownViewTheme(android.content.res.Resources$Theme);
++  public abstract android.content.res.Resources$Theme getDropDownViewTheme();
++}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ThemedSpinnerAdapter$Helper appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ThemedSpinnerAdapter$Helper
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.ThemedSpinnerAdapter$Helper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.ThemedSpinnerAdapter$Helper	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v7.widget.ThemedSpinnerAdapter$Helper {
++  public android.support.v7.widget.ThemedSpinnerAdapter$Helper(android.content.Context);
++  public void setDropDownViewTheme(android.content.res.Resources$Theme);
++  public android.content.res.Resources$Theme getDropDownViewTheme();
++  public android.view.LayoutInflater getDropDownViewInflater();
++}
+diff -U 0 -N appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.Toolbar appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.Toolbar
+--- appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_8eefd349/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
+@@ -41,0 +42,2 @@
++  public void setOverflowIcon(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getOverflowIcon();

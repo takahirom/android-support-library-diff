@@ -1,0 +1,113 @@
+diff -U 0 -N appcompat-v7-18.0.0_73b25da1/android.support.v7.app.ActionBarActivity appcompat-v7-19.0.0_68164551/android.support.v7.app.ActionBarActivity
+--- appcompat-v7-18.0.0_73b25da1/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.0.0_68164551/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
+@@ -30,0 +31,2 @@
++  public final void onContentChanged();
++  public void onSupportContentChanged();
+diff -U 0 -N appcompat-v7-18.0.0_73b25da1/android.support.v7.app.ActionBarImplJB appcompat-v7-19.0.0_68164551/android.support.v7.app.ActionBarImplJB
+--- appcompat-v7-18.0.0_73b25da1/android.support.v7.app.ActionBarImplJB	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-19.0.0_68164551/android.support.v7.app.ActionBarImplJB	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,52 @@
++public class android.support.v7.app.ActionBarImplJB extends android.support.v7.app.ActionBarImplICS {
++  public android.support.v7.app.ActionBarImplJB(android.app.Activity, android.support.v7.app.ActionBar$Callback);
++  public void setHomeButtonEnabled(boolean);
++  public void removeOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
++  public void addOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
++  public boolean isShowing();
++  public void hide();
++  public void show();
++  public int getHeight();
++  public android.content.Context getThemedContext();
++  public int getTabCount();
++  public android.support.v7.app.ActionBar$Tab getTabAt(int);
++  public android.support.v7.app.ActionBar$Tab getSelectedTab();
++  public void selectTab(android.support.v7.app.ActionBar$Tab);
++  public void removeAllTabs();
++  public void removeTabAt(int);
++  public void removeTab(android.support.v7.app.ActionBar$Tab);
++  public void addTab(android.support.v7.app.ActionBar$Tab, int, boolean);
++  public void addTab(android.support.v7.app.ActionBar$Tab, int);
++  public void addTab(android.support.v7.app.ActionBar$Tab, boolean);
++  public void addTab(android.support.v7.app.ActionBar$Tab);
++  public android.support.v7.app.ActionBar$Tab newTab();
++  public int getDisplayOptions();
++  public void setNavigationMode(int);
++  public int getNavigationMode();
++  public java.lang.CharSequence getSubtitle();
++  public java.lang.CharSequence getTitle();
++  public android.view.View getCustomView();
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setDisplayShowCustomEnabled(boolean);
++  public void setDisplayShowTitleEnabled(boolean);
++  public void setDisplayHomeAsUpEnabled(boolean);
++  public void setDisplayShowHomeEnabled(boolean);
++  public void setDisplayUseLogoEnabled(boolean);
++  public void setDisplayOptions(int, int);
++  public void setDisplayOptions(int);
++  public void setSubtitle(int);
++  public void setSubtitle(java.lang.CharSequence);
++  public void setTitle(int);
++  public void setTitle(java.lang.CharSequence);
++  public int getNavigationItemCount();
++  public int getSelectedNavigationIndex();
++  public void setSelectedNavigationItem(int);
++  public void setListNavigationCallbacks(android.widget.SpinnerAdapter, android.support.v7.app.ActionBar$OnNavigationListener);
++  public void setLogo(android.graphics.drawable.Drawable);
++  public void setLogo(int);
++  public void setIcon(android.graphics.drawable.Drawable);
++  public void setIcon(int);
++  public void setCustomView(int);
++  public void setCustomView(android.view.View, android.support.v7.app.ActionBar$LayoutParams);
++  public void setCustomView(android.view.View);
++}
+diff -U 0 -N appcompat-v7-18.0.0_73b25da1/android.support.v7.internal.view.menu.MenuItemWrapperICS appcompat-v7-19.0.0_68164551/android.support.v7.internal.view.menu.MenuItemWrapperICS
+--- appcompat-v7-18.0.0_73b25da1/android.support.v7.internal.view.menu.MenuItemWrapperICS	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-19.0.0_68164551/android.support.v7.internal.view.menu.MenuItemWrapperICS	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,47 @@
++public class android.support.v7.internal.view.menu.MenuItemWrapperICS extends android.support.v7.internal.view.menu.BaseMenuWrapper<android.view.MenuItem> implements android.support.v4.internal.view.SupportMenuItem {
++  public int getItemId();
++  public int getGroupId();
++  public int getOrder();
++  public android.view.MenuItem setTitle(java.lang.CharSequence);
++  public android.view.MenuItem setTitle(int);
++  public java.lang.CharSequence getTitle();
++  public android.view.MenuItem setTitleCondensed(java.lang.CharSequence);
++  public java.lang.CharSequence getTitleCondensed();
++  public android.view.MenuItem setIcon(android.graphics.drawable.Drawable);
++  public android.view.MenuItem setIcon(int);
++  public android.graphics.drawable.Drawable getIcon();
++  public android.view.MenuItem setIntent(android.content.Intent);
++  public android.content.Intent getIntent();
++  public android.view.MenuItem setShortcut(char, char);
++  public android.view.MenuItem setNumericShortcut(char);
++  public char getNumericShortcut();
++  public android.view.MenuItem setAlphabeticShortcut(char);
++  public char getAlphabeticShortcut();
++  public android.view.MenuItem setCheckable(boolean);
++  public boolean isCheckable();
++  public android.view.MenuItem setChecked(boolean);
++  public boolean isChecked();
++  public android.view.MenuItem setVisible(boolean);
++  public boolean isVisible();
++  public android.view.MenuItem setEnabled(boolean);
++  public boolean isEnabled();
++  public boolean hasSubMenu();
++  public android.view.SubMenu getSubMenu();
++  public android.view.MenuItem setOnMenuItemClickListener(android.view.MenuItem$OnMenuItemClickListener);
++  public android.view.ContextMenu$ContextMenuInfo getMenuInfo();
++  public void setShowAsAction(int);
++  public android.view.MenuItem setShowAsActionFlags(int);
++  public android.view.MenuItem setActionView(android.view.View);
++  public android.view.MenuItem setActionView(int);
++  public android.view.View getActionView();
++  public android.view.MenuItem setActionProvider(android.view.ActionProvider);
++  public android.view.ActionProvider getActionProvider();
++  public boolean expandActionView();
++  public boolean collapseActionView();
++  public boolean isActionViewExpanded();
++  public android.view.MenuItem setOnActionExpandListener(android.view.MenuItem$OnActionExpandListener);
++  public android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat$OnActionExpandListener);
++  public android.support.v4.internal.view.SupportMenuItem setSupportActionProvider(android.support.v4.view.ActionProvider);
++  public android.support.v4.view.ActionProvider getSupportActionProvider();
++  public void setExclusiveCheckable(boolean);
++}

@@ -1,0 +1,138 @@
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatActivity appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatActivity
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
+@@ -16,0 +17 @@
++  public android.support.v7.view.ActionMode onWindowStartingSupportActionMode(android.support.v7.view.ActionMode$Callback);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatCallback appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatCallback
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatCallback	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatCallback	2015-08-20 23:41:44.000000000 +0900
+@@ -3,0 +4 @@
++  public abstract android.support.v7.view.ActionMode onWindowStartingSupportActionMode(android.support.v7.view.ActionMode$Callback);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatDelegate appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatDelegate
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
+@@ -23,0 +24,2 @@
++  public abstract void setHandleNativeActionModesEnabled(boolean);
++  public abstract boolean isHandleNativeActionModesEnabled();
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatDialog appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatDialog
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.AppCompatDialog	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.AppCompatDialog	2015-08-20 23:41:44.000000000 +0900
+@@ -15,0 +16 @@
++  public android.support.v7.view.ActionMode onWindowStartingSupportActionMode(android.support.v7.view.ActionMode$Callback);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.NotificationCompat appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.NotificationCompat	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v7.app.NotificationCompat extends android.support.v4.app.NotificationCompat {
++  public android.support.v7.app.NotificationCompat();
++}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.NotificationCompat$Builder appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat$Builder
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.NotificationCompat$Builder	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat$Builder	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v7.app.NotificationCompat$Builder extends android.support.v4.app.NotificationCompat$Builder {
++  public android.support.v7.app.NotificationCompat$Builder(android.content.Context);
++}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.NotificationCompat$MediaStyle appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat$MediaStyle
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.app.NotificationCompat$MediaStyle	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat$MediaStyle	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v7.app.NotificationCompat$MediaStyle extends android.support.v4.app.NotificationCompat$Style {
++  public android.support.v7.app.NotificationCompat$MediaStyle();
++  public android.support.v7.app.NotificationCompat$MediaStyle(android.support.v4.app.NotificationCompat$Builder);
++  public android.support.v7.app.NotificationCompat$MediaStyle setShowActionsInCompactView(int...);
++  public android.support.v7.app.NotificationCompat$MediaStyle setMediaSession(android.support.v4.media.session.MediaSessionCompat$Token);
++  public void setShowCancelButton(boolean);
++  public void setCancelButtonIntent(android.app.PendingIntent);
++}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.app.AppCompatViewInflater appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.AppCompatViewInflater
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.app.AppCompatViewInflater	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.AppCompatViewInflater	2015-08-20 23:41:44.000000000 +0900
+@@ -2,2 +2,2 @@
+-  public android.support.v7.internal.app.AppCompatViewInflater(android.content.Context);
+-  public final android.view.View createView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean, boolean);
++  public android.support.v7.internal.app.AppCompatViewInflater();
++  public final android.view.View createView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean, boolean, boolean);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.app.NotificationCompatImpl21 appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.NotificationCompatImpl21
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.app.NotificationCompatImpl21	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.NotificationCompatImpl21	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.internal.app.NotificationCompatImpl21 {
++  public android.support.v7.internal.app.NotificationCompatImpl21();
++  public static void addMediaStyle(android.support.v4.app.NotificationBuilderWithBuilderAccessor, int[], java.lang.Object);
++}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.app.NotificationCompatImplBase appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.NotificationCompatImplBase
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.app.NotificationCompatImplBase	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.NotificationCompatImplBase	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.app.NotificationCompatImplBase {
++  public android.support.v7.internal.app.NotificationCompatImplBase();
++  public static <T extends android.support.v4.app.NotificationCompatBase$Action> void overrideContentView(android.support.v4.app.NotificationBuilderWithBuilderAccessor, android.content.Context, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, int, android.graphics.Bitmap, java.lang.CharSequence, boolean, long, java.util.List<T>, int[], boolean, android.app.PendingIntent);
++  public static <T extends android.support.v4.app.NotificationCompatBase$Action> void overrideBigContentView(android.app.Notification, android.content.Context, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, int, android.graphics.Bitmap, java.lang.CharSequence, boolean, long, java.util.List<T>, boolean, android.app.PendingIntent);
++}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -6,0 +7 @@
++  public void addActionModeWrapper(android.support.v7.internal.view.SupportActionModeWrapper);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.view.menu.MenuBuilder appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.view.menu.MenuBuilder
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.view.menu.MenuBuilder	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.view.menu.MenuBuilder	2015-08-20 23:41:44.000000000 +0900
+@@ -63,0 +64 @@
++  public void setOverrideVisibleItems(boolean);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.widget.NativeActionModeAwareLayout appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.widget.NativeActionModeAwareLayout
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.widget.NativeActionModeAwareLayout	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.widget.NativeActionModeAwareLayout	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public class android.support.v7.internal.widget.NativeActionModeAwareLayout extends android.support.v7.internal.widget.ContentFrameLayout {
+-  public android.support.v7.internal.widget.NativeActionModeAwareLayout(android.content.Context, android.util.AttributeSet);
+-  public void setActionModeForChildListener(android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener);
+-  public android.view.ActionMode startActionModeForChild(android.view.View, android.view.ActionMode$Callback);
+-}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener {
+-  public abstract android.view.ActionMode startActionModeForChild(android.view.View, android.view.ActionMode$Callback);
+-}
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.widget.ViewUtils appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.widget.ViewUtils
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
+@@ -6 +5,0 @@
+-  public static android.content.Context themifyContext(android.content.Context, android.util.AttributeSet, boolean, boolean);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatAutoCompleteTextView appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatAutoCompleteTextView
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatButton appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatButton
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatEditText appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatEditText
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatMultiAutoCompleteTextView appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatSpinner appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatSpinner
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+diff -U 0 -N appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.Toolbar appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.Toolbar
+--- appcompat-v7-22.1.1_e8b6d101/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
+@@ -56 +55,0 @@
+-  public void setMinimumHeight(int);

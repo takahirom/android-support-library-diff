@@ -1,0 +1,1934 @@
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBar appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBar
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBar	2015-08-20 23:41:44.000000000 +0900
+@@ -61,0 +62 @@
++  public boolean isTitleTruncated();
+@@ -65,0 +67,16 @@
++  public void setHideOnContentScrollEnabled(boolean);
++  public boolean isHideOnContentScrollEnabled();
++  public int getHideOffset();
++  public void setHideOffset(int);
++  public void setElevation(float);
++  public float getElevation();
++  public void setDefaultDisplayHomeAsUpEnabled(boolean);
++  public void setShowHideAnimationEnabled(boolean);
++  public void onConfigurationChanged(android.content.res.Configuration);
++  public void dispatchMenuVisibilityChanged(boolean);
++  public android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
++  public boolean openOptionsMenu();
++  public boolean invalidateOptionsMenu();
++  public boolean onMenuKeyEvent(android.view.KeyEvent);
++  public boolean collapseActionView();
++  public void setWindowTitle(java.lang.CharSequence);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBar$DisplayOptions appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBar$DisplayOptions
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBar$DisplayOptions	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBar$DisplayOptions	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.app.ActionBar$DisplayOptions extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBar$NavigationMode appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBar$NavigationMode
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBar$NavigationMode	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBar$NavigationMode	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.app.ActionBar$NavigationMode extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarActivity appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarActivity
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.app.ActionBarActivity extends android.support.v4.app.FragmentActivity implements android.support.v7.app.ActionBar$Callback,android.support.v4.app.TaskStackBuilder$SupportParentable,android.support.v4.app.ActionBarDrawerToggle$DelegateProvider {
++public class android.support.v7.app.ActionBarActivity extends android.support.v4.app.FragmentActivity implements android.support.v7.app.ActionBar$Callback,android.support.v4.app.TaskStackBuilder$SupportParentable,android.support.v4.app.ActionBarDrawerToggle$DelegateProvider,android.support.v7.app.ActionBarDrawerToggle$TmpDelegateProvider {
+@@ -3,0 +4 @@
++  public void setSupportActionBar(android.support.v7.widget.Toolbar);
+@@ -13,0 +15 @@
++  public void invalidateOptionsMenu();
+@@ -18,0 +21,2 @@
++  public void onPanelClosed(int, android.view.Menu);
++  public boolean onMenuOpened(int, android.view.Menu);
+@@ -30,0 +35,3 @@
++  public android.support.v7.app.ActionBarDrawerToggle$Delegate getV7DrawerToggleDelegate();
++  public boolean onKeyShortcut(int, android.view.KeyEvent);
++  public boolean onKeyDown(int, android.view.KeyEvent);
+@@ -32,0 +40 @@
++  public android.view.View onCreateView(java.lang.String, android.content.Context, android.util.AttributeSet);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarDrawerToggle appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarDrawerToggle
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarDrawerToggle	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarDrawerToggle	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,17 @@
++public class android.support.v7.app.ActionBarDrawerToggle implements android.support.v4.widget.DrawerLayout$DrawerListener {
++  public android.support.v7.app.ActionBarDrawerToggle(android.app.Activity, android.support.v4.widget.DrawerLayout, int, int);
++  public android.support.v7.app.ActionBarDrawerToggle(android.app.Activity, android.support.v4.widget.DrawerLayout, android.support.v7.widget.Toolbar, int, int);
++  public void syncState();
++  public void onConfigurationChanged(android.content.res.Configuration);
++  public boolean onOptionsItemSelected(android.view.MenuItem);
++  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
++  public void setHomeAsUpIndicator(int);
++  public boolean isDrawerIndicatorEnabled();
++  public void setDrawerIndicatorEnabled(boolean);
++  public void onDrawerSlide(android.view.View, float);
++  public void onDrawerOpened(android.view.View);
++  public void onDrawerClosed(android.view.View);
++  public void onDrawerStateChanged(int);
++  public android.view.View$OnClickListener getToolbarNavigationClickListener();
++  public void setToolbarNavigationClickListener(android.view.View$OnClickListener);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarDrawerToggle$Delegate appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarDrawerToggle$Delegate
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarDrawerToggle$Delegate	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarDrawerToggle$Delegate	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public interface android.support.v7.app.ActionBarDrawerToggle$Delegate {
++  public abstract void setActionBarUpIndicator(android.graphics.drawable.Drawable, int);
++  public abstract void setActionBarDescription(int);
++  public abstract android.graphics.drawable.Drawable getThemeUpIndicator();
++  public abstract android.content.Context getActionBarThemedContext();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarDrawerToggle$DelegateProvider appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarDrawerToggle$DelegateProvider
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarDrawerToggle$DelegateProvider	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarDrawerToggle$DelegateProvider	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.app.ActionBarDrawerToggle$DelegateProvider {
++  public abstract android.support.v7.app.ActionBarDrawerToggle$Delegate getDrawerToggleDelegate();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarImplBase$TabImpl appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarImplBase$TabImpl
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarImplBase$TabImpl	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarImplBase$TabImpl	1970-01-01 09:00:00.000000000 +0900
+@@ -1,22 +0,0 @@
+-public class android.support.v7.app.ActionBarImplBase$TabImpl extends android.support.v7.app.ActionBar$Tab {
+-  public android.support.v7.app.ActionBarImplBase$TabImpl(android.support.v7.app.ActionBarImplBase);
+-  public java.lang.Object getTag();
+-  public android.support.v7.app.ActionBar$Tab setTag(java.lang.Object);
+-  public android.support.v7.app.ActionBar$TabListener getCallback();
+-  public android.support.v7.app.ActionBar$Tab setTabListener(android.support.v7.app.ActionBar$TabListener);
+-  public android.view.View getCustomView();
+-  public android.support.v7.app.ActionBar$Tab setCustomView(android.view.View);
+-  public android.support.v7.app.ActionBar$Tab setCustomView(int);
+-  public android.graphics.drawable.Drawable getIcon();
+-  public int getPosition();
+-  public void setPosition(int);
+-  public java.lang.CharSequence getText();
+-  public android.support.v7.app.ActionBar$Tab setIcon(android.graphics.drawable.Drawable);
+-  public android.support.v7.app.ActionBar$Tab setIcon(int);
+-  public android.support.v7.app.ActionBar$Tab setText(java.lang.CharSequence);
+-  public android.support.v7.app.ActionBar$Tab setText(int);
+-  public void select();
+-  public android.support.v7.app.ActionBar$Tab setContentDescription(int);
+-  public android.support.v7.app.ActionBar$Tab setContentDescription(java.lang.CharSequence);
+-  public java.lang.CharSequence getContentDescription();
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarImplJB appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarImplJB
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarImplJB	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarImplJB	1970-01-01 09:00:00.000000000 +0900
+@@ -1,56 +0,0 @@
+-public class android.support.v7.app.ActionBarImplJB extends android.support.v7.app.ActionBarImplICS {
+-  public android.support.v7.app.ActionBarImplJB(android.app.Activity, android.support.v7.app.ActionBar$Callback);
+-  public void setHomeButtonEnabled(boolean);
+-  public void removeOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
+-  public void addOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
+-  public boolean isShowing();
+-  public void hide();
+-  public void show();
+-  public int getHeight();
+-  public void setHomeAsUpIndicator(int);
+-  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
+-  public android.content.Context getThemedContext();
+-  public int getTabCount();
+-  public android.support.v7.app.ActionBar$Tab getTabAt(int);
+-  public android.support.v7.app.ActionBar$Tab getSelectedTab();
+-  public void selectTab(android.support.v7.app.ActionBar$Tab);
+-  public void removeAllTabs();
+-  public void removeTabAt(int);
+-  public void removeTab(android.support.v7.app.ActionBar$Tab);
+-  public void addTab(android.support.v7.app.ActionBar$Tab, int, boolean);
+-  public void addTab(android.support.v7.app.ActionBar$Tab, int);
+-  public void addTab(android.support.v7.app.ActionBar$Tab, boolean);
+-  public void addTab(android.support.v7.app.ActionBar$Tab);
+-  public android.support.v7.app.ActionBar$Tab newTab();
+-  public int getDisplayOptions();
+-  public void setNavigationMode(int);
+-  public int getNavigationMode();
+-  public java.lang.CharSequence getSubtitle();
+-  public java.lang.CharSequence getTitle();
+-  public android.view.View getCustomView();
+-  public void setSplitBackgroundDrawable(android.graphics.drawable.Drawable);
+-  public void setStackedBackgroundDrawable(android.graphics.drawable.Drawable);
+-  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+-  public void setDisplayShowCustomEnabled(boolean);
+-  public void setDisplayShowTitleEnabled(boolean);
+-  public void setDisplayHomeAsUpEnabled(boolean);
+-  public void setDisplayShowHomeEnabled(boolean);
+-  public void setDisplayUseLogoEnabled(boolean);
+-  public void setDisplayOptions(int, int);
+-  public void setDisplayOptions(int);
+-  public void setSubtitle(int);
+-  public void setSubtitle(java.lang.CharSequence);
+-  public void setTitle(int);
+-  public void setTitle(java.lang.CharSequence);
+-  public int getNavigationItemCount();
+-  public int getSelectedNavigationIndex();
+-  public void setSelectedNavigationItem(int);
+-  public void setListNavigationCallbacks(android.widget.SpinnerAdapter, android.support.v7.app.ActionBar$OnNavigationListener);
+-  public void setLogo(android.graphics.drawable.Drawable);
+-  public void setLogo(int);
+-  public void setIcon(android.graphics.drawable.Drawable);
+-  public void setIcon(int);
+-  public void setCustomView(int);
+-  public void setCustomView(android.view.View, android.support.v7.app.ActionBar$LayoutParams);
+-  public void setCustomView(android.view.View);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarImplJBMR2 appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarImplJBMR2
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.app.ActionBarImplJBMR2	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.app.ActionBarImplJBMR2	1970-01-01 09:00:00.000000000 +0900
+@@ -1,7 +0,0 @@
+-public class android.support.v7.app.ActionBarImplJBMR2 extends android.support.v7.app.ActionBarImplJB {
+-  public android.support.v7.app.ActionBarImplJBMR2(android.app.Activity, android.support.v7.app.ActionBar$Callback);
+-  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
+-  public void setHomeAsUpIndicator(int);
+-  public void setHomeActionContentDescription(java.lang.CharSequence);
+-  public void setHomeActionContentDescription(int);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.VersionUtils appcompat-v7-21.0.0_a2881299/android.support.v7.internal.VersionUtils
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.VersionUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.VersionUtils	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v7.internal.VersionUtils {
++  public static boolean isAtLeastL();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.ToolbarActionBar appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.ToolbarActionBar
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.ToolbarActionBar	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,73 @@
++public class android.support.v7.internal.app.ToolbarActionBar extends android.support.v7.app.ActionBar {
++  public android.support.v7.internal.app.ToolbarActionBar(android.support.v7.widget.Toolbar, java.lang.CharSequence, android.view.Window, android.support.v7.internal.app.WindowCallback);
++  public android.support.v7.internal.app.WindowCallback getWrappedWindowCallback();
++  public void setCustomView(android.view.View);
++  public void setCustomView(android.view.View, android.support.v7.app.ActionBar$LayoutParams);
++  public void setCustomView(int);
++  public void setIcon(int);
++  public void setIcon(android.graphics.drawable.Drawable);
++  public void setLogo(int);
++  public void setLogo(android.graphics.drawable.Drawable);
++  public void setStackedBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setSplitBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setHomeButtonEnabled(boolean);
++  public void setElevation(float);
++  public float getElevation();
++  public android.content.Context getThemedContext();
++  public boolean isTitleTruncated();
++  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
++  public void setHomeAsUpIndicator(int);
++  public void setHomeActionContentDescription(java.lang.CharSequence);
++  public void setDefaultDisplayHomeAsUpEnabled(boolean);
++  public void setHomeActionContentDescription(int);
++  public void setShowHideAnimationEnabled(boolean);
++  public void onConfigurationChanged(android.content.res.Configuration);
++  public android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
++  public void setListNavigationCallbacks(android.widget.SpinnerAdapter, android.support.v7.app.ActionBar$OnNavigationListener);
++  public void setSelectedNavigationItem(int);
++  public int getSelectedNavigationIndex();
++  public int getNavigationItemCount();
++  public void setTitle(java.lang.CharSequence);
++  public void setTitle(int);
++  public void setWindowTitle(java.lang.CharSequence);
++  public void setSubtitle(java.lang.CharSequence);
++  public void setSubtitle(int);
++  public void setDisplayOptions(int);
++  public void setDisplayOptions(int, int);
++  public void setDisplayUseLogoEnabled(boolean);
++  public void setDisplayShowHomeEnabled(boolean);
++  public void setDisplayHomeAsUpEnabled(boolean);
++  public void setDisplayShowTitleEnabled(boolean);
++  public void setDisplayShowCustomEnabled(boolean);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public android.view.View getCustomView();
++  public java.lang.CharSequence getTitle();
++  public java.lang.CharSequence getSubtitle();
++  public int getNavigationMode();
++  public void setNavigationMode(int);
++  public int getDisplayOptions();
++  public android.support.v7.app.ActionBar$Tab newTab();
++  public void addTab(android.support.v7.app.ActionBar$Tab);
++  public void addTab(android.support.v7.app.ActionBar$Tab, boolean);
++  public void addTab(android.support.v7.app.ActionBar$Tab, int);
++  public void addTab(android.support.v7.app.ActionBar$Tab, int, boolean);
++  public void removeTab(android.support.v7.app.ActionBar$Tab);
++  public void removeTabAt(int);
++  public void removeAllTabs();
++  public void selectTab(android.support.v7.app.ActionBar$Tab);
++  public android.support.v7.app.ActionBar$Tab getSelectedTab();
++  public android.support.v7.app.ActionBar$Tab getTabAt(int);
++  public int getTabCount();
++  public int getHeight();
++  public void show();
++  public void hide();
++  public boolean isShowing();
++  public boolean openOptionsMenu();
++  public boolean invalidateOptionsMenu();
++  public boolean collapseActionView();
++  public boolean onMenuKeyEvent(android.view.KeyEvent);
++  public void addOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
++  public void removeOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
++  public void dispatchMenuVisibilityChanged(boolean);
++  public void setListMenuPresenter(android.support.v7.internal.view.menu.ListMenuPresenter);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowCallback appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowCallback
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowCallback	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowCallback	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,9 @@
++public interface android.support.v7.internal.app.WindowCallback {
++  public abstract boolean onMenuItemSelected(int, android.view.MenuItem);
++  public abstract boolean onCreatePanelMenu(int, android.view.Menu);
++  public abstract boolean onPreparePanel(int, android.view.View, android.view.Menu);
++  public abstract void onPanelClosed(int, android.view.Menu);
++  public abstract boolean onMenuOpened(int, android.view.Menu);
++  public abstract android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
++  public abstract android.view.View onCreatePanelView(int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowDecorActionBar appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowDecorActionBar
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowDecorActionBar	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowDecorActionBar	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,85 @@
++public class android.support.v7.internal.app.WindowDecorActionBar extends android.support.v7.app.ActionBar implements android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback {
++  public android.support.v7.internal.app.WindowDecorActionBar(android.support.v7.app.ActionBarActivity, boolean);
++  public android.support.v7.internal.app.WindowDecorActionBar(android.app.Dialog);
++  public android.support.v7.internal.app.WindowDecorActionBar(android.view.View);
++  public void setElevation(float);
++  public float getElevation();
++  public void onConfigurationChanged(android.content.res.Configuration);
++  public void onWindowVisibilityChanged(int);
++  public void setShowHideAnimationEnabled(boolean);
++  public void addOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
++  public void removeOnMenuVisibilityListener(android.support.v7.app.ActionBar$OnMenuVisibilityListener);
++  public void dispatchMenuVisibilityChanged(boolean);
++  public void setCustomView(int);
++  public void setDisplayUseLogoEnabled(boolean);
++  public void setDisplayShowHomeEnabled(boolean);
++  public void setDisplayHomeAsUpEnabled(boolean);
++  public void setDisplayShowTitleEnabled(boolean);
++  public void setDisplayShowCustomEnabled(boolean);
++  public void setHomeButtonEnabled(boolean);
++  public void setTitle(int);
++  public void setSubtitle(int);
++  public void setSelectedNavigationItem(int);
++  public void removeAllTabs();
++  public void setTitle(java.lang.CharSequence);
++  public void setWindowTitle(java.lang.CharSequence);
++  public void setSubtitle(java.lang.CharSequence);
++  public void setDisplayOptions(int);
++  public void setDisplayOptions(int, int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setStackedBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setSplitBackgroundDrawable(android.graphics.drawable.Drawable);
++  public android.view.View getCustomView();
++  public java.lang.CharSequence getTitle();
++  public java.lang.CharSequence getSubtitle();
++  public int getNavigationMode();
++  public int getDisplayOptions();
++  public android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
++  public void addTab(android.support.v7.app.ActionBar$Tab);
++  public void addTab(android.support.v7.app.ActionBar$Tab, int);
++  public void addTab(android.support.v7.app.ActionBar$Tab, boolean);
++  public void addTab(android.support.v7.app.ActionBar$Tab, int, boolean);
++  public android.support.v7.app.ActionBar$Tab newTab();
++  public void removeTab(android.support.v7.app.ActionBar$Tab);
++  public void removeTabAt(int);
++  public void selectTab(android.support.v7.app.ActionBar$Tab);
++  public android.support.v7.app.ActionBar$Tab getSelectedTab();
++  public int getHeight();
++  public void enableContentAnimations(boolean);
++  public void show();
++  public void showForSystem();
++  public void hide();
++  public void hideForSystem();
++  public void setHideOnContentScrollEnabled(boolean);
++  public boolean isHideOnContentScrollEnabled();
++  public int getHideOffset();
++  public void setHideOffset(int);
++  public void doShow(boolean);
++  public void doHide(boolean);
++  public boolean isShowing();
++  public void animateToMode(boolean);
++  public android.content.Context getThemedContext();
++  public boolean isTitleTruncated();
++  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
++  public void setHomeAsUpIndicator(int);
++  public void setHomeActionContentDescription(java.lang.CharSequence);
++  public void setHomeActionContentDescription(int);
++  public void onContentScrollStarted();
++  public void onContentScrollStopped();
++  public boolean collapseActionView();
++  public void setCustomView(android.view.View);
++  public void setCustomView(android.view.View, android.support.v7.app.ActionBar$LayoutParams);
++  public void setListNavigationCallbacks(android.widget.SpinnerAdapter, android.support.v7.app.ActionBar$OnNavigationListener);
++  public int getSelectedNavigationIndex();
++  public int getNavigationItemCount();
++  public int getTabCount();
++  public void setNavigationMode(int);
++  public android.support.v7.app.ActionBar$Tab getTabAt(int);
++  public void setIcon(int);
++  public void setIcon(android.graphics.drawable.Drawable);
++  public boolean hasIcon();
++  public void setLogo(int);
++  public void setLogo(android.graphics.drawable.Drawable);
++  public boolean hasLogo();
++  public void setDefaultDisplayHomeAsUpEnabled(boolean);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowDecorActionBar$ActionModeImpl appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowDecorActionBar$ActionModeImpl
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowDecorActionBar$ActionModeImpl	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowDecorActionBar$ActionModeImpl	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,23 @@
++public class android.support.v7.internal.app.WindowDecorActionBar$ActionModeImpl extends android.support.v7.view.ActionMode implements android.support.v7.internal.view.menu.MenuBuilder$Callback {
++  public android.support.v7.internal.app.WindowDecorActionBar$ActionModeImpl(android.support.v7.internal.app.WindowDecorActionBar, android.support.v7.view.ActionMode$Callback);
++  public android.view.MenuInflater getMenuInflater();
++  public android.view.Menu getMenu();
++  public void finish();
++  public void invalidate();
++  public boolean dispatchOnCreate();
++  public void setCustomView(android.view.View);
++  public void setSubtitle(java.lang.CharSequence);
++  public void setTitle(java.lang.CharSequence);
++  public void setTitle(int);
++  public void setSubtitle(int);
++  public java.lang.CharSequence getTitle();
++  public java.lang.CharSequence getSubtitle();
++  public void setTitleOptionalHint(boolean);
++  public boolean isTitleOptional();
++  public android.view.View getCustomView();
++  public boolean onMenuItemSelected(android.support.v7.internal.view.menu.MenuBuilder, android.view.MenuItem);
++  public void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean);
++  public boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder);
++  public void onCloseSubMenu(android.support.v7.internal.view.menu.SubMenuBuilder);
++  public void onMenuModeChange(android.support.v7.internal.view.menu.MenuBuilder);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowDecorActionBar$TabImpl appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowDecorActionBar$TabImpl
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.app.WindowDecorActionBar$TabImpl	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.app.WindowDecorActionBar$TabImpl	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,22 @@
++public class android.support.v7.internal.app.WindowDecorActionBar$TabImpl extends android.support.v7.app.ActionBar$Tab {
++  public android.support.v7.internal.app.WindowDecorActionBar$TabImpl(android.support.v7.internal.app.WindowDecorActionBar);
++  public java.lang.Object getTag();
++  public android.support.v7.app.ActionBar$Tab setTag(java.lang.Object);
++  public android.support.v7.app.ActionBar$TabListener getCallback();
++  public android.support.v7.app.ActionBar$Tab setTabListener(android.support.v7.app.ActionBar$TabListener);
++  public android.view.View getCustomView();
++  public android.support.v7.app.ActionBar$Tab setCustomView(android.view.View);
++  public android.support.v7.app.ActionBar$Tab setCustomView(int);
++  public android.graphics.drawable.Drawable getIcon();
++  public int getPosition();
++  public void setPosition(int);
++  public java.lang.CharSequence getText();
++  public android.support.v7.app.ActionBar$Tab setIcon(android.graphics.drawable.Drawable);
++  public android.support.v7.app.ActionBar$Tab setIcon(int);
++  public android.support.v7.app.ActionBar$Tab setText(java.lang.CharSequence);
++  public android.support.v7.app.ActionBar$Tab setText(int);
++  public void select();
++  public android.support.v7.app.ActionBar$Tab setContentDescription(int);
++  public android.support.v7.app.ActionBar$Tab setContentDescription(java.lang.CharSequence);
++  public java.lang.CharSequence getContentDescription();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.text.AllCapsTransformationMethod appcompat-v7-21.0.0_a2881299/android.support.v7.internal.text.AllCapsTransformationMethod
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.text.AllCapsTransformationMethod	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.text.AllCapsTransformationMethod	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.text.AllCapsTransformationMethod implements android.text.method.TransformationMethod {
++  public android.support.v7.internal.text.AllCapsTransformationMethod(android.content.Context);
++  public java.lang.CharSequence getTransformation(java.lang.CharSequence, android.view.View);
++  public void onFocusChanged(android.view.View, java.lang.CharSequence, boolean, int, android.graphics.Rect);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.transition.ActionBarTransition appcompat-v7-21.0.0_a2881299/android.support.v7.internal.transition.ActionBarTransition
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.transition.ActionBarTransition	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.transition.ActionBarTransition	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.internal.transition.ActionBarTransition {
++  public android.support.v7.internal.transition.ActionBarTransition();
++  public static void beginDelayedTransition(android.view.ViewGroup);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,17 +0,0 @@
+-public class android.support.v7.internal.view.ActionModeWrapper extends android.support.v7.view.ActionMode {
+-  public android.support.v7.internal.view.ActionModeWrapper(android.content.Context, android.view.ActionMode);
+-  public java.lang.Object getTag();
+-  public void setTag(java.lang.Object);
+-  public void setTitle(java.lang.CharSequence);
+-  public void setSubtitle(java.lang.CharSequence);
+-  public void invalidate();
+-  public void finish();
+-  public android.view.Menu getMenu();
+-  public java.lang.CharSequence getTitle();
+-  public void setTitle(int);
+-  public java.lang.CharSequence getSubtitle();
+-  public void setSubtitle(int);
+-  public android.view.View getCustomView();
+-  public void setCustomView(android.view.View);
+-  public android.view.MenuInflater getMenuInflater();
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,8 +0,0 @@
+-public class android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper implements android.view.ActionMode$Callback {
+-  public android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper(android.content.Context, android.support.v7.view.ActionMode$Callback);
+-  public boolean onCreateActionMode(android.view.ActionMode, android.view.Menu);
+-  public boolean onPrepareActionMode(android.view.ActionMode, android.view.Menu);
+-  public boolean onActionItemClicked(android.view.ActionMode, android.view.MenuItem);
+-  public void onDestroyActionMode(android.view.ActionMode);
+-  public void setLastStartedActionMode(android.support.v7.internal.view.ActionModeWrapper);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapperJB appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapperJB
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapperJB	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapperJB	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public class android.support.v7.internal.view.ActionModeWrapperJB extends android.support.v7.internal.view.ActionModeWrapper {
+-  public android.support.v7.internal.view.ActionModeWrapperJB(android.content.Context, android.view.ActionMode);
+-  public boolean getTitleOptionalHint();
+-  public void setTitleOptionalHint(boolean);
+-  public boolean isTitleOptional();
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public class android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper extends android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper {
+-  public android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper(android.content.Context, android.support.v7.view.ActionMode$Callback);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.StandaloneActionMode appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.StandaloneActionMode
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.StandaloneActionMode	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.StandaloneActionMode	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,23 @@
++public class android.support.v7.internal.view.StandaloneActionMode extends android.support.v7.view.ActionMode implements android.support.v7.internal.view.menu.MenuBuilder$Callback {
++  public android.support.v7.internal.view.StandaloneActionMode(android.content.Context, android.support.v7.internal.widget.ActionBarContextView, android.support.v7.view.ActionMode$Callback, boolean);
++  public void setTitle(java.lang.CharSequence);
++  public void setSubtitle(java.lang.CharSequence);
++  public void setTitle(int);
++  public void setSubtitle(int);
++  public void setTitleOptionalHint(boolean);
++  public boolean isTitleOptional();
++  public void setCustomView(android.view.View);
++  public void invalidate();
++  public void finish();
++  public android.view.Menu getMenu();
++  public java.lang.CharSequence getTitle();
++  public java.lang.CharSequence getSubtitle();
++  public android.view.View getCustomView();
++  public android.view.MenuInflater getMenuInflater();
++  public boolean onMenuItemSelected(android.support.v7.internal.view.menu.MenuBuilder, android.view.MenuItem);
++  public void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean);
++  public boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder);
++  public void onCloseSubMenu(android.support.v7.internal.view.menu.SubMenuBuilder);
++  public void onMenuModeChange(android.support.v7.internal.view.menu.MenuBuilder);
++  public boolean isUiFocusable();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.SupportActionModeWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.SupportActionModeWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.SupportActionModeWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.SupportActionModeWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,20 @@
++public class android.support.v7.internal.view.SupportActionModeWrapper extends android.view.ActionMode {
++  public android.support.v7.internal.view.SupportActionModeWrapper(android.content.Context, android.support.v7.view.ActionMode);
++  public java.lang.Object getTag();
++  public void setTag(java.lang.Object);
++  public void setTitle(java.lang.CharSequence);
++  public void setSubtitle(java.lang.CharSequence);
++  public void invalidate();
++  public void finish();
++  public android.view.Menu getMenu();
++  public java.lang.CharSequence getTitle();
++  public void setTitle(int);
++  public java.lang.CharSequence getSubtitle();
++  public void setSubtitle(int);
++  public android.view.View getCustomView();
++  public void setCustomView(android.view.View);
++  public android.view.MenuInflater getMenuInflater();
++  public boolean getTitleOptionalHint();
++  public void setTitleOptionalHint(boolean);
++  public boolean isTitleOptional();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper implements android.support.v7.view.ActionMode$Callback {
++  public android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper(android.content.Context, android.view.ActionMode$Callback);
++  public boolean onCreateActionMode(android.support.v7.view.ActionMode, android.view.Menu);
++  public boolean onPrepareActionMode(android.support.v7.view.ActionMode, android.view.Menu);
++  public boolean onActionItemClicked(android.support.v7.view.ActionMode, android.view.MenuItem);
++  public void onDestroyActionMode(android.support.v7.view.ActionMode);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v7.internal.view.ViewPropertyAnimatorCompatSet {
++  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet();
++  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet play(android.support.v4.view.ViewPropertyAnimatorCompat);
++  public void start();
++  public void cancel();
++  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet setDuration(long);
++  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet setInterpolator(android.view.animation.Interpolator);
++  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet setListener(android.support.v4.view.ViewPropertyAnimatorListener);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuItemView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuItemView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuItemView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuItemView	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.view.menu.ActionMenuItemView extends android.support.v7.internal.widget.CompatTextView implements android.support.v7.internal.view.menu.MenuView$ItemView,android.view.View$OnClickListener,android.view.View$OnLongClickListener,android.support.v7.internal.view.menu.ActionMenuView$ActionMenuChildView {
++public class android.support.v7.internal.view.menu.ActionMenuItemView extends android.support.v7.internal.widget.CompatTextView implements android.support.v7.internal.view.menu.MenuView$ItemView,android.view.View$OnClickListener,android.view.View$OnLongClickListener,android.support.v7.widget.ActionMenuView$ActionMenuChildView {
+@@ -4,0 +5 @@
++  public void onConfigurationChanged(android.content.res.Configuration);
+@@ -7,0 +9 @@
++  public boolean onTouchEvent(android.view.MotionEvent);
+@@ -9,0 +12 @@
++  public void setPopupCallback(android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback {
++  public android.support.v7.internal.view.menu.ActionMenuItemView$PopupCallback();
++  public abstract android.support.v7.widget.ListPopupWindow getPopup();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuPresenter appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuPresenter
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuPresenter	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuPresenter	1970-01-01 09:00:00.000000000 +0900
+@@ -1,27 +0,0 @@
+-public class android.support.v7.internal.view.menu.ActionMenuPresenter extends android.support.v7.internal.view.menu.BaseMenuPresenter implements android.support.v4.view.ActionProvider$SubUiVisibilityListener {
+-  public android.support.v7.internal.view.menu.ActionMenuPresenter(android.content.Context);
+-  public void initForMenu(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder);
+-  public void onConfigurationChanged(android.content.res.Configuration);
+-  public void setWidthLimit(int, boolean);
+-  public void setReserveOverflow(boolean);
+-  public void setItemLimit(int);
+-  public void setExpandedActionViewsExclusive(boolean);
+-  public android.support.v7.internal.view.menu.MenuView getMenuView(android.view.ViewGroup);
+-  public android.view.View getItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.view.View, android.view.ViewGroup);
+-  public void bindItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.support.v7.internal.view.menu.MenuView$ItemView);
+-  public boolean shouldIncludeItem(int, android.support.v7.internal.view.menu.MenuItemImpl);
+-  public void updateMenuView(boolean);
+-  public boolean filterLeftoverView(android.view.ViewGroup, int);
+-  public boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder);
+-  public boolean showOverflowMenu();
+-  public boolean hideOverflowMenu();
+-  public boolean dismissPopupMenus();
+-  public boolean hideSubMenus();
+-  public boolean isOverflowMenuShowing();
+-  public boolean isOverflowReserved();
+-  public boolean flagActionItems();
+-  public void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean);
+-  public android.os.Parcelable onSaveInstanceState();
+-  public void onRestoreInstanceState(android.os.Parcelable);
+-  public void onSubUiVisibilityChanged(boolean);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuView	1970-01-01 09:00:00.000000000 +0900
+@@ -1,18 +0,0 @@
+-public class android.support.v7.internal.view.menu.ActionMenuView extends android.support.v7.internal.widget.LinearLayoutICS implements android.support.v7.internal.view.menu.MenuBuilder$ItemInvoker,android.support.v7.internal.view.menu.MenuView {
+-  public android.support.v7.internal.view.menu.ActionMenuView(android.content.Context);
+-  public android.support.v7.internal.view.menu.ActionMenuView(android.content.Context, android.util.AttributeSet);
+-  public void setPresenter(android.support.v7.internal.view.menu.ActionMenuPresenter);
+-  public boolean isExpandedFormat();
+-  public void onConfigurationChanged(android.content.res.Configuration);
+-  public void onDetachedFromWindow();
+-  public boolean isOverflowReserved();
+-  public void setOverflowReserved(boolean);
+-  public android.support.v7.internal.view.menu.ActionMenuView$LayoutParams generateLayoutParams(android.util.AttributeSet);
+-  public android.support.v7.internal.view.menu.ActionMenuView$LayoutParams generateOverflowButtonLayoutParams();
+-  public boolean invokeItem(android.support.v7.internal.view.menu.MenuItemImpl);
+-  public int getWindowAnimations();
+-  public void initialize(android.support.v7.internal.view.menu.MenuBuilder);
+-  public boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
+-  public android.widget.LinearLayout$LayoutParams generateLayoutParams(android.util.AttributeSet);
+-  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuView$ActionMenuChildView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuView$ActionMenuChildView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuView$ActionMenuChildView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuView$ActionMenuChildView	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public interface android.support.v7.internal.view.menu.ActionMenuView$ActionMenuChildView {
+-  public abstract boolean needsDividerBefore();
+-  public abstract boolean needsDividerAfter();
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuView$LayoutParams appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuView$LayoutParams
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ActionMenuView$LayoutParams	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ActionMenuView$LayoutParams	1970-01-01 09:00:00.000000000 +0900
+@@ -1,12 +0,0 @@
+-public class android.support.v7.internal.view.menu.ActionMenuView$LayoutParams extends android.widget.LinearLayout$LayoutParams {
+-  public boolean isOverflowButton;
+-  public int cellsUsed;
+-  public int extraPixels;
+-  public boolean expandable;
+-  public boolean preventEdgeOffset;
+-  public boolean expanded;
+-  public android.support.v7.internal.view.menu.ActionMenuView$LayoutParams(android.content.Context, android.util.AttributeSet);
+-  public android.support.v7.internal.view.menu.ActionMenuView$LayoutParams(android.support.v7.internal.view.menu.ActionMenuView$LayoutParams);
+-  public android.support.v7.internal.view.menu.ActionMenuView$LayoutParams(int, int);
+-  public android.support.v7.internal.view.menu.ActionMenuView$LayoutParams(int, int, boolean);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.BaseMenuPresenter appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.BaseMenuPresenter
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.BaseMenuPresenter	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.BaseMenuPresenter	2015-08-20 23:41:44.000000000 +0900
+@@ -6,0 +7 @@
++  public android.support.v7.internal.view.menu.MenuPresenter$Callback getCallback();
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ExpandedMenuView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ExpandedMenuView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.ExpandedMenuView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.ExpandedMenuView	2015-08-20 23:41:44.000000000 +0900
+@@ -2,0 +3 @@
++  public android.support.v7.internal.view.menu.ExpandedMenuView(android.content.Context, android.util.AttributeSet, int);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.MenuBuilder appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.MenuBuilder
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.MenuBuilder	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.MenuBuilder	2015-08-20 23:41:44.000000000 +0900
+@@ -4,0 +5 @@
++  public void addMenuPresenter(android.support.v7.internal.view.menu.MenuPresenter, android.content.Context);
+@@ -43,0 +45,2 @@
++  public boolean performItemAction(android.view.MenuItem, android.support.v7.internal.view.menu.MenuPresenter, int);
++  public final void close(boolean);
+@@ -44,0 +48 @@
++  public void onItemsChanged(boolean);
+@@ -46,0 +51 @@
++  public java.util.ArrayList<android.support.v7.internal.view.menu.MenuItemImpl> getVisibleItems();
+@@ -47,0 +53,2 @@
++  public java.util.ArrayList<android.support.v7.internal.view.menu.MenuItemImpl> getActionItems();
++  public java.util.ArrayList<android.support.v7.internal.view.menu.MenuItemImpl> getNonActionItems();
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.MenuPopupHelper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.MenuPopupHelper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.MenuPopupHelper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.MenuPopupHelper	2015-08-20 23:41:44.000000000 +0900
+@@ -4 +4 @@
+-  public android.support.v7.internal.view.menu.MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View, boolean);
++  public android.support.v7.internal.view.menu.MenuPopupHelper(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder, android.view.View, boolean, int);
+@@ -6,0 +7 @@
++  public void setGravity(int);
+@@ -7,0 +9 @@
++  public android.support.v7.widget.ListPopupWindow getPopup();
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.SubMenuBuilder appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.SubMenuBuilder
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.view.menu.SubMenuBuilder	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.view.menu.SubMenuBuilder	2015-08-20 23:41:44.000000000 +0900
+@@ -11 +10,0 @@
+-  public boolean dispatchMenuItemSelected(android.support.v7.internal.view.menu.MenuBuilder, android.view.MenuItem);
+@@ -19 +17,0 @@
+-  public void clearHeader();
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AbsActionBarView$VisibilityAnimListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AbsActionBarView$VisibilityAnimListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AbsActionBarView$VisibilityAnimListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AbsActionBarView$VisibilityAnimListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.AbsActionBarView$VisibilityAnimListener implements android.support.v4.view.ViewPropertyAnimatorListener {
++  public android.support.v7.internal.widget.AbsActionBarView$VisibilityAnimListener withFinalVisibility(android.support.v4.view.ViewPropertyAnimatorCompat, int);
++  public void onAnimationStart(android.view.View);
++  public void onAnimationEnd(android.view.View);
++  public void onAnimationCancel(android.view.View);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarContainer appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarContainer
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarContainer	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarContainer	2015-08-20 23:41:44.000000000 +0900
+@@ -8,0 +9 @@
++  public void jumpDrawablesToCurrentState();
+@@ -12 +12,0 @@
+-  public boolean onHoverEvent(android.view.MotionEvent);
+@@ -15 +14,0 @@
+-  public void onDraw(android.graphics.Canvas);
+@@ -16,0 +16 @@
++  public android.view.ActionMode startActionModeForChild(android.view.View, android.view.ActionMode$Callback);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarContextView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarContextView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarContextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarContextView	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.widget.ActionBarContextView extends android.support.v7.internal.widget.AbsActionBarView {
++public class android.support.v7.internal.widget.ActionBarContextView extends android.support.v7.internal.widget.AbsActionBarView implements android.support.v4.view.ViewPropertyAnimatorListener {
+@@ -6 +6 @@
+-  public void setSplitActionBar(boolean);
++  public void setSplitToolbar(boolean);
+@@ -19,0 +20,5 @@
++  public void onAnimationStart(android.view.View);
++  public void onAnimationEnd(android.view.View);
++  public void onAnimationCancel(android.view.View);
++  public boolean shouldDelayChildPressedState();
++  public void onInitializeAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
+@@ -22,0 +28 @@
++  public boolean canShowOverflowMenu();
+@@ -23,0 +30 @@
++  public boolean isOverflowMenuShowPending();
+@@ -25 +31,0 @@
+-  public void setVisibility(int);
+@@ -28 +34 @@
+-  public void setSplitView(android.support.v7.internal.widget.ActionBarContainer);
++  public void setSplitView(android.view.ViewGroup);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarOverlayLayout appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarOverlayLayout
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarOverlayLayout	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarOverlayLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.widget.ActionBarOverlayLayout extends android.widget.FrameLayout {
++public class android.support.v7.internal.widget.ActionBarOverlayLayout extends android.view.ViewGroup implements android.support.v7.internal.widget.DecorContentParent {
+@@ -4 +4,39 @@
+-  public void setActionBar(android.support.v7.app.ActionBar);
++  public void setActionBarVisibilityCallback(android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback);
++  public void setOverlayMode(boolean);
++  public boolean isInOverlayMode();
++  public void setHasNonEmbeddedTabs(boolean);
++  public void setShowingForActionMode(boolean);
++  public void onWindowSystemUiVisibilityChanged(int);
++  public android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams generateLayoutParams(android.util.AttributeSet);
++  public void draw(android.graphics.Canvas);
++  public boolean shouldDelayChildPressedState();
++  public boolean onStartNestedScroll(android.view.View, android.view.View, int);
++  public void onNestedScrollAccepted(android.view.View, android.view.View, int);
++  public void onNestedScroll(android.view.View, int, int, int, int);
++  public void onStopNestedScroll(android.view.View);
++  public boolean onNestedFling(android.view.View, float, float, boolean);
++  public void setHideOnContentScrollEnabled(boolean);
++  public boolean isHideOnContentScrollEnabled();
++  public int getActionBarHideOffset();
++  public void setActionBarHideOffset(int);
++  public void setWindowCallback(android.support.v7.internal.app.WindowCallback);
++  public void setWindowTitle(java.lang.CharSequence);
++  public java.lang.CharSequence getTitle();
++  public void initFeature(int);
++  public void setUiOptions(int);
++  public boolean hasIcon();
++  public boolean hasLogo();
++  public void setIcon(int);
++  public void setIcon(android.graphics.drawable.Drawable);
++  public void setLogo(int);
++  public boolean canShowOverflowMenu();
++  public boolean isOverflowMenuShowing();
++  public boolean isOverflowMenuShowPending();
++  public boolean showOverflowMenu();
++  public boolean hideOverflowMenu();
++  public void setMenuPrepared();
++  public void setMenu(android.view.Menu, android.support.v7.internal.view.menu.MenuPresenter$Callback);
++  public void saveToolbarHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++  public void restoreToolbarHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++  public void dismissPopups();
++  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,8 @@
++public interface android.support.v7.internal.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback {
++  public abstract void onWindowVisibilityChanged(int);
++  public abstract void showForSystem();
++  public abstract void hideForSystem();
++  public abstract void enableContentAnimations(boolean);
++  public abstract void onContentScrollStarted();
++  public abstract void onContentScrollStopped();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams extends android.view.ViewGroup$MarginLayoutParams {
++  public android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams(int, int);
++  public android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams(android.view.ViewGroup$LayoutParams);
++  public android.support.v7.internal.widget.ActionBarOverlayLayout$LayoutParams(android.view.ViewGroup$MarginLayoutParams);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ActionBarView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ActionBarView	1970-01-01 09:00:00.000000000 +0900
+@@ -1,59 +0,0 @@
+-public class android.support.v7.internal.widget.ActionBarView extends android.support.v7.internal.widget.AbsActionBarView {
+-  public static final int DISPLAY_DEFAULT;
+-  public android.support.v7.internal.widget.ActionBarView(android.content.Context, android.util.AttributeSet);
+-  public void setWindowCallback(android.view.Window$Callback);
+-  public void onDetachedFromWindow();
+-  public boolean shouldDelayChildPressedState();
+-  public void initProgress();
+-  public void initIndeterminateProgress();
+-  public void setSplitActionBar(boolean);
+-  public boolean isSplitActionBar();
+-  public boolean hasEmbeddedTabs();
+-  public void setEmbeddedTabView(android.support.v7.internal.widget.ScrollingTabContainerView);
+-  public void setCallback(android.support.v7.app.ActionBar$OnNavigationListener);
+-  public void setMenu(android.support.v4.internal.view.SupportMenu, android.support.v7.internal.view.menu.MenuPresenter$Callback);
+-  public boolean hasExpandedActionView();
+-  public void collapseActionView();
+-  public void setCustomNavigationView(android.view.View);
+-  public java.lang.CharSequence getTitle();
+-  public void setTitle(java.lang.CharSequence);
+-  public void setWindowTitle(java.lang.CharSequence);
+-  public java.lang.CharSequence getSubtitle();
+-  public void setSubtitle(java.lang.CharSequence);
+-  public void setHomeButtonEnabled(boolean);
+-  public void setDisplayOptions(int);
+-  public void setIcon(android.graphics.drawable.Drawable);
+-  public void setIcon(int);
+-  public void setLogo(android.graphics.drawable.Drawable);
+-  public void setLogo(int);
+-  public void setNavigationMode(int);
+-  public void setDropdownAdapter(android.widget.SpinnerAdapter);
+-  public android.widget.SpinnerAdapter getDropdownAdapter();
+-  public void setDropdownSelectedPosition(int);
+-  public int getDropdownSelectedPosition();
+-  public android.view.View getCustomNavigationView();
+-  public int getNavigationMode();
+-  public int getDisplayOptions();
+-  public void setContextView(android.support.v7.internal.widget.ActionBarContextView);
+-  public void setCollapsable(boolean);
+-  public boolean isCollapsed();
+-  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
+-  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams);
+-  public android.os.Parcelable onSaveInstanceState();
+-  public void onRestoreInstanceState(android.os.Parcelable);
+-  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
+-  public void setHomeAsUpIndicator(int);
+-  public void dismissPopupMenus();
+-  public boolean isOverflowReserved();
+-  public boolean isOverflowMenuShowing();
+-  public boolean hideOverflowMenu();
+-  public void postShowOverflowMenu();
+-  public boolean showOverflowMenu();
+-  public void setVisibility(int);
+-  public void animateToVisibility(int);
+-  public int getAnimatedVisibility();
+-  public void setSplitView(android.support.v7.internal.widget.ActionBarContainer);
+-  public int getContentHeight();
+-  public void setContentHeight(int);
+-  public void setSplitWhenNarrow(boolean);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo implements android.view.ContextMenu$ContextMenuInfo {
++  public android.view.View targetView;
++  public int position;
++  public long id;
++  public android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo(android.view.View, int, long);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener {
++  public abstract void onItemClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener {
++  public abstract boolean onItemLongClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener {
++  public abstract void onItemSelected(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
++  public abstract void onNothingSelected(android.support.v7.internal.widget.AdapterViewCompat<?>);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat<T appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat<T
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewCompat<T	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewCompat<T	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,37 @@
++public abstract class android.support.v7.internal.widget.AdapterViewCompat<T extends android.widget.Adapter> extends android.view.ViewGroup {
++  public static final int INVALID_POSITION;
++  public static final long INVALID_ROW_ID;
++  public void setOnItemClickListener(android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener);
++  public final android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener getOnItemClickListener();
++  public boolean performItemClick(android.view.View, int, long);
++  public void setOnItemLongClickListener(android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener);
++  public final android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener getOnItemLongClickListener();
++  public void setOnItemSelectedListener(android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener);
++  public final android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener getOnItemSelectedListener();
++  public abstract T getAdapter();
++  public abstract void setAdapter(T);
++  public void addView(android.view.View);
++  public void addView(android.view.View, int);
++  public void addView(android.view.View, android.view.ViewGroup$LayoutParams);
++  public void addView(android.view.View, int, android.view.ViewGroup$LayoutParams);
++  public void removeView(android.view.View);
++  public void removeViewAt(int);
++  public void removeAllViews();
++  public int getSelectedItemPosition();
++  public long getSelectedItemId();
++  public abstract android.view.View getSelectedView();
++  public java.lang.Object getSelectedItem();
++  public int getCount();
++  public int getPositionForView(android.view.View);
++  public int getFirstVisiblePosition();
++  public int getLastVisiblePosition();
++  public abstract void setSelection(int);
++  public void setEmptyView(android.view.View);
++  public android.view.View getEmptyView();
++  public void setFocusable(boolean);
++  public void setFocusableInTouchMode(boolean);
++  public java.lang.Object getItemAtPosition(int);
++  public long getItemIdAtPosition(int);
++  public void setOnClickListener(android.view.View$OnClickListener);
++  public boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$AdapterContextMenuInfo appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$AdapterContextMenuInfo
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$AdapterContextMenuInfo	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$AdapterContextMenuInfo	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public class android.support.v7.internal.widget.AdapterViewICS$AdapterContextMenuInfo implements android.view.ContextMenu$ContextMenuInfo {
+-  public android.view.View targetView;
+-  public int position;
+-  public long id;
+-  public android.support.v7.internal.widget.AdapterViewICS$AdapterContextMenuInfo(android.view.View, int, long);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$OnItemClickListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$OnItemClickListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$OnItemClickListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$OnItemClickListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v7.internal.widget.AdapterViewICS$OnItemClickListener {
+-  public abstract void onItemClick(android.support.v7.internal.widget.AdapterViewICS<?>, android.view.View, int, long);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$OnItemLongClickListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$OnItemLongClickListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$OnItemLongClickListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$OnItemLongClickListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v7.internal.widget.AdapterViewICS$OnItemLongClickListener {
+-  public abstract boolean onItemLongClick(android.support.v7.internal.widget.AdapterViewICS<?>, android.view.View, int, long);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$OnItemSelectedListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$OnItemSelectedListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AdapterViewICS$OnItemSelectedListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AdapterViewICS$OnItemSelectedListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public interface android.support.v7.internal.widget.AdapterViewICS$OnItemSelectedListener {
+-  public abstract void onItemSelected(android.support.v7.internal.widget.AdapterViewICS<?>, android.view.View, int, long);
+-  public abstract void onNothingSelected(android.support.v7.internal.widget.AdapterViewICS<?>);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AppCompatPopupWindow appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AppCompatPopupWindow
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.AppCompatPopupWindow	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.AppCompatPopupWindow	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.AppCompatPopupWindow extends android.widget.PopupWindow {
++  public android.support.v7.internal.widget.AppCompatPopupWindow(android.content.Context, android.util.AttributeSet, int);
++  public void showAsDropDown(android.view.View, int, int);
++  public void showAsDropDown(android.view.View, int, int, int);
++  public void update(android.view.View, int, int, int, int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ContentFrameLayout appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ContentFrameLayout
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ContentFrameLayout	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ContentFrameLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.ContentFrameLayout extends android.widget.FrameLayout {
++  public android.support.v7.internal.widget.ContentFrameLayout(android.content.Context);
++  public android.support.v7.internal.widget.ContentFrameLayout(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.ContentFrameLayout(android.content.Context, android.util.AttributeSet, int);
++  public void dispatchFitSystemWindows(android.graphics.Rect);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.DecorContentParent appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.DecorContentParent
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.DecorContentParent	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.DecorContentParent	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,22 @@
++public interface android.support.v7.internal.widget.DecorContentParent {
++  public abstract void setWindowCallback(android.support.v7.internal.app.WindowCallback);
++  public abstract void setWindowTitle(java.lang.CharSequence);
++  public abstract java.lang.CharSequence getTitle();
++  public abstract void initFeature(int);
++  public abstract void setUiOptions(int);
++  public abstract boolean hasIcon();
++  public abstract boolean hasLogo();
++  public abstract void setIcon(int);
++  public abstract void setIcon(android.graphics.drawable.Drawable);
++  public abstract void setLogo(int);
++  public abstract boolean canShowOverflowMenu();
++  public abstract boolean isOverflowMenuShowing();
++  public abstract boolean isOverflowMenuShowPending();
++  public abstract boolean showOverflowMenu();
++  public abstract boolean hideOverflowMenu();
++  public abstract void setMenuPrepared();
++  public abstract void setMenu(android.view.Menu, android.support.v7.internal.view.menu.MenuPresenter$Callback);
++  public abstract void saveToolbarHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++  public abstract void restoreToolbarHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++  public abstract void dismissPopups();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.DecorToolbar appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.DecorToolbar
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.DecorToolbar	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,57 @@
++public interface android.support.v7.internal.widget.DecorToolbar {
++  public abstract android.view.ViewGroup getViewGroup();
++  public abstract android.content.Context getContext();
++  public abstract boolean isSplit();
++  public abstract boolean hasExpandedActionView();
++  public abstract void collapseActionView();
++  public abstract void setWindowCallback(android.support.v7.internal.app.WindowCallback);
++  public abstract void setWindowTitle(java.lang.CharSequence);
++  public abstract java.lang.CharSequence getTitle();
++  public abstract void setTitle(java.lang.CharSequence);
++  public abstract java.lang.CharSequence getSubtitle();
++  public abstract void setSubtitle(java.lang.CharSequence);
++  public abstract void initProgress();
++  public abstract void initIndeterminateProgress();
++  public abstract boolean canSplit();
++  public abstract void setSplitView(android.view.ViewGroup);
++  public abstract void setSplitToolbar(boolean);
++  public abstract void setSplitWhenNarrow(boolean);
++  public abstract boolean hasIcon();
++  public abstract boolean hasLogo();
++  public abstract void setIcon(int);
++  public abstract void setIcon(android.graphics.drawable.Drawable);
++  public abstract void setLogo(int);
++  public abstract void setLogo(android.graphics.drawable.Drawable);
++  public abstract boolean canShowOverflowMenu();
++  public abstract boolean isOverflowMenuShowing();
++  public abstract boolean isOverflowMenuShowPending();
++  public abstract boolean showOverflowMenu();
++  public abstract boolean hideOverflowMenu();
++  public abstract void setMenuPrepared();
++  public abstract void setMenu(android.view.Menu, android.support.v7.internal.view.menu.MenuPresenter$Callback);
++  public abstract void dismissPopupMenus();
++  public abstract int getDisplayOptions();
++  public abstract void setDisplayOptions(int);
++  public abstract void setEmbeddedTabView(android.support.v7.internal.widget.ScrollingTabContainerView);
++  public abstract boolean hasEmbeddedTabs();
++  public abstract boolean isTitleTruncated();
++  public abstract void setCollapsible(boolean);
++  public abstract void setHomeButtonEnabled(boolean);
++  public abstract int getNavigationMode();
++  public abstract void setNavigationMode(int);
++  public abstract void setDropdownParams(android.widget.SpinnerAdapter, android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener);
++  public abstract void setDropdownSelectedPosition(int);
++  public abstract int getDropdownSelectedPosition();
++  public abstract int getDropdownItemCount();
++  public abstract void setCustomView(android.view.View);
++  public abstract android.view.View getCustomView();
++  public abstract void animateToVisibility(int);
++  public abstract void setNavigationIcon(android.graphics.drawable.Drawable);
++  public abstract void setNavigationIcon(int);
++  public abstract void setNavigationContentDescription(java.lang.CharSequence);
++  public abstract void setNavigationContentDescription(int);
++  public abstract void setDefaultNavigationContentDescription(int);
++  public abstract void setDefaultNavigationIcon(android.graphics.drawable.Drawable);
++  public abstract void saveHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++  public abstract void restoreHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsFrameLayout appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsFrameLayout
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsFrameLayout	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsFrameLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.widget.FitWindowsFrameLayout extends android.widget.FrameLayout implements android.support.v7.internal.widget.FitWindowsViewGroup {
++  public android.support.v7.internal.widget.FitWindowsFrameLayout(android.content.Context);
++  public android.support.v7.internal.widget.FitWindowsFrameLayout(android.content.Context, android.util.AttributeSet);
++  public void setOnFitSystemWindowsListener(android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsLinearLayout appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsLinearLayout
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsLinearLayout	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsLinearLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.widget.FitWindowsLinearLayout extends android.widget.LinearLayout implements android.support.v7.internal.widget.FitWindowsViewGroup {
++  public android.support.v7.internal.widget.FitWindowsLinearLayout(android.content.Context);
++  public android.support.v7.internal.widget.FitWindowsLinearLayout(android.content.Context, android.util.AttributeSet);
++  public void setOnFitSystemWindowsListener(android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsViewGroup appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsViewGroup
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsViewGroup	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsViewGroup	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.internal.widget.FitWindowsViewGroup {
++  public abstract void setOnFitSystemWindowsListener(android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.internal.widget.FitWindowsViewGroup$OnFitSystemWindowsListener {
++  public abstract void onFitSystemWindows(android.graphics.Rect);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.LinearLayoutICS appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.LinearLayoutICS
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.LinearLayoutICS	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.LinearLayoutICS	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public class android.support.v7.internal.widget.LinearLayoutICS extends android.widget.LinearLayout {
+-  public android.support.v7.internal.widget.LinearLayoutICS(android.content.Context, android.util.AttributeSet);
+-  public int getSupportDividerWidth();
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ListPopupWindow appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ListPopupWindow
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ListPopupWindow	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ListPopupWindow	1970-01-01 09:00:00.000000000 +0900
+@@ -1,60 +0,0 @@
+-public class android.support.v7.internal.widget.ListPopupWindow {
+-  public static final int POSITION_PROMPT_ABOVE;
+-  public static final int POSITION_PROMPT_BELOW;
+-  public static final int FILL_PARENT;
+-  public static final int WRAP_CONTENT;
+-  public static final int INPUT_METHOD_FROM_FOCUSABLE;
+-  public static final int INPUT_METHOD_NEEDED;
+-  public static final int INPUT_METHOD_NOT_NEEDED;
+-  public android.support.v7.internal.widget.ListPopupWindow(android.content.Context);
+-  public android.support.v7.internal.widget.ListPopupWindow(android.content.Context, android.util.AttributeSet);
+-  public android.support.v7.internal.widget.ListPopupWindow(android.content.Context, android.util.AttributeSet, int);
+-  public void setAdapter(android.widget.ListAdapter);
+-  public void setPromptPosition(int);
+-  public int getPromptPosition();
+-  public void setModal(boolean);
+-  public boolean isModal();
+-  public void setForceIgnoreOutsideTouch(boolean);
+-  public void setDropDownAlwaysVisible(boolean);
+-  public boolean isDropDownAlwaysVisible();
+-  public void setSoftInputMode(int);
+-  public int getSoftInputMode();
+-  public void setListSelector(android.graphics.drawable.Drawable);
+-  public android.graphics.drawable.Drawable getBackground();
+-  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
+-  public void setAnimationStyle(int);
+-  public int getAnimationStyle();
+-  public android.view.View getAnchorView();
+-  public void setAnchorView(android.view.View);
+-  public int getHorizontalOffset();
+-  public void setHorizontalOffset(int);
+-  public int getVerticalOffset();
+-  public void setVerticalOffset(int);
+-  public int getWidth();
+-  public void setWidth(int);
+-  public void setContentWidth(int);
+-  public int getHeight();
+-  public void setHeight(int);
+-  public void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener);
+-  public void setOnItemSelectedListener(android.widget.AdapterView$OnItemSelectedListener);
+-  public void setPromptView(android.view.View);
+-  public void postShow();
+-  public void show();
+-  public void dismiss();
+-  public void setOnDismissListener(android.widget.PopupWindow$OnDismissListener);
+-  public void setInputMethodMode(int);
+-  public int getInputMethodMode();
+-  public void setSelection(int);
+-  public void clearListSelection();
+-  public boolean isShowing();
+-  public boolean isInputMethodNotNeeded();
+-  public boolean performItemClick(int);
+-  public java.lang.Object getSelectedItem();
+-  public int getSelectedItemPosition();
+-  public long getSelectedItemId();
+-  public android.view.View getSelectedView();
+-  public android.widget.ListView getListView();
+-  public boolean onKeyDown(int, android.view.KeyEvent);
+-  public boolean onKeyUp(int, android.view.KeyEvent);
+-  public int getMaxAvailableHeight(android.view.View, int, boolean);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ListViewCompat appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ListViewCompat
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ListViewCompat	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ListViewCompat	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v7.internal.widget.ListViewCompat extends android.widget.ListView {
++  public static final int INVALID_POSITION;
++  public static final int NO_POSITION;
++  public android.support.v7.internal.widget.ListViewCompat(android.content.Context);
++  public android.support.v7.internal.widget.ListViewCompat(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.ListViewCompat(android.content.Context, android.util.AttributeSet, int);
++  public void setSelector(android.graphics.drawable.Drawable);
++  public int lookForSelectablePosition(int, boolean);
++  public int measureHeightOfChildrenCompat(int, int, int, int, int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.NativeActionModeAwareLayout appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.NativeActionModeAwareLayout
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.NativeActionModeAwareLayout	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.NativeActionModeAwareLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.widget.NativeActionModeAwareLayout extends android.widget.LinearLayout {
++public class android.support.v7.internal.widget.NativeActionModeAwareLayout extends android.support.v7.internal.widget.ContentFrameLayout {
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.NativeActionModeAwareLayout$OnActionModeForChildListener	2015-08-20 23:41:44.000000000 +0900
+@@ -2 +2 @@
+-  public abstract android.view.ActionMode$Callback onActionModeForChild(android.view.ActionMode$Callback);
++  public abstract android.view.ActionMode startActionModeForChild(android.view.View, android.view.ActionMode$Callback);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ProgressBarCompat appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ProgressBarCompat
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ProgressBarCompat	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ProgressBarCompat	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,25 @@
++public class android.support.v7.internal.widget.ProgressBarCompat extends android.view.View {
++  public android.support.v7.internal.widget.ProgressBarCompat(android.content.Context, android.util.AttributeSet, int, int);
++  public synchronized boolean isIndeterminate();
++  public synchronized void setIndeterminate(boolean);
++  public android.graphics.drawable.Drawable getIndeterminateDrawable();
++  public void setIndeterminateDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getProgressDrawable();
++  public void setProgressDrawable(android.graphics.drawable.Drawable);
++  public void postInvalidate();
++  public synchronized void setProgress(int);
++  public synchronized void setSecondaryProgress(int);
++  public synchronized int getProgress();
++  public synchronized int getSecondaryProgress();
++  public synchronized int getMax();
++  public synchronized void setMax(int);
++  public final synchronized void incrementProgressBy(int);
++  public final synchronized void incrementSecondaryProgressBy(int);
++  public void setInterpolator(android.content.Context, int);
++  public void setInterpolator(android.view.animation.Interpolator);
++  public android.view.animation.Interpolator getInterpolator();
++  public void setVisibility(int);
++  public void invalidateDrawable(android.graphics.drawable.Drawable);
++  public android.os.Parcelable onSaveInstanceState();
++  public void onRestoreInstanceState(android.os.Parcelable);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ProgressBarICS appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ProgressBarICS
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ProgressBarICS	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ProgressBarICS	1970-01-01 09:00:00.000000000 +0900
+@@ -1,25 +0,0 @@
+-public class android.support.v7.internal.widget.ProgressBarICS extends android.view.View {
+-  public android.support.v7.internal.widget.ProgressBarICS(android.content.Context, android.util.AttributeSet, int, int);
+-  public synchronized boolean isIndeterminate();
+-  public synchronized void setIndeterminate(boolean);
+-  public android.graphics.drawable.Drawable getIndeterminateDrawable();
+-  public void setIndeterminateDrawable(android.graphics.drawable.Drawable);
+-  public android.graphics.drawable.Drawable getProgressDrawable();
+-  public void setProgressDrawable(android.graphics.drawable.Drawable);
+-  public void postInvalidate();
+-  public synchronized void setProgress(int);
+-  public synchronized void setSecondaryProgress(int);
+-  public synchronized int getProgress();
+-  public synchronized int getSecondaryProgress();
+-  public synchronized int getMax();
+-  public synchronized void setMax(int);
+-  public final synchronized void incrementProgressBy(int);
+-  public final synchronized void incrementSecondaryProgressBy(int);
+-  public void setInterpolator(android.content.Context, int);
+-  public void setInterpolator(android.view.animation.Interpolator);
+-  public android.view.animation.Interpolator getInterpolator();
+-  public void setVisibility(int);
+-  public void invalidateDrawable(android.graphics.drawable.Drawable);
+-  public android.os.Parcelable onSaveInstanceState();
+-  public void onRestoreInstanceState(android.os.Parcelable);
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.RtlSpacingHelper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.RtlSpacingHelper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.RtlSpacingHelper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.RtlSpacingHelper	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,11 @@
++public class android.support.v7.internal.widget.RtlSpacingHelper {
++  public static final int UNDEFINED;
++  public android.support.v7.internal.widget.RtlSpacingHelper();
++  public int getLeft();
++  public int getRight();
++  public int getStart();
++  public int getEnd();
++  public void setRelative(int, int);
++  public void setAbsolute(int, int);
++  public void setDirection(boolean);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ScrollingTabContainerView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ScrollingTabContainerView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ScrollingTabContainerView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ScrollingTabContainerView	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.internal.widget.ScrollingTabContainerView extends android.widget.HorizontalScrollView implements android.support.v7.internal.widget.AdapterViewICS$OnItemClickListener {
++public class android.support.v7.internal.widget.ScrollingTabContainerView extends android.widget.HorizontalScrollView implements android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener {
+@@ -6,0 +7 @@
++  public void animateToVisibility(int);
+@@ -15 +16 @@
+-  public void onItemClick(android.support.v7.internal.widget.AdapterViewICS<?>, android.view.View, int, long);
++  public void onItemClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ScrollingTabContainerView$TabView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ScrollingTabContainerView$TabView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ScrollingTabContainerView$TabView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ScrollingTabContainerView$TabView	1970-01-01 09:00:00.000000000 +0900
+@@ -1,7 +0,0 @@
+-public class android.support.v7.internal.widget.ScrollingTabContainerView$TabView extends android.widget.LinearLayout {
+-  public android.support.v7.internal.widget.ScrollingTabContainerView$TabView(android.content.Context, android.util.AttributeSet);
+-  public void bindTab(android.support.v7.app.ActionBar$Tab);
+-  public void onMeasure(int, int);
+-  public void update();
+-  public android.support.v7.app.ActionBar$Tab getTab();
+-}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ScrollingTabContainerView$VisibilityAnimListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ScrollingTabContainerView$VisibilityAnimListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ScrollingTabContainerView$VisibilityAnimListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ScrollingTabContainerView$VisibilityAnimListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.ScrollingTabContainerView$VisibilityAnimListener implements android.support.v4.view.ViewPropertyAnimatorListener {
++  public android.support.v7.internal.widget.ScrollingTabContainerView$VisibilityAnimListener withFinalVisibility(android.support.v4.view.ViewPropertyAnimatorCompat, int);
++  public void onAnimationStart(android.view.View);
++  public void onAnimationEnd(android.view.View);
++  public void onAnimationCancel(android.view.View);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintCheckBox appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintCheckBox
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintCheckBox	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintCheckBox	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.TintCheckBox extends android.widget.CheckBox {
++  public android.support.v7.internal.widget.TintCheckBox(android.content.Context);
++  public android.support.v7.internal.widget.TintCheckBox(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.TintCheckBox(android.content.Context, android.util.AttributeSet, int);
++  public void setButtonDrawable(int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintCheckedTextView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintCheckedTextView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintCheckedTextView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintCheckedTextView	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.TintCheckedTextView extends android.widget.CheckedTextView {
++  public android.support.v7.internal.widget.TintCheckedTextView(android.content.Context);
++  public android.support.v7.internal.widget.TintCheckedTextView(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.TintCheckedTextView(android.content.Context, android.util.AttributeSet, int);
++  public void setCheckMarkDrawable(int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintEditText appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintEditText
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintEditText	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintEditText	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.widget.TintEditText extends android.widget.EditText {
++  public android.support.v7.internal.widget.TintEditText(android.content.Context);
++  public android.support.v7.internal.widget.TintEditText(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.TintEditText(android.content.Context, android.util.AttributeSet, int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintImageView appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintImageView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintImageView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintImageView	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.TintImageView extends android.widget.ImageView {
++  public android.support.v7.internal.widget.TintImageView(android.content.Context);
++  public android.support.v7.internal.widget.TintImageView(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.TintImageView(android.content.Context, android.util.AttributeSet, int);
++  public void setImageResource(int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintManager appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintManager
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintManager	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintManager	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.widget.TintManager {
++  public static android.graphics.drawable.Drawable getDrawable(android.content.Context, int);
++  public android.support.v7.internal.widget.TintManager(android.content.Context);
++  public android.graphics.drawable.Drawable getDrawable(int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintRadioButton appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintRadioButton
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintRadioButton	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintRadioButton	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.TintRadioButton extends android.widget.RadioButton {
++  public android.support.v7.internal.widget.TintRadioButton(android.content.Context);
++  public android.support.v7.internal.widget.TintRadioButton(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.TintRadioButton(android.content.Context, android.util.AttributeSet, int);
++  public void setButtonDrawable(int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintSpinner appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintSpinner
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintSpinner	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintSpinner	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.internal.widget.TintSpinner extends android.widget.Spinner {
++  public android.support.v7.internal.widget.TintSpinner(android.content.Context);
++  public android.support.v7.internal.widget.TintSpinner(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.TintSpinner(android.content.Context, android.util.AttributeSet, int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintTypedArray appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintTypedArray
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.TintTypedArray	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.TintTypedArray	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,34 @@
++public class android.support.v7.internal.widget.TintTypedArray {
++  public static android.support.v7.internal.widget.TintTypedArray obtainStyledAttributes(android.content.Context, android.util.AttributeSet, int[]);
++  public static android.support.v7.internal.widget.TintTypedArray obtainStyledAttributes(android.content.Context, android.util.AttributeSet, int[], int, int);
++  public android.graphics.drawable.Drawable getDrawable(int);
++  public int length();
++  public int getIndexCount();
++  public int getIndex(int);
++  public android.content.res.Resources getResources();
++  public java.lang.CharSequence getText(int);
++  public java.lang.String getString(int);
++  public java.lang.String getNonResourceString(int);
++  public boolean getBoolean(int, boolean);
++  public int getInt(int, int);
++  public float getFloat(int, float);
++  public int getColor(int, int);
++  public android.content.res.ColorStateList getColorStateList(int);
++  public int getInteger(int, int);
++  public float getDimension(int, float);
++  public int getDimensionPixelOffset(int, int);
++  public int getDimensionPixelSize(int, int);
++  public int getLayoutDimension(int, java.lang.String);
++  public int getLayoutDimension(int, int);
++  public float getFraction(int, int, int, float);
++  public int getResourceId(int, int);
++  public java.lang.CharSequence[] getTextArray(int);
++  public boolean getValue(int, android.util.TypedValue);
++  public int getType(int);
++  public boolean hasValue(int);
++  public android.util.TypedValue peekValue(int);
++  public java.lang.String getPositionDescription();
++  public void recycle();
++  public int getChangingConfigurations();
++  public android.support.v7.internal.widget.TintManager getTintManager();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ToolbarWidgetWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ToolbarWidgetWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ToolbarWidgetWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,59 @@
++public class android.support.v7.internal.widget.ToolbarWidgetWrapper implements android.support.v7.internal.widget.DecorToolbar {
++  public android.support.v7.internal.widget.ToolbarWidgetWrapper(android.support.v7.widget.Toolbar, boolean);
++  public android.support.v7.internal.widget.ToolbarWidgetWrapper(android.support.v7.widget.Toolbar, boolean, int, int);
++  public void setDefaultNavigationContentDescription(int);
++  public void setDefaultNavigationIcon(android.graphics.drawable.Drawable);
++  public android.view.ViewGroup getViewGroup();
++  public android.content.Context getContext();
++  public boolean isSplit();
++  public boolean hasExpandedActionView();
++  public void collapseActionView();
++  public void setWindowCallback(android.support.v7.internal.app.WindowCallback);
++  public void setWindowTitle(java.lang.CharSequence);
++  public java.lang.CharSequence getTitle();
++  public void setTitle(java.lang.CharSequence);
++  public java.lang.CharSequence getSubtitle();
++  public void setSubtitle(java.lang.CharSequence);
++  public void initProgress();
++  public void initIndeterminateProgress();
++  public boolean canSplit();
++  public void setSplitView(android.view.ViewGroup);
++  public void setSplitToolbar(boolean);
++  public void setSplitWhenNarrow(boolean);
++  public boolean hasIcon();
++  public boolean hasLogo();
++  public void setIcon(int);
++  public void setIcon(android.graphics.drawable.Drawable);
++  public void setLogo(int);
++  public void setLogo(android.graphics.drawable.Drawable);
++  public boolean canShowOverflowMenu();
++  public boolean isOverflowMenuShowing();
++  public boolean isOverflowMenuShowPending();
++  public boolean showOverflowMenu();
++  public boolean hideOverflowMenu();
++  public void setMenuPrepared();
++  public void setMenu(android.view.Menu, android.support.v7.internal.view.menu.MenuPresenter$Callback);
++  public void dismissPopupMenus();
++  public int getDisplayOptions();
++  public void setDisplayOptions(int);
++  public void setEmbeddedTabView(android.support.v7.internal.widget.ScrollingTabContainerView);
++  public boolean hasEmbeddedTabs();
++  public boolean isTitleTruncated();
++  public void setCollapsible(boolean);
++  public void setHomeButtonEnabled(boolean);
++  public int getNavigationMode();
++  public void setNavigationMode(int);
++  public void setDropdownParams(android.widget.SpinnerAdapter, android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener);
++  public void setDropdownSelectedPosition(int);
++  public int getDropdownSelectedPosition();
++  public int getDropdownItemCount();
++  public void setCustomView(android.view.View);
++  public android.view.View getCustomView();
++  public void animateToVisibility(int);
++  public void setNavigationIcon(android.graphics.drawable.Drawable);
++  public void setNavigationIcon(int);
++  public void setNavigationContentDescription(java.lang.CharSequence);
++  public void setNavigationContentDescription(int);
++  public void saveHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++  public void restoreHierarchyState(android.util.SparseArray<android.os.Parcelable>);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ViewStubCompat appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ViewStubCompat
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ViewStubCompat	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ViewStubCompat	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,14 @@
++public final class android.support.v7.internal.widget.ViewStubCompat extends android.view.View {
++  public android.support.v7.internal.widget.ViewStubCompat(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.internal.widget.ViewStubCompat(android.content.Context, android.util.AttributeSet, int);
++  public int getInflatedId();
++  public void setInflatedId(int);
++  public int getLayoutResource();
++  public void setLayoutResource(int);
++  public void setLayoutInflater(android.view.LayoutInflater);
++  public android.view.LayoutInflater getLayoutInflater();
++  public void draw(android.graphics.Canvas);
++  public void setVisibility(int);
++  public android.view.View inflate();
++  public void setOnInflateListener(android.support.v7.internal.widget.ViewStubCompat$OnInflateListener);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ViewStubCompat$OnInflateListener appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ViewStubCompat$OnInflateListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ViewStubCompat$OnInflateListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ViewStubCompat$OnInflateListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.internal.widget.ViewStubCompat$OnInflateListener {
++  public abstract void onInflate(android.support.v7.internal.widget.ViewStubCompat, android.view.View);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ViewUtils appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ViewUtils
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.internal.widget.ViewUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.internal.widget.ViewUtils {
++  public static boolean isLayoutRtl(android.view.View);
++  public static int combineMeasuredStates(int, int);
++  public static void computeFitSystemWindows(android.view.View, android.graphics.Rect, android.graphics.Rect);
++  public static void makeOptionalFitsSystemWindows(android.view.View);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuPresenter appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuPresenter
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuPresenter	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuPresenter	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,29 @@
++public class android.support.v7.widget.ActionMenuPresenter extends android.support.v7.internal.view.menu.BaseMenuPresenter implements android.support.v4.view.ActionProvider$SubUiVisibilityListener {
++  public android.support.v7.widget.ActionMenuPresenter(android.content.Context);
++  public void initForMenu(android.content.Context, android.support.v7.internal.view.menu.MenuBuilder);
++  public void onConfigurationChanged(android.content.res.Configuration);
++  public void setWidthLimit(int, boolean);
++  public void setReserveOverflow(boolean);
++  public void setItemLimit(int);
++  public void setExpandedActionViewsExclusive(boolean);
++  public android.support.v7.internal.view.menu.MenuView getMenuView(android.view.ViewGroup);
++  public android.view.View getItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.view.View, android.view.ViewGroup);
++  public void bindItemView(android.support.v7.internal.view.menu.MenuItemImpl, android.support.v7.internal.view.menu.MenuView$ItemView);
++  public boolean shouldIncludeItem(int, android.support.v7.internal.view.menu.MenuItemImpl);
++  public void updateMenuView(boolean);
++  public boolean filterLeftoverView(android.view.ViewGroup, int);
++  public boolean onSubMenuSelected(android.support.v7.internal.view.menu.SubMenuBuilder);
++  public boolean showOverflowMenu();
++  public boolean hideOverflowMenu();
++  public boolean dismissPopupMenus();
++  public boolean hideSubMenus();
++  public boolean isOverflowMenuShowing();
++  public boolean isOverflowMenuShowPending();
++  public boolean isOverflowReserved();
++  public boolean flagActionItems();
++  public void onCloseMenu(android.support.v7.internal.view.menu.MenuBuilder, boolean);
++  public android.os.Parcelable onSaveInstanceState();
++  public void onRestoreInstanceState(android.os.Parcelable);
++  public void onSubUiVisibilityChanged(boolean);
++  public void setMenuView(android.support.v7.widget.ActionMenuView);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,29 @@
++public class android.support.v7.widget.ActionMenuView extends android.support.v7.widget.LinearLayoutCompat implements android.support.v7.internal.view.menu.MenuBuilder$ItemInvoker,android.support.v7.internal.view.menu.MenuView {
++  public android.support.v7.widget.ActionMenuView(android.content.Context);
++  public android.support.v7.widget.ActionMenuView(android.content.Context, android.util.AttributeSet);
++  public void setPopupTheme(int);
++  public int getPopupTheme();
++  public void setPresenter(android.support.v7.widget.ActionMenuPresenter);
++  public void onConfigurationChanged(android.content.res.Configuration);
++  public void setOnMenuItemClickListener(android.support.v7.widget.ActionMenuView$OnMenuItemClickListener);
++  public void onDetachedFromWindow();
++  public boolean isOverflowReserved();
++  public void setOverflowReserved(boolean);
++  public android.support.v7.widget.ActionMenuView$LayoutParams generateLayoutParams(android.util.AttributeSet);
++  public android.support.v7.widget.ActionMenuView$LayoutParams generateOverflowButtonLayoutParams();
++  public boolean invokeItem(android.support.v7.internal.view.menu.MenuItemImpl);
++  public int getWindowAnimations();
++  public void initialize(android.support.v7.internal.view.menu.MenuBuilder);
++  public android.view.Menu getMenu();
++  public void setMenuCallbacks(android.support.v7.internal.view.menu.MenuPresenter$Callback, android.support.v7.internal.view.menu.MenuBuilder$Callback);
++  public android.support.v7.internal.view.menu.MenuBuilder peekMenu();
++  public boolean showOverflowMenu();
++  public boolean hideOverflowMenu();
++  public boolean isOverflowMenuShowing();
++  public boolean isOverflowMenuShowPending();
++  public void dismissPopupMenus();
++  public boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
++  public void setExpandedActionViewsExclusive(boolean);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams generateLayoutParams(android.util.AttributeSet);
++  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView$ActionMenuChildView appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView$ActionMenuChildView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView$ActionMenuChildView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView$ActionMenuChildView	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.widget.ActionMenuView$ActionMenuChildView {
++  public abstract boolean needsDividerBefore();
++  public abstract boolean needsDividerAfter();
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView$LayoutParams appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView$LayoutParams
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView$LayoutParams	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView$LayoutParams	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,11 @@
++public class android.support.v7.widget.ActionMenuView$LayoutParams extends android.support.v7.widget.LinearLayoutCompat$LayoutParams {
++  public boolean isOverflowButton;
++  public int cellsUsed;
++  public int extraPixels;
++  public boolean expandable;
++  public boolean preventEdgeOffset;
++  public android.support.v7.widget.ActionMenuView$LayoutParams(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.ActionMenuView$LayoutParams(android.view.ViewGroup$LayoutParams);
++  public android.support.v7.widget.ActionMenuView$LayoutParams(android.support.v7.widget.ActionMenuView$LayoutParams);
++  public android.support.v7.widget.ActionMenuView$LayoutParams(int, int);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView$OnMenuItemClickListener appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView$OnMenuItemClickListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ActionMenuView$OnMenuItemClickListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ActionMenuView$OnMenuItemClickListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.widget.ActionMenuView$OnMenuItemClickListener {
++  public abstract boolean onMenuItemClick(android.view.MenuItem);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,37 @@
++public class android.support.v7.widget.LinearLayoutCompat extends android.view.ViewGroup {
++  public static final int HORIZONTAL;
++  public static final int VERTICAL;
++  public static final int SHOW_DIVIDER_NONE;
++  public static final int SHOW_DIVIDER_BEGINNING;
++  public static final int SHOW_DIVIDER_MIDDLE;
++  public static final int SHOW_DIVIDER_END;
++  public android.support.v7.widget.LinearLayoutCompat(android.content.Context);
++  public android.support.v7.widget.LinearLayoutCompat(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.LinearLayoutCompat(android.content.Context, android.util.AttributeSet, int);
++  public void setShowDividers(int);
++  public boolean shouldDelayChildPressedState();
++  public int getShowDividers();
++  public android.graphics.drawable.Drawable getDividerDrawable();
++  public void setDividerDrawable(android.graphics.drawable.Drawable);
++  public void setDividerPadding(int);
++  public int getDividerPadding();
++  public int getDividerWidth();
++  public boolean isBaselineAligned();
++  public void setBaselineAligned(boolean);
++  public boolean isMeasureWithLargestChildEnabled();
++  public void setMeasureWithLargestChildEnabled(boolean);
++  public int getBaseline();
++  public int getBaselineAlignedChildIndex();
++  public void setBaselineAlignedChildIndex(int);
++  public float getWeightSum();
++  public void setWeightSum(float);
++  public void setOrientation(int);
++  public int getOrientation();
++  public void setGravity(int);
++  public void setHorizontalGravity(int);
++  public void setVerticalGravity(int);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams generateLayoutParams(android.util.AttributeSet);
++  public void onInitializeAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
++  public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo);
++  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat$DividerMode appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat$DividerMode
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat$DividerMode	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat$DividerMode	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.widget.LinearLayoutCompat$DividerMode extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat$LayoutParams appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat$LayoutParams
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat$LayoutParams	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat$LayoutParams	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v7.widget.LinearLayoutCompat$LayoutParams extends android.view.ViewGroup$MarginLayoutParams {
++  public float weight;
++  public int gravity;
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams(int, int);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams(int, int, float);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams(android.view.ViewGroup$LayoutParams);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams(android.view.ViewGroup$MarginLayoutParams);
++  public android.support.v7.widget.LinearLayoutCompat$LayoutParams(android.support.v7.widget.LinearLayoutCompat$LayoutParams);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat$OrientationMode appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat$OrientationMode
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.LinearLayoutCompat$OrientationMode	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.LinearLayoutCompat$OrientationMode	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.widget.LinearLayoutCompat$OrientationMode extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ListPopupWindow appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ListPopupWindow
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ListPopupWindow	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ListPopupWindow	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,62 @@
++public class android.support.v7.widget.ListPopupWindow {
++  public static final int POSITION_PROMPT_ABOVE;
++  public static final int POSITION_PROMPT_BELOW;
++  public static final int MATCH_PARENT;
++  public static final int WRAP_CONTENT;
++  public static final int INPUT_METHOD_FROM_FOCUSABLE;
++  public static final int INPUT_METHOD_NEEDED;
++  public static final int INPUT_METHOD_NOT_NEEDED;
++  public android.support.v7.widget.ListPopupWindow(android.content.Context);
++  public android.support.v7.widget.ListPopupWindow(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.ListPopupWindow(android.content.Context, android.util.AttributeSet, int);
++  public void setAdapter(android.widget.ListAdapter);
++  public void setPromptPosition(int);
++  public int getPromptPosition();
++  public void setModal(boolean);
++  public boolean isModal();
++  public void setForceIgnoreOutsideTouch(boolean);
++  public void setDropDownAlwaysVisible(boolean);
++  public boolean isDropDownAlwaysVisible();
++  public void setSoftInputMode(int);
++  public int getSoftInputMode();
++  public void setListSelector(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getBackground();
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setAnimationStyle(int);
++  public int getAnimationStyle();
++  public android.view.View getAnchorView();
++  public void setAnchorView(android.view.View);
++  public int getHorizontalOffset();
++  public void setHorizontalOffset(int);
++  public int getVerticalOffset();
++  public void setVerticalOffset(int);
++  public void setDropDownGravity(int);
++  public int getWidth();
++  public void setWidth(int);
++  public void setContentWidth(int);
++  public int getHeight();
++  public void setHeight(int);
++  public void setOnItemClickListener(android.widget.AdapterView$OnItemClickListener);
++  public void setOnItemSelectedListener(android.widget.AdapterView$OnItemSelectedListener);
++  public void setPromptView(android.view.View);
++  public void postShow();
++  public void show();
++  public void dismiss();
++  public void setOnDismissListener(android.widget.PopupWindow$OnDismissListener);
++  public void setInputMethodMode(int);
++  public int getInputMethodMode();
++  public void setSelection(int);
++  public void clearListSelection();
++  public boolean isShowing();
++  public boolean isInputMethodNotNeeded();
++  public boolean performItemClick(int);
++  public java.lang.Object getSelectedItem();
++  public int getSelectedItemPosition();
++  public long getSelectedItemId();
++  public android.view.View getSelectedView();
++  public android.widget.ListView getListView();
++  public boolean onKeyDown(int, android.view.KeyEvent);
++  public boolean onKeyUp(int, android.view.KeyEvent);
++  public boolean onKeyPreIme(int, android.view.KeyEvent);
++  public android.view.View$OnTouchListener createDragToOpenListener(android.view.View);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ListPopupWindow$ForwardingListener appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ListPopupWindow$ForwardingListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.ListPopupWindow$ForwardingListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.ListPopupWindow$ForwardingListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v7.widget.ListPopupWindow$ForwardingListener implements android.view.View$OnTouchListener {
++  public android.support.v7.widget.ListPopupWindow$ForwardingListener(android.view.View);
++  public abstract android.support.v7.widget.ListPopupWindow getPopup();
++  public boolean onTouch(android.view.View, android.view.MotionEvent);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.PopupMenu appcompat-v7-21.0.0_a2881299/android.support.v7.widget.PopupMenu
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.PopupMenu	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.PopupMenu	2015-08-20 23:41:44.000000000 +0900
+@@ -2,0 +3,2 @@
++  public android.support.v7.widget.PopupMenu(android.content.Context, android.view.View, int);
++  public android.view.View$OnTouchListener getDragToOpenListener();
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.SearchView appcompat-v7-21.0.0_a2881299/android.support.v7.widget.SearchView
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.SearchView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.SearchView	2015-08-20 23:41:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.SearchView extends android.widget.LinearLayout implements android.support.v7.view.CollapsibleActionView {
++public class android.support.v7.widget.SearchView extends android.support.v7.widget.LinearLayoutCompat implements android.support.v7.view.CollapsibleActionView {
+@@ -3,0 +4 @@
++  public android.support.v7.widget.SearchView(android.content.Context, android.util.AttributeSet, int);
+@@ -33 +33,0 @@
+-  public boolean onKeyDown(int, android.view.KeyEvent);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.SearchView$SearchAutoComplete appcompat-v7-21.0.0_a2881299/android.support.v7.widget.SearchView$SearchAutoComplete
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.SearchView$SearchAutoComplete	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.SearchView$SearchAutoComplete	2015-08-20 23:41:44.000000000 +0900
+@@ -5,0 +6 @@
++  public void setDropDownBackgroundResource(int);
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.SwitchCompat appcompat-v7-21.0.0_a2881299/android.support.v7.widget.SwitchCompat
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.SwitchCompat	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.SwitchCompat	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,40 @@
++public class android.support.v7.widget.SwitchCompat extends android.widget.CompoundButton {
++  public android.support.v7.widget.SwitchCompat(android.content.Context);
++  public android.support.v7.widget.SwitchCompat(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.SwitchCompat(android.content.Context, android.util.AttributeSet, int);
++  public void setSwitchTextAppearance(android.content.Context, int);
++  public void setSwitchTypeface(android.graphics.Typeface, int);
++  public void setSwitchTypeface(android.graphics.Typeface);
++  public void setSwitchPadding(int);
++  public int getSwitchPadding();
++  public void setSwitchMinWidth(int);
++  public int getSwitchMinWidth();
++  public void setThumbTextPadding(int);
++  public int getThumbTextPadding();
++  public void setTrackDrawable(android.graphics.drawable.Drawable);
++  public void setTrackResource(int);
++  public android.graphics.drawable.Drawable getTrackDrawable();
++  public void setThumbDrawable(android.graphics.drawable.Drawable);
++  public void setThumbResource(int);
++  public android.graphics.drawable.Drawable getThumbDrawable();
++  public void setSplitTrack(boolean);
++  public boolean getSplitTrack();
++  public java.lang.CharSequence getTextOn();
++  public void setTextOn(java.lang.CharSequence);
++  public java.lang.CharSequence getTextOff();
++  public void setTextOff(java.lang.CharSequence);
++  public void setShowText(boolean);
++  public boolean getShowText();
++  public void onMeasure(int, int);
++  public void onPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
++  public boolean onTouchEvent(android.view.MotionEvent);
++  public void toggle();
++  public void setChecked(boolean);
++  public void draw(android.graphics.Canvas);
++  public int getCompoundPaddingLeft();
++  public int getCompoundPaddingRight();
++  public void drawableHotspotChanged(float, float);
++  public void jumpDrawablesToCurrentState();
++  public void onInitializeAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
++  public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.Toolbar appcompat-v7-21.0.0_a2881299/android.support.v7.widget.Toolbar
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.Toolbar	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,57 @@
++public class android.support.v7.widget.Toolbar extends android.view.ViewGroup {
++  public android.support.v7.widget.Toolbar(android.content.Context);
++  public android.support.v7.widget.Toolbar(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.Toolbar(android.content.Context, android.util.AttributeSet, int);
++  public void setPopupTheme(int);
++  public int getPopupTheme();
++  public void onRtlPropertiesChanged(int);
++  public void setLogo(int);
++  public boolean canShowOverflowMenu();
++  public boolean isOverflowMenuShowing();
++  public boolean isOverflowMenuShowPending();
++  public boolean showOverflowMenu();
++  public boolean hideOverflowMenu();
++  public void setMenu(android.support.v7.internal.view.menu.MenuBuilder, android.support.v7.widget.ActionMenuPresenter);
++  public void dismissPopupMenus();
++  public boolean isTitleTruncated();
++  public void setLogo(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getLogo();
++  public void setLogoDescription(int);
++  public void setLogoDescription(java.lang.CharSequence);
++  public java.lang.CharSequence getLogoDescription();
++  public boolean hasExpandedActionView();
++  public void collapseActionView();
++  public java.lang.CharSequence getTitle();
++  public void setTitle(int);
++  public void setTitle(java.lang.CharSequence);
++  public java.lang.CharSequence getSubtitle();
++  public void setSubtitle(int);
++  public void setSubtitle(java.lang.CharSequence);
++  public void setTitleTextAppearance(android.content.Context, int);
++  public void setSubtitleTextAppearance(android.content.Context, int);
++  public void setTitleTextColor(int);
++  public void setSubtitleTextColor(int);
++  public java.lang.CharSequence getNavigationContentDescription();
++  public void setNavigationContentDescription(int);
++  public void setNavigationContentDescription(java.lang.CharSequence);
++  public void setNavigationIcon(int);
++  public void setNavigationIcon(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getNavigationIcon();
++  public void setNavigationOnClickListener(android.view.View$OnClickListener);
++  public android.view.Menu getMenu();
++  public void inflateMenu(int);
++  public void setOnMenuItemClickListener(android.support.v7.widget.Toolbar$OnMenuItemClickListener);
++  public void setContentInsetsRelative(int, int);
++  public int getContentInsetStart();
++  public int getContentInsetEnd();
++  public void setContentInsetsAbsolute(int, int);
++  public int getContentInsetLeft();
++  public int getContentInsetRight();
++  public boolean onTouchEvent(android.view.MotionEvent);
++  public android.support.v7.widget.Toolbar$LayoutParams generateLayoutParams(android.util.AttributeSet);
++  public android.support.v7.internal.widget.DecorToolbar getWrapper();
++  public void setCollapsible(boolean);
++  public void setMenuCallbacks(android.support.v7.internal.view.menu.MenuPresenter$Callback, android.support.v7.internal.view.menu.MenuBuilder$Callback);
++  public void setMinimumHeight(int);
++  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.Toolbar$LayoutParams appcompat-v7-21.0.0_a2881299/android.support.v7.widget.Toolbar$LayoutParams
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.Toolbar$LayoutParams	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.Toolbar$LayoutParams	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v7.widget.Toolbar$LayoutParams extends android.support.v7.app.ActionBar$LayoutParams {
++  public android.support.v7.widget.Toolbar$LayoutParams(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.Toolbar$LayoutParams(int, int);
++  public android.support.v7.widget.Toolbar$LayoutParams(int, int, int);
++  public android.support.v7.widget.Toolbar$LayoutParams(int);
++  public android.support.v7.widget.Toolbar$LayoutParams(android.support.v7.widget.Toolbar$LayoutParams);
++  public android.support.v7.widget.Toolbar$LayoutParams(android.support.v7.app.ActionBar$LayoutParams);
++  public android.support.v7.widget.Toolbar$LayoutParams(android.view.ViewGroup$MarginLayoutParams);
++  public android.support.v7.widget.Toolbar$LayoutParams(android.view.ViewGroup$LayoutParams);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.Toolbar$OnMenuItemClickListener appcompat-v7-21.0.0_a2881299/android.support.v7.widget.Toolbar$OnMenuItemClickListener
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.Toolbar$OnMenuItemClickListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.Toolbar$OnMenuItemClickListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.widget.Toolbar$OnMenuItemClickListener {
++  public abstract boolean onMenuItemClick(android.view.MenuItem);
++}
+diff -U 0 -N appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.WindowCallbackWrapper appcompat-v7-21.0.0_a2881299/android.support.v7.widget.WindowCallbackWrapper
+--- appcompat-v7-20.0.0_f2b4a6f1/android.support.v7.widget.WindowCallbackWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-21.0.0_a2881299/android.support.v7.widget.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v7.widget.WindowCallbackWrapper implements android.support.v7.internal.app.WindowCallback {
++  public android.support.v7.widget.WindowCallbackWrapper(android.support.v7.internal.app.WindowCallback);
++  public boolean onMenuItemSelected(int, android.view.MenuItem);
++  public boolean onCreatePanelMenu(int, android.view.Menu);
++  public boolean onPreparePanel(int, android.view.View, android.view.Menu);
++  public void onPanelClosed(int, android.view.Menu);
++  public boolean onMenuOpened(int, android.view.Menu);
++  public android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
++  public android.view.View onCreatePanelView(int);
++}

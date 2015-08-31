@@ -1,0 +1,30 @@
+diff -U 0 -N appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat$MediaStyle appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.NotificationCompat$MediaStyle
+--- appcompat-v7-22.2.0_6f9b39af/android.support.v7.app.NotificationCompat$MediaStyle	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.1_4b6eb887/android.support.v7.app.NotificationCompat$MediaStyle	2015-08-20 23:41:44.000000000 +0900
+@@ -6,2 +6,2 @@
+-  public void setShowCancelButton(boolean);
+-  public void setCancelButtonIntent(android.app.PendingIntent);
++  public android.support.v7.app.NotificationCompat$MediaStyle setShowCancelButton(boolean);
++  public android.support.v7.app.NotificationCompat$MediaStyle setCancelButtonIntent(android.app.PendingIntent);
+diff -U 0 -N appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.ToolbarActionBar appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.app.ToolbarActionBar
+--- appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
+@@ -2 +2 @@
+-  public android.support.v7.internal.app.ToolbarActionBar(android.support.v7.widget.Toolbar, java.lang.CharSequence, android.view.Window);
++  public android.support.v7.internal.app.ToolbarActionBar(android.support.v7.widget.Toolbar, java.lang.CharSequence, android.view.Window$Callback);
+diff -U 0 -N appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper
+--- appcompat-v7-22.2.0_6f9b39af/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.2.1_4b6eb887/android.support.v7.internal.view.SupportActionModeWrapper$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+@@ -7 +7 @@
+-  public void addActionModeWrapper(android.support.v7.internal.view.SupportActionModeWrapper);
++  public android.view.ActionMode getActionModeWrapper(android.support.v7.view.ActionMode);
+diff -U 0 -N appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.Toolbar$SavedState appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.Toolbar$SavedState
+--- appcompat-v7-22.2.0_6f9b39af/android.support.v7.widget.Toolbar$SavedState	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.2.1_4b6eb887/android.support.v7.widget.Toolbar$SavedState	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.widget.Toolbar$SavedState extends android.view.View$BaseSavedState {
++  public static final android.os.Parcelable$Creator<android.support.v7.widget.Toolbar$SavedState> CREATOR;
++  public android.support.v7.widget.Toolbar$SavedState(android.os.Parcel);
++  public android.support.v7.widget.Toolbar$SavedState(android.os.Parcelable);
++  public void writeToParcel(android.os.Parcel, int);
++}
