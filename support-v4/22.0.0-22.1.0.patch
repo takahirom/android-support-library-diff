@@ -1,6 +1,6 @@
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.graphics.ColorUtils support-v4-22.1.0_75d9aed6/android.support.v4.graphics.ColorUtils
---- support-v4-22.0.0_5f9916fe/android.support.v4.graphics.ColorUtils	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.graphics.ColorUtils	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.graphics.ColorUtils support-v4-22.1.0_ffc0c32e/android.support.v4.graphics.ColorUtils
+--- support-v4-22.0.0_96dba0e2/android.support.v4.graphics.ColorUtils	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.graphics.ColorUtils	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,10 @@
 +public class android.support.v4.graphics.ColorUtils {
 +  public static int compositeColors(int, int);
@@ -12,24 +12,24 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.graphics.ColorUtils s
 +  public static int HSLToColor(float[]);
 +  public static int setAlphaComponent(int, int);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.graphics.drawable.DrawableCompat support-v4-22.1.0_75d9aed6/android.support.v4.graphics.drawable.DrawableCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.graphics.drawable.DrawableCompat support-v4-22.1.0_ffc0c32e/android.support.v4.graphics.drawable.DrawableCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -10,0 +11,2 @@
 +  public static android.graphics.drawable.Drawable wrap(android.graphics.drawable.Drawable);
 +  public static <T extends android.graphics.drawable.Drawable> T unwrap(android.graphics.drawable.Drawable);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.os.TraceCompat support-v4-22.1.0_75d9aed6/android.support.v4.os.TraceCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.os.TraceCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.os.TraceCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.os.TraceCompat support-v4-22.1.0_ffc0c32e/android.support.v4.os.TraceCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.os.TraceCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.os.TraceCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v4.os.TraceCompat {
 +  public android.support.v4.os.TraceCompat();
 +  public static void beginSection(java.lang.String);
 +  public static void endSection();
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.util.CircularArray<E> support-v4-22.1.0_75d9aed6/android.support.v4.util.CircularArray<E>
---- support-v4-22.0.0_5f9916fe/android.support.v4.util.CircularArray<E>	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.util.CircularArray<E>	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.util.CircularArray<E> support-v4-22.1.0_ffc0c32e/android.support.v4.util.CircularArray<E>
+--- support-v4-22.0.0_96dba0e2/android.support.v4.util.CircularArray<E>	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.util.CircularArray<E>	2015-08-20 23:41:45.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v4.util.CircularArray<E> {
 +public final class android.support.v4.util.CircularArray<E> {
@@ -55,9 +55,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.util.CircularArray<E>
 +  public E get(int);
 +  public int size();
 +  public boolean isEmpty();
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.util.CircularIntArray support-v4-22.1.0_75d9aed6/android.support.v4.util.CircularIntArray
---- support-v4-22.0.0_5f9916fe/android.support.v4.util.CircularIntArray	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.util.CircularIntArray	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.util.CircularIntArray support-v4-22.1.0_ffc0c32e/android.support.v4.util.CircularIntArray
+--- support-v4-22.0.0_96dba0e2/android.support.v4.util.CircularIntArray	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.util.CircularIntArray	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,16 @@
 +public final class android.support.v4.util.CircularIntArray {
 +  public android.support.v4.util.CircularIntArray();
@@ -75,9 +75,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.util.CircularIntArray
 +  public int size();
 +  public boolean isEmpty();
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.InputDeviceCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.InputDeviceCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.InputDeviceCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.InputDeviceCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.InputDeviceCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.InputDeviceCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.InputDeviceCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.InputDeviceCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,23 @@
 +public class android.support.v4.view.InputDeviceCompat {
 +  public static final int SOURCE_CLASS_MASK;
@@ -102,16 +102,16 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.InputDeviceCompa
 +  public static final int SOURCE_ANY;
 +  public android.support.v4.view.InputDeviceCompat();
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.LayoutInflaterCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.LayoutInflaterCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.LayoutInflaterCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.LayoutInflaterCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.LayoutInflaterCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.LayoutInflaterCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.LayoutInflaterCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.LayoutInflaterCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,3 @@
 +public class android.support.v4.view.LayoutInflaterCompat {
 +  public static void setFactory(android.view.LayoutInflater, android.support.v4.view.LayoutInflaterFactory);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.MotionEventCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.MotionEventCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.MotionEventCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.MotionEventCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.MotionEventCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.MotionEventCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.MotionEventCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.MotionEventCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -10,0 +11,42 @@
 +  public static final int AXIS_X;
 +  public static final int AXIS_Y;
@@ -159,9 +159,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.MotionEventCompa
 +  public static int getSource(android.view.MotionEvent);
 +  public static float getAxisValue(android.view.MotionEvent, int);
 +  public static float getAxisValue(android.view.MotionEvent, int, int);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingChild support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingChild
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingChild	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingChild	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingChild support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingChild
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingChild	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingChild	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,11 @@
 +public interface android.support.v4.view.NestedScrollingChild {
 +  public abstract void setNestedScrollingEnabled(boolean);
@@ -174,9 +174,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingC
 +  public abstract boolean dispatchNestedFling(float, float, boolean);
 +  public abstract boolean dispatchNestedPreFling(float, float);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingChildHelper support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingChildHelper
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingChildHelper	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingChildHelper	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingChildHelper support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingChildHelper
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingChildHelper	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingChildHelper	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,14 @@
 +public class android.support.v4.view.NestedScrollingChildHelper {
 +  public android.support.v4.view.NestedScrollingChildHelper(android.view.View);
@@ -192,9 +192,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingC
 +  public void onDetachedFromWindow();
 +  public void onStopNestedScroll(android.view.View);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingParent support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingParent
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingParent	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingParent	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingParent support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingParent
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingParent	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingParent	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,10 @@
 +public interface android.support.v4.view.NestedScrollingParent {
 +  public abstract boolean onStartNestedScroll(android.view.View, android.view.View, int);
@@ -206,9 +206,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingP
 +  public abstract boolean onNestedPreFling(android.view.View, float, float);
 +  public abstract int getNestedScrollAxes();
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingParentHelper support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingParentHelper
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingParentHelper	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.NestedScrollingParentHelper	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingParentHelper support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingParentHelper
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.NestedScrollingParentHelper	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.NestedScrollingParentHelper	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v4.view.NestedScrollingParentHelper {
 +  public android.support.v4.view.NestedScrollingParentHelper(android.view.ViewGroup);
@@ -216,9 +216,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.NestedScrollingP
 +  public int getNestedScrollAxes();
 +  public void onStopNestedScroll(android.view.View);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ScrollingView support-v4-22.1.0_75d9aed6/android.support.v4.view.ScrollingView
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.ScrollingView	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.ScrollingView	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.ScrollingView support-v4-22.1.0_ffc0c32e/android.support.v4.view.ScrollingView
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.ScrollingView	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.ScrollingView	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,8 @@
 +public interface android.support.v4.view.ScrollingView {
 +  public abstract int computeHorizontalScrollRange();
@@ -228,9 +228,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ScrollingView su
 +  public abstract int computeVerticalScrollOffset();
 +  public abstract int computeVerticalScrollExtent();
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.ViewCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.ViewCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -22,0 +23,3 @@
 +  public static final int SCROLL_AXIS_NONE;
 +  public static final int SCROLL_AXIS_HORIZONTAL;
@@ -257,14 +257,14 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewCompat suppo
 +  public static boolean dispatchNestedPreFling(android.view.View, float, float);
 +  public static boolean isLaidOut(android.view.View);
 +  public static float getZ(android.view.View);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewGroupCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.ViewGroupCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewGroupCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.ViewGroupCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -9,0 +10 @@
 +  public static int getNestedScrollAxes(android.view.ViewGroup);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewParentCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.ViewParentCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewParentCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.ViewParentCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewParentCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.ViewParentCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewParentCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.ViewParentCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -2,0 +3,8 @@
 +  public static boolean onStartNestedScroll(android.view.ViewParent, android.view.View, android.view.View, int);
 +  public static void onNestedScrollAccepted(android.view.ViewParent, android.view.View, android.view.View, int);
@@ -274,9 +274,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewParentCompat
 +  public static boolean onNestedFling(android.view.ViewParent, android.view.View, float, float, boolean);
 +  public static boolean onNestedPreFling(android.view.ViewParent, android.view.View, float, float);
 +  public static void notifySubtreeAccessibilityStateChanged(android.view.ViewParent, android.view.View, android.view.View, int);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityEventCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.accessibility.AccessibilityEventCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityEventCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.accessibility.AccessibilityEventCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityEventCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.accessibility.AccessibilityEventCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityEventCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.accessibility.AccessibilityEventCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -16,0 +17,4 @@
 +  public static final int CONTENT_CHANGE_TYPE_UNDEFINED;
 +  public static final int CONTENT_CHANGE_TYPE_SUBTREE;
@@ -285,9 +285,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.Ac
 @@ -21,0 +26,2 @@
 +  public static void setContentChangeTypes(android.view.accessibility.AccessibilityEvent, int);
 +  public static int getContentChangeTypes(android.view.accessibility.AccessibilityEvent);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -106,0 +107,6 @@
 +  public void setContentInvalid(boolean);
 +  public boolean isContentInvalid();
@@ -295,47 +295,47 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.Ac
 +  public java.lang.CharSequence getError();
 +  public void setLabelFor(android.view.View);
 +  public void setLabelFor(android.view.View, int);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.FastOutLinearInInterpolator support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.FastOutLinearInInterpolator
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.FastOutLinearInInterpolator	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.FastOutLinearInInterpolator	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.FastOutLinearInInterpolator support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.FastOutLinearInInterpolator
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.FastOutLinearInInterpolator	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.FastOutLinearInInterpolator	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v4.view.animation.FastOutLinearInInterpolator extends android.support.v4.view.animation.LookupTableInterpolator {
 +  public android.support.v4.view.animation.FastOutLinearInInterpolator();
 +  public float getInterpolation(float);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.FastOutSlowInInterpolator support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.FastOutSlowInInterpolator
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.FastOutSlowInInterpolator	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.FastOutSlowInInterpolator	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.FastOutSlowInInterpolator support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.FastOutSlowInInterpolator
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.FastOutSlowInInterpolator	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.FastOutSlowInInterpolator	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v4.view.animation.FastOutSlowInInterpolator extends android.support.v4.view.animation.LookupTableInterpolator {
 +  public android.support.v4.view.animation.FastOutSlowInInterpolator();
 +  public float getInterpolation(float);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.LinearOutSlowInInterpolator support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.LinearOutSlowInInterpolator
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.LinearOutSlowInInterpolator	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.LinearOutSlowInInterpolator	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.LinearOutSlowInInterpolator support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.LinearOutSlowInInterpolator
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.LinearOutSlowInInterpolator	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.LinearOutSlowInInterpolator	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v4.view.animation.LinearOutSlowInInterpolator extends android.support.v4.view.animation.LookupTableInterpolator {
 +  public android.support.v4.view.animation.LinearOutSlowInInterpolator();
 +  public float getInterpolation(float);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.PathInterpolatorCompat support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.PathInterpolatorCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.view.animation.PathInterpolatorCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.view.animation.PathInterpolatorCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.PathInterpolatorCompat support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.PathInterpolatorCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.view.animation.PathInterpolatorCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.view.animation.PathInterpolatorCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v4.view.animation.PathInterpolatorCompat {
 +  public static android.view.animation.Interpolator create(android.graphics.Path);
 +  public static android.view.animation.Interpolator create(float, float);
 +  public static android.view.animation.Interpolator create(float, float, float, float);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.widget.EdgeEffectCompat support-v4-22.1.0_75d9aed6/android.support.v4.widget.EdgeEffectCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.widget.EdgeEffectCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.widget.EdgeEffectCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.widget.EdgeEffectCompat support-v4-22.1.0_ffc0c32e/android.support.v4.widget.EdgeEffectCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.widget.EdgeEffectCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.widget.EdgeEffectCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -6,0 +7 @@
 +  public boolean onPull(float, float);
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.widget.NestedScrollView support-v4-22.1.0_75d9aed6/android.support.v4.widget.NestedScrollView
---- support-v4-22.0.0_5f9916fe/android.support.v4.widget.NestedScrollView	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.widget.NestedScrollView	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.widget.NestedScrollView support-v4-22.1.0_ffc0c32e/android.support.v4.widget.NestedScrollView
+--- support-v4-22.0.0_96dba0e2/android.support.v4.widget.NestedScrollView	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.widget.NestedScrollView	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,51 @@
 +public class android.support.v4.widget.NestedScrollView extends android.widget.FrameLayout implements android.support.v4.view.NestedScrollingParent,android.support.v4.view.NestedScrollingChild {
 +  public android.support.v4.widget.NestedScrollView(android.content.Context);
@@ -388,9 +388,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.widget.NestedScrollVi
 +  public void scrollTo(int, int);
 +  public void draw(android.graphics.Canvas);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.widget.Space support-v4-22.1.0_75d9aed6/android.support.v4.widget.Space
---- support-v4-22.0.0_5f9916fe/android.support.v4.widget.Space	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.widget.Space	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.widget.Space support-v4-22.1.0_ffc0c32e/android.support.v4.widget.Space
+--- support-v4-22.0.0_96dba0e2/android.support.v4.widget.Space	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.widget.Space	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v4.widget.Space extends android.view.View {
 +  public android.support.v4.widget.Space(android.content.Context, android.util.AttributeSet, int);
@@ -398,9 +398,9 @@ diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.widget.Space support-
 +  public android.support.v4.widget.Space(android.content.Context);
 +  public void draw(android.graphics.Canvas);
 +}
-diff -U 0 -N support-v4-22.0.0_5f9916fe/android.support.v4.widget.TextViewCompat support-v4-22.1.0_75d9aed6/android.support.v4.widget.TextViewCompat
---- support-v4-22.0.0_5f9916fe/android.support.v4.widget.TextViewCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.1.0_75d9aed6/android.support.v4.widget.TextViewCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-22.0.0_96dba0e2/android.support.v4.widget.TextViewCompat support-v4-22.1.0_ffc0c32e/android.support.v4.widget.TextViewCompat
+--- support-v4-22.0.0_96dba0e2/android.support.v4.widget.TextViewCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.1.0_ffc0c32e/android.support.v4.widget.TextViewCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v4.widget.TextViewCompat {
 +  public static void setCompoundDrawablesRelative(android.widget.TextView, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable);

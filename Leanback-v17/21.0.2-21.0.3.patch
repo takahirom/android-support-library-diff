@@ -1,0 +1,14 @@
+diff -U 0 -N leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsFragment leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsFragment
+--- leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsFragment	2015-08-20 23:41:44.000000000 +0900
++++ leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsFragment	2015-08-20 23:41:43.000000000 +0900
+@@ -15 +14,0 @@
+-  public void setSelectedPosition(int);
+@@ -16,0 +16 @@
++  public void setSelectedPosition(int);
+diff -U 0 -N leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsSupportFragment leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsSupportFragment
+--- leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsSupportFragment	2015-08-20 23:41:44.000000000 +0900
++++ leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsSupportFragment	2015-08-20 23:41:43.000000000 +0900
+@@ -15 +14,0 @@
+-  public void setSelectedPosition(int);
+@@ -16,0 +16 @@
++  public void setSelectedPosition(int);

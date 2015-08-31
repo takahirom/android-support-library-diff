@@ -1,0 +1,720 @@
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActionBarDrawerToggle support-v4-21.0.0_55ef455a/android.support.v4.app.ActionBarDrawerToggle
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActionBarDrawerToggle	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActionBarDrawerToggle	2015-08-20 23:41:45.000000000 +0900
+@@ -2,0 +3 @@
++  public android.support.v4.app.ActionBarDrawerToggle(android.app.Activity, android.support.v4.widget.DrawerLayout, boolean, int, int, int);
+@@ -3,0 +5,2 @@
++  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
++  public void setHomeAsUpIndicator(int);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityCompat support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -6,0 +7,5 @@
++  public static void finishAfterTransition(android.app.Activity);
++  public static void setEnterSharedElementCallback(android.app.Activity, android.support.v4.app.SharedElementCallback);
++  public static void setExitSharedElementCallback(android.app.Activity, android.support.v4.app.SharedElementCallback);
++  public static void postponeEnterTransition(android.app.Activity);
++  public static void startPostponedEnterTransition(android.app.Activity);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityManagerCompat support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityManagerCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityManagerCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityManagerCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v4.app.ActivityManagerCompat {
++  public static boolean isLowRamDevice(android.app.ActivityManager);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityOptionsCompat support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityOptionsCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityOptionsCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityOptionsCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -4,0 +5,2 @@
++  public static android.support.v4.app.ActivityOptionsCompat makeSceneTransitionAnimation(android.app.Activity, android.view.View, java.lang.String);
++  public static android.support.v4.app.ActivityOptionsCompat makeSceneTransitionAnimation(android.app.Activity, android.support.v4.util.Pair<android.view.View, java.lang.String>...);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.BackStackRecord$TransitionState support-v4-21.0.0_55ef455a/android.support.v4.app.BackStackRecord$TransitionState
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.BackStackRecord$TransitionState	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.BackStackRecord$TransitionState	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v4.app.BackStackRecord$TransitionState {
++  public android.support.v4.util.ArrayMap<java.lang.String, java.lang.String> nameOverrides;
++  public java.util.ArrayList<android.view.View> hiddenFragmentViews;
++  public android.support.v4.app.FragmentTransitionCompat21$EpicenterView enteringEpicenterView;
++  public android.view.View nonExistentView;
++  public android.support.v4.app.BackStackRecord$TransitionState(android.support.v4.app.BackStackRecord);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.Fragment support-v4-21.0.0_55ef455a/android.support.v4.app.Fragment
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.Fragment	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.Fragment	2015-08-20 23:41:45.000000000 +0900
+@@ -72,0 +73,18 @@
++  public void setEnterSharedElementCallback(android.support.v4.app.SharedElementCallback);
++  public void setExitSharedElementCallback(android.support.v4.app.SharedElementCallback);
++  public void setEnterTransition(java.lang.Object);
++  public java.lang.Object getEnterTransition();
++  public void setReturnTransition(java.lang.Object);
++  public java.lang.Object getReturnTransition();
++  public void setExitTransition(java.lang.Object);
++  public java.lang.Object getExitTransition();
++  public void setReenterTransition(java.lang.Object);
++  public java.lang.Object getReenterTransition();
++  public void setSharedElementEnterTransition(java.lang.Object);
++  public java.lang.Object getSharedElementEnterTransition();
++  public void setSharedElementReturnTransition(java.lang.Object);
++  public java.lang.Object getSharedElementReturnTransition();
++  public void setAllowEnterTransitionOverlap(boolean);
++  public boolean getAllowEnterTransitionOverlap();
++  public void setAllowReturnTransitionOverlap(boolean);
++  public boolean getAllowReturnTransitionOverlap();
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentActivity support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentActivity
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentActivity	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentActivity	2015-08-20 23:41:45.000000000 +0900
+@@ -3,0 +4,5 @@
++  public void supportFinishAfterTransition();
++  public void setEnterSharedElementCallback(android.support.v4.app.SharedElementCallback);
++  public void setExitSharedElementCallback(android.support.v4.app.SharedElementCallback);
++  public void supportPostponeEnterTransition();
++  public void supportStartPostponedEnterTransition();
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentTransaction support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentTransaction
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentTransaction	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentTransaction	2015-08-20 23:41:45.000000000 +0900
+@@ -22,0 +23 @@
++  public abstract android.support.v4.app.FragmentTransaction addSharedElement(android.view.View, java.lang.String);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -27,0 +28 @@
++  public static final java.lang.String EXTRA_BIG_TEXT;
+@@ -34,0 +36 @@
++  public static final java.lang.String EXTRA_SHOW_WHEN;
+@@ -36,0 +39 @@
++  public static final java.lang.String EXTRA_TEMPLATE;
+@@ -37,0 +41,21 @@
++  public static final java.lang.String EXTRA_BACKGROUND_IMAGE_URI;
++  public static final java.lang.String EXTRA_MEDIA_SESSION;
++  public static final java.lang.String EXTRA_COMPACT_ACTIONS;
++  public static final int COLOR_DEFAULT;
++  public static final int VISIBILITY_PUBLIC;
++  public static final int VISIBILITY_PRIVATE;
++  public static final int VISIBILITY_SECRET;
++  public static final java.lang.String CATEGORY_CALL;
++  public static final java.lang.String CATEGORY_MESSAGE;
++  public static final java.lang.String CATEGORY_EMAIL;
++  public static final java.lang.String CATEGORY_EVENT;
++  public static final java.lang.String CATEGORY_PROMO;
++  public static final java.lang.String CATEGORY_ALARM;
++  public static final java.lang.String CATEGORY_PROGRESS;
++  public static final java.lang.String CATEGORY_SOCIAL;
++  public static final java.lang.String CATEGORY_ERROR;
++  public static final java.lang.String CATEGORY_TRANSPORT;
++  public static final java.lang.String CATEGORY_SYSTEM;
++  public static final java.lang.String CATEGORY_SERVICE;
++  public static final java.lang.String CATEGORY_RECOMMENDATION;
++  public static final java.lang.String CATEGORY_STATUS;
+@@ -41,0 +66 @@
++  public static java.lang.String getCategory(android.app.Notification);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Action$WearableExtender support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Action$WearableExtender
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Action$WearableExtender	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Action$WearableExtender	2015-08-20 23:41:45.000000000 +0900
+@@ -7,0 +8,6 @@
++  public android.support.v4.app.NotificationCompat$Action$WearableExtender setInProgressLabel(java.lang.CharSequence);
++  public java.lang.CharSequence getInProgressLabel();
++  public android.support.v4.app.NotificationCompat$Action$WearableExtender setConfirmLabel(java.lang.CharSequence);
++  public java.lang.CharSequence getConfirmLabel();
++  public android.support.v4.app.NotificationCompat$Action$WearableExtender setCancelLabel(java.lang.CharSequence);
++  public java.lang.CharSequence getCancelLabel();
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Builder support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Builder
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Builder	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Builder	2015-08-20 23:41:45.000000000 +0900
+@@ -1,0 +2 @@
++  public java.util.ArrayList<java.lang.String> mPeople;
+@@ -3,0 +5 @@
++  public android.support.v4.app.NotificationCompat$Builder setShowWhen(boolean);
+@@ -27,0 +30 @@
++  public android.support.v4.app.NotificationCompat$Builder setCategory(java.lang.String);
+@@ -29,0 +33 @@
++  public android.support.v4.app.NotificationCompat$Builder addPerson(java.lang.String);
+@@ -38,0 +43,3 @@
++  public android.support.v4.app.NotificationCompat$Builder setColor(int);
++  public android.support.v4.app.NotificationCompat$Builder setVisibility(int);
++  public android.support.v4.app.NotificationCompat$Builder setPublicVersion(android.app.Notification);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.SharedElementCallback support-v4-21.0.0_55ef455a/android.support.v4.app.SharedElementCallback
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.SharedElementCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.SharedElementCallback	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v4.app.SharedElementCallback {
++  public android.support.v4.app.SharedElementCallback();
++  public void onSharedElementStart(java.util.List<java.lang.String>, java.util.List<android.view.View>, java.util.List<android.view.View>);
++  public void onSharedElementEnd(java.util.List<java.lang.String>, java.util.List<android.view.View>, java.util.List<android.view.View>);
++  public void onRejectSharedElements(java.util.List<android.view.View>);
++  public void onMapSharedElements(java.util.List<java.lang.String>, java.util.Map<java.lang.String, android.view.View>);
++  public android.os.Parcelable onCaptureSharedElementSnapshot(android.view.View, android.graphics.Matrix, android.graphics.RectF);
++  public android.view.View onCreateSnapshotView(android.content.Context, android.os.Parcelable);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.content.ContextCompat support-v4-21.0.0_55ef455a/android.support.v4.content.ContextCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.content.ContextCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.content.ContextCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -7,0 +8,3 @@
++  public static final android.graphics.drawable.Drawable getDrawable(android.content.Context, int);
++  public final java.io.File getNoBackupFilesDir(android.content.Context);
++  public final java.io.File getCodeCacheDir(android.content.Context);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.content.res.ResourcesCompat support-v4-21.0.0_55ef455a/android.support.v4.content.res.ResourcesCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.content.res.ResourcesCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.content.res.ResourcesCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.content.res.ResourcesCompat {
++  public android.support.v4.content.res.ResourcesCompat();
++  public android.graphics.drawable.Drawable getDrawable(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.BitmapCompat support-v4-21.0.0_55ef455a/android.support.v4.graphics.BitmapCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.BitmapCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.BitmapCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v4.graphics.BitmapCompat {
++  public android.support.v4.graphics.BitmapCompat();
++  public static boolean hasMipMap(android.graphics.Bitmap);
++  public static void setHasMipMap(android.graphics.Bitmap, boolean);
++  public static int getAllocationByteCount(android.graphics.Bitmap);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.DrawableCompat support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.DrawableCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -5,0 +6,5 @@
++  public static void setHotspot(android.graphics.drawable.Drawable, float, float);
++  public static void setHotspotBounds(android.graphics.drawable.Drawable, int, int, int, int);
++  public static void setTint(android.graphics.drawable.Drawable, int);
++  public static void setTintList(android.graphics.drawable.Drawable, android.content.res.ColorStateList);
++  public static void setTintMode(android.graphics.drawable.Drawable, android.graphics.PorterDuff$Mode);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory
+--- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory {
++  public android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory();
++  public static android.support.v4.graphics.drawable.RoundedBitmapDrawable create(android.content.res.Resources, android.graphics.Bitmap);
++  public static android.support.v4.graphics.drawable.RoundedBitmapDrawable create(android.content.res.Resources, java.lang.String);
++  public static android.support.v4.graphics.drawable.RoundedBitmapDrawable create(android.content.res.Resources, java.io.InputStream);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,41 @@
++public final class android.support.v4.media.MediaMetadataCompat implements android.os.Parcelable {
++  public static final java.lang.String METADATA_KEY_TITLE;
++  public static final java.lang.String METADATA_KEY_ARTIST;
++  public static final java.lang.String METADATA_KEY_DURATION;
++  public static final java.lang.String METADATA_KEY_ALBUM;
++  public static final java.lang.String METADATA_KEY_AUTHOR;
++  public static final java.lang.String METADATA_KEY_WRITER;
++  public static final java.lang.String METADATA_KEY_COMPOSER;
++  public static final java.lang.String METADATA_KEY_COMPILATION;
++  public static final java.lang.String METADATA_KEY_DATE;
++  public static final java.lang.String METADATA_KEY_YEAR;
++  public static final java.lang.String METADATA_KEY_GENRE;
++  public static final java.lang.String METADATA_KEY_TRACK_NUMBER;
++  public static final java.lang.String METADATA_KEY_NUM_TRACKS;
++  public static final java.lang.String METADATA_KEY_DISC_NUMBER;
++  public static final java.lang.String METADATA_KEY_ALBUM_ARTIST;
++  public static final java.lang.String METADATA_KEY_ART;
++  public static final java.lang.String METADATA_KEY_ART_URI;
++  public static final java.lang.String METADATA_KEY_ALBUM_ART;
++  public static final java.lang.String METADATA_KEY_ALBUM_ART_URI;
++  public static final java.lang.String METADATA_KEY_USER_RATING;
++  public static final java.lang.String METADATA_KEY_RATING;
++  public static final java.lang.String METADATA_KEY_DISPLAY_TITLE;
++  public static final java.lang.String METADATA_KEY_DISPLAY_SUBTITLE;
++  public static final java.lang.String METADATA_KEY_DISPLAY_DESCRIPTION;
++  public static final java.lang.String METADATA_KEY_DISPLAY_ICON;
++  public static final java.lang.String METADATA_KEY_DISPLAY_ICON_URI;
++  public static final android.os.Parcelable$Creator<android.support.v4.media.MediaMetadataCompat> CREATOR;
++  public boolean containsKey(java.lang.String);
++  public java.lang.CharSequence getText(java.lang.String);
++  public java.lang.String getString(java.lang.String);
++  public long getLong(java.lang.String);
++  public android.support.v4.media.RatingCompat getRating(java.lang.String);
++  public android.graphics.Bitmap getBitmap(java.lang.String);
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++  public int size();
++  public java.util.Set<java.lang.String> keySet();
++  public static android.support.v4.media.MediaMetadataCompat fromMediaMetadata(java.lang.Object);
++  public java.lang.Object getMediaMetadata();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat$Builder support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat$Builder
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat$Builder	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,10 @@
++public final class android.support.v4.media.MediaMetadataCompat$Builder {
++  public android.support.v4.media.MediaMetadataCompat$Builder();
++  public android.support.v4.media.MediaMetadataCompat$Builder(android.support.v4.media.MediaMetadataCompat);
++  public android.support.v4.media.MediaMetadataCompat$Builder putText(java.lang.String, java.lang.CharSequence);
++  public android.support.v4.media.MediaMetadataCompat$Builder putString(java.lang.String, java.lang.String);
++  public android.support.v4.media.MediaMetadataCompat$Builder putLong(java.lang.String, long);
++  public android.support.v4.media.MediaMetadataCompat$Builder putRating(java.lang.String, android.support.v4.media.RatingCompat);
++  public android.support.v4.media.MediaMetadataCompat$Builder putBitmap(java.lang.String, android.graphics.Bitmap);
++  public android.support.v4.media.MediaMetadataCompat build();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.RatingCompat support-v4-21.0.0_55ef455a/android.support.v4.media.RatingCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.RatingCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.RatingCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,26 @@
++public final class android.support.v4.media.RatingCompat implements android.os.Parcelable {
++  public static final int RATING_NONE;
++  public static final int RATING_HEART;
++  public static final int RATING_THUMB_UP_DOWN;
++  public static final int RATING_3_STARS;
++  public static final int RATING_4_STARS;
++  public static final int RATING_5_STARS;
++  public static final int RATING_PERCENTAGE;
++  public static final android.os.Parcelable$Creator<android.support.v4.media.RatingCompat> CREATOR;
++  public java.lang.String toString();
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++  public static android.support.v4.media.RatingCompat newUnratedRating(int);
++  public static android.support.v4.media.RatingCompat newHeartRating(boolean);
++  public static android.support.v4.media.RatingCompat newThumbRating(boolean);
++  public static android.support.v4.media.RatingCompat newStarRating(int, float);
++  public static android.support.v4.media.RatingCompat newPercentageRating(float);
++  public boolean isRated();
++  public int getRatingStyle();
++  public boolean hasHeart();
++  public boolean isThumbUp();
++  public float getStarRating();
++  public float getPercentRating();
++  public static android.support.v4.media.RatingCompat fromRating(java.lang.Object);
++  public java.lang.Object getRating();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,14 @@
++public abstract class android.support.v4.media.VolumeProviderCompat {
++  public static final int VOLUME_CONTROL_FIXED;
++  public static final int VOLUME_CONTROL_RELATIVE;
++  public static final int VOLUME_CONTROL_ABSOLUTE;
++  public android.support.v4.media.VolumeProviderCompat(int, int, int);
++  public final int getCurrentVolume();
++  public final int getVolumeControl();
++  public final int getMaxVolume();
++  public final void setCurrentVolume(int);
++  public void onSetVolumeTo(int);
++  public void onAdjustVolume(int);
++  public void setCallback(android.support.v4.media.VolumeProviderCompat$Callback);
++  public java.lang.Object getVolumeProvider();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat$Callback support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat$Callback
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat$Callback	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v4.media.VolumeProviderCompat$Callback {
++  public android.support.v4.media.VolumeProviderCompat$Callback();
++  public abstract void onVolumeChanged(android.support.v4.media.VolumeProviderCompat);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,15 @@
++public final class android.support.v4.media.session.MediaControllerCompat {
++  public android.support.v4.media.session.MediaControllerCompat(android.content.Context, android.support.v4.media.session.MediaSessionCompat);
++  public android.support.v4.media.session.MediaControllerCompat(android.content.Context, android.support.v4.media.session.MediaSessionCompat$Token) throws android.os.RemoteException;
++  public android.support.v4.media.session.MediaControllerCompat$TransportControls getTransportControls();
++  public boolean dispatchMediaButtonEvent(android.view.KeyEvent);
++  public android.support.v4.media.session.PlaybackStateCompat getPlaybackState();
++  public android.support.v4.media.MediaMetadataCompat getMetadata();
++  public int getRatingType();
++  public android.support.v4.media.session.MediaControllerCompat$PlaybackInfo getPlaybackInfo();
++  public void registerCallback(android.support.v4.media.session.MediaControllerCompat$Callback);
++  public void registerCallback(android.support.v4.media.session.MediaControllerCompat$Callback, android.os.Handler);
++  public void unregisterCallback(android.support.v4.media.session.MediaControllerCompat$Callback);
++  public void sendCommand(java.lang.String, android.os.Bundle, android.os.ResultReceiver);
++  public java.lang.Object getMediaController();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$Callback support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$Callback
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$Callback	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,7 @@
++public abstract class android.support.v4.media.session.MediaControllerCompat$Callback {
++  public android.support.v4.media.session.MediaControllerCompat$Callback();
++  public void onSessionDestroyed();
++  public void onSessionEvent(java.lang.String, android.os.Bundle);
++  public void onPlaybackStateChanged(android.support.v4.media.session.PlaybackStateCompat);
++  public void onMetadataChanged(android.support.v4.media.MediaMetadataCompat);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,9 @@
++public final class android.support.v4.media.session.MediaControllerCompat$PlaybackInfo {
++  public static final int PLAYBACK_TYPE_LOCAL;
++  public static final int PLAYBACK_TYPE_REMOTE;
++  public int getPlaybackType();
++  public int getAudioStream();
++  public int getVolumeControl();
++  public int getMaxVolume();
++  public int getCurrentVolume();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$TransportControls support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$TransportControls
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$TransportControls	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,11 @@
++public abstract class android.support.v4.media.session.MediaControllerCompat$TransportControls {
++  public abstract void play();
++  public abstract void pause();
++  public abstract void stop();
++  public abstract void seekTo(long);
++  public abstract void fastForward();
++  public abstract void skipToNext();
++  public abstract void rewind();
++  public abstract void skipToPrevious();
++  public abstract void setRating(android.support.v4.media.RatingCompat);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,19 @@
++public class android.support.v4.media.session.MediaSessionCompat {
++  public static final int FLAG_HANDLES_MEDIA_BUTTONS;
++  public static final int FLAG_HANDLES_TRANSPORT_CONTROLS;
++  public android.support.v4.media.session.MediaSessionCompat(android.content.Context, java.lang.String);
++  public void setCallback(android.support.v4.media.session.MediaSessionCompat$Callback);
++  public void setCallback(android.support.v4.media.session.MediaSessionCompat$Callback, android.os.Handler);
++  public void setFlags(int);
++  public void setPlaybackToLocal(int);
++  public void setPlaybackToRemote(android.support.v4.media.VolumeProviderCompat);
++  public void setActive(boolean);
++  public boolean isActive();
++  public void sendSessionEvent(java.lang.String, android.os.Bundle);
++  public void release();
++  public android.support.v4.media.session.MediaSessionCompat$Token getSessionToken();
++  public void setPlaybackState(android.support.v4.media.session.PlaybackStateCompat);
++  public void setMetadata(android.support.v4.media.MediaMetadataCompat);
++  public java.lang.Object getMediaSession();
++  public static android.support.v4.media.session.MediaSessionCompat obtain(java.lang.Object);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Callback support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Callback
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Callback	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,14 @@
++public abstract class android.support.v4.media.session.MediaSessionCompat$Callback {
++  public android.support.v4.media.session.MediaSessionCompat$Callback();
++  public void onCommand(java.lang.String, android.os.Bundle, android.os.ResultReceiver);
++  public boolean onMediaButtonEvent(android.content.Intent);
++  public void onPlay();
++  public void onPause();
++  public void onSkipToNext();
++  public void onSkipToPrevious();
++  public void onFastForward();
++  public void onRewind();
++  public void onStop();
++  public void onSeekTo(long);
++  public void onSetRating(android.support.v4.media.RatingCompat);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Token support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Token
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Token	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Token	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v4.media.session.MediaSessionCompat$Token implements android.os.Parcelable {
++  public static final android.os.Parcelable$Creator<android.support.v4.media.session.MediaSessionCompat$Token> CREATOR;
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++  public java.lang.Object getToken();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,40 @@
++public final class android.support.v4.media.session.PlaybackStateCompat implements android.os.Parcelable {
++  public static final long ACTION_STOP;
++  public static final long ACTION_PAUSE;
++  public static final long ACTION_PLAY;
++  public static final long ACTION_REWIND;
++  public static final long ACTION_SKIP_TO_PREVIOUS;
++  public static final long ACTION_SKIP_TO_NEXT;
++  public static final long ACTION_FAST_FORWARD;
++  public static final long ACTION_SET_RATING;
++  public static final long ACTION_SEEK_TO;
++  public static final long ACTION_PLAY_PAUSE;
++  public static final long ACTION_PLAY_FROM_MEDIA_ID;
++  public static final long ACTION_PLAY_FROM_SEARCH;
++  public static final long ACTION_SKIP_TO_QUEUE_ITEM;
++  public static final int STATE_NONE;
++  public static final int STATE_STOPPED;
++  public static final int STATE_PAUSED;
++  public static final int STATE_PLAYING;
++  public static final int STATE_FAST_FORWARDING;
++  public static final int STATE_REWINDING;
++  public static final int STATE_BUFFERING;
++  public static final int STATE_ERROR;
++  public static final int STATE_CONNECTING;
++  public static final int STATE_SKIPPING_TO_PREVIOUS;
++  public static final int STATE_SKIPPING_TO_NEXT;
++  public static final long PLAYBACK_POSITION_UNKNOWN;
++  public static final android.os.Parcelable$Creator<android.support.v4.media.session.PlaybackStateCompat> CREATOR;
++  public java.lang.String toString();
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++  public int getState();
++  public long getPosition();
++  public long getBufferedPosition();
++  public float getPlaybackSpeed();
++  public long getActions();
++  public java.lang.CharSequence getErrorMessage();
++  public long getLastPositionUpdateTime();
++  public static android.support.v4.media.session.PlaybackStateCompat fromPlaybackState(java.lang.Object);
++  public java.lang.Object getPlaybackState();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat$Builder support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat$Builder
+--- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,9 @@
++public final class android.support.v4.media.session.PlaybackStateCompat$Builder {
++  public android.support.v4.media.session.PlaybackStateCompat$Builder();
++  public android.support.v4.media.session.PlaybackStateCompat$Builder(android.support.v4.media.session.PlaybackStateCompat);
++  public void setState(int, long, float);
++  public void setBufferedPosition(long);
++  public void setActions(long);
++  public void setErrorMessage(java.lang.CharSequence);
++  public android.support.v4.media.session.PlaybackStateCompat build();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.os.AsyncTaskCompat support-v4-21.0.0_55ef455a/android.support.v4.os.AsyncTaskCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.os.AsyncTaskCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.os.AsyncTaskCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.os.AsyncTaskCompat {
++  public android.support.v4.os.AsyncTaskCompat();
++  public static <Params, Progress, Result> android.os.AsyncTask<Params, Progress, Result> executeParallel(android.os.AsyncTask<Params, Progress, Result>, Params...);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper
+--- support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper	2015-08-20 23:41:45.000000000 +0900
+@@ -16,0 +17 @@
++  public void printBitmap(java.lang.String, android.graphics.Bitmap, android.support.v4.print.PrintHelper$OnPrintFinishCallback);
+@@ -17,0 +19 @@
++  public void printBitmap(java.lang.String, android.net.Uri, android.support.v4.print.PrintHelper$OnPrintFinishCallback) throws java.io.FileNotFoundException;
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper$OnPrintFinishCallback support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper$OnPrintFinishCallback
+--- support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper$OnPrintFinishCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper$OnPrintFinishCallback	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v4.print.PrintHelper$OnPrintFinishCallback {
++  public abstract void onFinish();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.provider.DocumentFile support-v4-21.0.0_55ef455a/android.support.v4.provider.DocumentFile
+--- support-v4-20.0.0_d41fb95e/android.support.v4.provider.DocumentFile	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.provider.DocumentFile	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,23 @@
++public abstract class android.support.v4.provider.DocumentFile {
++  public static android.support.v4.provider.DocumentFile fromFile(java.io.File);
++  public static android.support.v4.provider.DocumentFile fromSingleUri(android.content.Context, android.net.Uri);
++  public static android.support.v4.provider.DocumentFile fromTreeUri(android.content.Context, android.net.Uri);
++  public static boolean isDocumentUri(android.content.Context, android.net.Uri);
++  public abstract android.support.v4.provider.DocumentFile createFile(java.lang.String, java.lang.String);
++  public abstract android.support.v4.provider.DocumentFile createDirectory(java.lang.String);
++  public abstract android.net.Uri getUri();
++  public abstract java.lang.String getName();
++  public abstract java.lang.String getType();
++  public android.support.v4.provider.DocumentFile getParentFile();
++  public abstract boolean isDirectory();
++  public abstract boolean isFile();
++  public abstract long lastModified();
++  public abstract long length();
++  public abstract boolean canRead();
++  public abstract boolean canWrite();
++  public abstract boolean delete();
++  public abstract boolean exists();
++  public abstract android.support.v4.provider.DocumentFile[] listFiles();
++  public android.support.v4.provider.DocumentFile findFile(java.lang.String);
++  public abstract boolean renameTo(java.lang.String);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.LruCache<K, support-v4-21.0.0_55ef455a/android.support.v4.util.LruCache<K,
+--- support-v4-20.0.0_d41fb95e/android.support.v4.util.LruCache<K,	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.util.LruCache<K,	2015-08-20 23:41:45.000000000 +0900
+@@ -2,0 +3 @@
++  public void resize(int);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.Pair<F, support-v4-21.0.0_55ef455a/android.support.v4.util.Pair<F,
+--- support-v4-20.0.0_d41fb95e/android.support.v4.util.Pair<F,	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.util.Pair<F,	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v4.util.Pair<F, S> {
++  public final F first;
++  public final S second;
++  public android.support.v4.util.Pair(F, S);
++  public boolean equals(java.lang.Object);
++  public int hashCode();
++  public static <A, B> android.support.v4.util.Pair<A, B> create(A, B);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.SimpleArrayMap<K, support-v4-21.0.0_55ef455a/android.support.v4.util.SimpleArrayMap<K,
+--- support-v4-20.0.0_d41fb95e/android.support.v4.util.SimpleArrayMap<K,	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.util.SimpleArrayMap<K,	2015-08-20 23:41:45.000000000 +0900
+@@ -7,0 +8 @@
++  public int indexOfKey(java.lang.Object);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -31,0 +32 @@
++  public static boolean hasAccessibilityDelegate(android.view.View);
+@@ -78,11 +79,23 @@
+-  public float getPivotX(android.view.View);
+-  public void setPivotX(android.view.View, float);
+-  public float getPivotY(android.view.View);
+-  public void setPivotY(android.view.View, float);
+-  public float getRotation(android.view.View);
+-  public float getRotationX(android.view.View);
+-  public float getRotationY(android.view.View);
+-  public float getScaleX(android.view.View);
+-  public float getScaleY(android.view.View);
+-  public float getX(android.view.View);
+-  public float getY(android.view.View);
++  public static float getPivotX(android.view.View);
++  public static void setPivotX(android.view.View, float);
++  public static float getPivotY(android.view.View);
++  public static void setPivotY(android.view.View, float);
++  public static float getRotation(android.view.View);
++  public static float getRotationX(android.view.View);
++  public static float getRotationY(android.view.View);
++  public static float getScaleX(android.view.View);
++  public static float getScaleY(android.view.View);
++  public static float getX(android.view.View);
++  public static float getY(android.view.View);
++  public static void setElevation(android.view.View, float);
++  public static float getElevation(android.view.View);
++  public static void setTranslationZ(android.view.View, float);
++  public static float getTranslationZ(android.view.View);
++  public static void setTransitionName(android.view.View, java.lang.String);
++  public static java.lang.String getTransitionName(android.view.View);
++  public static int getWindowSystemUiVisibility(android.view.View);
++  public static void requestApplyInsets(android.view.View);
++  public static void setChildrenDrawingOrderEnabled(android.view.ViewGroup, boolean);
++  public static boolean getFitsSystemWindows(android.view.View);
++  public static void jumpDrawablesToCurrentState(android.view.View);
++  public static void setOnApplyWindowInsetsListener(android.view.View, android.support.v4.view.OnApplyWindowInsetsListener);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewConfigurationCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewConfigurationCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewConfigurationCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewConfigurationCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -3,0 +4 @@
++  public static boolean hasPermanentMenuKey(android.view.ViewConfiguration);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewGroupCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewGroupCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -7,0 +8,2 @@
++  public static void setTransitionGroup(android.view.ViewGroup, boolean);
++  public static boolean isTransitionGroup(android.view.ViewGroup);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -33,0 +34 @@
++  public android.support.v4.view.ViewPropertyAnimatorCompat setUpdateListener(android.support.v4.view.ViewPropertyAnimatorUpdateListener);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorListenerAdapter support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorListenerAdapter
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorListenerAdapter	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorListenerAdapter	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v4.view.ViewPropertyAnimatorListenerAdapter implements android.support.v4.view.ViewPropertyAnimatorListener {
++  public android.support.v4.view.ViewPropertyAnimatorListenerAdapter();
++  public void onAnimationStart(android.view.View);
++  public void onAnimationEnd(android.view.View);
++  public void onAnimationCancel(android.view.View);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -19,0 +20 @@
++  public static final int ACTION_SET_TEXT;
+@@ -24,0 +26 @@
++  public static final java.lang.String ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE;
+@@ -97,0 +100,6 @@
++  public android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat getCollectionInfo();
++  public void setCollectionInfo(java.lang.Object);
++  public void setCollectionItemInfo(java.lang.Object);
++  public android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat getCollectionItemInfo();
++  public android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat getRangeInfo();
++  public java.util.List<android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat> getActionList();
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat {
++  public int getId();
++  public java.lang.CharSequence getLabel();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat {
++  public static final int SELECTION_MODE_NONE;
++  public static final int SELECTION_MODE_SINGLE;
++  public static final int SELECTION_MODE_MULTIPLE;
++  public static android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat obtain(int, int, boolean, int);
++  public int getColumnCount();
++  public int getRowCount();
++  public boolean isHierarchical();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat {
++  public static android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat obtain(int, int, int, int, boolean, boolean);
++  public int getColumnIndex();
++  public int getColumnSpan();
++  public int getRowIndex();
++  public int getRowSpan();
++  public boolean isHeading();
++  public boolean isSelected();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat {
++  public static final int RANGE_TYPE_INT;
++  public static final int RANGE_TYPE_FLOAT;
++  public static final int RANGE_TYPE_PERCENT;
++  public float getCurrent();
++  public float getMax();
++  public float getMin();
++  public int getType();
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.DrawerLayout support-v4-21.0.0_55ef455a/android.support.v4.widget.DrawerLayout
+--- support-v4-20.0.0_d41fb95e/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:45.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.DrawerLayout extends android.view.ViewGroup {
++public class android.support.v4.widget.DrawerLayout extends android.view.ViewGroup implements android.support.v4.widget.DrawerLayoutImpl {
+@@ -10,0 +11 @@
++  public void setChildInsets(java.lang.Object, boolean);
+@@ -23,0 +25,4 @@
++  public void setStatusBarBackground(android.graphics.drawable.Drawable);
++  public void setStatusBarBackground(int);
++  public void setStatusBarBackgroundColor(int);
++  public void onDraw(android.graphics.Canvas);
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize support-v4-21.0.0_55ef455a/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize
+--- support-v4-20.0.0_d41fb95e/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.PopupWindowCompat support-v4-21.0.0_55ef455a/android.support.v4.widget.PopupWindowCompat
+--- support-v4-20.0.0_d41fb95e/android.support.v4.widget.PopupWindowCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.PopupWindowCompat	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v4.widget.PopupWindowCompat {
++  public static void showAsDropDown(android.widget.PopupWindow, android.view.View, int, int, int);
++}
+diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.SwipeRefreshLayout support-v4-21.0.0_55ef455a/android.support.v4.widget.SwipeRefreshLayout
+--- support-v4-20.0.0_d41fb95e/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:46.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:45.000000000 +0900
+@@ -1,0 +2,5 @@
++  public static final int LARGE;
++  public static final int DEFAULT;
++  public void setProgressViewOffset(boolean, int, int);
++  public void setProgressViewEndTarget(boolean, int);
++  public void setSize(int);
+@@ -4,2 +8,0 @@
+-  public void onAttachedToWindow();
+-  public void onDetachedFromWindow();
+@@ -8,3 +11,4 @@
+-  public void setColorScheme(int, int, int, int);
+-  public void setColorSchemeResources(int, int, int, int);
+-  public void setColorSchemeColors(int, int, int, int);
++  public void setProgressBackgroundColor(int);
++  public void setColorScheme(int...);
++  public void setColorSchemeResources(int...);
++  public void setColorSchemeColors(int...);
+@@ -12 +16 @@
+-  public void draw(android.graphics.Canvas);
++  public void setDistanceToTriggerSync(int);

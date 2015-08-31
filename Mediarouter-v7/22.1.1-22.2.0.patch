@@ -1,0 +1,6 @@
+diff -U 0 -N mediarouter-v7-22.1.1_657aa5f6/android.support.v7.app.MediaRouteControllerDialog mediarouter-v7-22.2.0_6b7939a2/android.support.v7.app.MediaRouteControllerDialog
+--- mediarouter-v7-22.1.1_657aa5f6/android.support.v7.app.MediaRouteControllerDialog	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-22.2.0_6b7939a2/android.support.v7.app.MediaRouteControllerDialog	2015-08-20 23:41:45.000000000 +0900
+@@ -6,0 +7,2 @@
++  public void setVolumeControlEnabled(boolean);
++  public boolean isVolumeControlEnabled();

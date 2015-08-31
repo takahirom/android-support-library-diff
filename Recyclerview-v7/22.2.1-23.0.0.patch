@@ -1,0 +1,102 @@
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.AsyncListUtil$DataCallback<T> recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.AsyncListUtil$DataCallback<T>
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.AsyncListUtil$DataCallback<T>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.AsyncListUtil$DataCallback<T>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,7 @@
++public abstract class android.support.v7.util.AsyncListUtil$DataCallback<T> {
++  public android.support.v7.util.AsyncListUtil$DataCallback();
++  public abstract int refreshData();
++  public abstract void fillData(T[], int, int);
++  public void recycleData(T[], int);
++  public int getMaxCachedTiles();
++}
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.AsyncListUtil$ViewCallback recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.AsyncListUtil$ViewCallback
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.AsyncListUtil$ViewCallback	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.AsyncListUtil$ViewCallback	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,10 @@
++public abstract class android.support.v7.util.AsyncListUtil$ViewCallback {
++  public static final int HINT_SCROLL_NONE;
++  public static final int HINT_SCROLL_DESC;
++  public static final int HINT_SCROLL_ASC;
++  public android.support.v7.util.AsyncListUtil$ViewCallback();
++  public abstract void getItemRangeInto(int[]);
++  public void extendRangeInto(int[], int[], int);
++  public abstract void onDataRefresh();
++  public abstract void onItemLoaded(int);
++}
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.AsyncListUtil<T> recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.AsyncListUtil<T>
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.AsyncListUtil<T>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.AsyncListUtil<T>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v7.util.AsyncListUtil<T> {
++  public android.support.v7.util.AsyncListUtil(java.lang.Class<T>, int, android.support.v7.util.AsyncListUtil$DataCallback<T>, android.support.v7.util.AsyncListUtil$ViewCallback);
++  public void onRangeChanged();
++  public void refresh();
++  public T getItem(int);
++  public int getItemCount();
++}
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.ThreadUtil$BackgroundCallback<T> recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.ThreadUtil$BackgroundCallback<T>
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.ThreadUtil$BackgroundCallback<T>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.ThreadUtil$BackgroundCallback<T>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,6 @@
++public interface android.support.v7.util.ThreadUtil$BackgroundCallback<T> {
++  public abstract void refresh(int);
++  public abstract void updateRange(int, int, int, int, int);
++  public abstract void loadTile(int, int);
++  public abstract void recycleTile(android.support.v7.util.TileList$Tile<T>);
++}
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.ThreadUtil$MainThreadCallback<T> recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.ThreadUtil$MainThreadCallback<T>
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.ThreadUtil$MainThreadCallback<T>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.ThreadUtil$MainThreadCallback<T>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,5 @@
++public interface android.support.v7.util.ThreadUtil$MainThreadCallback<T> {
++  public abstract void updateItemCount(int, int);
++  public abstract void addTile(int, android.support.v7.util.TileList$Tile<T>);
++  public abstract void removeTile(int, int);
++}
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.TileList$Tile<T> recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.TileList$Tile<T>
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.TileList$Tile<T>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.util.TileList$Tile<T>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.util.TileList$Tile<T> {
++  public final T[] mItems;
++  public int mStartPosition;
++  public int mItemCount;
++  public android.support.v7.util.TileList$Tile(java.lang.Class<T>, int);
++}
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.GridLayoutManager recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.GridLayoutManager
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.GridLayoutManager	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.GridLayoutManager	2015-08-20 23:41:45.000000000 +0900
+@@ -14 +14 @@
+-  public void onItemsUpdated(android.support.v7.widget.RecyclerView, int, int);
++  public void onItemsUpdated(android.support.v7.widget.RecyclerView, int, int, java.lang.Object);
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+@@ -53,0 +54,2 @@
++  public void setLayoutFrozen(boolean);
++  public boolean isLayoutFrozen();
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$Adapter<VH recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView$Adapter<VH
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$Adapter<VH	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView$Adapter<VH	2015-08-20 23:41:45.000000000 +0900
+@@ -4,0 +5 @@
++  public void onBindViewHolder(VH, int, java.util.List<java.lang.Object>);
+@@ -22,0 +24 @@
++  public final void notifyItemChanged(int, java.lang.Object);
+@@ -23,0 +26 @@
++  public final void notifyItemRangeChanged(int, int, java.lang.Object);
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$AdapterDataObserver recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView$AdapterDataObserver
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$AdapterDataObserver	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView$AdapterDataObserver	2015-08-20 23:41:45.000000000 +0900
+@@ -4,0 +5 @@
++  public void onItemRangeChanged(int, int, java.lang.Object);
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
+@@ -95,0 +96 @@
++  public void onItemsUpdated(android.support.v7.widget.RecyclerView, int, int, java.lang.Object);
+diff -U 0 -N recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.StaggeredGridLayoutManager recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.StaggeredGridLayoutManager
+--- recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.StaggeredGridLayoutManager	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-23.0.0_fe2aa3a6/android.support.v7.widget.StaggeredGridLayoutManager	2015-08-20 23:41:45.000000000 +0900
+@@ -45 +45 @@
+-  public void onItemsUpdated(android.support.v7.widget.RecyclerView, int, int);
++  public void onItemsUpdated(android.support.v7.widget.RecyclerView, int, int, java.lang.Object);

@@ -1,12 +1,12 @@
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.BuildConfig support-v4-22.0.0_5f9916fe/android.support.v4.BuildConfig
---- support-v4-21.0.3_4e19e922/android.support.v4.BuildConfig	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.BuildConfig	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.BuildConfig support-v4-22.0.0_96dba0e2/android.support.v4.BuildConfig
+--- support-v4-21.0.3_998b88de/android.support.v4.BuildConfig	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.BuildConfig	2015-08-20 23:41:45.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation support-v4-22.0.0_5f9916fe/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation
---- support-v4-21.0.3_4e19e922/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation support-v4-22.0.0_96dba0e2/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation
+--- support-v4-21.0.3_998b88de/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.app.NotificationCompat$CarExtender$UnreadConversation	2015-08-20 23:41:45.000000000 +0900
 @@ -1,0 +2,8 @@
 +  public java.lang.String[] getMessages();
 +  public android.support.v4.app.RemoteInput getRemoteInput();
@@ -16,14 +16,14 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.app.NotificationCompa
 +  public java.lang.String getParticipant();
 +  public long getLatestTimestamp();
 +  public android.support.v4.app.RemoteInputCompatBase$RemoteInput getRemoteInput();
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.content.res.ResourcesCompat support-v4-22.0.0_5f9916fe/android.support.v4.content.res.ResourcesCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.content.res.ResourcesCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.content.res.ResourcesCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.content.res.ResourcesCompat support-v4-22.0.0_96dba0e2/android.support.v4.content.res.ResourcesCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.content.res.ResourcesCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.content.res.ResourcesCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -3,0 +4 @@
 +  public static android.graphics.drawable.Drawable getDrawableForDensity(android.content.res.Resources, int, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.MediaDescriptionCompat support-v4-22.0.0_5f9916fe/android.support.v4.media.MediaDescriptionCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.media.MediaDescriptionCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.MediaDescriptionCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.MediaDescriptionCompat support-v4-22.0.0_96dba0e2/android.support.v4.media.MediaDescriptionCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.media.MediaDescriptionCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.MediaDescriptionCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,15 @@
 +public final class android.support.v4.media.MediaDescriptionCompat implements android.os.Parcelable {
 +  public static final android.os.Parcelable$Creator<android.support.v4.media.MediaDescriptionCompat> CREATOR;
@@ -40,9 +40,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.MediaDescriptio
 +  public java.lang.Object getMediaDescription();
 +  public static android.support.v4.media.MediaDescriptionCompat fromMediaDescription(java.lang.Object);
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.MediaDescriptionCompat$Builder support-v4-22.0.0_5f9916fe/android.support.v4.media.MediaDescriptionCompat$Builder
---- support-v4-21.0.3_4e19e922/android.support.v4.media.MediaDescriptionCompat$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.MediaDescriptionCompat$Builder	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.MediaDescriptionCompat$Builder support-v4-22.0.0_96dba0e2/android.support.v4.media.MediaDescriptionCompat$Builder
+--- support-v4-21.0.3_998b88de/android.support.v4.media.MediaDescriptionCompat$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.MediaDescriptionCompat$Builder	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,11 @@
 +public final class android.support.v4.media.MediaDescriptionCompat$Builder {
 +  public android.support.v4.media.MediaDescriptionCompat$Builder();
@@ -55,18 +55,18 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.MediaDescriptio
 +  public android.support.v4.media.MediaDescriptionCompat$Builder setExtras(android.os.Bundle);
 +  public android.support.v4.media.MediaDescriptionCompat build();
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.MediaMetadataCompat support-v4-22.0.0_5f9916fe/android.support.v4.media.MediaMetadataCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.media.MediaMetadataCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.MediaMetadataCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.MediaMetadataCompat support-v4-22.0.0_96dba0e2/android.support.v4.media.MediaMetadataCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.media.MediaMetadataCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.MediaMetadataCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -27,0 +28 @@
 +  public static final java.lang.String METADATA_KEY_MEDIA_ID;
 @@ -34,0 +36 @@
 +  public android.support.v4.media.MediaDescriptionCompat getDescription();
 @@ -38,0 +41 @@
 +  public android.os.Bundle getBundle();
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaControllerCallback support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaControllerCallback
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaControllerCallback	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaControllerCallback	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaControllerCallback support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaControllerCallback
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaControllerCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaControllerCallback	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,10 @@
 +public interface android.support.v4.media.session.IMediaControllerCallback extends android.os.IInterface {
 +  public abstract void onEvent(java.lang.String, android.os.Bundle) throws android.os.RemoteException;
@@ -78,9 +78,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaC
 +  public abstract void onExtrasChanged(android.os.Bundle) throws android.os.RemoteException;
 +  public abstract void onVolumeInfoChanged(android.support.v4.media.session.ParcelableVolumeInfo) throws android.os.RemoteException;
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaControllerCallback$Stub support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaControllerCallback$Stub
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaControllerCallback$Stub	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaControllerCallback$Stub	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaControllerCallback$Stub support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaControllerCallback$Stub
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaControllerCallback$Stub	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaControllerCallback$Stub	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,6 @@
 +public abstract class android.support.v4.media.session.IMediaControllerCallback$Stub extends android.os.Binder implements android.support.v4.media.session.IMediaControllerCallback {
 +  public android.support.v4.media.session.IMediaControllerCallback$Stub();
@@ -88,9 +88,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaC
 +  public android.os.IBinder asBinder();
 +  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaSession support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaSession
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaSession	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaSession	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaSession support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaSession
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaSession	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaSession	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,33 @@
 +public interface android.support.v4.media.session.IMediaSession extends android.os.IInterface {
 +  public abstract void sendCommand(java.lang.String, android.os.Bundle, android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper) throws android.os.RemoteException;
@@ -125,9 +125,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaS
 +  public abstract android.os.Bundle getExtras() throws android.os.RemoteException;
 +  public abstract int getRatingType() throws android.os.RemoteException;
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaSession$Stub support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaSession$Stub
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaSession$Stub	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.IMediaSession$Stub	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaSession$Stub support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaSession$Stub
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.IMediaSession$Stub	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.IMediaSession$Stub	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,6 @@
 +public abstract class android.support.v4.media.session.IMediaSession$Stub extends android.os.Binder implements android.support.v4.media.session.IMediaSession {
 +  public android.support.v4.media.session.IMediaSession$Stub();
@@ -135,9 +135,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.IMediaS
 +  public android.os.IBinder asBinder();
 +  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaControllerCompat support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaControllerCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaControllerCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaControllerCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaControllerCompat support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaControllerCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaControllerCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaControllerCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -7,0 +8,3 @@
 +  public java.util.List<android.support.v4.media.session.MediaSessionCompat$QueueItem> getQueue();
 +  public java.lang.CharSequence getQueueTitle();
@@ -151,9 +151,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaCo
 +  public void adjustVolume(int, int);
 @@ -13,0 +22 @@
 +  public java.lang.String getPackageName();
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaControllerCompat$Callback support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaControllerCompat$Callback
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaControllerCompat$Callback	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaControllerCompat$Callback	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaControllerCompat$Callback support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaControllerCompat$Callback
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaControllerCompat$Callback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaControllerCompat$Callback	2015-08-20 23:41:45.000000000 +0900
 @@ -1 +1 @@
 -public abstract class android.support.v4.media.session.MediaControllerCompat$Callback {
 +public abstract class android.support.v4.media.session.MediaControllerCompat$Callback implements android.os.IBinder$DeathRecipient {
@@ -163,9 +163,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaCo
 +  public void onExtrasChanged(android.os.Bundle);
 +  public void onAudioInfoChanged(android.support.v4.media.session.MediaControllerCompat$PlaybackInfo);
 +  public void binderDied();
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaControllerCompat$TransportControls support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaControllerCompat$TransportControls
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaControllerCompat$TransportControls support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaControllerCompat$TransportControls
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-08-20 23:41:45.000000000 +0900
 @@ -2,0 +3,3 @@
 +  public abstract void playFromMediaId(java.lang.String, android.os.Bundle);
 +  public abstract void playFromSearch(java.lang.String, android.os.Bundle);
@@ -173,9 +173,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaCo
 @@ -10,0 +14,2 @@
 +  public abstract void sendCustomAction(android.support.v4.media.session.PlaybackStateCompat$CustomAction, android.os.Bundle);
 +  public abstract void sendCustomAction(java.lang.String, android.os.Bundle);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -4 +4 @@
 -  public android.support.v4.media.session.MediaSessionCompat(android.content.Context, java.lang.String);
 +  public android.support.v4.media.session.MediaSessionCompat(android.content.Context, java.lang.String, android.content.ComponentName, android.app.PendingIntent);
@@ -195,25 +195,25 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSe
 +  public void addOnActiveChangeListener(android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener);
 +  public void removeOnActiveChangeListener(android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener);
 +  public static android.support.v4.media.session.MediaSessionCompat obtain(android.content.Context, java.lang.Object);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$Callback support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$Callback
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$Callback	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$Callback	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$Callback support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$Callback
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$Callback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$Callback	2015-08-20 23:41:45.000000000 +0900
 @@ -5,0 +6,3 @@
 +  public void onPlayFromMediaId(java.lang.String, android.os.Bundle);
 +  public void onPlayFromSearch(java.lang.String, android.os.Bundle);
 +  public void onSkipToQueueItem(long);
 @@ -13,0 +17 @@
 +  public void onCustomAction(java.lang.String, android.os.Bundle);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener {
 +  public abstract void onActiveChanged();
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$QueueItem support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$QueueItem
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$QueueItem	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$QueueItem	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$QueueItem support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$QueueItem
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$QueueItem	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$QueueItem	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,12 @@
 +public final class android.support.v4.media.session.MediaSessionCompat$QueueItem implements android.os.Parcelable {
 +  public static final int UNKNOWN_ID;
@@ -227,14 +227,14 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSe
 +  public static android.support.v4.media.session.MediaSessionCompat$QueueItem obtain(java.lang.Object);
 +  public java.lang.String toString();
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$Token support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$Token
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.MediaSessionCompat$Token	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.MediaSessionCompat$Token	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$Token support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$Token
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.MediaSessionCompat$Token	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.MediaSessionCompat$Token	2015-08-20 23:41:45.000000000 +0900
 @@ -2,0 +3 @@
 +  public static android.support.v4.media.session.MediaSessionCompat$Token fromToken(java.lang.Object);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.ParcelableVolumeInfo support-v4-22.0.0_5f9916fe/android.support.v4.media.session.ParcelableVolumeInfo
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.ParcelableVolumeInfo	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.ParcelableVolumeInfo	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.ParcelableVolumeInfo support-v4-22.0.0_96dba0e2/android.support.v4.media.session.ParcelableVolumeInfo
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.ParcelableVolumeInfo	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.ParcelableVolumeInfo	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,12 @@
 +public class android.support.v4.media.session.ParcelableVolumeInfo implements android.os.Parcelable {
 +  public int volumeType;
@@ -248,9 +248,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.Parcela
 +  public int describeContents();
 +  public void writeToParcel(android.os.Parcel, int);
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.PlaybackStateCompat$Builder support-v4-22.0.0_5f9916fe/android.support.v4.media.session.PlaybackStateCompat$Builder
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.PlaybackStateCompat$Builder support-v4-22.0.0_96dba0e2/android.support.v4.media.session.PlaybackStateCompat$Builder
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-08-20 23:41:45.000000000 +0900
 @@ -4,4 +4,5 @@
 -  public void setState(int, long, float);
 -  public void setBufferedPosition(long);
@@ -261,9 +261,9 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.Playbac
 +  public android.support.v4.media.session.PlaybackStateCompat$Builder setBufferedPosition(long);
 +  public android.support.v4.media.session.PlaybackStateCompat$Builder setActions(long);
 +  public android.support.v4.media.session.PlaybackStateCompat$Builder setErrorMessage(java.lang.CharSequence);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.PlaybackStateCompat$CustomAction support-v4-22.0.0_5f9916fe/android.support.v4.media.session.PlaybackStateCompat$CustomAction
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.PlaybackStateCompat$CustomAction	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.PlaybackStateCompat$CustomAction	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.PlaybackStateCompat$CustomAction support-v4-22.0.0_96dba0e2/android.support.v4.media.session.PlaybackStateCompat$CustomAction
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.PlaybackStateCompat$CustomAction	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.PlaybackStateCompat$CustomAction	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,10 @@
 +public final class android.support.v4.media.session.PlaybackStateCompat$CustomAction implements android.os.Parcelable {
 +  public static final android.os.Parcelable$Creator<android.support.v4.media.session.PlaybackStateCompat$CustomAction> CREATOR;
@@ -275,41 +275,41 @@ diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.Playbac
 +  public android.os.Bundle getExtras();
 +  public java.lang.String toString();
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder support-v4-22.0.0_5f9916fe/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder
---- support-v4-21.0.3_4e19e922/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder support-v4-22.0.0_96dba0e2/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder
+--- support-v4-21.0.3_998b88de/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder	2015-08-20 23:41:45.000000000 +0900
 @@ -0,0 +1,5 @@
 +public final class android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder {
 +  public android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder(java.lang.String, java.lang.CharSequence, int);
 +  public android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder setExtras(android.os.Bundle);
 +  public android.support.v4.media.session.PlaybackStateCompat$CustomAction build();
 +}
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.view.ViewCompat support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.view.ViewCompat support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -99,0 +100 @@
 +  public static void setFitsSystemWindows(android.view.View, boolean);
 @@ -101,0 +103,2 @@
 +  public static void setSaveFromParentEnabled(android.view.View, boolean);
 +  public static void setActivated(android.view.View, boolean);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -50,0 +51 @@
 +  public void addAction(android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
---- support-v4-21.0.3_4e19e922/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+--- support-v4-21.0.3_998b88de/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-08-20 23:41:45.000000000 +0900
 @@ -1,0 +2 @@
 +  public android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat(int, java.lang.CharSequence);
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.widget.DrawerLayout support-v4-22.0.0_5f9916fe/android.support.v4.widget.DrawerLayout
---- support-v4-21.0.3_4e19e922/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.widget.DrawerLayout support-v4-22.0.0_96dba0e2/android.support.v4.widget.DrawerLayout
+--- support-v4-21.0.3_998b88de/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:45.000000000 +0900
 @@ -25,0 +26 @@
 +  public android.graphics.drawable.Drawable getStatusBarBackgroundDrawable();
-diff -U 0 -N support-v4-21.0.3_4e19e922/android.support.v4.widget.SwipeRefreshLayout support-v4-22.0.0_5f9916fe/android.support.v4.widget.SwipeRefreshLayout
---- support-v4-21.0.3_4e19e922/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:45.000000000 +0900
-+++ support-v4-22.0.0_5f9916fe/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:45.000000000 +0900
+diff -U 0 -N support-v4-21.0.3_998b88de/android.support.v4.widget.SwipeRefreshLayout support-v4-22.0.0_96dba0e2/android.support.v4.widget.SwipeRefreshLayout
+--- support-v4-21.0.3_998b88de/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-22.0.0_96dba0e2/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:45.000000000 +0900
 @@ -11,0 +12,2 @@
 +  public void setProgressBackgroundColorSchemeResource(int);
 +  public void setProgressBackgroundColorSchemeColor(int);

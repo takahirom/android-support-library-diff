@@ -1,0 +1,100 @@
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$BatchedCallback<T2> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$BatchedCallback<T2>
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$BatchedCallback<T2>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$BatchedCallback<T2>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,11 @@
++public class android.support.v7.util.SortedList$BatchedCallback<T2> extends android.support.v7.util.SortedList$Callback<T2> {
++  public android.support.v7.util.SortedList$BatchedCallback(android.support.v7.util.SortedList$Callback<T2>);
++  public int compare(T2, T2);
++  public void onInserted(int, int);
++  public void onRemoved(int, int);
++  public void onMoved(int, int);
++  public void onChanged(int, int);
++  public boolean areContentsTheSame(T2, T2);
++  public boolean areItemsTheSame(T2, T2);
++  public void dispatchLastEvent();
++}
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$Callback<T2> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$Callback<T2>
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$Callback<T2>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$Callback<T2>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,10 @@
++public abstract class android.support.v7.util.SortedList$Callback<T2> {
++  public android.support.v7.util.SortedList$Callback();
++  public abstract int compare(T2, T2);
++  public abstract void onInserted(int, int);
++  public abstract void onRemoved(int, int);
++  public abstract void onMoved(int, int);
++  public abstract void onChanged(int, int);
++  public abstract boolean areContentsTheSame(T2, T2);
++  public abstract boolean areItemsTheSame(T2, T2);
++}
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList<T> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList<T>
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList<T>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList<T>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,15 @@
++public class android.support.v7.util.SortedList<T> {
++  public static final int INVALID_POSITION;
++  public android.support.v7.util.SortedList(java.lang.Class<T>, android.support.v7.util.SortedList$Callback<T>);
++  public android.support.v7.util.SortedList(java.lang.Class<T>, android.support.v7.util.SortedList$Callback<T>, int);
++  public int size();
++  public int add(T);
++  public void beginBatchedUpdates();
++  public void endBatchedUpdates();
++  public boolean remove(T);
++  public T removeItemAt(int);
++  public void updateItemAt(int, T);
++  public void recalculatePositionOfItemAt(int);
++  public T get(int) throws java.lang.IndexOutOfBoundsException;
++  public int indexOf(T);
++}
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.RecyclerView extends android.view.ViewGroup {
++public class android.support.v7.widget.RecyclerView extends android.view.ViewGroup implements android.support.v4.view.ScrollingView {
+@@ -24,0 +25 @@
++  public int getBaseline();
+@@ -35,0 +37,3 @@
++  public void addOnScrollListener(android.support.v7.widget.RecyclerView$OnScrollListener);
++  public void removeOnScrollListener(android.support.v7.widget.RecyclerView$OnScrollListener);
++  public void clearOnScrollListeners();
+@@ -39,0 +44,6 @@
++  public int computeHorizontalScrollOffset();
++  public int computeHorizontalScrollExtent();
++  public int computeHorizontalScrollRange();
++  public int computeVerticalScrollOffset();
++  public int computeVerticalScrollExtent();
++  public int computeVerticalScrollRange();
+@@ -50,0 +61 @@
++  public boolean onGenericMotionEvent(android.view.MotionEvent);
+@@ -51,0 +63 @@
++  public void sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent);
+@@ -71,0 +84,3 @@
++  public void onScrolled(int, int);
++  public void onScrollStateChanged(int);
++  public boolean hasPendingAdapterUpdates();
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
+@@ -6,0 +7,3 @@
++  public boolean isAttachedToWindow();
++  public void postOnAnimation(java.lang.Runnable);
++  public boolean removeCallbacks(java.lang.Runnable);
+@@ -32,0 +36 @@
++  public int getBaseline();
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$State recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$State
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$State	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$State	2015-08-20 23:41:45.000000000 +0900
+@@ -13 +12,0 @@
+-  public void onViewRecycled(android.support.v7.widget.RecyclerView$ViewHolder);
+diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.util.SortedListAdapterCallback<T2> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.util.SortedListAdapterCallback<T2>
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.util.SortedListAdapterCallback<T2>	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.util.SortedListAdapterCallback<T2>	2015-08-20 23:41:45.000000000 +0900
+@@ -0,0 +1,7 @@
++public abstract class android.support.v7.widget.util.SortedListAdapterCallback<T2> extends android.support.v7.util.SortedList$Callback<T2> {
++  public android.support.v7.widget.util.SortedListAdapterCallback(android.support.v7.widget.RecyclerView$Adapter);
++  public void onInserted(int, int);
++  public void onRemoved(int, int);
++  public void onMoved(int, int);
++  public void onChanged(int, int);
++}

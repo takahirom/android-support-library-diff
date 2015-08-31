@@ -1,0 +1,5 @@
+diff -U 0 -N mediarouter-v7-19.1.0_cc5a3bfe/android.support.v7.app.MediaRouteChooserDialog mediarouter-v7-20.0.0_ab1d2fde/android.support.v7.app.MediaRouteChooserDialog
+--- mediarouter-v7-19.1.0_cc5a3bfe/android.support.v7.app.MediaRouteChooserDialog	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-20.0.0_ab1d2fde/android.support.v7.app.MediaRouteChooserDialog	2015-08-20 23:41:45.000000000 +0900
+@@ -5,0 +6 @@
++  public void onFilterRoutes(java.util.List<android.support.v7.media.MediaRouter$RouteInfo>);

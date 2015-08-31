@@ -1,0 +1,314 @@
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BackgroundSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BackgroundSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BackgroundSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BackgroundSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v17.leanback.app.BackgroundSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.BackgroundSupportFragment();
++  public void onResume();
++  public void onDestroy();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseFrameLayout$OnChildFocusListener leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseFrameLayout$OnChildFocusListener
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseFrameLayout$OnChildFocusListener	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseFrameLayout$OnChildFocusListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public interface android.support.v17.leanback.app.BrowseFrameLayout$OnChildFocusListener {
+-  public abstract boolean onRequestFocusInDescendants(int, android.graphics.Rect);
+-  public abstract void onRequestChildFocus(android.view.View, android.view.View);
+-}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseFrameLayout$OnFocusSearchListener leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseFrameLayout$OnFocusSearchListener
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseFrameLayout$OnFocusSearchListener	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseFrameLayout$OnFocusSearchListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v17.leanback.app.BrowseFrameLayout$OnFocusSearchListener {
+-  public abstract android.view.View onFocusSearch(android.view.View, int);
+-}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,42 @@
++public class android.support.v17.leanback.app.BrowseSupportFragment extends android.support.v4.app.Fragment {
++  public static final int HEADERS_ENABLED;
++  public static final int HEADERS_HIDDEN;
++  public static final int HEADERS_DISABLED;
++  public android.support.v17.leanback.app.BrowseSupportFragment();
++  public static android.os.Bundle createArgs(android.os.Bundle, java.lang.String, int);
++  public void setBrandColor(int);
++  public int getBrandColor();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public android.support.v17.leanback.widget.ObjectAdapter getAdapter();
++  public void setOnItemSelectedListener(android.support.v17.leanback.widget.OnItemSelectedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public android.support.v17.leanback.widget.OnItemViewSelectedListener getOnItemViewSelectedListener();
++  public void setOnItemClickedListener(android.support.v17.leanback.widget.OnItemClickedListener);
++  public android.support.v17.leanback.widget.OnItemClickedListener getOnItemClickedListener();
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void setOnSearchClickedListener(android.view.View$OnClickListener);
++  public void setSearchAffordanceColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
++  public android.support.v17.leanback.widget.SearchOrbView$Colors getSearchAffordanceColors();
++  public void setSearchAffordanceColor(int);
++  public int getSearchAffordanceColor();
++  public void startHeadersTransition(boolean);
++  public boolean isInHeadersTransition();
++  public boolean isShowingHeaders();
++  public void setBrowseTransitionListener(android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener);
++  public void enableRowScaling(boolean);
++  public void onSaveInstanceState(android.os.Bundle);
++  public void onCreate(android.os.Bundle);
++  public void onDestroy();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void setHeaderPresenterSelector(android.support.v17.leanback.widget.PresenterSelector);
++  public void onStart();
++  public final void setHeadersTransitionOnBackEnabled(boolean);
++  public final boolean isHeadersTransitionOnBackEnabled();
++  public void setBadgeDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getBadgeDrawable();
++  public void setTitle(java.lang.String);
++  public java.lang.String getTitle();
++  public void setHeadersState(int);
++  public int getHeadersState();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener {
++  public android.support.v17.leanback.app.BrowseSupportFragment$BrowseTransitionListener();
++  public void onHeadersTransitionStart(boolean);
++  public void onHeadersTransitionStop(boolean);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.DetailsSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.DetailsSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.DetailsSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.DetailsSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,14 @@
++public class android.support.v17.leanback.app.DetailsSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.DetailsSupportFragment();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public android.support.v17.leanback.widget.ObjectAdapter getAdapter();
++  public void setOnItemSelectedListener(android.support.v17.leanback.widget.OnItemSelectedListener);
++  public void setOnItemClickedListener(android.support.v17.leanback.widget.OnItemClickedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public android.support.v17.leanback.widget.OnItemClickedListener getOnItemClickedListener();
++  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void onCreate(android.os.Bundle);
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onStart();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.ErrorSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.ErrorSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.ErrorSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.ErrorSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,21 @@
++public class android.support.v17.leanback.app.ErrorSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.ErrorSupportFragment();
++  public void setBadgeDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getBadgeDrawable();
++  public void setTitle(java.lang.String);
++  public java.lang.String getTitle();
++  public void setDefaultBackground(boolean);
++  public boolean isBackgroundTranslucent();
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getBackgroundDrawable();
++  public void setImageDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getImageDrawable();
++  public void setMessage(java.lang.CharSequence);
++  public java.lang.CharSequence getMessage();
++  public void setButtonText(java.lang.String);
++  public java.lang.String getButtonText();
++  public void setButtonClickListener(android.view.View$OnClickListener);
++  public android.view.View$OnClickListener getButtonClickListener();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onStart();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.HeadersSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.HeadersSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.HeadersSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.HeadersSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v17.leanback.app.HeadersSupportFragment extends android.support.v17.leanback.app.BaseRowSupportFragment {
++  public android.support.v17.leanback.app.HeadersSupportFragment();
++  public void setOnHeaderClickedListener(android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderClickedListener);
++  public void setOnItemSelectedListener(android.support.v17.leanback.widget.OnItemSelectedListener);
++  public void onViewCreated(android.view.View, android.os.Bundle);
++  public void setSelectedPosition(int);
++  public void onDestroyView();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.PlaybackOverlaySupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.PlaybackOverlaySupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,18 @@
++public class android.support.v17.leanback.app.PlaybackOverlaySupportFragment extends android.support.v17.leanback.app.DetailsSupportFragment {
++  public static final int BG_NONE;
++  public static final int BG_DARK;
++  public static final int BG_LIGHT;
++  public android.support.v17.leanback.app.PlaybackOverlaySupportFragment();
++  public void setFadingEnabled(boolean);
++  public boolean isFadingEnabled();
++  public void setFadeCompleteListener(android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener);
++  public android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener getFadeCompleteListener();
++  public void tickle();
++  public void onResume();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public void onCreate(android.os.Bundle);
++  public void setBackgroundType(int);
++  public int getBackgroundType();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onDestroyView();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener {
++  public android.support.v17.leanback.app.PlaybackOverlaySupportFragment$OnFadeCompleteListener();
++  public void onFadeInComplete();
++  public void onFadeOutComplete();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.RowsFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.RowsFragment	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -12,0 +13 @@
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+@@ -16 +16,0 @@
+-  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.RowsSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.RowsSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.RowsSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,17 @@
++public class android.support.v17.leanback.app.RowsSupportFragment extends android.support.v17.leanback.app.BaseRowSupportFragment {
++  public android.support.v17.leanback.app.RowsSupportFragment();
++  public void setOnItemClickedListener(android.support.v17.leanback.widget.OnItemClickedListener);
++  public android.support.v17.leanback.widget.OnItemClickedListener getOnItemClickedListener();
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void setExpand(boolean);
++  public void setOnItemSelectedListener(android.support.v17.leanback.widget.OnItemSelectedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public android.support.v17.leanback.widget.OnItemViewSelectedListener getOnItemViewSelectedListener();
++  public void enableRowScaling(boolean);
++  public void onCreate(android.os.Bundle);
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onViewCreated(android.view.View, android.os.Bundle);
++  public void setSelectedPosition(int);
++  public void onDestroyView();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.SearchSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.SearchSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.SearchSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.SearchSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,27 @@
++public class android.support.v17.leanback.app.SearchSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.SearchSupportFragment();
++  public static android.os.Bundle createArgs(android.os.Bundle, java.lang.String);
++  public static android.os.Bundle createArgs(android.os.Bundle, java.lang.String, java.lang.String);
++  public static android.support.v17.leanback.app.SearchSupportFragment newInstance(java.lang.String);
++  public void onCreate(android.os.Bundle);
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onStart();
++  public void onResume();
++  public void onPause();
++  public void onDestroy();
++  public void startRecognition();
++  public void setSearchResultProvider(android.support.v17.leanback.app.SearchSupportFragment$SearchResultProvider);
++  public void setOnItemSelectedListener(android.support.v17.leanback.widget.OnItemSelectedListener);
++  public void setOnItemClickedListener(android.support.v17.leanback.widget.OnItemClickedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public void setTitle(java.lang.String);
++  public java.lang.String getTitle();
++  public void setBadgeDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getBadgeDrawable();
++  public void displayCompletions(java.util.List<java.lang.String>);
++  public void setSpeechRecognitionCallback(android.support.v17.leanback.widget.SpeechRecognitionCallback);
++  public void setSearchQuery(java.lang.String, boolean);
++  public void setSearchQuery(android.content.Intent, boolean);
++  public android.content.Intent getRecognizerIntent();
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.SearchSupportFragment$SearchResultProvider leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.SearchSupportFragment$SearchResultProvider
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.SearchSupportFragment$SearchResultProvider	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.SearchSupportFragment$SearchResultProvider	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public interface android.support.v17.leanback.app.SearchSupportFragment$SearchResultProvider {
++  public abstract android.support.v17.leanback.widget.ObjectAdapter getResultsAdapter();
++  public abstract boolean onQueryTextChange(java.lang.String);
++  public abstract boolean onQueryTextSubmit(java.lang.String);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.VerticalGridSupportFragment leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.VerticalGridSupportFragment
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.app.VerticalGridSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,27 @@
++public class android.support.v17.leanback.app.VerticalGridSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.VerticalGridSupportFragment();
++  public void setBadgeDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getBadgeDrawable();
++  public void setTitle(java.lang.String);
++  public java.lang.String getTitle();
++  public void setGridPresenter(android.support.v17.leanback.widget.VerticalGridPresenter);
++  public android.support.v17.leanback.widget.VerticalGridPresenter getGridPresenter();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public android.support.v17.leanback.widget.ObjectAdapter getAdapter();
++  public void setOnItemSelectedListener(android.support.v17.leanback.widget.OnItemSelectedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setOnItemClickedListener(android.support.v17.leanback.widget.OnItemClickedListener);
++  public android.support.v17.leanback.widget.OnItemClickedListener getOnItemClickedListener();
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void setOnSearchClickedListener(android.view.View$OnClickListener);
++  public void setSearchAffordanceColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
++  public android.support.v17.leanback.widget.SearchOrbView$Colors getSearchAffordanceColors();
++  public void setSearchAffordanceColor(int);
++  public int getSearchAffordanceColor();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onViewCreated(android.view.View, android.os.Bundle);
++  public void onStart();
++  public void onDestroyView();
++  public void setSelectedPosition(int);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseFrameLayout leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseFrameLayout
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseFrameLayout	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseFrameLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v17.leanback.widget.BrowseFrameLayout extends android.widget.FrameLayout {
++  public android.support.v17.leanback.widget.BrowseFrameLayout(android.content.Context);
++  public android.support.v17.leanback.widget.BrowseFrameLayout(android.content.Context, android.util.AttributeSet);
++  public android.support.v17.leanback.widget.BrowseFrameLayout(android.content.Context, android.util.AttributeSet, int);
++  public void setOnFocusSearchListener(android.support.v17.leanback.widget.BrowseFrameLayout$OnFocusSearchListener);
++  public void setOnChildFocusListener(android.support.v17.leanback.widget.BrowseFrameLayout$OnChildFocusListener);
++  public android.view.View focusSearch(android.view.View, int);
++  public void requestChildFocus(android.view.View, android.view.View);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseFrameLayout$OnChildFocusListener leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseFrameLayout$OnChildFocusListener
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseFrameLayout$OnChildFocusListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseFrameLayout$OnChildFocusListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v17.leanback.widget.BrowseFrameLayout$OnChildFocusListener {
++  public abstract boolean onRequestFocusInDescendants(int, android.graphics.Rect);
++  public abstract void onRequestChildFocus(android.view.View, android.view.View);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseFrameLayout$OnFocusSearchListener leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseFrameLayout$OnFocusSearchListener
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseFrameLayout$OnFocusSearchListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseFrameLayout$OnFocusSearchListener	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.BrowseFrameLayout$OnFocusSearchListener {
++  public abstract android.view.View onFocusSearch(android.view.View, int);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseRowsFrameLayout leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseRowsFrameLayout
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.BrowseRowsFrameLayout	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.BrowseRowsFrameLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.widget.BrowseRowsFrameLayout extends android.widget.FrameLayout {
++  public android.support.v17.leanback.widget.BrowseRowsFrameLayout(android.content.Context);
++  public android.support.v17.leanback.widget.BrowseRowsFrameLayout(android.content.Context, android.util.AttributeSet);
++  public android.support.v17.leanback.widget.BrowseRowsFrameLayout(android.content.Context, android.util.AttributeSet, int);
++}
+diff -U 0 -N leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.ScaleFrameLayout leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.ScaleFrameLayout
+--- leanback-v17-21.0.0_401ab28e/android.support.v17.leanback.widget.ScaleFrameLayout	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-21.0.2_2c056822/android.support.v17.leanback.widget.ScaleFrameLayout	2015-08-20 23:41:44.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v17.leanback.widget.ScaleFrameLayout extends android.widget.FrameLayout {
++  public android.support.v17.leanback.widget.ScaleFrameLayout(android.content.Context);
++  public android.support.v17.leanback.widget.ScaleFrameLayout(android.content.Context, android.util.AttributeSet);
++  public android.support.v17.leanback.widget.ScaleFrameLayout(android.content.Context, android.util.AttributeSet, int);
++  public void setLayoutScaleX(float);
++  public void setLayoutScaleY(float);
++  public void setForeground(android.graphics.drawable.Drawable);
++}

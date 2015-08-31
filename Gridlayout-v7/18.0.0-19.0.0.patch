@@ -1,0 +1,12 @@
+diff -U 0 -N gridlayout-v7-18.0.0_05eabbfe/android.support.v7.widget.GridLayout gridlayout-v7-19.0.0_8bcae7dc/android.support.v7.widget.GridLayout
+--- gridlayout-v7-18.0.0_05eabbfe/android.support.v7.widget.GridLayout	2015-08-20 23:41:45.000000000 +0900
++++ gridlayout-v7-19.0.0_8bcae7dc/android.support.v7.widget.GridLayout	2015-08-20 23:41:45.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.GridLayout extends android.support.v7.widget.ViewGroup {
++public class android.support.v7.widget.GridLayout extends android.view.ViewGroup {
+@@ -32,0 +33,2 @@
++  public android.util.Printer getPrinter();
++  public void setPrinter(android.util.Printer);
+@@ -35,2 +36,0 @@
+-  public void onInitializeAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
+-  public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo);

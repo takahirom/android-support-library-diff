@@ -1,0 +1,8 @@
+diff -U 0 -N gridlayout-v7-20.0.0_3f092704/android.support.v7.widget.GridLayout gridlayout-v7-21.0.0_2b4942b2/android.support.v7.widget.GridLayout
+--- gridlayout-v7-20.0.0_3f092704/android.support.v7.widget.GridLayout	2015-08-20 23:41:45.000000000 +0900
++++ gridlayout-v7-21.0.0_2b4942b2/android.support.v7.widget.GridLayout	2015-08-20 23:41:45.000000000 +0900
+@@ -36,0 +37,4 @@
++  public static android.support.v7.widget.GridLayout$Spec spec(int, int, android.support.v7.widget.GridLayout$Alignment, float);
++  public static android.support.v7.widget.GridLayout$Spec spec(int, android.support.v7.widget.GridLayout$Alignment, float);
++  public static android.support.v7.widget.GridLayout$Spec spec(int, int, float);
++  public static android.support.v7.widget.GridLayout$Spec spec(int, float);

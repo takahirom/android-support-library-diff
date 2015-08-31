@@ -1,6 +1,6 @@
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.ActionBarActivity appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.ActionBarActivity
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.ActionBarActivity appcompat-v7-22.1.0_4488834a/android.support.v7.app.ActionBarActivity
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.app.ActionBarActivity extends android.support.v4.app.FragmentActivity implements android.support.v7.app.ActionBar$Callback,android.support.v4.app.TaskStackBuilder$SupportParentable,android.support.v4.app.ActionBarDrawerToggle$DelegateProvider,android.support.v7.app.ActionBarDrawerToggle$TmpDelegateProvider {
 +public class android.support.v7.app.ActionBarActivity extends android.support.v7.app.AppCompatActivity {
@@ -42,9 +42,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.ActionBarActivi
 -  public final void onContentChanged();
 -  public void onSupportContentChanged();
 -  public android.view.View onCreateView(java.lang.String, android.content.Context, android.util.AttributeSet);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertController$AlertParams appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertController$AlertParams
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertController$AlertParams	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertController$AlertParams	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertController$AlertParams appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertController$AlertParams
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertController$AlertParams	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertController$AlertParams	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,44 @@
 +public class android.support.v7.app.AlertController$AlertParams {
 +  public final android.content.Context mContext;
@@ -90,16 +90,16 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertController
 +  public android.support.v7.app.AlertController$AlertParams(android.content.Context);
 +  public void apply(android.support.v7.app.AlertController);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v7.app.AlertController$AlertParams$OnPrepareListViewListener {
 +  public abstract void onPrepareListView(android.widget.ListView);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertDialog appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertDialog
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertDialog	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertDialog	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertDialog appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertDialog
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertDialog	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertDialog	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,16 @@
 +public class android.support.v7.app.AlertDialog extends android.support.v7.app.AppCompatDialog implements android.content.DialogInterface {
 +  public android.widget.Button getButton(int);
@@ -117,9 +117,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertDialog app
 +  public boolean onKeyDown(int, android.view.KeyEvent);
 +  public boolean onKeyUp(int, android.view.KeyEvent);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertDialog$Builder appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertDialog$Builder
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertDialog$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AlertDialog$Builder	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertDialog$Builder appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertDialog$Builder
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AlertDialog$Builder	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AlertDialog$Builder	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,42 @@
 +public class android.support.v7.app.AlertDialog$Builder {
 +  public android.support.v7.app.AlertDialog$Builder(android.content.Context);
@@ -163,9 +163,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AlertDialog$Bui
 +  public android.support.v7.app.AlertDialog create();
 +  public android.support.v7.app.AlertDialog show();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatActivity appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatActivity
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatActivity	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatActivity appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatActivity
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatActivity	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,32 @@
 +public class android.support.v7.app.AppCompatActivity extends android.support.v4.app.FragmentActivity implements android.support.v7.app.AppCompatCallback,android.support.v4.app.TaskStackBuilder$SupportParentable,android.support.v7.app.ActionBarDrawerToggle$DelegateProvider {
 +  public android.support.v7.app.AppCompatActivity();
@@ -199,17 +199,17 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatActivi
 +  public android.support.v7.app.ActionBarDrawerToggle$Delegate getDrawerToggleDelegate();
 +  public android.support.v7.app.AppCompatDelegate getDelegate();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatCallback appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatCallback
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatCallback	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatCallback	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatCallback appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatCallback
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatCallback	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatCallback	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,4 @@
 +public interface android.support.v7.app.AppCompatCallback {
 +  public abstract void onSupportActionModeStarted(android.support.v7.view.ActionMode);
 +  public abstract void onSupportActionModeFinished(android.support.v7.view.ActionMode);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatDelegate appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatDelegate
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatDelegate	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatDelegate appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatDelegate
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatDelegate	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,24 @@
 +public abstract class android.support.v7.app.AppCompatDelegate {
 +  public static android.support.v7.app.AppCompatDelegate create(android.app.Activity, android.support.v7.app.AppCompatCallback);
@@ -235,9 +235,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatDelega
 +  public abstract void installViewFactory();
 +  public abstract android.view.View createView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatDialog appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatDialog
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatDialog	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.app.AppCompatDialog	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatDialog appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatDialog
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.app.AppCompatDialog	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.app.AppCompatDialog	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,16 @@
 +public class android.support.v7.app.AppCompatDialog extends android.app.Dialog implements android.support.v7.app.AppCompatCallback {
 +  public android.support.v7.app.AppCompatDialog(android.content.Context);
@@ -255,9 +255,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.app.AppCompatDialog
 +  public void onSupportActionModeStarted(android.support.v7.view.ActionMode);
 +  public void onSupportActionModeFinished(android.support.v7.view.ActionMode);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.graphics.drawable.DrawableWrapper appcompat-v7-22.1.0_0772a5ef/android.support.v7.graphics.drawable.DrawableWrapper
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.graphics.drawable.DrawableWrapper	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.graphics.drawable.DrawableWrapper	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.graphics.drawable.DrawableWrapper appcompat-v7-22.1.0_4488834a/android.support.v7.graphics.drawable.DrawableWrapper
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.graphics.drawable.DrawableWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.graphics.drawable.DrawableWrapper	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,35 @@
 +public class android.support.v7.graphics.drawable.DrawableWrapper extends android.graphics.drawable.Drawable implements android.graphics.drawable.Drawable$Callback {
 +  public android.support.v7.graphics.drawable.DrawableWrapper(android.graphics.drawable.Drawable);
@@ -294,17 +294,17 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.graphics.drawable.D
 +  public android.graphics.drawable.Drawable getWrappedDrawable();
 +  public void setWrappedDrawable(android.graphics.drawable.Drawable);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.AppCompatViewInflater appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.AppCompatViewInflater
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.AppCompatViewInflater	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.AppCompatViewInflater	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.AppCompatViewInflater appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.AppCompatViewInflater
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.AppCompatViewInflater	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.AppCompatViewInflater	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v7.internal.app.AppCompatViewInflater {
 +  public android.support.v7.internal.app.AppCompatViewInflater(android.content.Context);
 +  public final android.view.View createView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet, boolean, boolean);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.ToolbarActionBar appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.ToolbarActionBar
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.ToolbarActionBar appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.ToolbarActionBar
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.ToolbarActionBar	2015-08-20 23:41:44.000000000 +0900
 @@ -2,2 +2,2 @@
 -  public android.support.v7.internal.app.ToolbarActionBar(android.support.v7.widget.Toolbar, java.lang.CharSequence, android.view.Window, android.support.v7.internal.app.WindowCallback);
 -  public android.support.v7.internal.app.WindowCallback getWrappedWindowCallback();
@@ -312,9 +312,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.Toolba
 +  public android.view.Window$Callback getWrappedWindowCallback();
 @@ -25 +24,0 @@
 -  public android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.WindowCallback appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.WindowCallback
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.WindowCallback	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.WindowCallback	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.WindowCallback appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.WindowCallback
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.WindowCallback	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.WindowCallback	1970-01-01 09:00:00.000000000 +0900
 @@ -1,9 +0,0 @@
 -public interface android.support.v7.internal.app.WindowCallback {
 -  public abstract boolean onMenuItemSelected(int, android.view.MenuItem);
@@ -325,15 +325,15 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.Window
 -  public abstract android.support.v7.view.ActionMode startActionMode(android.support.v7.view.ActionMode$Callback);
 -  public abstract android.view.View onCreatePanelView(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.WindowDecorActionBar appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.WindowDecorActionBar
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.app.WindowDecorActionBar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.app.WindowDecorActionBar	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.WindowDecorActionBar appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.WindowDecorActionBar
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.app.WindowDecorActionBar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.app.WindowDecorActionBar	2015-08-20 23:41:44.000000000 +0900
 @@ -2 +2 @@
 -  public android.support.v7.internal.app.WindowDecorActionBar(android.support.v7.app.ActionBarActivity, boolean);
 +  public android.support.v7.internal.app.WindowDecorActionBar(android.app.Activity, boolean);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.ContextThemeWrapper appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.view.ContextThemeWrapper
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.ContextThemeWrapper	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.view.ContextThemeWrapper	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.view.ContextThemeWrapper appcompat-v7-22.1.0_4488834a/android.support.v7.internal.view.ContextThemeWrapper
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.view.ContextThemeWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.view.ContextThemeWrapper	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v7.internal.view.ContextThemeWrapper extends android.content.ContextWrapper {
 +  public android.support.v7.internal.view.ContextThemeWrapper(android.content.Context, int);
@@ -342,9 +342,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.Conte
 +  public android.content.res.Resources$Theme getTheme();
 +  public java.lang.Object getSystemService(java.lang.String);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.WindowCallbackWrapper appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.view.WindowCallbackWrapper
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.WindowCallbackWrapper	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.view.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.view.WindowCallbackWrapper appcompat-v7-22.1.0_4488834a/android.support.v7.internal.view.WindowCallbackWrapper
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.view.WindowCallbackWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.view.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,24 @@
 +public class android.support.v7.internal.view.WindowCallbackWrapper implements android.view.Window$Callback {
 +  public android.support.v7.internal.view.WindowCallbackWrapper(android.view.Window$Callback);
@@ -370,15 +370,15 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.Windo
 +  public void onActionModeStarted(android.view.ActionMode);
 +  public void onActionModeFinished(android.view.ActionMode);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.menu.ActionMenuItemView appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.view.menu.ActionMenuItemView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.view.menu.ActionMenuItemView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.view.menu.ActionMenuItemView	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.view.menu.ActionMenuItemView appcompat-v7-22.1.0_4488834a/android.support.v7.internal.view.menu.ActionMenuItemView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.view.menu.ActionMenuItemView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.view.menu.ActionMenuItemView	2015-08-20 23:41:44.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.internal.view.menu.ActionMenuItemView extends android.support.v7.internal.widget.CompatTextView implements android.support.v7.internal.view.menu.MenuView$ItemView,android.view.View$OnClickListener,android.view.View$OnLongClickListener,android.support.v7.widget.ActionMenuView$ActionMenuChildView {
 +public class android.support.v7.internal.view.menu.ActionMenuItemView extends android.support.v7.widget.AppCompatTextView implements android.support.v7.internal.view.menu.MenuView$ItemView,android.view.View$OnClickListener,android.view.View$OnLongClickListener,android.support.v7.widget.ActionMenuView$ActionMenuChildView {
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ActionBarOverlayLayout appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ActionBarOverlayLayout
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ActionBarOverlayLayout	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ActionBarOverlayLayout	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ActionBarOverlayLayout appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ActionBarOverlayLayout
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ActionBarOverlayLayout	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ActionBarOverlayLayout	2015-08-20 23:41:44.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.internal.widget.ActionBarOverlayLayout extends android.view.ViewGroup implements android.support.v7.internal.widget.DecorContentParent {
 +public class android.support.v7.internal.widget.ActionBarOverlayLayout extends android.view.ViewGroup implements android.support.v7.internal.widget.DecorContentParent,android.support.v4.view.NestedScrollingParent {
@@ -389,18 +389,18 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Act
 @@ -22 +25 @@
 -  public void setWindowCallback(android.support.v7.internal.app.WindowCallback);
 +  public void setWindowCallback(android.view.Window$Callback);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.CompatTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.CompatTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.CompatTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.CompatTextView	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.CompatTextView appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.CompatTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.CompatTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.CompatTextView	1970-01-01 09:00:00.000000000 +0900
 @@ -1,5 +0,0 @@
 -public class android.support.v7.internal.widget.CompatTextView extends android.widget.TextView {
 -  public android.support.v7.internal.widget.CompatTextView(android.content.Context);
 -  public android.support.v7.internal.widget.CompatTextView(android.content.Context, android.util.AttributeSet);
 -  public android.support.v7.internal.widget.CompatTextView(android.content.Context, android.util.AttributeSet, int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ContentFrameLayout appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ContentFrameLayout
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ContentFrameLayout	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ContentFrameLayout	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ContentFrameLayout appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ContentFrameLayout
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ContentFrameLayout	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ContentFrameLayout	2015-08-20 23:41:44.000000000 +0900
 @@ -5,0 +6,7 @@
 +  public void setDecorPadding(int, int, int, int);
 +  public android.util.TypedValue getMinWidthMajor();
@@ -409,38 +409,38 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Con
 +  public android.util.TypedValue getFixedWidthMinor();
 +  public android.util.TypedValue getFixedHeightMajor();
 +  public android.util.TypedValue getFixedHeightMinor();
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DecorContentParent appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DecorContentParent
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DecorContentParent	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DecorContentParent	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DecorContentParent appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DecorContentParent
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DecorContentParent	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DecorContentParent	2015-08-20 23:41:44.000000000 +0900
 @@ -2 +2 @@
 -  public abstract void setWindowCallback(android.support.v7.internal.app.WindowCallback);
 +  public abstract void setWindowCallback(android.view.Window$Callback);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DecorToolbar appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DecorToolbar
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DecorToolbar appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DecorToolbar
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
 @@ -7 +7 @@
 -  public abstract void setWindowCallback(android.support.v7.internal.app.WindowCallback);
 +  public abstract void setWindowCallback(android.view.Window$Callback);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DialogTitle appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DialogTitle
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DialogTitle	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DialogTitle	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DialogTitle appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DialogTitle
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DialogTitle	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DialogTitle	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v7.internal.widget.DialogTitle extends android.widget.TextView {
 +  public android.support.v7.internal.widget.DialogTitle(android.content.Context, android.util.AttributeSet, int);
 +  public android.support.v7.internal.widget.DialogTitle(android.content.Context, android.util.AttributeSet);
 +  public android.support.v7.internal.widget.DialogTitle(android.content.Context);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DrawableUtils appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DrawableUtils
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.DrawableUtils	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.DrawableUtils	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DrawableUtils appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DrawableUtils
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.DrawableUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.DrawableUtils	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v7.internal.widget.DrawableUtils {
 +  public static final android.graphics.Rect INSETS_NONE;
 +  public static android.graphics.Rect getOpticalBounds(android.graphics.drawable.Drawable);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ThemeUtils appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ThemeUtils
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ThemeUtils	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ThemeUtils	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ThemeUtils appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ThemeUtils
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ThemeUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ThemeUtils	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v7.internal.widget.ThemeUtils {
 +  public android.support.v7.internal.widget.ThemeUtils();
@@ -449,9 +449,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.The
 +  public static android.content.res.ColorStateList getThemeAttrColorStateList(android.content.Context, int);
 +  public static int getDisabledThemeAttrColor(android.content.Context, int);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintAutoCompleteTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintAutoCompleteTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintAutoCompleteTextView appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintAutoCompleteTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.TintAutoCompleteTextView extends android.widget.AutoCompleteTextView {
 -  public android.support.v7.internal.widget.TintAutoCompleteTextView(android.content.Context);
@@ -459,9 +459,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 -  public android.support.v7.internal.widget.TintAutoCompleteTextView(android.content.Context, android.util.AttributeSet, int);
 -  public void setDropDownBackgroundResource(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintButton appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintButton
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintButton	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintButton	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintButton appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintButton
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintButton	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintButton	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.TintButton extends android.widget.Button {
 -  public android.support.v7.internal.widget.TintButton(android.content.Context);
@@ -469,9 +469,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 -  public android.support.v7.internal.widget.TintButton(android.content.Context, android.util.AttributeSet, int);
 -  public void setBackgroundResource(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintCheckBox appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintCheckBox
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintCheckBox	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintCheckBox	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintCheckBox appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintCheckBox
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintCheckBox	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintCheckBox	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.TintCheckBox extends android.widget.CheckBox {
 -  public android.support.v7.internal.widget.TintCheckBox(android.content.Context);
@@ -479,9 +479,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 -  public android.support.v7.internal.widget.TintCheckBox(android.content.Context, android.util.AttributeSet, int);
 -  public void setButtonDrawable(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintCheckedTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintCheckedTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintCheckedTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintCheckedTextView	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintCheckedTextView appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintCheckedTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintCheckedTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintCheckedTextView	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.TintCheckedTextView extends android.widget.CheckedTextView {
 -  public android.support.v7.internal.widget.TintCheckedTextView(android.content.Context);
@@ -489,26 +489,26 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 -  public android.support.v7.internal.widget.TintCheckedTextView(android.content.Context, android.util.AttributeSet, int);
 -  public void setCheckMarkDrawable(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintContextWrapper appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintContextWrapper
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintContextWrapper	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintContextWrapper	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintContextWrapper appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintContextWrapper
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintContextWrapper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintContextWrapper	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v7.internal.widget.TintContextWrapper extends android.content.ContextWrapper {
 +  public static android.content.Context wrap(android.content.Context);
 +  public android.content.res.Resources getResources();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintEditText appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintEditText
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintEditText	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintEditText	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintEditText appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintEditText
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintEditText	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintEditText	1970-01-01 09:00:00.000000000 +0900
 @@ -1,5 +0,0 @@
 -public class android.support.v7.internal.widget.TintEditText extends android.widget.EditText {
 -  public android.support.v7.internal.widget.TintEditText(android.content.Context);
 -  public android.support.v7.internal.widget.TintEditText(android.content.Context, android.util.AttributeSet);
 -  public android.support.v7.internal.widget.TintEditText(android.content.Context, android.util.AttributeSet, int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintInfo appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintInfo
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintInfo	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintInfo	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintInfo appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintInfo
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintInfo	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintInfo	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v7.internal.widget.TintInfo {
 +  public android.content.res.ColorStateList mTintList;
@@ -517,9 +517,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 +  public boolean mHasTintList;
 +  public android.support.v7.internal.widget.TintInfo();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintManager appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintManager
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintManager	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintManager	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintManager appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintManager
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintManager	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintManager	2015-08-20 23:41:44.000000000 +0900
 @@ -1 +1,2 @@
 -public class android.support.v7.internal.widget.TintManager {
 +public final class android.support.v7.internal.widget.TintManager {
@@ -532,9 +532,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 +  public final boolean tintDrawableUsingColorFilter(int, android.graphics.drawable.Drawable);
 +  public final android.content.res.ColorStateList getTintList(int);
 +  public static void tintViewBackground(android.view.View, android.support.v7.internal.widget.TintInfo);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintMultiAutoCompleteTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintMultiAutoCompleteTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintMultiAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintMultiAutoCompleteTextView appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintMultiAutoCompleteTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintMultiAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.TintMultiAutoCompleteTextView extends android.widget.MultiAutoCompleteTextView {
 -  public android.support.v7.internal.widget.TintMultiAutoCompleteTextView(android.content.Context);
@@ -542,9 +542,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 -  public android.support.v7.internal.widget.TintMultiAutoCompleteTextView(android.content.Context, android.util.AttributeSet, int);
 -  public void setDropDownBackgroundResource(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintRadioButton appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintRadioButton
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintRadioButton	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintRadioButton	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintRadioButton appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintRadioButton
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintRadioButton	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintRadioButton	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.TintRadioButton extends android.widget.RadioButton {
 -  public android.support.v7.internal.widget.TintRadioButton(android.content.Context);
@@ -552,43 +552,43 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.Tin
 -  public android.support.v7.internal.widget.TintRadioButton(android.content.Context, android.util.AttributeSet, int);
 -  public void setButtonDrawable(int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintRatingBar appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintRatingBar
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintRatingBar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintRatingBar	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintRatingBar appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintRatingBar
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintRatingBar	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintRatingBar	1970-01-01 09:00:00.000000000 +0900
 @@ -1,5 +0,0 @@
 -public class android.support.v7.internal.widget.TintRatingBar extends android.widget.RatingBar {
 -  public android.support.v7.internal.widget.TintRatingBar(android.content.Context);
 -  public android.support.v7.internal.widget.TintRatingBar(android.content.Context, android.util.AttributeSet);
 -  public android.support.v7.internal.widget.TintRatingBar(android.content.Context, android.util.AttributeSet, int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintSpinner appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintSpinner
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintSpinner	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintSpinner	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintSpinner appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintSpinner
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintSpinner	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintSpinner	1970-01-01 09:00:00.000000000 +0900
 @@ -1,5 +0,0 @@
 -public class android.support.v7.internal.widget.TintSpinner extends android.widget.Spinner {
 -  public android.support.v7.internal.widget.TintSpinner(android.content.Context);
 -  public android.support.v7.internal.widget.TintSpinner(android.content.Context, android.util.AttributeSet);
 -  public android.support.v7.internal.widget.TintSpinner(android.content.Context, android.util.AttributeSet, int);
 -}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintTypedArray appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintTypedArray
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.TintTypedArray	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.TintTypedArray	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintTypedArray appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintTypedArray
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.TintTypedArray	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.TintTypedArray	2015-08-20 23:41:44.000000000 +0900
 @@ -4,0 +5 @@
 +  public android.graphics.drawable.Drawable getDrawableIfKnown(int);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ToolbarWidgetWrapper appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ToolbarWidgetWrapper
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ToolbarWidgetWrapper appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ToolbarWidgetWrapper
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
 @@ -11 +11 @@
 -  public void setWindowCallback(android.support.v7.internal.app.WindowCallback);
 +  public void setWindowCallback(android.view.Window$Callback);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ViewUtils appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ViewUtils
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ViewUtils appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ViewUtils
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.internal.widget.ViewUtils	2015-08-20 23:41:44.000000000 +0900
 @@ -5,0 +6 @@
 +  public static android.content.Context themifyContext(android.content.Context, android.util.AttributeSet, boolean, boolean);
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatAutoCompleteTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatAutoCompleteTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatAutoCompleteTextView appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatAutoCompleteTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,10 @@
 +public class android.support.v7.widget.AppCompatAutoCompleteTextView extends android.widget.AutoCompleteTextView implements android.support.v4.view.TintableBackgroundView {
 +  public android.support.v7.widget.AppCompatAutoCompleteTextView(android.content.Context);
@@ -600,9 +600,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatAut
 +  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
 +  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatButton appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatButton
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatButton	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatButton appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatButton
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatButton	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,13 @@
 +public class android.support.v7.widget.AppCompatButton extends android.widget.Button implements android.support.v4.view.TintableBackgroundView {
 +  public android.support.v7.widget.AppCompatButton(android.content.Context);
@@ -617,9 +617,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatBut
 +  public void setAllCaps(boolean);
 +  public void setTextAppearance(android.content.Context, int);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatCheckBox appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatCheckBox
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatCheckBox	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatCheckBox	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatCheckBox appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatCheckBox
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatCheckBox	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatCheckBox	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,8 @@
 +public class android.support.v7.widget.AppCompatCheckBox extends android.widget.CheckBox {
 +  public android.support.v7.widget.AppCompatCheckBox(android.content.Context);
@@ -629,9 +629,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatChe
 +  public void setButtonDrawable(int);
 +  public int getCompoundPaddingLeft();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatCheckedTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatCheckedTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatCheckedTextView	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatCheckedTextView	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatCheckedTextView appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatCheckedTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatCheckedTextView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatCheckedTextView	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v7.widget.AppCompatCheckedTextView extends android.widget.CheckedTextView {
 +  public android.support.v7.widget.AppCompatCheckedTextView(android.content.Context);
@@ -639,9 +639,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatChe
 +  public android.support.v7.widget.AppCompatCheckedTextView(android.content.Context, android.util.AttributeSet, int);
 +  public void setCheckMarkDrawable(int);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatEditText appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatEditText
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatEditText	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatEditText appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatEditText
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatEditText	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v7.widget.AppCompatEditText extends android.widget.EditText implements android.support.v4.view.TintableBackgroundView {
 +  public android.support.v7.widget.AppCompatEditText(android.content.Context);
@@ -652,9 +652,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatEdi
 +  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
 +  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatMultiAutoCompleteTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatMultiAutoCompleteTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatMultiAutoCompleteTextView appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,10 @@
 +public class android.support.v7.widget.AppCompatMultiAutoCompleteTextView extends android.widget.MultiAutoCompleteTextView implements android.support.v4.view.TintableBackgroundView {
 +  public android.support.v7.widget.AppCompatMultiAutoCompleteTextView(android.content.Context);
@@ -666,9 +666,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatMul
 +  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
 +  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatRadioButton appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatRadioButton
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatRadioButton	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatRadioButton	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatRadioButton appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatRadioButton
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatRadioButton	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatRadioButton	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,8 @@
 +public class android.support.v7.widget.AppCompatRadioButton extends android.widget.RadioButton {
 +  public android.support.v7.widget.AppCompatRadioButton(android.content.Context);
@@ -678,18 +678,18 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatRad
 +  public void setButtonDrawable(int);
 +  public int getCompoundPaddingLeft();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatRatingBar appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatRatingBar
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatRatingBar	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatRatingBar	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatRatingBar appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatRatingBar
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatRatingBar	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatRatingBar	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v7.widget.AppCompatRatingBar extends android.widget.RatingBar {
 +  public android.support.v7.widget.AppCompatRatingBar(android.content.Context);
 +  public android.support.v7.widget.AppCompatRatingBar(android.content.Context, android.util.AttributeSet);
 +  public android.support.v7.widget.AppCompatRatingBar(android.content.Context, android.util.AttributeSet, int);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatSpinner appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatSpinner
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatSpinner	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatSpinner appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatSpinner
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatSpinner	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v7.widget.AppCompatSpinner extends android.widget.Spinner implements android.support.v4.view.TintableBackgroundView {
 +  public android.support.v7.widget.AppCompatSpinner(android.content.Context);
@@ -700,9 +700,9 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatSpi
 +  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
 +  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatTextView appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatTextView
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatTextView	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.AppCompatTextView	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatTextView appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatTextView
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.AppCompatTextView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.AppCompatTextView	2015-08-20 23:41:44.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v7.widget.AppCompatTextView extends android.widget.TextView {
 +  public android.support.v7.widget.AppCompatTextView(android.content.Context);
@@ -711,15 +711,15 @@ diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.AppCompatTex
 +  public void setAllCaps(boolean);
 +  public void setTextAppearance(android.content.Context, int);
 +}
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.SearchView$SearchAutoComplete appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.SearchView$SearchAutoComplete
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.SearchView$SearchAutoComplete	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.SearchView$SearchAutoComplete	2015-08-20 23:41:44.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.SearchView$SearchAutoComplete appcompat-v7-22.1.0_4488834a/android.support.v7.widget.SearchView$SearchAutoComplete
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.SearchView$SearchAutoComplete	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.SearchView$SearchAutoComplete	2015-08-20 23:41:44.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.SearchView$SearchAutoComplete extends android.support.v7.internal.widget.TintAutoCompleteTextView {
 +public class android.support.v7.widget.SearchView$SearchAutoComplete extends android.support.v7.widget.AppCompatAutoCompleteTextView {
-diff -U 0 -N appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.WindowCallbackWrapper appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.WindowCallbackWrapper
---- appcompat-v7-22.0.0_6bfba991/android.support.v7.widget.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-22.1.0_0772a5ef/android.support.v7.widget.WindowCallbackWrapper	1970-01-01 09:00:00.000000000 +0900
+diff -U 0 -N appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.WindowCallbackWrapper appcompat-v7-22.1.0_4488834a/android.support.v7.widget.WindowCallbackWrapper
+--- appcompat-v7-22.0.0_1abd6836/android.support.v7.widget.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-22.1.0_4488834a/android.support.v7.widget.WindowCallbackWrapper	1970-01-01 09:00:00.000000000 +0900
 @@ -1,10 +0,0 @@
 -public class android.support.v7.widget.WindowCallbackWrapper implements android.support.v7.internal.app.WindowCallback {
 -  public android.support.v7.widget.WindowCallbackWrapper(android.support.v7.internal.app.WindowCallback);
