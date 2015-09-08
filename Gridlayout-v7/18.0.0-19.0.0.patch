@@ -1,6 +1,6 @@
 diff -U 0 -N gridlayout-v7-18.0.0_05eabbfe/android.support.v7.widget.GridLayout gridlayout-v7-19.0.0_8bcae7dc/android.support.v7.widget.GridLayout
---- gridlayout-v7-18.0.0_05eabbfe/android.support.v7.widget.GridLayout	2015-08-20 23:41:45.000000000 +0900
-+++ gridlayout-v7-19.0.0_8bcae7dc/android.support.v7.widget.GridLayout	2015-08-20 23:41:45.000000000 +0900
+--- gridlayout-v7-18.0.0_05eabbfe/android.support.v7.widget.GridLayout	2015-09-05 18:52:11.000000000 +0900
++++ gridlayout-v7-19.0.0_8bcae7dc/android.support.v7.widget.GridLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.GridLayout extends android.support.v7.widget.ViewGroup {
 +public class android.support.v7.widget.GridLayout extends android.view.ViewGroup {

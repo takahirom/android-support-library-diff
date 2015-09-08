@@ -1,6 +1,6 @@
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$BatchedCallback<T2> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$BatchedCallback<T2>
 --- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$BatchedCallback<T2>	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$BatchedCallback<T2>	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$BatchedCallback<T2>	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,11 @@
 +public class android.support.v7.util.SortedList$BatchedCallback<T2> extends android.support.v7.util.SortedList$Callback<T2> {
 +  public android.support.v7.util.SortedList$BatchedCallback(android.support.v7.util.SortedList$Callback<T2>);
@@ -15,7 +15,7 @@ diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$
 +}
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$Callback<T2> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$Callback<T2>
 --- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$Callback<T2>	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$Callback<T2>	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList$Callback<T2>	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,10 @@
 +public abstract class android.support.v7.util.SortedList$Callback<T2> {
 +  public android.support.v7.util.SortedList$Callback();
@@ -29,7 +29,7 @@ diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList$
 +}
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList<T> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList<T>
 --- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList<T>	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList<T>	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.util.SortedList<T>	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,15 @@
 +public class android.support.v7.util.SortedList<T> {
 +  public static final int INVALID_POSITION;
@@ -47,8 +47,8 @@ diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.util.SortedList<
 +  public int indexOf(T);
 +}
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView
---- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.RecyclerView extends android.view.ViewGroup {
 +public class android.support.v7.widget.RecyclerView extends android.view.ViewGroup implements android.support.v4.view.ScrollingView {
@@ -74,8 +74,8 @@ diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerV
 +  public void onScrollStateChanged(int);
 +  public boolean hasPendingAdapterUpdates();
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$LayoutManager
---- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutManager	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$LayoutManager	2015-09-05 18:52:08.000000000 +0900
 @@ -6,0 +7,3 @@
 +  public boolean isAttachedToWindow();
 +  public void postOnAnimation(java.lang.Runnable);
@@ -83,13 +83,13 @@ diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerV
 @@ -32,0 +36 @@
 +  public int getBaseline();
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$State recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$State
---- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$State	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$State	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$State	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.RecyclerView$State	2015-09-05 18:52:08.000000000 +0900
 @@ -13 +12,0 @@
 -  public void onViewRecycled(android.support.v7.widget.RecyclerView$ViewHolder);
 diff -U 0 -N recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.util.SortedListAdapterCallback<T2> recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.util.SortedListAdapterCallback<T2>
 --- recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.util.SortedListAdapterCallback<T2>	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.util.SortedListAdapterCallback<T2>	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.1.0_c98fc10a/android.support.v7.widget.util.SortedListAdapterCallback<T2>	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,7 @@
 +public abstract class android.support.v7.widget.util.SortedListAdapterCallback<T2> extends android.support.v7.util.SortedList$Callback<T2> {
 +  public android.support.v7.widget.util.SortedListAdapterCallback(android.support.v7.widget.RecyclerView$Adapter);

@@ -1,14 +1,14 @@
 diff -U 0 -N recyclerview-v7-21.0.0_cbb718fa/android.support.v7.widget.RecyclerView recyclerview-v7-21.0.2_09059f3a/android.support.v7.widget.RecyclerView
---- recyclerview-v7-21.0.0_cbb718fa/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-21.0.2_09059f3a/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.0_cbb718fa/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-21.0.2_09059f3a/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
 @@ -6,0 +7,2 @@
 +  public static final int TOUCH_SLOP_DEFAULT;
 +  public static final int TOUCH_SLOP_PAGING;
 @@ -17,0 +20 @@
 +  public void setScrollingTouchSlop(int);
 diff -U 0 -N recyclerview-v7-21.0.0_cbb718fa/android.support.v7.widget.RecyclerView$Adapter<VH recyclerview-v7-21.0.2_09059f3a/android.support.v7.widget.RecyclerView$Adapter<VH
---- recyclerview-v7-21.0.0_cbb718fa/android.support.v7.widget.RecyclerView$Adapter<VH	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-21.0.2_09059f3a/android.support.v7.widget.RecyclerView$Adapter<VH	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.0_cbb718fa/android.support.v7.widget.RecyclerView$Adapter<VH	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-21.0.2_09059f3a/android.support.v7.widget.RecyclerView$Adapter<VH	2015-09-05 18:52:08.000000000 +0900
 @@ -17,0 +18,2 @@
 +  public void onAttachedToRecyclerView(android.support.v7.widget.RecyclerView);
 +  public void onDetachedFromRecyclerView(android.support.v7.widget.RecyclerView);

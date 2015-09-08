@@ -1,29 +1,29 @@
 diff -U 0 -N recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList$Callback<T2> recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.SortedList$Callback<T2>
---- recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList$Callback<T2>	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.SortedList$Callback<T2>	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList$Callback<T2>	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.SortedList$Callback<T2>	2015-09-05 18:52:08.000000000 +0900
 @@ -1 +1 @@
 -public abstract class android.support.v7.util.SortedList$Callback<T2> {
 +public abstract class android.support.v7.util.SortedList$Callback<T2> implements java.util.Comparator<T2> {
 diff -U 0 -N recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList<T> recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.SortedList<T>
---- recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList<T>	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.SortedList<T>	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList<T>	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.util.SortedList<T>	2015-09-05 18:52:08.000000000 +0900
 @@ -6,0 +7,3 @@
 +  public void addAll(T[], boolean);
 +  public void addAll(T...);
 +  public void addAll(java.util.Collection<T>);
 diff -U 0 -N recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView
---- recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
 @@ -70,0 +71 @@
 +  public boolean isComputingLayout();
 diff -U 0 -N recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener
---- recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	2015-09-05 18:52:08.000000000 +0900
 @@ -2 +2 @@
 -  public android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener(android.support.v7.widget.RecyclerView);
 +  public android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener();
 diff -U 0 -N recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SmoothScroller$Action recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$SmoothScroller$Action
---- recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SmoothScroller$Action	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$SmoothScroller$Action	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SmoothScroller$Action	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.1_2cf38ee6/android.support.v7.widget.RecyclerView$SmoothScroller$Action	2015-09-05 18:52:08.000000000 +0900
 @@ -5,0 +6 @@
 +  public void jumpTo(int);

@@ -1,6 +1,6 @@
 diff -U 0 -N mediarouter-v7-19.0.1_4604863a/android.support.v7.mediarouter.BuildConfig mediarouter-v7-19.1.0_cc5a3bfe/android.support.v7.mediarouter.BuildConfig
 --- mediarouter-v7-19.0.1_4604863a/android.support.v7.mediarouter.BuildConfig	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.1.0_cc5a3bfe/android.support.v7.mediarouter.BuildConfig	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.1.0_cc5a3bfe/android.support.v7.mediarouter.BuildConfig	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,9 @@
 +public final class android.support.v7.mediarouter.BuildConfig {
 +  public static final boolean DEBUG;

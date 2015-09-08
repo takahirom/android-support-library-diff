@@ -1,0 +1,9 @@
+diff -U 0 -N support-v4-23.0.0_c65229c2/android.support.v4.app.BundleCompat support-v4-23.0.1_f17955e2/android.support.v4.app.BundleCompat
+--- support-v4-23.0.0_c65229c2/android.support.v4.app.BundleCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.0.1_f17955e2/android.support.v4.app.BundleCompat	2015-09-05 18:52:10.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v4.app.BundleCompat {
++  public android.support.v4.app.BundleCompat();
++  public static android.os.IBinder getBinder(android.os.Bundle, java.lang.String);
++  public static void putBinder(android.os.Bundle, java.lang.String, android.os.IBinder);
++}

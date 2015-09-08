@@ -1,0 +1,5 @@
+diff -U 0 -N customtabs-23.0.0_4c0e9d7e/android.support.customtabs.CustomTabsSessionToken customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsSessionToken
+--- customtabs-23.0.0_4c0e9d7e/android.support.customtabs.CustomTabsSessionToken	2015-09-05 18:52:11.000000000 +0900
++++ customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsSessionToken	2015-09-05 18:52:11.000000000 +0900
+@@ -1,0 +2 @@
++  public static android.support.customtabs.CustomTabsSessionToken getSessionTokenFromIntent(android.content.Intent);

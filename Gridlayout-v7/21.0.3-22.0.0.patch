@@ -1,6 +1,6 @@
 diff -U 0 -N gridlayout-v7-21.0.3_75716e64/android.support.v7.gridlayout.BuildConfig gridlayout-v7-22.0.0_4d687404/android.support.v7.gridlayout.BuildConfig
---- gridlayout-v7-21.0.3_75716e64/android.support.v7.gridlayout.BuildConfig	2015-08-20 23:41:45.000000000 +0900
-+++ gridlayout-v7-22.0.0_4d687404/android.support.v7.gridlayout.BuildConfig	2015-08-20 23:41:45.000000000 +0900
+--- gridlayout-v7-21.0.3_75716e64/android.support.v7.gridlayout.BuildConfig	2015-09-05 18:52:11.000000000 +0900
++++ gridlayout-v7-22.0.0_4d687404/android.support.v7.gridlayout.BuildConfig	2015-09-05 18:52:11.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;

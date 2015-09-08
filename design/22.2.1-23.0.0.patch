@@ -1,21 +1,21 @@
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenu design-23.0.0_f864480a/android.support.design.internal.NavigationMenu
 --- design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenu	1970-01-01 09:00:00.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.internal.NavigationMenu	2015-08-20 23:41:45.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.internal.NavigationMenu	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.design.internal.NavigationMenu extends android.support.v7.internal.view.menu.MenuBuilder {
 +  public android.support.design.internal.NavigationMenu(android.content.Context);
 +  public android.view.SubMenu addSubMenu(int, int, int, java.lang.CharSequence);
 +}
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenuPresenter design-23.0.0_f864480a/android.support.design.internal.NavigationMenuPresenter
---- design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenuPresenter	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.internal.NavigationMenuPresenter	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenuPresenter	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.internal.NavigationMenuPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -16,0 +17 @@
 +  public void setCheckedItem(android.support.v7.internal.view.menu.MenuItemImpl);
 @@ -23,0 +25 @@
 +  public void setItemTextAppearance(int);
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.internal.NavigationSubMenu design-23.0.0_f864480a/android.support.design.internal.NavigationSubMenu
 --- design-22.2.1_f6b6ef86/android.support.design.internal.NavigationSubMenu	1970-01-01 09:00:00.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.internal.NavigationSubMenu	2015-08-20 23:41:45.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.internal.NavigationSubMenu	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.design.internal.NavigationSubMenu extends android.support.v7.internal.view.menu.SubMenuBuilder {
 +  public android.support.design.internal.NavigationSubMenu(android.content.Context, android.support.design.internal.NavigationMenu, android.support.v7.internal.view.menu.MenuItemImpl);
@@ -25,14 +25,14 @@ diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.internal.NavigationSu
 +  public android.view.MenuItem add(int, int, int, int);
 +}
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout design-23.0.0_f864480a/android.support.design.widget.AppBarLayout
---- design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.AppBarLayout	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.AppBarLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -6,0 +7,2 @@
 +  public void setExpanded(boolean);
 +  public void setExpanded(boolean, boolean);
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout$Behavior design-23.0.0_f864480a/android.support.design.widget.AppBarLayout$Behavior
---- design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout$Behavior	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.AppBarLayout$Behavior	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout$Behavior	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.AppBarLayout$Behavior	2015-09-05 18:52:11.000000000 +0900
 @@ -7,0 +8,2 @@
 +  public boolean onInterceptTouchEvent(android.support.design.widget.CoordinatorLayout, android.support.design.widget.AppBarLayout, android.view.MotionEvent);
 +  public boolean onTouchEvent(android.support.design.widget.CoordinatorLayout, android.support.design.widget.AppBarLayout, android.view.MotionEvent);
@@ -40,8 +40,8 @@ diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.AppBarLayout$B
 +  public boolean onTouchEvent(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.MotionEvent);
 +  public boolean onInterceptTouchEvent(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.MotionEvent);
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.CollapsingToolbarLayout design-23.0.0_f864480a/android.support.design.widget.CollapsingToolbarLayout
---- design-22.2.1_f6b6ef86/android.support.design.widget.CollapsingToolbarLayout	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.CollapsingToolbarLayout	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.CollapsingToolbarLayout	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.CollapsingToolbarLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -6,0 +7,3 @@
 +  public java.lang.CharSequence getTitle();
 +  public void setTitleEnabled(boolean);
@@ -53,14 +53,14 @@ diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.CollapsingTool
 +  public void setExpandedTitleGravity(int);
 +  public int getExpandedTitleGravity();
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.NavigationView design-23.0.0_f864480a/android.support.design.widget.NavigationView
---- design-22.2.1_f6b6ef86/android.support.design.widget.NavigationView	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.NavigationView	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.NavigationView	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.NavigationView	2015-09-05 18:52:11.000000000 +0900
 @@ -17,0 +18,2 @@
 +  public void setCheckedItem(int);
 +  public void setItemTextAppearance(int);
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar design-23.0.0_f864480a/android.support.design.widget.Snackbar
---- design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.Snackbar	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.Snackbar	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.design.widget.Snackbar {
 +public final class android.support.design.widget.Snackbar {
@@ -69,7 +69,7 @@ diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar desig
 +  public boolean isShown();
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar$Callback design-23.0.0_f864480a/android.support.design.widget.Snackbar$Callback
 --- design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar$Callback	1970-01-01 09:00:00.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.Snackbar$Callback	2015-08-20 23:41:45.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.Snackbar$Callback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,10 @@
 +public abstract class android.support.design.widget.Snackbar$Callback {
 +  public static final int DISMISS_EVENT_SWIPE;
@@ -83,24 +83,24 @@ diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar$Callb
 +}
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar$Callback$DismissEvent design-23.0.0_f864480a/android.support.design.widget.Snackbar$Callback$DismissEvent
 --- design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar$Callback$DismissEvent	1970-01-01 09:00:00.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.Snackbar$Callback$DismissEvent	2015-08-20 23:41:45.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.Snackbar$Callback$DismissEvent	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,2 @@
 +public interface android.support.design.widget.Snackbar$Callback$DismissEvent extends java.lang.annotation.Annotation {
 +}
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout design-23.0.0_f864480a/android.support.design.widget.TabLayout
---- design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.TabLayout	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.TabLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -8,0 +9,2 @@
 +  public void setSelectedTabIndicatorColor(int);
 +  public void setSelectedTabIndicatorHeight(int);
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout$Tab design-23.0.0_f864480a/android.support.design.widget.TabLayout$Tab
---- design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout$Tab	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.TabLayout$Tab	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout$Tab	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.TabLayout$Tab	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5 @@
 +  public android.view.View getCustomView();
 diff -U 0 -N design-22.2.1_f6b6ef86/android.support.design.widget.TextInputLayout design-23.0.0_f864480a/android.support.design.widget.TextInputLayout
---- design-22.2.1_f6b6ef86/android.support.design.widget.TextInputLayout	2015-08-20 23:41:45.000000000 +0900
-+++ design-23.0.0_f864480a/android.support.design.widget.TextInputLayout	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.1_f6b6ef86/android.support.design.widget.TextInputLayout	2015-09-05 18:52:11.000000000 +0900
++++ design-23.0.0_f864480a/android.support.design.widget.TextInputLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -3,0 +4 @@
 +  public android.support.design.widget.TextInputLayout(android.content.Context, android.util.AttributeSet, int);
 @@ -4,0 +6 @@

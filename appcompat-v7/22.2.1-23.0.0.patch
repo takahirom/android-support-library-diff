@@ -1,12 +1,12 @@
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatActivity appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatActivity
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatActivity	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatActivity	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatActivity	2015-09-05 18:52:11.000000000 +0900
 @@ -31,0 +32,2 @@
 +  public boolean onMenuOpened(int, android.view.Menu);
 +  public void onPanelClosed(int, android.view.Menu);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDelegate appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatDelegate
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatDelegate	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDelegate	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatDelegate	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2,3 @@
 +  public static final int FEATURE_SUPPORT_ACTION_BAR;
 +  public static final int FEATURE_SUPPORT_ACTION_BAR_OVERLAY;
@@ -15,7 +15,7 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDelega
 +  public abstract boolean hasWindowFeature(int);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDialogFragment appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatDialogFragment
 --- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDialogFragment	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatDialogFragment	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.app.AppCompatDialogFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v7.app.AppCompatDialogFragment extends android.support.v4.app.DialogFragment {
 +  public android.support.v7.app.AppCompatDialogFragment();
@@ -24,7 +24,7 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.app.AppCompatDialog
 +}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.DrawableUtils appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawableUtils
 --- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.DrawableUtils	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawableUtils	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawableUtils	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v7.graphics.drawable.DrawableUtils {
 +  public android.support.v7.graphics.drawable.DrawableUtils();
@@ -32,7 +32,7 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.D
 +}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.DrawerArrowDrawable appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawerArrowDrawable
 --- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.DrawerArrowDrawable	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawerArrowDrawable	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawerArrowDrawable	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,32 @@
 +public class android.support.v7.graphics.drawable.DrawerArrowDrawable extends android.graphics.drawable.Drawable {
 +  public static final int ARROW_DIRECTION_LEFT;
@@ -68,40 +68,40 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.D
 +}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection
 --- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,2 @@
 +public interface android.support.v7.graphics.drawable.DrawerArrowDrawable$ArrowDirection extends java.lang.annotation.Annotation {
 +}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.ContextThemeWrapper appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.ContextThemeWrapper
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.ContextThemeWrapper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.ContextThemeWrapper	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.ContextThemeWrapper	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.ContextThemeWrapper	2015-09-05 18:52:11.000000000 +0900
 @@ -2,0 +3 @@
 +  public android.support.v7.internal.view.ContextThemeWrapper(android.content.Context, android.content.res.Resources$Theme);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.ViewPropertyAnimatorCompatSet	2015-09-05 18:52:11.000000000 +0900
 @@ -3,0 +4 @@
 +  public android.support.v7.internal.view.ViewPropertyAnimatorCompatSet playSequentially(android.support.v4.view.ViewPropertyAnimatorCompat, android.support.v4.view.ViewPropertyAnimatorCompat);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.WindowCallbackWrapper appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.WindowCallbackWrapper
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.WindowCallbackWrapper	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.WindowCallbackWrapper	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.WindowCallbackWrapper	2015-09-05 18:52:11.000000000 +0900
 @@ -19,0 +20 @@
 +  public boolean onSearchRequested(android.view.SearchEvent);
 @@ -21,0 +23 @@
 +  public android.view.ActionMode onWindowStartingActionMode(android.view.ActionMode$Callback, int);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.menu.MenuItemImpl appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.menu.MenuItemImpl
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.menu.MenuItemImpl	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.menu.MenuItemImpl	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.menu.MenuItemImpl	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.menu.MenuItemImpl	2015-09-05 18:52:11.000000000 +0900
 @@ -18,0 +19 @@
 +  public void setSubMenu(android.support.v7.internal.view.menu.SubMenuBuilder);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.menu.MenuPopupHelper appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.menu.MenuPopupHelper
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.menu.MenuPopupHelper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.menu.MenuPopupHelper	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.view.menu.MenuPopupHelper	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.view.menu.MenuPopupHelper	2015-09-05 18:52:11.000000000 +0900
 @@ -8,0 +9 @@
 +  public int getGravity();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ActionBarContextView appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ActionBarContextView
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ActionBarContextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ActionBarContextView	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ActionBarContextView	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ActionBarContextView	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.internal.widget.ActionBarContextView extends android.support.v7.internal.widget.AbsActionBarView implements android.support.v4.view.ViewPropertyAnimatorListener {
 +public class android.support.v7.internal.widget.ActionBarContextView extends android.support.v7.internal.widget.AbsActionBarView {
@@ -122,7 +122,7 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Act
 +  public boolean onHoverEvent(android.view.MotionEvent);
 +  public boolean onTouchEvent(android.view.MotionEvent);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	2015-09-05 18:52:11.000000000 +0900
 +++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo	1970-01-01 09:00:00.000000000 +0900
 @@ -1,6 +0,0 @@
 -public class android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo implements android.view.ContextMenu$ContextMenuInfo {
@@ -132,21 +132,21 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Ada
 -  public android.support.v7.internal.widget.AdapterViewCompat$AdapterContextMenuInfo(android.view.View, int, long);
 -}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	2015-09-05 18:52:11.000000000 +0900
 +++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener	1970-01-01 09:00:00.000000000 +0900
 @@ -1,3 +0,0 @@
 -public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener {
 -  public abstract void onItemClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
 -}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	2015-09-05 18:52:11.000000000 +0900
 +++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener	1970-01-01 09:00:00.000000000 +0900
 @@ -1,3 +0,0 @@
 -public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemLongClickListener {
 -  public abstract boolean onItemLongClick(android.support.v7.internal.widget.AdapterViewCompat<?>, android.view.View, int, long);
 -}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	2015-09-05 18:52:11.000000000 +0900
 +++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener	1970-01-01 09:00:00.000000000 +0900
 @@ -1,4 +0,0 @@
 -public interface android.support.v7.internal.widget.AdapterViewCompat$OnItemSelectedListener {
@@ -154,7 +154,7 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Ada
 -  public abstract void onNothingSelected(android.support.v7.internal.widget.AdapterViewCompat<?>);
 -}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat<T appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat<T
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat<T	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AdapterViewCompat<T	2015-09-05 18:52:11.000000000 +0900
 +++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AdapterViewCompat<T	1970-01-01 09:00:00.000000000 +0900
 @@ -1,37 +0,0 @@
 -public abstract class android.support.v7.internal.widget.AdapterViewCompat<T extends android.widget.Adapter> extends android.view.ViewGroup {
@@ -195,14 +195,14 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Ada
 -  public boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent);
 -}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AppCompatPopupWindow appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AppCompatPopupWindow
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AppCompatPopupWindow	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AppCompatPopupWindow	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.AppCompatPopupWindow	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.AppCompatPopupWindow	2015-09-05 18:52:11.000000000 +0900
 @@ -5,0 +6,2 @@
 +  public void setSupportOverlapAnchor(boolean);
 +  public boolean getSupportOverlapAnchor();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.DecorToolbar appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.DecorToolbar
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.DecorToolbar	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.DecorToolbar	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.DecorToolbar	2015-09-05 18:52:11.000000000 +0900
 @@ -4 +3,0 @@
 -  public abstract boolean isSplit();
 @@ -15,4 +13,0 @@
@@ -218,8 +218,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Dec
 @@ -63 +58,0 @@
 -  public abstract int getPopupTheme();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ScrollingTabContainerView appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ScrollingTabContainerView
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ScrollingTabContainerView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ScrollingTabContainerView	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ScrollingTabContainerView	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ScrollingTabContainerView	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.internal.widget.ScrollingTabContainerView extends android.widget.HorizontalScrollView implements android.support.v7.internal.widget.AdapterViewCompat$OnItemClickListener {
 +public class android.support.v7.internal.widget.ScrollingTabContainerView extends android.widget.HorizontalScrollView implements android.widget.AdapterView$OnItemSelectedListener {
@@ -228,8 +228,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Scr
 +  public void onItemSelected(android.widget.AdapterView<?>, android.view.View, int, long);
 +  public void onNothingSelected(android.widget.AdapterView<?>);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ToolbarWidgetWrapper appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ToolbarWidgetWrapper
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.internal.widget.ToolbarWidgetWrapper	2015-09-05 18:52:11.000000000 +0900
 @@ -8 +7,0 @@
 -  public boolean isSplit();
 @@ -19,4 +17,0 @@
@@ -245,20 +245,20 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.internal.widget.Too
 @@ -65 +60,0 @@
 -  public int getPopupTheme();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ActionMenuPresenter appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ActionMenuPresenter
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ActionMenuPresenter	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ActionMenuPresenter	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ActionMenuPresenter	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ActionMenuPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -8,0 +9,2 @@
 +  public void setOverflowIcon(android.graphics.drawable.Drawable);
 +  public android.graphics.drawable.Drawable getOverflowIcon();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ActionMenuView appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ActionMenuView
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ActionMenuView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ActionMenuView	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ActionMenuView	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ActionMenuView	2015-09-05 18:52:11.000000000 +0900
 @@ -9,0 +10,2 @@
 +  public void setOverflowIcon(android.graphics.drawable.Drawable);
 +  public android.graphics.drawable.Drawable getOverflowIcon();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatAutoCompleteTextView appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatAutoCompleteTextView
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatAutoCompleteTextView	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5 @@
 +  public void setDropDownBackgroundResource(int);
 @@ -7 +7,0 @@
@@ -266,8 +266,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatAut
 @@ -11,0 +12 @@
 +  public void setTextAppearance(android.content.Context, int);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatButton appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatButton
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatButton	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatButton	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatButton	2015-09-05 18:52:11.000000000 +0900
 @@ -10,0 +11 @@
 +  public void setTextAppearance(android.content.Context, int);
 @@ -13,2 +14 @@
@@ -275,8 +275,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatBut
 -  public void setTextAppearance(android.content.Context, int);
 +  public void setSupportAllCaps(boolean);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatCheckBox appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatCheckBox
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatCheckBox	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatCheckBox	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatCheckBox	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatCheckBox	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.AppCompatCheckBox extends android.widget.CheckBox {
 +public class android.support.v7.widget.AppCompatCheckBox extends android.widget.CheckBox implements android.support.v4.widget.TintableCompoundButton {
@@ -286,13 +286,13 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatChe
 +  public void setSupportButtonTintMode(android.graphics.PorterDuff$Mode);
 +  public android.graphics.PorterDuff$Mode getSupportButtonTintMode();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatEditText appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatEditText
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatEditText	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatEditText	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatEditText	2015-09-05 18:52:11.000000000 +0900
 @@ -10,0 +11 @@
 +  public void setTextAppearance(android.content.Context, int);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatMultiAutoCompleteTextView appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatMultiAutoCompleteTextView
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatMultiAutoCompleteTextView	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5 @@
 +  public void setDropDownBackgroundResource(int);
 @@ -7 +7,0 @@
@@ -300,8 +300,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatMul
 @@ -11,0 +12 @@
 +  public void setTextAppearance(android.content.Context, int);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatRadioButton appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatRadioButton
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatRadioButton	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatRadioButton	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatRadioButton	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatRadioButton	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.AppCompatRadioButton extends android.widget.RadioButton {
 +public class android.support.v7.widget.AppCompatRadioButton extends android.widget.RadioButton implements android.support.v4.widget.TintableCompoundButton {
@@ -311,8 +311,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatRad
 +  public void setSupportButtonTintMode(android.graphics.PorterDuff$Mode);
 +  public android.graphics.PorterDuff$Mode getSupportButtonTintMode();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatSpinner appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatSpinner
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatSpinner	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatSpinner	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatSpinner	2015-09-05 18:52:11.000000000 +0900
 @@ -2,0 +3 @@
 +  public android.support.v7.widget.AppCompatSpinner(android.content.Context, int);
 @@ -4,0 +6,17 @@
@@ -336,19 +336,19 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatSpi
 @@ -10,0 +29 @@
 +  public void setAdapter(android.widget.Adapter);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatTextView appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatTextView
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatTextView	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatTextView	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.AppCompatTextView	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.AppCompatTextView	2015-09-05 18:52:11.000000000 +0900
 @@ -5 +4,0 @@
 -  public void setAllCaps(boolean);
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.PopupMenu appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.PopupMenu
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.PopupMenu	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.PopupMenu	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.PopupMenu	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.PopupMenu	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5,2 @@
 +  public void setGravity(int);
 +  public int getGravity();
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ThemedSpinnerAdapter appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ThemedSpinnerAdapter
 --- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ThemedSpinnerAdapter	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ThemedSpinnerAdapter	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ThemedSpinnerAdapter	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public interface android.support.v7.widget.ThemedSpinnerAdapter extends android.widget.SpinnerAdapter {
 +  public abstract void setDropDownViewTheme(android.content.res.Resources$Theme);
@@ -356,7 +356,7 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ThemedSpinne
 +}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ThemedSpinnerAdapter$Helper appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ThemedSpinnerAdapter$Helper
 --- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ThemedSpinnerAdapter$Helper	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ThemedSpinnerAdapter$Helper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.ThemedSpinnerAdapter$Helper	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,6 @@
 +public final class android.support.v7.widget.ThemedSpinnerAdapter$Helper {
 +  public android.support.v7.widget.ThemedSpinnerAdapter$Helper(android.content.Context);
@@ -365,8 +365,8 @@ diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.ThemedSpinne
 +  public android.view.LayoutInflater getDropDownViewInflater();
 +}
 diff -U 0 -N appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.Toolbar appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.Toolbar
---- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.Toolbar	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-22.2.1_f8bc9be2/android.support.v7.widget.Toolbar	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-23.0.0_2b2171b2/android.support.v7.widget.Toolbar	2015-09-05 18:52:11.000000000 +0900
 @@ -41,0 +42,2 @@
 +  public void setOverflowIcon(android.graphics.drawable.Drawable);
 +  public android.graphics.drawable.Drawable getOverflowIcon();

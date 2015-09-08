@@ -1,11 +1,11 @@
 diff -U 0 -N mediarouter-v7-22.2.1_539792ae/android.support.v7.app.MediaRouteButton mediarouter-v7-23.0.0_00311a7e/android.support.v7.app.MediaRouteButton
---- mediarouter-v7-22.2.1_539792ae/android.support.v7.app.MediaRouteButton	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-23.0.0_00311a7e/android.support.v7.app.MediaRouteButton	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-22.2.1_539792ae/android.support.v7.app.MediaRouteButton	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-23.0.0_00311a7e/android.support.v7.app.MediaRouteButton	2015-09-05 18:52:11.000000000 +0900
 @@ -11,0 +12 @@
 +  public void setRemoteIndicatorDrawable(android.graphics.drawable.Drawable);
 diff -U 0 -N mediarouter-v7-22.2.1_539792ae/android.support.v7.app.MediaRouteControllerDialog mediarouter-v7-23.0.0_00311a7e/android.support.v7.app.MediaRouteControllerDialog
---- mediarouter-v7-22.2.1_539792ae/android.support.v7.app.MediaRouteControllerDialog	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-23.0.0_00311a7e/android.support.v7.app.MediaRouteControllerDialog	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-22.2.1_539792ae/android.support.v7.app.MediaRouteControllerDialog	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-23.0.0_00311a7e/android.support.v7.app.MediaRouteControllerDialog	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.app.MediaRouteControllerDialog extends android.app.Dialog {
 +public class android.support.v7.app.MediaRouteControllerDialog extends android.support.v7.app.AlertDialog {

@@ -1,6 +1,6 @@
 diff -U 0 -N leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter
---- leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5,2 @@
 +  public static final int ALIGN_MODE_START;
 +  public static final int ALIGN_MODE_MIDDLE;
@@ -15,12 +15,12 @@ diff -U 0 -N leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.Fu
 +  public final void setAlignmentMode(int);
 +  public final int getAlignmentMode();
 diff -U 0 -N leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.HorizontalGridView leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.HorizontalGridView
---- leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.HorizontalGridView	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.HorizontalGridView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.HorizontalGridView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.HorizontalGridView	2015-09-05 18:52:11.000000000 +0900
 @@ -41,0 +42 @@
 +  public android.view.View focusSearch(int);
 diff -U 0 -N leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.VerticalGridView leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.VerticalGridView
---- leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.VerticalGridView	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.VerticalGridView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.2.1_4530a28e/android.support.v17.leanback.widget.VerticalGridView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-23.0.0_78516afe/android.support.v17.leanback.widget.VerticalGridView	2015-09-05 18:52:11.000000000 +0900
 @@ -28,0 +29 @@
 +  public android.view.View focusSearch(int);

@@ -1,6 +1,6 @@
 diff -U 0 -N support-v13-21.0.3_993cae5c/android.support.v13.BuildConfig support-v13-22.0.0_ca3e8044/android.support.v13.BuildConfig
---- support-v13-21.0.3_993cae5c/android.support.v13.BuildConfig	2015-08-20 23:41:45.000000000 +0900
-+++ support-v13-22.0.0_ca3e8044/android.support.v13.BuildConfig	2015-08-20 23:41:45.000000000 +0900
+--- support-v13-21.0.3_993cae5c/android.support.v13.BuildConfig	2015-09-05 18:52:09.000000000 +0900
++++ support-v13-22.0.0_ca3e8044/android.support.v13.BuildConfig	2015-09-05 18:52:09.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;

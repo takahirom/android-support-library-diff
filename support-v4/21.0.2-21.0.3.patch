@@ -1,6 +1,6 @@
 diff -U 0 -N support-v4-21.0.2_6496e6a2/android.support.v4.app.NotificationCompat$WearableExtender support-v4-21.0.3_998b88de/android.support.v4.app.NotificationCompat$WearableExtender
---- support-v4-21.0.2_6496e6a2/android.support.v4.app.NotificationCompat$WearableExtender	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.3_998b88de/android.support.v4.app.NotificationCompat$WearableExtender	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-21.0.2_6496e6a2/android.support.v4.app.NotificationCompat$WearableExtender	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.3_998b88de/android.support.v4.app.NotificationCompat$WearableExtender	2015-09-05 18:52:10.000000000 +0900
 @@ -8,0 +9,2 @@
 +  public static final int SCREEN_TIMEOUT_SHORT;
 +  public static final int SCREEN_TIMEOUT_LONG;

@@ -1,12 +1,12 @@
 diff -U 0 -N recyclerview-v7-21.0.3_93906ea8/android.support.v7.recyclerview.BuildConfig recyclerview-v7-22.0.0_c71c50e8/android.support.v7.recyclerview.BuildConfig
---- recyclerview-v7-21.0.3_93906ea8/android.support.v7.recyclerview.BuildConfig	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.recyclerview.BuildConfig	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.3_93906ea8/android.support.v7.recyclerview.BuildConfig	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.recyclerview.BuildConfig	2015-09-05 18:52:08.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;
 diff -U 0 -N recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView
---- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
 @@ -59,0 +60,2 @@
 +  public int getChildAdapterPosition(android.view.View);
 +  public int getChildLayoutPosition(android.view.View);
@@ -14,19 +14,19 @@ diff -U 0 -N recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerV
 +  public android.support.v7.widget.RecyclerView$ViewHolder findViewHolderForLayoutPosition(int);
 +  public android.support.v7.widget.RecyclerView$ViewHolder findViewHolderForAdapterPosition(int);
 diff -U 0 -N recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$Adapter<VH recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$Adapter<VH
---- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$Adapter<VH	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$Adapter<VH	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$Adapter<VH	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$Adapter<VH	2015-09-05 18:52:08.000000000 +0900
 @@ -12,0 +13 @@
 +  public boolean onFailedToRecycleView(VH);
 diff -U 0 -N recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$LayoutParams recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutParams
---- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$LayoutParams	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutParams	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$LayoutParams	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$LayoutParams	2015-09-05 18:52:08.000000000 +0900
 @@ -11,0 +12,2 @@
 +  public int getViewLayoutPosition();
 +  public int getViewAdapterPosition();
 diff -U 0 -N recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$ViewHolder recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$ViewHolder
---- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$ViewHolder	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$ViewHolder	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-21.0.3_93906ea8/android.support.v7.widget.RecyclerView$ViewHolder	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.0.0_c71c50e8/android.support.v7.widget.RecyclerView$ViewHolder	2015-09-05 18:52:08.000000000 +0900
 @@ -4,0 +5,2 @@
 +  public final int getLayoutPosition();
 +  public final int getAdapterPosition();

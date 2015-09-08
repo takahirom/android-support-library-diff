@@ -1,14 +1,14 @@
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActionBarDrawerToggle support-v4-21.0.0_55ef455a/android.support.v4.app.ActionBarDrawerToggle
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActionBarDrawerToggle	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActionBarDrawerToggle	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActionBarDrawerToggle	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActionBarDrawerToggle	2015-09-05 18:52:10.000000000 +0900
 @@ -2,0 +3 @@
 +  public android.support.v4.app.ActionBarDrawerToggle(android.app.Activity, android.support.v4.widget.DrawerLayout, boolean, int, int, int);
 @@ -3,0 +5,2 @@
 +  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
 +  public void setHomeAsUpIndicator(int);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityCompat support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -6,0 +7,5 @@
 +  public static void finishAfterTransition(android.app.Activity);
 +  public static void setEnterSharedElementCallback(android.app.Activity, android.support.v4.app.SharedElementCallback);
@@ -17,20 +17,20 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityCompat su
 +  public static void startPostponedEnterTransition(android.app.Activity);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityManagerCompat support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityManagerCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityManagerCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityManagerCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityManagerCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,3 @@
 +public final class android.support.v4.app.ActivityManagerCompat {
 +  public static boolean isLowRamDevice(android.app.ActivityManager);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityOptionsCompat support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityOptionsCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityOptionsCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityOptionsCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.ActivityOptionsCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.ActivityOptionsCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -4,0 +5,2 @@
 +  public static android.support.v4.app.ActivityOptionsCompat makeSceneTransitionAnimation(android.app.Activity, android.view.View, java.lang.String);
 +  public static android.support.v4.app.ActivityOptionsCompat makeSceneTransitionAnimation(android.app.Activity, android.support.v4.util.Pair<android.view.View, java.lang.String>...);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.BackStackRecord$TransitionState support-v4-21.0.0_55ef455a/android.support.v4.app.BackStackRecord$TransitionState
 --- support-v4-20.0.0_d41fb95e/android.support.v4.app.BackStackRecord$TransitionState	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.BackStackRecord$TransitionState	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.BackStackRecord$TransitionState	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v4.app.BackStackRecord$TransitionState {
 +  public android.support.v4.util.ArrayMap<java.lang.String, java.lang.String> nameOverrides;
@@ -40,8 +40,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.BackStackRecord$T
 +  public android.support.v4.app.BackStackRecord$TransitionState(android.support.v4.app.BackStackRecord);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.Fragment support-v4-21.0.0_55ef455a/android.support.v4.app.Fragment
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.Fragment	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.Fragment	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.Fragment	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.Fragment	2015-09-05 18:52:10.000000000 +0900
 @@ -72,0 +73,18 @@
 +  public void setEnterSharedElementCallback(android.support.v4.app.SharedElementCallback);
 +  public void setExitSharedElementCallback(android.support.v4.app.SharedElementCallback);
@@ -62,8 +62,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.Fragment support-
 +  public void setAllowReturnTransitionOverlap(boolean);
 +  public boolean getAllowReturnTransitionOverlap();
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentActivity support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentActivity
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentActivity	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentActivity	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentActivity	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentActivity	2015-09-05 18:52:10.000000000 +0900
 @@ -3,0 +4,5 @@
 +  public void supportFinishAfterTransition();
 +  public void setEnterSharedElementCallback(android.support.v4.app.SharedElementCallback);
@@ -71,13 +71,13 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentActivity 
 +  public void supportPostponeEnterTransition();
 +  public void supportStartPostponedEnterTransition();
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentTransaction support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentTransaction
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentTransaction	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentTransaction	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.FragmentTransaction	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.FragmentTransaction	2015-09-05 18:52:10.000000000 +0900
 @@ -22,0 +23 @@
 +  public abstract android.support.v4.app.FragmentTransaction addSharedElement(android.view.View, java.lang.String);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -27,0 +28 @@
 +  public static final java.lang.String EXTRA_BIG_TEXT;
 @@ -34,0 +36 @@
@@ -109,8 +109,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompa
 @@ -41,0 +66 @@
 +  public static java.lang.String getCategory(android.app.Notification);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Action$WearableExtender support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Action$WearableExtender
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Action$WearableExtender	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Action$WearableExtender	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Action$WearableExtender	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Action$WearableExtender	2015-09-05 18:52:10.000000000 +0900
 @@ -7,0 +8,6 @@
 +  public android.support.v4.app.NotificationCompat$Action$WearableExtender setInProgressLabel(java.lang.CharSequence);
 +  public java.lang.CharSequence getInProgressLabel();
@@ -119,8 +119,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompa
 +  public android.support.v4.app.NotificationCompat$Action$WearableExtender setCancelLabel(java.lang.CharSequence);
 +  public java.lang.CharSequence getCancelLabel();
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Builder support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Builder
---- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Builder	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Builder	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompat$Builder	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.NotificationCompat$Builder	2015-09-05 18:52:10.000000000 +0900
 @@ -1,0 +2 @@
 +  public java.util.ArrayList<java.lang.String> mPeople;
 @@ -3,0 +5 @@
@@ -135,7 +135,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.NotificationCompa
 +  public android.support.v4.app.NotificationCompat$Builder setPublicVersion(android.app.Notification);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.SharedElementCallback support-v4-21.0.0_55ef455a/android.support.v4.app.SharedElementCallback
 --- support-v4-20.0.0_d41fb95e/android.support.v4.app.SharedElementCallback	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.app.SharedElementCallback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.app.SharedElementCallback	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,9 @@
 +public abstract class android.support.v4.app.SharedElementCallback {
 +  public android.support.v4.app.SharedElementCallback();
@@ -147,15 +147,15 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.app.SharedElementCall
 +  public android.view.View onCreateSnapshotView(android.content.Context, android.os.Parcelable);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.content.ContextCompat support-v4-21.0.0_55ef455a/android.support.v4.content.ContextCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.content.ContextCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.content.ContextCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.content.ContextCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.content.ContextCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -7,0 +8,3 @@
 +  public static final android.graphics.drawable.Drawable getDrawable(android.content.Context, int);
 +  public final java.io.File getNoBackupFilesDir(android.content.Context);
 +  public final java.io.File getCodeCacheDir(android.content.Context);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.content.res.ResourcesCompat support-v4-21.0.0_55ef455a/android.support.v4.content.res.ResourcesCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.content.res.ResourcesCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.content.res.ResourcesCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.content.res.ResourcesCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v4.content.res.ResourcesCompat {
 +  public android.support.v4.content.res.ResourcesCompat();
@@ -163,7 +163,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.content.res.Resources
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.BitmapCompat support-v4-21.0.0_55ef455a/android.support.v4.graphics.BitmapCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.BitmapCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.BitmapCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.BitmapCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v4.graphics.BitmapCompat {
 +  public android.support.v4.graphics.BitmapCompat();
@@ -172,8 +172,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.BitmapCompat
 +  public static int getAllocationByteCount(android.graphics.Bitmap);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.DrawableCompat support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.DrawableCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.DrawableCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.DrawableCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.DrawableCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -5,0 +6,5 @@
 +  public static void setHotspot(android.graphics.drawable.Drawable, float, float);
 +  public static void setHotspotBounds(android.graphics.drawable.Drawable, int, int, int, int);
@@ -182,7 +182,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.Dra
 +  public static void setTintMode(android.graphics.drawable.Drawable, android.graphics.PorterDuff$Mode);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory
 --- support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory {
 +  public android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory();
@@ -192,7 +192,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.graphics.drawable.Rou
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,41 @@
 +public final class android.support.v4.media.MediaMetadataCompat implements android.os.Parcelable {
 +  public static final java.lang.String METADATA_KEY_TITLE;
@@ -237,7 +237,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCo
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat$Builder support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat$Builder
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCompat$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat$Builder	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.MediaMetadataCompat$Builder	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,10 @@
 +public final class android.support.v4.media.MediaMetadataCompat$Builder {
 +  public android.support.v4.media.MediaMetadataCompat$Builder();
@@ -251,7 +251,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.MediaMetadataCo
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.RatingCompat support-v4-21.0.0_55ef455a/android.support.v4.media.RatingCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.RatingCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.RatingCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.RatingCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,26 @@
 +public final class android.support.v4.media.RatingCompat implements android.os.Parcelable {
 +  public static final int RATING_NONE;
@@ -281,7 +281,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.RatingCompat su
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,14 @@
 +public abstract class android.support.v4.media.VolumeProviderCompat {
 +  public static final int VOLUME_CONTROL_FIXED;
@@ -299,7 +299,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderC
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat$Callback support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat$Callback
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderCompat$Callback	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat$Callback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.VolumeProviderCompat$Callback	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,4 @@
 +public abstract class android.support.v4.media.VolumeProviderCompat$Callback {
 +  public android.support.v4.media.VolumeProviderCompat$Callback();
@@ -307,7 +307,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.VolumeProviderC
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,15 @@
 +public final class android.support.v4.media.session.MediaControllerCompat {
 +  public android.support.v4.media.session.MediaControllerCompat(android.content.Context, android.support.v4.media.session.MediaSessionCompat);
@@ -326,7 +326,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaCo
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$Callback support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$Callback
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$Callback	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$Callback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$Callback	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,7 @@
 +public abstract class android.support.v4.media.session.MediaControllerCompat$Callback {
 +  public android.support.v4.media.session.MediaControllerCompat$Callback();
@@ -337,7 +337,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaCo
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$PlaybackInfo	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,9 @@
 +public final class android.support.v4.media.session.MediaControllerCompat$PlaybackInfo {
 +  public static final int PLAYBACK_TYPE_LOCAL;
@@ -350,7 +350,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaCo
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$TransportControls support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$TransportControls
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaControllerCompat$TransportControls	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaControllerCompat$TransportControls	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,11 @@
 +public abstract class android.support.v4.media.session.MediaControllerCompat$TransportControls {
 +  public abstract void play();
@@ -365,7 +365,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaCo
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,19 @@
 +public class android.support.v4.media.session.MediaSessionCompat {
 +  public static final int FLAG_HANDLES_MEDIA_BUTTONS;
@@ -388,7 +388,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSe
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Callback support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Callback
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Callback	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Callback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Callback	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,14 @@
 +public abstract class android.support.v4.media.session.MediaSessionCompat$Callback {
 +  public android.support.v4.media.session.MediaSessionCompat$Callback();
@@ -406,7 +406,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSe
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Token support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Token
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSessionCompat$Token	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Token	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.MediaSessionCompat$Token	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,6 @@
 +public final class android.support.v4.media.session.MediaSessionCompat$Token implements android.os.Parcelable {
 +  public static final android.os.Parcelable$Creator<android.support.v4.media.session.MediaSessionCompat$Token> CREATOR;
@@ -416,7 +416,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.MediaSe
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,40 @@
 +public final class android.support.v4.media.session.PlaybackStateCompat implements android.os.Parcelable {
 +  public static final long ACTION_STOP;
@@ -460,7 +460,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.Playbac
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat$Builder support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat$Builder
 --- support-v4-20.0.0_d41fb95e/android.support.v4.media.session.PlaybackStateCompat$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.media.session.PlaybackStateCompat$Builder	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,9 @@
 +public final class android.support.v4.media.session.PlaybackStateCompat$Builder {
 +  public android.support.v4.media.session.PlaybackStateCompat$Builder();
@@ -473,29 +473,29 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.media.session.Playbac
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.os.AsyncTaskCompat support-v4-21.0.0_55ef455a/android.support.v4.os.AsyncTaskCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.os.AsyncTaskCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.os.AsyncTaskCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.os.AsyncTaskCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v4.os.AsyncTaskCompat {
 +  public android.support.v4.os.AsyncTaskCompat();
 +  public static <Params, Progress, Result> android.os.AsyncTask<Params, Progress, Result> executeParallel(android.os.AsyncTask<Params, Progress, Result>, Params...);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper
---- support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper	2015-09-05 18:52:10.000000000 +0900
 @@ -16,0 +17 @@
 +  public void printBitmap(java.lang.String, android.graphics.Bitmap, android.support.v4.print.PrintHelper$OnPrintFinishCallback);
 @@ -17,0 +19 @@
 +  public void printBitmap(java.lang.String, android.net.Uri, android.support.v4.print.PrintHelper$OnPrintFinishCallback) throws java.io.FileNotFoundException;
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper$OnPrintFinishCallback support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper$OnPrintFinishCallback
 --- support-v4-20.0.0_d41fb95e/android.support.v4.print.PrintHelper$OnPrintFinishCallback	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper$OnPrintFinishCallback	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.print.PrintHelper$OnPrintFinishCallback	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v4.print.PrintHelper$OnPrintFinishCallback {
 +  public abstract void onFinish();
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.provider.DocumentFile support-v4-21.0.0_55ef455a/android.support.v4.provider.DocumentFile
 --- support-v4-20.0.0_d41fb95e/android.support.v4.provider.DocumentFile	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.provider.DocumentFile	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.provider.DocumentFile	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,23 @@
 +public abstract class android.support.v4.provider.DocumentFile {
 +  public static android.support.v4.provider.DocumentFile fromFile(java.io.File);
@@ -521,13 +521,13 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.provider.DocumentFile
 +  public abstract boolean renameTo(java.lang.String);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.LruCache<K, support-v4-21.0.0_55ef455a/android.support.v4.util.LruCache<K,
---- support-v4-20.0.0_d41fb95e/android.support.v4.util.LruCache<K,	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.util.LruCache<K,	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.util.LruCache<K,	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.util.LruCache<K,	2015-09-05 18:52:10.000000000 +0900
 @@ -2,0 +3 @@
 +  public void resize(int);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.Pair<F, support-v4-21.0.0_55ef455a/android.support.v4.util.Pair<F,
 --- support-v4-20.0.0_d41fb95e/android.support.v4.util.Pair<F,	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.util.Pair<F,	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.util.Pair<F,	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,8 @@
 +public class android.support.v4.util.Pair<F, S> {
 +  public final F first;
@@ -538,13 +538,13 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.Pair<F, support-
 +  public static <A, B> android.support.v4.util.Pair<A, B> create(A, B);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.util.SimpleArrayMap<K, support-v4-21.0.0_55ef455a/android.support.v4.util.SimpleArrayMap<K,
---- support-v4-20.0.0_d41fb95e/android.support.v4.util.SimpleArrayMap<K,	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.util.SimpleArrayMap<K,	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.util.SimpleArrayMap<K,	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.util.SimpleArrayMap<K,	2015-09-05 18:52:10.000000000 +0900
 @@ -7,0 +8 @@
 +  public int indexOfKey(java.lang.Object);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -31,0 +32 @@
 +  public static boolean hasAccessibilityDelegate(android.view.View);
 @@ -78,11 +79,23 @@
@@ -583,24 +583,24 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewCompat suppo
 +  public static void jumpDrawablesToCurrentState(android.view.View);
 +  public static void setOnApplyWindowInsetsListener(android.view.View, android.support.v4.view.OnApplyWindowInsetsListener);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewConfigurationCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewConfigurationCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewConfigurationCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewConfigurationCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewConfigurationCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewConfigurationCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -3,0 +4 @@
 +  public static boolean hasPermanentMenuKey(android.view.ViewConfiguration);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewGroupCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewGroupCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewGroupCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewGroupCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewGroupCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -7,0 +8,2 @@
 +  public static void setTransitionGroup(android.view.ViewGroup, boolean);
 +  public static boolean isTransitionGroup(android.view.ViewGroup);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorCompat support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -33,0 +34 @@
 +  public android.support.v4.view.ViewPropertyAnimatorCompat setUpdateListener(android.support.v4.view.ViewPropertyAnimatorUpdateListener);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorListenerAdapter support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorListenerAdapter
 --- support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnimatorListenerAdapter	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorListenerAdapter	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.ViewPropertyAnimatorListenerAdapter	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v4.view.ViewPropertyAnimatorListenerAdapter implements android.support.v4.view.ViewPropertyAnimatorListener {
 +  public android.support.v4.view.ViewPropertyAnimatorListenerAdapter();
@@ -609,8 +609,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.ViewPropertyAnim
 +  public void onAnimationCancel(android.view.View);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
---- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -19,0 +20 @@
 +  public static final int ACTION_SET_TEXT;
 @@ -24,0 +26 @@
@@ -624,7 +624,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.Ac
 +  public java.util.List<android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat> getActionList();
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,4 @@
 +public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat {
 +  public int getId();
@@ -632,7 +632,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.Ac
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat {
 +  public static final int SELECTION_MODE_NONE;
@@ -645,7 +645,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.Ac
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat {
 +  public static android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat obtain(int, int, int, int, boolean, boolean);
@@ -658,7 +658,7 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.Ac
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat {
 +  public static final int RANGE_TYPE_INT;
@@ -670,8 +670,8 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.view.accessibility.Ac
 +  public int getType();
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.DrawerLayout support-v4-21.0.0_55ef455a/android.support.v4.widget.DrawerLayout
---- support-v4-20.0.0_d41fb95e/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.widget.DrawerLayout	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.widget.DrawerLayout	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.DrawerLayout	2015-09-05 18:52:10.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v4.widget.DrawerLayout extends android.view.ViewGroup {
 +public class android.support.v4.widget.DrawerLayout extends android.view.ViewGroup implements android.support.v4.widget.DrawerLayoutImpl {
@@ -684,20 +684,20 @@ diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.DrawerLayout s
 +  public void onDraw(android.graphics.Canvas);
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize support-v4-21.0.0_55ef455a/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize
 --- support-v4-20.0.0_d41fb95e/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,2 @@
 +public interface android.support.v4.widget.MaterialProgressDrawable$ProgressDrawableSize extends java.lang.annotation.Annotation {
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.PopupWindowCompat support-v4-21.0.0_55ef455a/android.support.v4.widget.PopupWindowCompat
 --- support-v4-20.0.0_d41fb95e/android.support.v4.widget.PopupWindowCompat	1970-01-01 09:00:00.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.widget.PopupWindowCompat	2015-08-20 23:41:45.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.PopupWindowCompat	2015-09-05 18:52:10.000000000 +0900
 @@ -0,0 +1,3 @@
 +public class android.support.v4.widget.PopupWindowCompat {
 +  public static void showAsDropDown(android.widget.PopupWindow, android.view.View, int, int, int);
 +}
 diff -U 0 -N support-v4-20.0.0_d41fb95e/android.support.v4.widget.SwipeRefreshLayout support-v4-21.0.0_55ef455a/android.support.v4.widget.SwipeRefreshLayout
---- support-v4-20.0.0_d41fb95e/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:46.000000000 +0900
-+++ support-v4-21.0.0_55ef455a/android.support.v4.widget.SwipeRefreshLayout	2015-08-20 23:41:45.000000000 +0900
+--- support-v4-20.0.0_d41fb95e/android.support.v4.widget.SwipeRefreshLayout	2015-09-05 18:52:10.000000000 +0900
++++ support-v4-21.0.0_55ef455a/android.support.v4.widget.SwipeRefreshLayout	2015-09-05 18:52:10.000000000 +0900
 @@ -1,0 +2,5 @@
 +  public static final int LARGE;
 +  public static final int DEFAULT;

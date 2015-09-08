@@ -1,12 +1,12 @@
 diff -U 0 -N appcompat-v7-18.0.0_438a7ea6/android.support.v7.app.ActionBarActivity appcompat-v7-19.0.0_9739e836/android.support.v7.app.ActionBarActivity
---- appcompat-v7-18.0.0_438a7ea6/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-19.0.0_9739e836/android.support.v7.app.ActionBarActivity	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-18.0.0_438a7ea6/android.support.v7.app.ActionBarActivity	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-19.0.0_9739e836/android.support.v7.app.ActionBarActivity	2015-09-05 18:52:11.000000000 +0900
 @@ -30,0 +31,2 @@
 +  public final void onContentChanged();
 +  public void onSupportContentChanged();
 diff -U 0 -N appcompat-v7-18.0.0_438a7ea6/android.support.v7.app.ActionBarImplJB appcompat-v7-19.0.0_9739e836/android.support.v7.app.ActionBarImplJB
 --- appcompat-v7-18.0.0_438a7ea6/android.support.v7.app.ActionBarImplJB	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-19.0.0_9739e836/android.support.v7.app.ActionBarImplJB	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.0.0_9739e836/android.support.v7.app.ActionBarImplJB	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,52 @@
 +public class android.support.v7.app.ActionBarImplJB extends android.support.v7.app.ActionBarImplICS {
 +  public android.support.v7.app.ActionBarImplJB(android.app.Activity, android.support.v7.app.ActionBar$Callback);
@@ -62,7 +62,7 @@ diff -U 0 -N appcompat-v7-18.0.0_438a7ea6/android.support.v7.app.ActionBarImplJB
 +}
 diff -U 0 -N appcompat-v7-18.0.0_438a7ea6/android.support.v7.internal.view.menu.MenuItemWrapperICS appcompat-v7-19.0.0_9739e836/android.support.v7.internal.view.menu.MenuItemWrapperICS
 --- appcompat-v7-18.0.0_438a7ea6/android.support.v7.internal.view.menu.MenuItemWrapperICS	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-19.0.0_9739e836/android.support.v7.internal.view.menu.MenuItemWrapperICS	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.0.0_9739e836/android.support.v7.internal.view.menu.MenuItemWrapperICS	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,47 @@
 +public class android.support.v7.internal.view.menu.MenuItemWrapperICS extends android.support.v7.internal.view.menu.BaseMenuWrapper<android.view.MenuItem> implements android.support.v4.internal.view.SupportMenuItem {
 +  public int getItemId();

@@ -1,16 +1,16 @@
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.util.SortedList<T> recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList<T>
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.util.SortedList<T>	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList<T>	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.util.SortedList<T>	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.util.SortedList<T>	2015-09-05 18:52:08.000000000 +0900
 @@ -14,0 +15 @@
 +  public void clear();
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.GridLayoutManager recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.GridLayoutManager
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.GridLayoutManager	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.GridLayoutManager	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.GridLayoutManager	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.GridLayoutManager	2015-09-05 18:52:08.000000000 +0900
 @@ -2,0 +3 @@
 +  public android.support.v7.widget.GridLayoutManager(android.content.Context, android.util.AttributeSet, int, int);
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.LinearLayoutManager recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.LinearLayoutManager
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.LinearLayoutManager	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.LinearLayoutManager	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.LinearLayoutManager	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.LinearLayoutManager	2015-09-05 18:52:08.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.LinearLayoutManager extends android.support.v7.widget.RecyclerView$LayoutManager {
 +public class android.support.v7.widget.LinearLayoutManager extends android.support.v7.widget.RecyclerView$LayoutManager implements android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler {
@@ -19,8 +19,8 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.LinearLay
 @@ -44,0 +46 @@
 +  public void prepareForDrop(android.view.View, android.view.View, int, int);
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView	2015-09-05 18:52:08.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v7.widget.RecyclerView extends android.view.ViewGroup implements android.support.v4.view.ScrollingView {
 +public class android.support.v7.widget.RecyclerView extends android.view.ViewGroup implements android.support.v4.view.ScrollingView,android.support.v4.view.NestedScrollingChild {
@@ -53,19 +53,19 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerV
 +  public boolean dispatchNestedPreFling(float, float);
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$ChildDrawingOrderCallback recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$ChildDrawingOrderCallback
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$ChildDrawingOrderCallback	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$ChildDrawingOrderCallback	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$ChildDrawingOrderCallback	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v7.widget.RecyclerView$ChildDrawingOrderCallback {
 +  public abstract int onGetChildDrawingOrder(int, int);
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$LayoutManager
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$LayoutManager	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$LayoutManager	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$LayoutManager	2015-09-05 18:52:08.000000000 +0900
 @@ -121,0 +122 @@
 +  public static android.support.v7.widget.RecyclerView$LayoutManager$Properties getProperties(android.content.Context, android.util.AttributeSet, int, int);
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$LayoutManager$Properties recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$LayoutManager$Properties
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$LayoutManager$Properties	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$LayoutManager$Properties	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$LayoutManager$Properties	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v7.widget.RecyclerView$LayoutManager$Properties {
 +  public int orientation;
@@ -76,20 +76,20 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerV
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,4 @@
 +public interface android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener {
 +  public abstract void onChildViewAttachedToWindow(android.view.View);
 +  public abstract void onChildViewDetachedFromWindow(android.view.View);
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$OnItemTouchListener recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$OnItemTouchListener
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$OnItemTouchListener	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$OnItemTouchListener	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$OnItemTouchListener	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$OnItemTouchListener	2015-09-05 18:52:08.000000000 +0900
 @@ -3,0 +4 @@
 +  public abstract void onRequestDisallowInterceptTouchEvent(boolean);
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener implements android.support.v7.widget.RecyclerView$OnItemTouchListener {
 +  public android.support.v7.widget.RecyclerView$SimpleOnItemTouchListener(android.support.v7.widget.RecyclerView);
@@ -98,13 +98,13 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.RecyclerV
 +  public void onRequestDisallowInterceptTouchEvent(boolean);
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.StaggeredGridLayoutManager recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.StaggeredGridLayoutManager
---- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.StaggeredGridLayoutManager	2015-08-20 23:41:45.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.StaggeredGridLayoutManager	2015-08-20 23:41:45.000000000 +0900
+--- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.StaggeredGridLayoutManager	2015-09-05 18:52:08.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.StaggeredGridLayoutManager	2015-09-05 18:52:08.000000000 +0900
 @@ -7,0 +8 @@
 +  public android.support.v7.widget.StaggeredGridLayoutManager(android.content.Context, android.util.AttributeSet, int, int);
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,23 @@
 +public class android.support.v7.widget.helper.ItemTouchHelper extends android.support.v7.widget.RecyclerView$ItemDecoration implements android.support.v7.widget.RecyclerView$OnChildAttachStateChangeListener {
 +  public static final int UP;
@@ -131,7 +131,7 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.It
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper$Callback recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$Callback
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper$Callback	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$Callback	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$Callback	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,27 @@
 +public abstract class android.support.v7.widget.helper.ItemTouchHelper$Callback {
 +  public static final int DEFAULT_DRAG_ANIMATION_DURATION;
@@ -162,7 +162,7 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.It
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,8 @@
 +public abstract class android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback extends android.support.v7.widget.helper.ItemTouchHelper$Callback {
 +  public android.support.v7.widget.helper.ItemTouchHelper$SimpleCallback(int, int);
@@ -174,14 +174,14 @@ diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.It
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler {
 +  public abstract void prepareForDrop(android.view.View, android.view.View, int, int);
 +}
 diff -U 0 -N recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchUIUtil recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchUIUtil
 --- recyclerview-v7-22.1.1_4dc35770/android.support.v7.widget.helper.ItemTouchUIUtil	1970-01-01 09:00:00.000000000 +0900
-+++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchUIUtil	2015-08-20 23:41:45.000000000 +0900
++++ recyclerview-v7-22.2.0_06a72a78/android.support.v7.widget.helper.ItemTouchUIUtil	2015-09-05 18:52:08.000000000 +0900
 @@ -0,0 +1,6 @@
 +public interface android.support.v7.widget.helper.ItemTouchUIUtil {
 +  public abstract void onDraw(android.graphics.Canvas, android.support.v7.widget.RecyclerView, android.view.View, float, float, int, boolean);

@@ -1,6 +1,6 @@
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.system.Settings leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.system.Settings
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.system.Settings	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.system.Settings	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.system.Settings	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v17.leanback.system.Settings {
 +  public static final java.lang.String PREFER_STATIC_SHADOWS;
@@ -10,18 +10,18 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.system.Se
 +  public void setBoolean(java.lang.String, boolean);
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ClassPresenterSelector leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ClassPresenterSelector
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ClassPresenterSelector	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ClassPresenterSelector	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ClassPresenterSelector	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ClassPresenterSelector	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5 @@
 +  public android.support.v17.leanback.widget.Presenter[] getPresenters();
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ControlButtonPresenterSelector leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ControlButtonPresenterSelector
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ControlButtonPresenterSelector	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ControlButtonPresenterSelector	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ControlButtonPresenterSelector	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ControlButtonPresenterSelector	2015-09-05 18:52:11.000000000 +0900
 @@ -5,0 +6 @@
 +  public android.support.v17.leanback.widget.Presenter[] getPresenters();
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,8 @@
 +public class android.support.v17.leanback.widget.DetailsOverviewLogoPresenter extends android.support.v17.leanback.widget.Presenter {
 +  public android.support.v17.leanback.widget.DetailsOverviewLogoPresenter();
@@ -33,14 +33,14 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.De
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,3 @@
 +public class android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder extends android.support.v17.leanback.widget.Presenter$ViewHolder {
 +  public android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder(android.view.View);
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.DetailsOverviewRow$Listener leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewRow$Listener
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.DetailsOverviewRow$Listener	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewRow$Listener	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.DetailsOverviewRow$Listener	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v17.leanback.widget.DetailsOverviewRow$Listener {
 +  public android.support.v17.leanback.widget.DetailsOverviewRow$Listener();
@@ -50,21 +50,21 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.De
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FacetProvider leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FacetProvider
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FacetProvider	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FacetProvider	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FacetProvider	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v17.leanback.widget.FacetProvider {
 +  public abstract java.lang.Object getFacet(java.lang.Class<?>);
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FacetProviderAdapter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FacetProviderAdapter
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FacetProviderAdapter	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FacetProviderAdapter	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FacetProviderAdapter	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v17.leanback.widget.FacetProviderAdapter {
 +  public abstract android.support.v17.leanback.widget.FacetProvider getFacetProvider(int);
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,20 @@
 +public class android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter extends android.support.v17.leanback.widget.RowPresenter {
 +  public static final int STATE_HALF;
@@ -88,7 +88,7 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Fu
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public abstract class android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener {
 +  public android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener();
@@ -96,7 +96,7 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Fu
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder extends android.support.v17.leanback.widget.RowPresenter$ViewHolder {
 +  public android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder(android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter, android.view.View, android.support.v17.leanback.widget.Presenter, android.support.v17.leanback.widget.DetailsOverviewLogoPresenter);
@@ -109,7 +109,7 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Fu
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener extends android.support.v17.leanback.widget.DetailsOverviewRow$Listener {
 +  public android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$DetailsOverviewRowListener(android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder);
@@ -119,7 +119,7 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Fu
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,9 @@
 +public class android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper extends android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$Listener {
 +  public android.support.v17.leanback.widget.FullWidthDetailsOverviewSharedElementHelper();
@@ -131,8 +131,8 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Fu
 +  public void startPostponedEnterTransition();
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.HorizontalGridView leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.HorizontalGridView
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.HorizontalGridView	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.HorizontalGridView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.HorizontalGridView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.HorizontalGridView	2015-09-05 18:52:11.000000000 +0900
 @@ -45,0 +46 @@
 +  public int getSelectedSubPosition();
 @@ -46,0 +48 @@
@@ -145,7 +145,7 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Ho
 +  public void setOnChildViewHolderSelectedListener(android.support.v17.leanback.widget.OnChildViewHolderSelectedListener);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemAlignmentFacet leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemAlignmentFacet
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemAlignmentFacet	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemAlignmentFacet	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemAlignmentFacet	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,7 @@
 +public final class android.support.v17.leanback.widget.ItemAlignmentFacet {
 +  public static final float ITEM_ALIGN_OFFSET_PERCENT_DISABLED;
@@ -156,7 +156,7 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.It
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,13 @@
 +public class android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef {
 +  public android.support.v17.leanback.widget.ItemAlignmentFacet$ItemAlignmentDef();
@@ -172,38 +172,38 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.It
 +  public final int getItemAlignmentFocusViewId();
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemBridgeAdapter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemBridgeAdapter
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemBridgeAdapter	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemBridgeAdapter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemBridgeAdapter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemBridgeAdapter	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.widget.ItemBridgeAdapter extends android.support.v7.widget.RecyclerView$Adapter {
 +public class android.support.v17.leanback.widget.ItemBridgeAdapter extends android.support.v7.widget.RecyclerView$Adapter implements android.support.v17.leanback.widget.FacetProviderAdapter {
 @@ -19,0 +20 @@
 +  public android.support.v17.leanback.widget.FacetProvider getFacetProvider(int);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder extends android.support.v7.widget.RecyclerView$ViewHolder {
 +public class android.support.v17.leanback.widget.ItemBridgeAdapter$ViewHolder extends android.support.v7.widget.RecyclerView$ViewHolder implements android.support.v17.leanback.widget.FacetProvider {
 @@ -6,0 +7 @@
 +  public java.lang.Object getFacet(java.lang.Class<?>);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ListRowPresenter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ListRowPresenter
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ListRowPresenter	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ListRowPresenter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ListRowPresenter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ListRowPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -19 +19 @@
 -  public boolean isUsingZOrder();
 +  public boolean isUsingZOrder(android.content.Context);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener
 --- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public abstract class android.support.v17.leanback.widget.OnChildViewHolderSelectedListener {
 +  public android.support.v17.leanback.widget.OnChildViewHolderSelectedListener();
 +  public void onChildViewHolderSelected(android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView$ViewHolder, int, int);
 +}
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Presenter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.Presenter
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Presenter	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.Presenter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Presenter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.Presenter	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public abstract class android.support.v17.leanback.widget.Presenter {
 +public abstract class android.support.v17.leanback.widget.Presenter implements android.support.v17.leanback.widget.FacetProvider {
@@ -211,8 +211,8 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Pr
 +  public final java.lang.Object getFacet(java.lang.Class<?>);
 +  public final void setFacet(java.lang.Class<?>, java.lang.Object);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Presenter$ViewHolder leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.Presenter$ViewHolder
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Presenter$ViewHolder	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.Presenter$ViewHolder	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Presenter$ViewHolder	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.Presenter$ViewHolder	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.widget.Presenter$ViewHolder {
 +public class android.support.v17.leanback.widget.Presenter$ViewHolder implements android.support.v17.leanback.widget.FacetProvider {
@@ -220,13 +220,13 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Pr
 +  public final java.lang.Object getFacet(java.lang.Class<?>);
 +  public final void setFacet(java.lang.Class<?>, java.lang.Object);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.PresenterSelector leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.PresenterSelector
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.PresenterSelector	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.PresenterSelector	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.PresenterSelector	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.PresenterSelector	2015-09-05 18:52:11.000000000 +0900
 @@ -3,0 +4 @@
 +  public android.support.v17.leanback.widget.Presenter[] getPresenters();
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ShadowOverlayContainer leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ShadowOverlayContainer
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ShadowOverlayContainer	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ShadowOverlayContainer	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.ShadowOverlayContainer	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.ShadowOverlayContainer	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2,3 @@
 +  public static final int SHADOW_NONE;
 +  public static final int SHADOW_STATIC;
@@ -241,19 +241,19 @@ diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.Sh
 @@ -11,0 +20 @@
 +  public android.view.View getWrappedView();
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.SinglePresenterSelector leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.SinglePresenterSelector
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.SinglePresenterSelector	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.SinglePresenterSelector	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.SinglePresenterSelector	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.SinglePresenterSelector	2015-09-05 18:52:11.000000000 +0900
 @@ -3,0 +4 @@
 +  public android.support.v17.leanback.widget.Presenter[] getPresenters();
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.VerticalGridPresenter leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.VerticalGridPresenter
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.VerticalGridPresenter	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.VerticalGridPresenter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.VerticalGridPresenter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.VerticalGridPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -12 +12 @@
 -  public boolean isUsingZOrder();
 +  public boolean isUsingZOrder(android.content.Context);
 diff -U 0 -N leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.VerticalGridView leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.VerticalGridView
---- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.VerticalGridView	2015-08-20 23:41:44.000000000 +0900
-+++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.VerticalGridView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-22.1.1_08f40e5e/android.support.v17.leanback.widget.VerticalGridView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.2.0_4bca7396/android.support.v17.leanback.widget.VerticalGridView	2015-09-05 18:52:11.000000000 +0900
 @@ -32,0 +33 @@
 +  public int getSelectedSubPosition();
 @@ -33,0 +35 @@

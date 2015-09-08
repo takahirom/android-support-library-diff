@@ -1,14 +1,14 @@
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBar appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBar
---- appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBar	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBar	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBar	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBar	2015-09-05 18:52:11.000000000 +0900
 @@ -61,0 +62,4 @@
 +  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
 +  public void setHomeAsUpIndicator(int);
 +  public void setHomeActionContentDescription(java.lang.CharSequence);
 +  public void setHomeActionContentDescription(int);
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJB appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBarImplJB
---- appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJB	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBarImplJB	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJB	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBarImplJB	2015-09-05 18:52:11.000000000 +0900
 @@ -9,0 +10,2 @@
 +  public void setHomeAsUpIndicator(int);
 +  public void setHomeAsUpIndicator(android.graphics.drawable.Drawable);
@@ -17,7 +17,7 @@ diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJB
 +  public void setStackedBackgroundDrawable(android.graphics.drawable.Drawable);
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJBMR2 appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBarImplJBMR2
 --- appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJBMR2	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBarImplJBMR2	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.app.ActionBarImplJBMR2	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,7 @@
 +public class android.support.v7.app.ActionBarImplJBMR2 extends android.support.v7.app.ActionBarImplJB {
 +  public android.support.v7.app.ActionBarImplJBMR2(android.app.Activity, android.support.v7.app.ActionBar$Callback);
@@ -28,7 +28,7 @@ diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.app.ActionBarImplJB
 +}
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.appcompat.BuildConfig appcompat-v7-19.1.0_fe8794f2/android.support.v7.appcompat.BuildConfig
 --- appcompat-v7-19.0.1_51f2b23a/android.support.v7.appcompat.BuildConfig	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.appcompat.BuildConfig	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.appcompat.BuildConfig	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,9 @@
 +public final class android.support.v7.appcompat.BuildConfig {
 +  public static final boolean DEBUG;
@@ -40,15 +40,15 @@ diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.appcompat.BuildConf
 +  public android.support.v7.appcompat.BuildConfig();
 +}
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapper appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapper
---- appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapper	2015-08-20 23:41:44.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapper	2015-08-20 23:41:44.000000000 +0900
+--- appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapper	2015-09-05 18:52:11.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapper	2015-09-05 18:52:11.000000000 +0900
 @@ -5,3 +4,0 @@
 -  public boolean getTitleOptionalHint();
 -  public void setTitleOptionalHint(boolean);
 -  public boolean isTitleOptional();
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapperJB appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapperJB
 --- appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapperJB	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapperJB	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapperJB	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v7.internal.view.ActionModeWrapperJB extends android.support.v7.internal.view.ActionModeWrapper {
 +  public android.support.v7.internal.view.ActionModeWrapperJB(android.content.Context, android.view.ActionMode);
@@ -58,7 +58,7 @@ diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.Actio
 +}
 diff -U 0 -N appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper
 --- appcompat-v7-19.0.1_51f2b23a/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper	1970-01-01 09:00:00.000000000 +0900
-+++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper	2015-08-20 23:41:44.000000000 +0900
++++ appcompat-v7-19.1.0_fe8794f2/android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,3 @@
 +public class android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper extends android.support.v7.internal.view.ActionModeWrapper$CallbackWrapper {
 +  public android.support.v7.internal.view.ActionModeWrapperJB$CallbackWrapper(android.content.Context, android.support.v7.view.ActionMode$Callback);

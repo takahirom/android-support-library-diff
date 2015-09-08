@@ -1,18 +1,18 @@
 diff -U 0 -N mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouteProvider$ProviderMetadata mediarouter-v7-19.0.1_4604863a/android.support.v7.media.MediaRouteProvider$ProviderMetadata
---- mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouteProvider$ProviderMetadata	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-19.0.1_4604863a/android.support.v7.media.MediaRouteProvider$ProviderMetadata	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouteProvider$ProviderMetadata	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-19.0.1_4604863a/android.support.v7.media.MediaRouteProvider$ProviderMetadata	2015-09-05 18:52:11.000000000 +0900
 @@ -2 +1,0 @@
 -  public android.support.v7.media.MediaRouteProvider$ProviderMetadata(java.lang.String);
 @@ -3,0 +3 @@
 +  public android.content.ComponentName getComponentName();
 diff -U 0 -N mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter$ProviderInfo mediarouter-v7-19.0.1_4604863a/android.support.v7.media.MediaRouter$ProviderInfo
---- mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter$ProviderInfo	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-19.0.1_4604863a/android.support.v7.media.MediaRouter$ProviderInfo	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter$ProviderInfo	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-19.0.1_4604863a/android.support.v7.media.MediaRouter$ProviderInfo	2015-09-05 18:52:11.000000000 +0900
 @@ -3,0 +4 @@
 +  public android.content.ComponentName getComponentName();
 diff -U 0 -N mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RegisteredMediaRouteProviderWatcher$Callback mediarouter-v7-19.0.1_4604863a/android.support.v7.media.RegisteredMediaRouteProviderWatcher$Callback
 --- mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RegisteredMediaRouteProviderWatcher$Callback	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.1_4604863a/android.support.v7.media.RegisteredMediaRouteProviderWatcher$Callback	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.1_4604863a/android.support.v7.media.RegisteredMediaRouteProviderWatcher$Callback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public interface android.support.v7.media.RegisteredMediaRouteProviderWatcher$Callback {
 +  public abstract void addProvider(android.support.v7.media.MediaRouteProvider);

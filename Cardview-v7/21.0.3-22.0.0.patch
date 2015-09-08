@@ -1,6 +1,6 @@
 diff -U 0 -N cardview-v7-21.0.3_cba24b32/android.support.v7.cardview.BuildConfig cardview-v7-22.0.0_83152332/android.support.v7.cardview.BuildConfig
---- cardview-v7-21.0.3_cba24b32/android.support.v7.cardview.BuildConfig	2015-08-20 23:41:43.000000000 +0900
-+++ cardview-v7-22.0.0_83152332/android.support.v7.cardview.BuildConfig	2015-08-20 23:41:43.000000000 +0900
+--- cardview-v7-21.0.3_cba24b32/android.support.v7.cardview.BuildConfig	2015-09-05 18:52:11.000000000 +0900
++++ cardview-v7-22.0.0_83152332/android.support.v7.cardview.BuildConfig	2015-09-05 18:52:11.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;

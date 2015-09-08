@@ -1,16 +1,16 @@
 diff -U 0 -N palette-v7-21.0.3_853c82ee/android.support.v7.graphics.Palette palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette
---- palette-v7-21.0.3_853c82ee/android.support.v7.graphics.Palette	2015-08-20 23:41:45.000000000 +0900
-+++ palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette	2015-08-20 23:41:45.000000000 +0900
+--- palette-v7-21.0.3_853c82ee/android.support.v7.graphics.Palette	2015-09-05 18:52:11.000000000 +0900
++++ palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette	2015-09-05 18:52:11.000000000 +0900
 @@ -5,0 +6 @@
 +  public static android.support.v7.graphics.Palette from(java.util.List<android.support.v7.graphics.Palette$Swatch>);
 diff -U 0 -N palette-v7-21.0.3_853c82ee/android.support.v7.graphics.Palette$Swatch palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette$Swatch
---- palette-v7-21.0.3_853c82ee/android.support.v7.graphics.Palette$Swatch	2015-08-20 23:41:45.000000000 +0900
-+++ palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette$Swatch	2015-08-20 23:41:45.000000000 +0900
+--- palette-v7-21.0.3_853c82ee/android.support.v7.graphics.Palette$Swatch	2015-09-05 18:52:11.000000000 +0900
++++ palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette$Swatch	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2 @@
 +  public android.support.v7.graphics.Palette$Swatch(int, int);
 diff -U 0 -N palette-v7-21.0.3_853c82ee/android.support.v7.palette.BuildConfig palette-v7-22.0.0_c3c3a5ee/android.support.v7.palette.BuildConfig
---- palette-v7-21.0.3_853c82ee/android.support.v7.palette.BuildConfig	2015-08-20 23:41:45.000000000 +0900
-+++ palette-v7-22.0.0_c3c3a5ee/android.support.v7.palette.BuildConfig	2015-08-20 23:41:45.000000000 +0900
+--- palette-v7-21.0.3_853c82ee/android.support.v7.palette.BuildConfig	2015-09-05 18:52:11.000000000 +0900
++++ palette-v7-22.0.0_c3c3a5ee/android.support.v7.palette.BuildConfig	2015-09-05 18:52:11.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;

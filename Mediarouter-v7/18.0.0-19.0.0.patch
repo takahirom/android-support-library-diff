@@ -1,6 +1,6 @@
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaControlIntent mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaControlIntent
---- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaControlIntent	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaControlIntent	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaControlIntent	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaControlIntent	2015-09-05 18:52:11.000000000 +0900
 @@ -12,0 +13,3 @@
 +  public static final java.lang.String ACTION_START_SESSION;
 +  public static final java.lang.String ACTION_GET_SESSION_STATUS;
@@ -15,24 +15,24 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaContro
 +  public static final int ERROR_INVALID_SESSION_ID;
 +  public static final int ERROR_INVALID_ITEM_ID;
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaItemMetadata mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaItemMetadata
---- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaItemMetadata	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaItemMetadata	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaItemMetadata	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaItemMetadata	2015-09-05 18:52:11.000000000 +0900
 @@ -11,0 +12 @@
 +  public static final java.lang.String KEY_DURATION;
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaRouter mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter
---- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaRouter	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaRouter	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter	2015-09-05 18:52:11.000000000 +0900
 @@ -18,0 +19,2 @@
 +  public void addRemoteControlClient(java.lang.Object);
 +  public void removeRemoteControlClient(java.lang.Object);
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaRouter$RouteInfo mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter$RouteInfo
---- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaRouter$RouteInfo	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter$RouteInfo	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaRouter$RouteInfo	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaRouter$RouteInfo	2015-09-05 18:52:11.000000000 +0900
 @@ -16,0 +17 @@
 +  public boolean supportsControlAction(java.lang.String, java.lang.String);
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaSessionStatus mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaSessionStatus
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaSessionStatus	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaSessionStatus	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaSessionStatus	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,12 @@
 +public final class android.support.v7.media.MediaSessionStatus {
 +  public static final int SESSION_STATE_ACTIVE;
@@ -48,7 +48,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaSessio
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaSessionStatus$Builder mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaSessionStatus$Builder
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaSessionStatus$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaSessionStatus$Builder	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.MediaSessionStatus$Builder	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,9 @@
 +public final class android.support.v7.media.MediaSessionStatus$Builder {
 +  public android.support.v7.media.MediaSessionStatus$Builder(int);
@@ -61,7 +61,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.MediaSessio
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemoteControlClientCompat$PlaybackInfo mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemoteControlClientCompat$PlaybackInfo
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemoteControlClientCompat$PlaybackInfo	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemoteControlClientCompat$PlaybackInfo	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemoteControlClientCompat$PlaybackInfo	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,8 @@
 +public final class android.support.v7.media.RemoteControlClientCompat$PlaybackInfo {
 +  public int volume;
@@ -73,7 +73,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemoteContr
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemoteControlClientCompat$VolumeCallback mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemoteControlClientCompat$VolumeCallback
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemoteControlClientCompat$VolumeCallback	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemoteControlClientCompat$VolumeCallback	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemoteControlClientCompat$VolumeCallback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public interface android.support.v7.media.RemoteControlClientCompat$VolumeCallback {
 +  public abstract void onVolumeUpdateRequest(int);
@@ -81,7 +81,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemoteContr
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,22 @@
 +public class android.support.v7.media.RemotePlaybackClient {
 +  public android.support.v7.media.RemotePlaybackClient(android.content.Context, android.support.v7.media.MediaRouter$RouteInfo);
@@ -107,7 +107,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlayb
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$ActionCallback mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$ActionCallback
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$ActionCallback	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$ActionCallback	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$ActionCallback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public abstract class android.support.v7.media.RemotePlaybackClient$ActionCallback {
 +  public android.support.v7.media.RemotePlaybackClient$ActionCallback();
@@ -115,7 +115,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlayb
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$ItemActionCallback mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$ItemActionCallback
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$ItemActionCallback	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$ItemActionCallback	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$ItemActionCallback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public abstract class android.support.v7.media.RemotePlaybackClient$ItemActionCallback extends android.support.v7.media.RemotePlaybackClient$ActionCallback {
 +  public android.support.v7.media.RemotePlaybackClient$ItemActionCallback();
@@ -123,7 +123,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlayb
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$SessionActionCallback mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$SessionActionCallback
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$SessionActionCallback	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$SessionActionCallback	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$SessionActionCallback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,4 @@
 +public abstract class android.support.v7.media.RemotePlaybackClient$SessionActionCallback extends android.support.v7.media.RemotePlaybackClient$ActionCallback {
 +  public android.support.v7.media.RemotePlaybackClient$SessionActionCallback();
@@ -131,7 +131,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlayb
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$StatusCallback mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$StatusCallback
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlaybackClient$StatusCallback	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$StatusCallback	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.RemotePlaybackClient$StatusCallback	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,6 @@
 +public abstract class android.support.v7.media.RemotePlaybackClient$StatusCallback {
 +  public android.support.v7.media.RemotePlaybackClient$StatusCallback();
@@ -141,7 +141,7 @@ diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.RemotePlayb
 +}
 diff -U 0 -N mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController mediarouter-v7-19.0.0_776d9702/android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController
 --- mediarouter-v7-18.0.0_f4cb019a/android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController	1970-01-01 09:00:00.000000000 +0900
-+++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController	2015-08-20 23:41:45.000000000 +0900
++++ mediarouter-v7-19.0.0_776d9702/android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,5 @@
 +public final class android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController extends android.support.v7.media.MediaRouteProvider$RouteController {
 +  public android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl$SystemRouteController(android.support.v7.media.SystemMediaRouteProvider$JellybeanImpl, java.lang.Object);

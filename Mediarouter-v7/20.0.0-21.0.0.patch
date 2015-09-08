@@ -1,6 +1,6 @@
 diff -U 0 -N mediarouter-v7-20.0.0_ab1d2fde/android.support.v7.media.MediaRouter mediarouter-v7-21.0.0_616c180e/android.support.v7.media.MediaRouter
---- mediarouter-v7-20.0.0_ab1d2fde/android.support.v7.media.MediaRouter	2015-08-20 23:41:45.000000000 +0900
-+++ mediarouter-v7-21.0.0_616c180e/android.support.v7.media.MediaRouter	2015-08-20 23:41:45.000000000 +0900
+--- mediarouter-v7-20.0.0_ab1d2fde/android.support.v7.media.MediaRouter	2015-09-05 18:52:11.000000000 +0900
++++ mediarouter-v7-21.0.0_616c180e/android.support.v7.media.MediaRouter	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5 @@
 +  public static final int CALLBACK_FLAG_FORCE_DISCOVERY;
 @@ -5,0 +7 @@

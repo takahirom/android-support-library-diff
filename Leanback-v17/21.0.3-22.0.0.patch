@@ -1,12 +1,12 @@
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.BuildConfig leanback-v17-22.0.0_5260278a/android.support.v17.leanback.BuildConfig
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.BuildConfig	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.BuildConfig	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.BuildConfig	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.BuildConfig	2015-09-05 18:52:11.000000000 +0900
 @@ -3 +3 @@
 -  public static final java.lang.String PACKAGE_NAME;
 +  public static final java.lang.String APPLICATION_ID;
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.BrowseFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.BrowseFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.BrowseFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.BrowseFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.BrowseFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.BrowseFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.app.BrowseFragment extends android.app.Fragment {
 +public class android.support.v17.leanback.app.BrowseFragment extends android.support.v17.leanback.app.BaseFragment {
@@ -21,8 +21,8 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.Brows
 +  public void prepareEntranceTransition();
 +  public void onViewCreated(android.view.View, android.os.Bundle);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.BrowseSupportFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.BrowseSupportFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.BrowseSupportFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.BrowseSupportFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.BrowseSupportFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.BrowseSupportFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.app.BrowseSupportFragment extends android.support.v4.app.Fragment {
 +public class android.support.v17.leanback.app.BrowseSupportFragment extends android.support.v17.leanback.app.BaseSupportFragment {
@@ -37,8 +37,8 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.Brows
 +  public void prepareEntranceTransition();
 +  public void onViewCreated(android.view.View, android.os.Bundle);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.DetailsFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.DetailsFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.DetailsFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.DetailsFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.DetailsFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.DetailsFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.app.DetailsFragment extends android.app.Fragment {
 +public class android.support.v17.leanback.app.DetailsFragment extends android.support.v17.leanback.app.BaseFragment {
@@ -50,8 +50,8 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.Detai
 +  public void prepareEntranceTransition();
 +  public void onViewCreated(android.view.View, android.os.Bundle);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.DetailsSupportFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.DetailsSupportFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.DetailsSupportFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.DetailsSupportFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.DetailsSupportFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.DetailsSupportFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.app.DetailsSupportFragment extends android.support.v4.app.Fragment {
 +public class android.support.v17.leanback.app.DetailsSupportFragment extends android.support.v17.leanback.app.BaseSupportFragment {
@@ -63,18 +63,18 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.Detai
 +  public void prepareEntranceTransition();
 +  public void onViewCreated(android.view.View, android.os.Bundle);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.HeadersFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.HeadersFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.HeadersFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.HeadersFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.HeadersFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.HeadersFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -5,0 +6 @@
 +  public void setSelectedPosition(int, boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.HeadersSupportFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.HeadersSupportFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.HeadersSupportFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.HeadersSupportFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.HeadersSupportFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.HeadersSupportFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -5,0 +6 @@
 +  public void setSelectedPosition(int, boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.MediaControllerGlue leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.MediaControllerGlue
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.MediaControllerGlue	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.MediaControllerGlue	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.MediaControllerGlue	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,16 @@
 +public abstract class android.support.v17.leanback.app.MediaControllerGlue extends android.support.v17.leanback.app.PlaybackControlGlue {
 +  public android.support.v17.leanback.app.MediaControllerGlue(android.content.Context, android.support.v17.leanback.app.PlaybackOverlayFragment, int[]);
@@ -94,7 +94,7 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.Media
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackControlGlue leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackControlGlue
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackControlGlue	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackControlGlue	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackControlGlue	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,42 @@
 +public abstract class android.support.v17.leanback.app.PlaybackControlGlue {
 +  public static final int ACTION_CUSTOM_LEFT_FIRST;
@@ -139,56 +139,56 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.Playb
 +  public abstract int getCurrentPosition();
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlayFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlayFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlayFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlayFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlayFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlayFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -9,0 +10,2 @@
 +  public final void setInputEventHandler(android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler);
 +  public final android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler getInputEventHandler();
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler {
 +  public abstract boolean handleInputEvent(android.view.InputEvent);
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -9,0 +10,2 @@
 +  public final void setInputEventHandler(android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler);
 +  public final android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler getInputEventHandler();
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,3 @@
 +public interface android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler {
 +  public abstract boolean handleInputEvent(android.view.InputEvent);
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.RowsFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.RowsFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.RowsFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -15,0 +16 @@
 +  public void setSelectedPosition(int, boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsSupportFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.RowsSupportFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsSupportFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.RowsSupportFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.RowsSupportFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.RowsSupportFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -15,0 +16 @@
 +  public void setSelectedPosition(int, boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.VerticalGridFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.VerticalGridFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.VerticalGridFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.VerticalGridFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.VerticalGridFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.VerticalGridFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -24,0 +25,2 @@
 +  public void onPause();
 +  public void onResume();
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.VerticalGridSupportFragment leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.VerticalGridSupportFragment
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-09-05 18:52:11.000000000 +0900
 @@ -24,0 +25,2 @@
 +  public void onPause();
 +  public void onResume();
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.LeanbackTransitionHelper leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.LeanbackTransitionHelper
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.LeanbackTransitionHelper	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.LeanbackTransitionHelper	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.LeanbackTransitionHelper	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,5 @@
 +public class android.support.v17.leanback.transition.LeanbackTransitionHelper {
 +  public android.support.v17.leanback.transition.LeanbackTransitionHelper();
@@ -196,7 +196,7 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transitio
 +  public static java.lang.Object loadTitleOutTransition(android.content.Context, android.support.v17.leanback.transition.TransitionHelper);
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.SlideCallback leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.SlideCallback
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.SlideCallback	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.SlideCallback	2015-09-05 18:52:11.000000000 +0900
 +++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.SlideCallback	1970-01-01 09:00:00.000000000 +0900
 @@ -1,3 +0,0 @@
 -public interface android.support.v17.leanback.transition.SlideCallback {
@@ -204,7 +204,7 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transitio
 -}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.SlideNoPropagation leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.SlideNoPropagation
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.SlideNoPropagation	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.SlideNoPropagation	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.SlideNoPropagation	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,6 @@
 +public class android.support.v17.leanback.transition.SlideNoPropagation extends android.transition.Slide {
 +  public android.support.v17.leanback.transition.SlideNoPropagation();
@@ -213,8 +213,8 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transitio
 +  public void setSlideEdge(int);
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.TransitionHelper leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.TransitionHelper
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.TransitionHelper	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.TransitionHelper	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transition.TransitionHelper	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.transition.TransitionHelper	2015-09-05 18:52:11.000000000 +0900
 @@ -8,0 +9 @@
 +  public static boolean systemSupportsEntranceTransitions();
 @@ -25 +26 @@
@@ -223,13 +223,13 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.transitio
 @@ -42,0 +44 @@
 +  public java.lang.Object loadTransition(android.content.Context, int);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.ArrayObjectAdapter leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.ArrayObjectAdapter
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.ArrayObjectAdapter	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.ArrayObjectAdapter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.ArrayObjectAdapter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.ArrayObjectAdapter	2015-09-05 18:52:11.000000000 +0900
 @@ -12,0 +13 @@
 +  public void replace(int, java.lang.Object);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.HeaderItem leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.HeaderItem
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.HeaderItem	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.HeaderItem	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.HeaderItem	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.HeaderItem	2015-09-05 18:52:11.000000000 +0900
 @@ -2,2 +2,2 @@
 -  public android.support.v17.leanback.widget.HeaderItem(long, java.lang.String, java.lang.String);
 -  public android.support.v17.leanback.widget.HeaderItem(java.lang.String, java.lang.String);
@@ -238,29 +238,29 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.He
 @@ -6 +5,0 @@
 -  public final java.lang.String getImageUri();
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.HorizontalGridView leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.HorizontalGridView
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.HorizontalGridView	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.HorizontalGridView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.HorizontalGridView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.HorizontalGridView	2015-09-05 18:52:11.000000000 +0900
 @@ -19,0 +20 @@
 +  public void onRtlPropertiesChanged(int);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.ListRowPresenter leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.ListRowPresenter
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.ListRowPresenter	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.ListRowPresenter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.ListRowPresenter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.ListRowPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -8,0 +9,2 @@
 +  public void setRecycledPoolSize(android.support.v17.leanback.widget.Presenter, int);
 +  public int getRecycledPoolSize(android.support.v17.leanback.widget.Presenter);
 @@ -20,0 +23 @@
 +  public void setEntranceTransitionState(android.support.v17.leanback.widget.RowPresenter$ViewHolder, boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction extends android.support.v17.leanback.widget.Action {
 +public class android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction extends android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction {
 @@ -2,0 +3 @@
 +  public android.support.v17.leanback.widget.PlaybackControlsRow$FastForwardAction(android.content.Context, int);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction	2015-09-05 18:52:11.000000000 +0900
 @@ -5 +5,2 @@
 -  public int getNumberOfDrawables();
 +  public void setSecondaryLabels(java.lang.String[]);
@@ -268,21 +268,21 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.Pl
 @@ -7,0 +9 @@
 +  public java.lang.String getSecondaryLabel(int);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction	2015-09-05 18:52:11.000000000 +0900
 @@ -1 +1 @@
 -public class android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction extends android.support.v17.leanback.widget.Action {
 +public class android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction extends android.support.v17.leanback.widget.PlaybackControlsRow$MultiAction {
 @@ -2,0 +3 @@
 +  public android.support.v17.leanback.widget.PlaybackControlsRow$RewindAction(android.content.Context, int);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.RowPresenter leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.RowPresenter
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.RowPresenter	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.RowPresenter	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.RowPresenter	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.RowPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -27,0 +28 @@
 +  public void setEntranceTransitionState(android.support.v17.leanback.widget.RowPresenter$ViewHolder, boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.SparseArrayObjectAdapter leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.SparseArrayObjectAdapter
 --- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.SparseArrayObjectAdapter	1970-01-01 09:00:00.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.SparseArrayObjectAdapter	2015-08-20 23:41:43.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.SparseArrayObjectAdapter	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,14 @@
 +public class android.support.v17.leanback.widget.SparseArrayObjectAdapter extends android.support.v17.leanback.widget.ObjectAdapter {
 +  public android.support.v17.leanback.widget.SparseArrayObjectAdapter(android.support.v17.leanback.widget.PresenterSelector);
@@ -299,17 +299,17 @@ diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.Sp
 +  public java.lang.Object lookup(int);
 +}
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.TitleView leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.TitleView
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.TitleView	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.TitleView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.TitleView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.TitleView	2015-09-05 18:52:11.000000000 +0900
 @@ -12,0 +13 @@
 +  public void enableAnimation(boolean);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.VerticalGridView leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.VerticalGridView
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.VerticalGridView	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.VerticalGridView	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.VerticalGridView	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.VerticalGridView	2015-09-05 18:52:11.000000000 +0900
 @@ -6,0 +7 @@
 +  public void onRtlPropertiesChanged(int);
 diff -U 0 -N leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.WindowAlignment$Axis leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.WindowAlignment$Axis
---- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.WindowAlignment$Axis	2015-08-20 23:41:43.000000000 +0900
-+++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.WindowAlignment$Axis	2015-08-20 23:41:43.000000000 +0900
+--- leanback-v17-21.0.3_8d35e96a/android.support.v17.leanback.widget.WindowAlignment$Axis	2015-09-05 18:52:11.000000000 +0900
++++ leanback-v17-22.0.0_5260278a/android.support.v17.leanback.widget.WindowAlignment$Axis	2015-09-05 18:52:11.000000000 +0900
 @@ -30,0 +31 @@
 +  public final void setReversedFlow(boolean);

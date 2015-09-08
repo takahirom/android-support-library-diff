@@ -1,44 +1,44 @@
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.internal.NavigationMenuPresenter design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenuPresenter
---- design-22.2.0_ab0ff486/android.support.design.internal.NavigationMenuPresenter	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenuPresenter	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.internal.NavigationMenuPresenter	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.internal.NavigationMenuPresenter	2015-09-05 18:52:11.000000000 +0900
 @@ -25,0 +26 @@
 +  public void setUpdateSuspended(boolean);
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.CoordinatorLayout design-22.2.1_f6b6ef86/android.support.design.widget.CoordinatorLayout
---- design-22.2.0_ab0ff486/android.support.design.widget.CoordinatorLayout	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.CoordinatorLayout	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.CoordinatorLayout	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.CoordinatorLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5 @@
 +  public void setOnHierarchyChangeListener(android.view.ViewGroup$OnHierarchyChangeListener);
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.CoordinatorLayout$Behavior<V design-22.2.1_f6b6ef86/android.support.design.widget.CoordinatorLayout$Behavior<V
---- design-22.2.0_ab0ff486/android.support.design.widget.CoordinatorLayout$Behavior<V	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.CoordinatorLayout$Behavior<V	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.CoordinatorLayout$Behavior<V	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.CoordinatorLayout$Behavior<V	2015-09-05 18:52:11.000000000 +0900
 @@ -10,0 +11 @@
 +  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, V, android.view.View);
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.FloatingActionButton design-22.2.1_f6b6ef86/android.support.design.widget.FloatingActionButton
---- design-22.2.0_ab0ff486/android.support.design.widget.FloatingActionButton	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.FloatingActionButton	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.FloatingActionButton	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.FloatingActionButton	2015-09-05 18:52:11.000000000 +0900
 @@ -10,0 +11,2 @@
 +  public void show();
 +  public void hide();
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.FloatingActionButton$Behavior design-22.2.1_f6b6ef86/android.support.design.widget.FloatingActionButton$Behavior
---- design-22.2.0_ab0ff486/android.support.design.widget.FloatingActionButton$Behavior	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.FloatingActionButton$Behavior	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.FloatingActionButton$Behavior	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.FloatingActionButton$Behavior	2015-09-05 18:52:11.000000000 +0900
 @@ -4,0 +5,4 @@
 +  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, android.view.View);
 +  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, int);
 +  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, android.view.View, int);
 +  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.View);
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.Snackbar design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar
---- design-22.2.0_ab0ff486/android.support.design.widget.Snackbar	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.Snackbar	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.Snackbar	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2 @@
 +  public static final int LENGTH_INDEFINITE;
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.TabLayout design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout
---- design-22.2.0_ab0ff486/android.support.design.widget.TabLayout	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.TabLayout	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout	2015-09-05 18:52:11.000000000 +0900
 @@ -17,0 +18 @@
 +  public int getSelectedTabPosition();
 diff -U 0 -N design-22.2.0_ab0ff486/android.support.design.widget.TabLayout$Tab design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout$Tab
---- design-22.2.0_ab0ff486/android.support.design.widget.TabLayout$Tab	2015-08-20 23:41:45.000000000 +0900
-+++ design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout$Tab	2015-08-20 23:41:45.000000000 +0900
+--- design-22.2.0_ab0ff486/android.support.design.widget.TabLayout$Tab	2015-09-05 18:52:11.000000000 +0900
++++ design-22.2.1_f6b6ef86/android.support.design.widget.TabLayout$Tab	2015-09-05 18:52:11.000000000 +0900
 @@ -14,0 +15 @@
 +  public boolean isSelected();

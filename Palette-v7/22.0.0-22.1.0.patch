@@ -1,6 +1,6 @@
 diff -U 0 -N palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette palette-v7-22.1.0_e346e04a/android.support.v7.graphics.Palette
---- palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette	2015-08-20 23:41:45.000000000 +0900
-+++ palette-v7-22.1.0_e346e04a/android.support.v7.graphics.Palette	2015-08-20 23:41:45.000000000 +0900
+--- palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette	2015-09-05 18:52:11.000000000 +0900
++++ palette-v7-22.1.0_e346e04a/android.support.v7.graphics.Palette	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2,2 @@
 +  public static android.support.v7.graphics.Palette$Builder from(android.graphics.Bitmap);
 +  public static android.support.v7.graphics.Palette from(java.util.List<android.support.v7.graphics.Palette$Swatch>);
@@ -11,7 +11,7 @@ diff -U 0 -N palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette pale
 -  public int hashCode();
 diff -U 0 -N palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette$Builder palette-v7-22.1.0_e346e04a/android.support.v7.graphics.Palette$Builder
 --- palette-v7-22.0.0_c3c3a5ee/android.support.v7.graphics.Palette$Builder	1970-01-01 09:00:00.000000000 +0900
-+++ palette-v7-22.1.0_e346e04a/android.support.v7.graphics.Palette$Builder	2015-08-20 23:41:45.000000000 +0900
++++ palette-v7-22.1.0_e346e04a/android.support.v7.graphics.Palette$Builder	2015-09-05 18:52:11.000000000 +0900
 @@ -0,0 +1,8 @@
 +public final class android.support.v7.graphics.Palette$Builder {
 +  public android.support.v7.graphics.Palette$Builder(android.graphics.Bitmap);

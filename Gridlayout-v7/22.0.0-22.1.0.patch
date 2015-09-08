@@ -1,16 +1,16 @@
 diff -U 0 -N gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.GridLayout$Alignment gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.GridLayout$Alignment
---- gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.GridLayout$Alignment	2015-08-20 23:41:45.000000000 +0900
-+++ gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.GridLayout$Alignment	2015-08-20 23:41:45.000000000 +0900
+--- gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.GridLayout$Alignment	2015-09-05 18:52:11.000000000 +0900
++++ gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.GridLayout$Alignment	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2 @@
 +  public java.lang.String toString();
 diff -U 0 -N gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.GridLayout$Spec gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.GridLayout$Spec
---- gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.GridLayout$Spec	2015-08-20 23:41:45.000000000 +0900
-+++ gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.GridLayout$Spec	2015-08-20 23:41:45.000000000 +0900
+--- gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.GridLayout$Spec	2015-09-05 18:52:11.000000000 +0900
++++ gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.GridLayout$Spec	2015-09-05 18:52:11.000000000 +0900
 @@ -1,0 +2 @@
 +  public android.support.v7.widget.GridLayout$Alignment getAbsoluteAlignment(boolean);
 diff -U 0 -N gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.Space gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.Space
---- gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.Space	2015-08-20 23:41:45.000000000 +0900
-+++ gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.Space	2015-08-20 23:41:45.000000000 +0900
+--- gridlayout-v7-22.0.0_4d687404/android.support.v7.widget.Space	2015-09-05 18:52:11.000000000 +0900
++++ gridlayout-v7-22.1.0_a110b7da/android.support.v7.widget.Space	2015-09-05 18:52:11.000000000 +0900
 @@ -1,3 +1 @@
 -public final class android.support.v7.widget.Space extends android.view.View {
 -  public android.support.v7.widget.Space(android.content.Context, android.util.AttributeSet, int);
