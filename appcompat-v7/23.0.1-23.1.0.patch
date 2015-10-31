@@ -1,0 +1,111 @@
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.graphics.drawable.DrawerArrowDrawable appcompat-v7-23.1.0_91960c56/android.support.v7.graphics.drawable.DrawerArrowDrawable
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.graphics.drawable.DrawerArrowDrawable	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.graphics.drawable.DrawerArrowDrawable	2015-10-17 20:26:41.000000000 +0900
+@@ -31,0 +32 @@
++  public final android.graphics.Paint getPaint();
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ButtonBarLayout appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ButtonBarLayout
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ButtonBarLayout	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ButtonBarLayout	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.internal.widget.ButtonBarLayout extends android.widget.LinearLayout {
++  public android.support.v7.internal.widget.ButtonBarLayout(android.content.Context, android.util.AttributeSet);
++  public void setAllowStacking(boolean);
++}
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ContentFrameLayout appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ContentFrameLayout
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ContentFrameLayout	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ContentFrameLayout	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6 @@
++  public void setAttachListener(android.support.v7.internal.widget.ContentFrameLayout$OnAttachListener);
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ContentFrameLayout$OnAttachListener appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ContentFrameLayout$OnAttachListener
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ContentFrameLayout$OnAttachListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ContentFrameLayout$OnAttachListener	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.internal.widget.ContentFrameLayout$OnAttachListener {
++  public abstract void onDetachedFromWindow();
++  public abstract void onAttachedFromWindow();
++}
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ListViewCompat appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ListViewCompat
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.ListViewCompat	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.ListViewCompat	2015-10-17 20:26:41.000000000 +0900
+@@ -7,0 +8 @@
++  public boolean onTouchEvent(android.view.MotionEvent);
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.TintImageView appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.TintImageView
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.TintImageView	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.TintImageView	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public class android.support.v7.internal.widget.TintImageView extends android.widget.ImageView {
+-  public android.support.v7.internal.widget.TintImageView(android.content.Context);
+-  public android.support.v7.internal.widget.TintImageView(android.content.Context, android.util.AttributeSet);
+-  public android.support.v7.internal.widget.TintImageView(android.content.Context, android.util.AttributeSet, int);
+-  public void setImageResource(int);
+-}
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.TintManager appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.TintManager
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.internal.widget.TintManager	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.internal.widget.TintManager	2015-10-17 20:26:41.000000000 +0900
+@@ -9 +9 @@
+-  public static void tintViewBackground(android.view.View, android.support.v7.internal.widget.TintInfo);
++  public static void tintDrawable(android.graphics.drawable.Drawable, android.support.v7.internal.widget.TintInfo, int[]);
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatCheckedTextView appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatCheckedTextView
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatCheckedTextView	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatCheckedTextView	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6 @@
++  public void setTextAppearance(android.content.Context, int);
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatImageButton appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatImageButton
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatImageButton	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatImageButton	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.v7.widget.AppCompatImageButton extends android.widget.ImageButton implements android.support.v4.view.TintableBackgroundView {
++  public android.support.v7.widget.AppCompatImageButton(android.content.Context);
++  public android.support.v7.widget.AppCompatImageButton(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.AppCompatImageButton(android.content.Context, android.util.AttributeSet, int);
++  public void setImageResource(int);
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setSupportBackgroundTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getSupportBackgroundTintList();
++  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
++}
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatImageView appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatImageView
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatImageView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatImageView	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.v7.widget.AppCompatImageView extends android.widget.ImageView implements android.support.v4.view.TintableBackgroundView {
++  public android.support.v7.widget.AppCompatImageView(android.content.Context);
++  public android.support.v7.widget.AppCompatImageView(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.AppCompatImageView(android.content.Context, android.util.AttributeSet, int);
++  public void setImageResource(int);
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setSupportBackgroundTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getSupportBackgroundTintList();
++  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
++}
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatSeekBar appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatSeekBar
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatSeekBar	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatSeekBar	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.widget.AppCompatSeekBar extends android.widget.SeekBar {
++  public android.support.v7.widget.AppCompatSeekBar(android.content.Context);
++  public android.support.v7.widget.AppCompatSeekBar(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.widget.AppCompatSeekBar(android.content.Context, android.util.AttributeSet, int);
++}
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatTextView appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatTextView
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.widget.AppCompatTextView	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.widget.AppCompatTextView	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.AppCompatTextView extends android.widget.TextView {
++public class android.support.v7.widget.AppCompatTextView extends android.widget.TextView implements android.support.v4.view.TintableBackgroundView {
+@@ -4,0 +5,6 @@
++  public void setBackgroundResource(int);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++  public void setSupportBackgroundTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getSupportBackgroundTintList();
++  public void setSupportBackgroundTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getSupportBackgroundTintMode();
+diff -U 0 -N appcompat-v7-23.0.1_197b6716/android.support.v7.widget.ListPopupWindow appcompat-v7-23.1.0_91960c56/android.support.v7.widget.ListPopupWindow
+--- appcompat-v7-23.0.1_197b6716/android.support.v7.widget.ListPopupWindow	2015-10-17 20:26:41.000000000 +0900
++++ appcompat-v7-23.1.0_91960c56/android.support.v7.widget.ListPopupWindow	2015-10-17 20:26:41.000000000 +0900
+@@ -39,0 +40 @@
++  public void setWindowLayoutType(int);

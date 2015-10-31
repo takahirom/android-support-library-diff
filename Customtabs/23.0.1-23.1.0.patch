@@ -1,0 +1,30 @@
+diff -U 0 -N customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsCallback customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsCallback
+--- customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsCallback	2015-10-17 20:26:39.000000000 +0900
++++ customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsCallback	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6,2 @@
++  public static final int TAB_SHOWN;
++  public static final int TAB_HIDDEN;
+diff -U 0 -N customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsIntent customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsIntent
+--- customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsIntent	2015-10-17 20:26:39.000000000 +0900
++++ customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsIntent	2015-10-17 20:26:41.000000000 +0900
+@@ -3,0 +4 @@
++  public static final java.lang.String EXTRA_ENABLE_URLBAR_HIDING;
+@@ -11,0 +13 @@
++  public static final java.lang.String EXTRA_TINT_ACTION_BUTTON;
+diff -U 0 -N customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsIntent$Builder customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsIntent$Builder
+--- customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsIntent$Builder	2015-10-17 20:26:39.000000000 +0900
++++ customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsIntent$Builder	2015-10-17 20:26:41.000000000 +0900
+@@ -4,0 +5 @@
++  public android.support.customtabs.CustomTabsIntent$Builder enableUrlBarHiding();
+@@ -7,0 +9 @@
++  public android.support.customtabs.CustomTabsIntent$Builder setActionButton(android.graphics.Bitmap, java.lang.String, android.app.PendingIntent, boolean);
+diff -U 0 -N customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsSession customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsSession
+--- customtabs-23.0.1_dd93f212/android.support.customtabs.CustomTabsSession	2015-10-17 20:26:39.000000000 +0900
++++ customtabs-23.1.0_5e4d1586/android.support.customtabs.CustomTabsSession	2015-10-17 20:26:41.000000000 +0900
+@@ -2,0 +3 @@
++  public boolean setActionButton(android.graphics.Bitmap, java.lang.String);
+diff -U 0 -N customtabs-23.0.1_dd93f212/android.support.customtabs.ICustomTabsService customtabs-23.1.0_5e4d1586/android.support.customtabs.ICustomTabsService
+--- customtabs-23.0.1_dd93f212/android.support.customtabs.ICustomTabsService	2015-10-17 20:26:39.000000000 +0900
++++ customtabs-23.1.0_5e4d1586/android.support.customtabs.ICustomTabsService	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6 @@
++  public abstract boolean updateVisuals(android.support.customtabs.ICustomTabsCallback, android.os.Bundle) throws android.os.RemoteException;

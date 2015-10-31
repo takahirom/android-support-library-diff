@@ -1,0 +1,143 @@
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.DefaultItemAnimator recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.DefaultItemAnimator
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.DefaultItemAnimator	2015-10-17 20:26:40.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.DefaultItemAnimator	2015-10-17 20:26:40.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.DefaultItemAnimator extends android.support.v7.widget.RecyclerView$ItemAnimator {
++public class android.support.v7.widget.DefaultItemAnimator extends android.support.v7.widget.SimpleItemAnimator {
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.LinearLayoutManager$SavedState recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.LinearLayoutManager$SavedState
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.LinearLayoutManager$SavedState	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.LinearLayoutManager$SavedState	2015-10-17 20:26:40.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v7.widget.LinearLayoutManager$SavedState implements android.os.Parcelable {
++  public static final android.os.Parcelable$Creator<android.support.v7.widget.LinearLayoutManager$SavedState> CREATOR;
++  public android.support.v7.widget.LinearLayoutManager$SavedState();
++  public android.support.v7.widget.LinearLayoutManager$SavedState(android.support.v7.widget.LinearLayoutManager$SavedState);
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++}
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$ItemAnimator recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$ItemAnimator
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$ItemAnimator	2015-10-17 20:26:40.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$ItemAnimator	2015-10-17 20:26:40.000000000 +0900
+@@ -1,0 +2,5 @@
++  public static final int FLAG_CHANGED;
++  public static final int FLAG_REMOVED;
++  public static final int FLAG_INVALIDATED;
++  public static final int FLAG_MOVED;
++  public static final int FLAG_APPEARED_IN_PRE_LAYOUT;
+@@ -11,2 +16,6 @@
+-  public boolean getSupportsChangeAnimations();
+-  public void setSupportsChangeAnimations(boolean);
++  public android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo recordPreLayoutInformation(android.support.v7.widget.RecyclerView$State, android.support.v7.widget.RecyclerView$ViewHolder, int, java.util.List<java.lang.Object>);
++  public android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo recordPostLayoutInformation(android.support.v7.widget.RecyclerView$State, android.support.v7.widget.RecyclerView$ViewHolder);
++  public abstract boolean animateDisappearance(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public abstract boolean animateAppearance(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public abstract boolean animatePersistence(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public abstract boolean animateChange(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
+@@ -14,12 +22,0 @@
+-  public abstract boolean animateRemove(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public abstract boolean animateAdd(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public abstract boolean animateMove(android.support.v7.widget.RecyclerView$ViewHolder, int, int, int, int);
+-  public abstract boolean animateChange(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ViewHolder, int, int, int, int);
+-  public final void dispatchRemoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public final void dispatchMoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public final void dispatchAddFinished(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public final void dispatchChangeFinished(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
+-  public final void dispatchRemoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public final void dispatchMoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public final void dispatchAddStarting(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public final void dispatchChangeStarting(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
+@@ -28,0 +26,4 @@
++  public final void dispatchAnimationFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onAnimationFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchAnimationStarted(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onAnimationStarted(android.support.v7.widget.RecyclerView$ViewHolder);
+@@ -29,0 +31 @@
++  public boolean canReuseUpdatedViewHolder(android.support.v7.widget.RecyclerView$ViewHolder);
+@@ -31,8 +33 @@
+-  public void onRemoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public void onRemoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public void onAddStarting(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public void onAddFinished(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public void onMoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public void onMoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
+-  public void onChangeStarting(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
+-  public void onChangeFinished(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
++  public android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo obtainHolderInfo();
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$ItemAnimator$AdapterChanges recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$ItemAnimator$AdapterChanges
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$ItemAnimator$AdapterChanges	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$ItemAnimator$AdapterChanges	2015-10-17 20:26:40.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.widget.RecyclerView$ItemAnimator$AdapterChanges extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo	2015-10-17 20:26:40.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo {
++  public int left;
++  public int top;
++  public int right;
++  public int bottom;
++  public int changeFlags;
++  public android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo();
++  public android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo setFrom(android.support.v7.widget.RecyclerView$ViewHolder);
++  public android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo setFrom(android.support.v7.widget.RecyclerView$ViewHolder, int);
++}
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$SavedState recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$SavedState
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$SavedState	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$SavedState	2015-10-17 20:26:40.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.widget.RecyclerView$SavedState extends android.view.View$BaseSavedState {
++  public static final android.os.Parcelable$Creator<android.support.v7.widget.RecyclerView$SavedState> CREATOR;
++  public void writeToParcel(android.os.Parcel, int);
++}
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$State recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$State
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.RecyclerView$State	2015-10-17 20:26:40.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.RecyclerView$State	2015-10-17 20:26:40.000000000 +0900
+@@ -13 +12,0 @@
+-  public void onViewIgnored(android.support.v7.widget.RecyclerView$ViewHolder);
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.SimpleItemAnimator recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.SimpleItemAnimator
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.SimpleItemAnimator	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.SimpleItemAnimator	2015-10-17 20:26:40.000000000 +0900
+@@ -0,0 +1,30 @@
++public abstract class android.support.v7.widget.SimpleItemAnimator extends android.support.v7.widget.RecyclerView$ItemAnimator {
++  public android.support.v7.widget.SimpleItemAnimator();
++  public boolean getSupportsChangeAnimations();
++  public void setSupportsChangeAnimations(boolean);
++  public boolean canReuseUpdatedViewHolder(android.support.v7.widget.RecyclerView$ViewHolder);
++  public boolean animateDisappearance(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public boolean animateAppearance(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public boolean animatePersistence(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public boolean animateChange(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo, android.support.v7.widget.RecyclerView$ItemAnimator$ItemHolderInfo);
++  public abstract boolean animateRemove(android.support.v7.widget.RecyclerView$ViewHolder);
++  public abstract boolean animateAdd(android.support.v7.widget.RecyclerView$ViewHolder);
++  public abstract boolean animateMove(android.support.v7.widget.RecyclerView$ViewHolder, int, int, int, int);
++  public abstract boolean animateChange(android.support.v7.widget.RecyclerView$ViewHolder, android.support.v7.widget.RecyclerView$ViewHolder, int, int, int, int);
++  public final void dispatchRemoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchMoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchAddFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchChangeFinished(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
++  public final void dispatchRemoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchMoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchAddStarting(android.support.v7.widget.RecyclerView$ViewHolder);
++  public final void dispatchChangeStarting(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
++  public void onRemoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onRemoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onAddStarting(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onAddFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onMoveStarting(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onMoveFinished(android.support.v7.widget.RecyclerView$ViewHolder);
++  public void onChangeStarting(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
++  public void onChangeFinished(android.support.v7.widget.RecyclerView$ViewHolder, boolean);
++}
+diff -U 0 -N recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.StaggeredGridLayoutManager$SavedState recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.StaggeredGridLayoutManager$SavedState
+--- recyclerview-v7-23.0.1_e9cdaee8/android.support.v7.widget.StaggeredGridLayoutManager$SavedState	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.StaggeredGridLayoutManager$SavedState	2015-10-17 20:26:40.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v7.widget.StaggeredGridLayoutManager$SavedState implements android.os.Parcelable {
++  public static final android.os.Parcelable$Creator<android.support.v7.widget.StaggeredGridLayoutManager$SavedState> CREATOR;
++  public android.support.v7.widget.StaggeredGridLayoutManager$SavedState();
++  public android.support.v7.widget.StaggeredGridLayoutManager$SavedState(android.support.v7.widget.StaggeredGridLayoutManager$SavedState);
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++}

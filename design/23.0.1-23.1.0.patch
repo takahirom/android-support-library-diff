@@ -1,0 +1,161 @@
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.internal.ForegroundLinearLayout design-23.1.0_426a6d5e/android.support.design.internal.ForegroundLinearLayout
+--- design-23.0.1_a88b44ba/android.support.design.internal.ForegroundLinearLayout	1970-01-01 09:00:00.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.internal.ForegroundLinearLayout	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.design.internal.ForegroundLinearLayout extends android.support.v7.widget.LinearLayoutCompat {
++  public android.support.design.internal.ForegroundLinearLayout(android.content.Context);
++  public android.support.design.internal.ForegroundLinearLayout(android.content.Context, android.util.AttributeSet);
++  public android.support.design.internal.ForegroundLinearLayout(android.content.Context, android.util.AttributeSet, int);
++  public int getForegroundGravity();
++  public void setForegroundGravity(int);
++  public void jumpDrawablesToCurrentState();
++  public void setForeground(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getForeground();
++  public void draw(android.graphics.Canvas);
++  public void drawableHotspotChanged(float, float);
++}
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.internal.NavigationMenuItemView design-23.1.0_426a6d5e/android.support.design.internal.NavigationMenuItemView
+--- design-23.0.1_a88b44ba/android.support.design.internal.NavigationMenuItemView	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.internal.NavigationMenuItemView	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.internal.NavigationMenuItemView extends android.widget.TextView implements android.support.v7.internal.view.menu.MenuView$ItemView {
++public class android.support.design.internal.NavigationMenuItemView extends android.support.design.internal.ForegroundLinearLayout implements android.support.v7.internal.view.menu.MenuView$ItemView {
+@@ -5,0 +6 @@
++  public void recycle();
+@@ -13,0 +15,2 @@
++  public void setTextAppearance(android.content.Context, int);
++  public void setTextColor(android.content.res.ColorStateList);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.internal.NavigationMenuPresenter design-23.1.0_426a6d5e/android.support.design.internal.NavigationMenuPresenter
+--- design-23.0.1_a88b44ba/android.support.design.internal.NavigationMenuPresenter	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.internal.NavigationMenuPresenter	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.internal.NavigationMenuPresenter implements android.support.v7.internal.view.menu.MenuPresenter,android.widget.AdapterView$OnItemClickListener {
++public class android.support.design.internal.NavigationMenuPresenter implements android.support.v7.internal.view.menu.MenuPresenter {
+@@ -16 +15,0 @@
+-  public void onItemClick(android.widget.AdapterView<?>, android.view.View, int, long);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.internal.NavigationMenuView design-23.1.0_426a6d5e/android.support.design.internal.NavigationMenuView
+--- design-23.0.1_a88b44ba/android.support.design.internal.NavigationMenuView	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.internal.NavigationMenuView	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.internal.NavigationMenuView extends android.widget.ListView implements android.support.v7.internal.view.menu.MenuView {
++public class android.support.design.internal.NavigationMenuView extends android.support.v7.widget.RecyclerView implements android.support.v7.internal.view.menu.MenuView {
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.internal.ParcelableSparseArray design-23.1.0_426a6d5e/android.support.design.internal.ParcelableSparseArray
+--- design-23.0.1_a88b44ba/android.support.design.internal.ParcelableSparseArray	1970-01-01 09:00:00.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.internal.ParcelableSparseArray	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.design.internal.ParcelableSparseArray extends android.util.SparseArray<android.os.Parcelable> implements android.os.Parcelable {
++  public static final android.os.Parcelable$Creator<android.support.design.internal.ParcelableSparseArray> CREATOR;
++  public android.support.design.internal.ParcelableSparseArray();
++  public android.support.design.internal.ParcelableSparseArray(android.os.Parcel, java.lang.ClassLoader);
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++}
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$Behavior design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$Behavior
+--- design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$Behavior	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$Behavior	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.AppBarLayout$Behavior extends android.support.design.widget.ViewOffsetBehavior<android.support.design.widget.AppBarLayout> {
++public class android.support.design.widget.AppBarLayout$Behavior extends android.support.design.widget.HeaderBehavior<android.support.design.widget.AppBarLayout> {
+@@ -8,2 +7,0 @@
+-  public boolean onInterceptTouchEvent(android.support.design.widget.CoordinatorLayout, android.support.design.widget.AppBarLayout, android.view.MotionEvent);
+-  public boolean onTouchEvent(android.support.design.widget.CoordinatorLayout, android.support.design.widget.AppBarLayout, android.view.MotionEvent);
+@@ -10,0 +9 @@
++  public void setDragCallback(android.support.design.widget.AppBarLayout$Behavior$DragCallback);
+@@ -26,2 +24,0 @@
+-  public boolean onTouchEvent(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.MotionEvent);
+-  public boolean onInterceptTouchEvent(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.MotionEvent);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$Behavior$DragCallback design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$Behavior$DragCallback
+--- design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$Behavior$DragCallback	1970-01-01 09:00:00.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$Behavior$DragCallback	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.design.widget.AppBarLayout$Behavior$DragCallback {
++  public android.support.design.widget.AppBarLayout$Behavior$DragCallback();
++  public abstract boolean canDrag(android.support.design.widget.AppBarLayout);
++}
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$Behavior$SavedState design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$Behavior$SavedState
+--- design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$Behavior$SavedState	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$Behavior$SavedState	2015-10-17 20:26:41.000000000 +0900
+@@ -3 +3 @@
+-  public android.support.design.widget.AppBarLayout$Behavior$SavedState(android.os.Parcel);
++  public android.support.design.widget.AppBarLayout$Behavior$SavedState(android.os.Parcel, java.lang.ClassLoader);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$LayoutParams design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$LayoutParams
+--- design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$LayoutParams	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$LayoutParams	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6 @@
++  public static final int SCROLL_FLAG_SNAP;
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$ScrollingViewBehavior design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$ScrollingViewBehavior
+--- design-23.0.1_a88b44ba/android.support.design.widget.AppBarLayout$ScrollingViewBehavior	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.AppBarLayout$ScrollingViewBehavior	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.AppBarLayout$ScrollingViewBehavior extends android.support.design.widget.ViewOffsetBehavior<android.view.View> {
++public class android.support.design.widget.AppBarLayout$ScrollingViewBehavior extends android.support.design.widget.HeaderScrollingViewBehavior {
+@@ -5 +5 @@
+-  public boolean onMeasureChild(android.support.design.widget.CoordinatorLayout, android.view.View, int, int, int, int);
++  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, android.view.View, int);
+@@ -8,0 +9 @@
++  public boolean onMeasureChild(android.support.design.widget.CoordinatorLayout, android.view.View, int, int, int, int);
+@@ -13 +13,0 @@
+-  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, android.view.View, int);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.CollapsingToolbarLayout design-23.1.0_426a6d5e/android.support.design.widget.CollapsingToolbarLayout
+--- design-23.0.1_a88b44ba/android.support.design.widget.CollapsingToolbarLayout	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.CollapsingToolbarLayout	2015-10-17 20:26:41.000000000 +0900
+@@ -9,0 +10,2 @@
++  public void setScrimsShown(boolean);
++  public void setScrimsShown(boolean, boolean);
+@@ -25,0 +28,4 @@
++  public void setCollapsedTitleTypeface(android.graphics.Typeface);
++  public android.graphics.Typeface getCollapsedTitleTypeface();
++  public void setExpandedTitleTypeface(android.graphics.Typeface);
++  public android.graphics.Typeface getExpandedTitleTypeface();
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.CoordinatorLayout$SavedState design-23.1.0_426a6d5e/android.support.design.widget.CoordinatorLayout$SavedState
+--- design-23.0.1_a88b44ba/android.support.design.widget.CoordinatorLayout$SavedState	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.CoordinatorLayout$SavedState	2015-10-17 20:26:41.000000000 +0900
+@@ -3 +3 @@
+-  public android.support.design.widget.CoordinatorLayout$SavedState(android.os.Parcel);
++  public android.support.design.widget.CoordinatorLayout$SavedState(android.os.Parcel, java.lang.ClassLoader);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.FloatingActionButton design-23.1.0_426a6d5e/android.support.design.widget.FloatingActionButton
+--- design-23.0.1_a88b44ba/android.support.design.widget.FloatingActionButton	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.FloatingActionButton	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.FloatingActionButton extends android.widget.ImageView {
++public class android.support.design.widget.FloatingActionButton extends android.widget.ImageButton {
+@@ -11,0 +12 @@
++  public void show(android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener);
+@@ -12,0 +14 @@
++  public void hide(android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.FloatingActionButton$Behavior design-23.1.0_426a6d5e/android.support.design.widget.FloatingActionButton$Behavior
+--- design-23.0.1_a88b44ba/android.support.design.widget.FloatingActionButton$Behavior	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.FloatingActionButton$Behavior	2015-10-17 20:26:41.000000000 +0900
+@@ -5 +4,0 @@
+-  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, android.view.View);
+@@ -8 +6,0 @@
+-  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.View);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener design-23.1.0_426a6d5e/android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener
+--- design-23.0.1_a88b44ba/android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener	1970-01-01 09:00:00.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener {
++  public android.support.design.widget.FloatingActionButton$OnVisibilityChangedListener();
++  public void onShown(android.support.design.widget.FloatingActionButton);
++  public void onHidden(android.support.design.widget.FloatingActionButton);
++}
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.NavigationView$SavedState design-23.1.0_426a6d5e/android.support.design.widget.NavigationView$SavedState
+--- design-23.0.1_a88b44ba/android.support.design.widget.NavigationView$SavedState	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.NavigationView$SavedState	2015-10-17 20:26:41.000000000 +0900
+@@ -4 +4 @@
+-  public android.support.design.widget.NavigationView$SavedState(android.os.Parcel);
++  public android.support.design.widget.NavigationView$SavedState(android.os.Parcel, java.lang.ClassLoader);
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.Snackbar design-23.1.0_426a6d5e/android.support.design.widget.Snackbar
+--- design-23.0.1_a88b44ba/android.support.design.widget.Snackbar	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.Snackbar	2015-10-17 20:26:41.000000000 +0900
+@@ -19,0 +20 @@
++  public boolean isShownOrQueued();
+diff -U 0 -N design-23.0.1_a88b44ba/android.support.design.widget.TextInputLayout design-23.1.0_426a6d5e/android.support.design.widget.TextInputLayout
+--- design-23.0.1_a88b44ba/android.support.design.widget.TextInputLayout	2015-10-17 20:26:38.000000000 +0900
++++ design-23.1.0_426a6d5e/android.support.design.widget.TextInputLayout	2015-10-17 20:26:41.000000000 +0900
+@@ -6,0 +7 @@
++  public android.graphics.Typeface getTypeface();
+@@ -13,0 +15,3 @@
++  public void setCounterEnabled(boolean);
++  public void setCounterMaxLength(int);
++  public int getCounterMaxLength();

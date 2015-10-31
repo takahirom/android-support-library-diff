@@ -1,0 +1,418 @@
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.animation.UntargetableAnimatorSet leanback-v17-23.1.0_521072f2/android.support.v17.leanback.animation.UntargetableAnimatorSet
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.animation.UntargetableAnimatorSet	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.animation.UntargetableAnimatorSet	1970-01-01 09:00:00.000000000 +0900
+@@ -1,22 +0,0 @@
+-public class android.support.v17.leanback.animation.UntargetableAnimatorSet extends android.animation.Animator {
+-  public android.support.v17.leanback.animation.UntargetableAnimatorSet(android.animation.AnimatorSet);
+-  public void addListener(android.animation.Animator$AnimatorListener);
+-  public void cancel();
+-  public android.animation.Animator clone();
+-  public void end();
+-  public long getDuration();
+-  public java.util.ArrayList<android.animation.Animator$AnimatorListener> getListeners();
+-  public long getStartDelay();
+-  public boolean isRunning();
+-  public boolean isStarted();
+-  public void removeAllListeners();
+-  public void removeListener(android.animation.Animator$AnimatorListener);
+-  public android.animation.Animator setDuration(long);
+-  public void setInterpolator(android.animation.TimeInterpolator);
+-  public void setStartDelay(long);
+-  public void setTarget(java.lang.Object);
+-  public void setupEndValues();
+-  public void setupStartValues();
+-  public void start();
+-  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+-}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedActionAdapter$EditListener leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedActionAdapter$EditListener
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedActionAdapter$EditListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedActionAdapter$EditListener	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.GuidedActionAdapter$EditListener {
++  public abstract void onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction, boolean);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepFragment	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -1,0 +2,4 @@
++  public static final java.lang.String EXTRA_UI_STYLE;
++  public static final int UI_STYLE_DEFAULT;
++  public static final int UI_STYLE_ENTRANCE;
++  public static final int UI_STYLE_ACTIVITY_ROOT;
+@@ -9,0 +14 @@
++  public void onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction);
+@@ -10,0 +16,2 @@
++  public static int add(android.app.FragmentManager, android.support.v17.leanback.app.GuidedStepFragment, int);
++  public static int addAsRoot(android.app.Activity, android.support.v17.leanback.app.GuidedStepFragment, int);
+@@ -18,0 +26,2 @@
++  public void setUiStyle(int);
++  public int getUiStyle();
+@@ -22,2 +30,0 @@
+-  public void onStart();
+-  public android.animation.Animator onCreateAnimator(int, boolean, int);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepFragment$DummyFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepFragment$DummyFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepFragment$DummyFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepFragment$DummyFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.GuidedStepFragment$DummyFragment extends android.app.Fragment {
++  public android.support.v17.leanback.app.GuidedStepFragment$DummyFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment extends android.app.Fragment {
++  public android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepSupportFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepSupportFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepSupportFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,31 @@
++public class android.support.v17.leanback.app.GuidedStepSupportFragment extends android.support.v4.app.Fragment implements android.support.v17.leanback.app.GuidedActionAdapter$ClickListener,android.support.v17.leanback.app.GuidedActionAdapter$FocusListener {
++  public static final java.lang.String EXTRA_UI_STYLE;
++  public static final int UI_STYLE_DEFAULT;
++  public static final int UI_STYLE_ENTRANCE;
++  public static final int UI_STYLE_ACTIVITY_ROOT;
++  public android.support.v17.leanback.app.GuidedStepSupportFragment();
++  public android.support.v17.leanback.widget.GuidanceStylist onCreateGuidanceStylist();
++  public android.support.v17.leanback.widget.GuidedActionsStylist onCreateActionsStylist();
++  public int onProvideTheme();
++  public android.support.v17.leanback.widget.GuidanceStylist$Guidance onCreateGuidance(android.os.Bundle);
++  public void onCreateActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>, android.os.Bundle);
++  public void onGuidedActionClicked(android.support.v17.leanback.widget.GuidedAction);
++  public void onGuidedActionFocused(android.support.v17.leanback.widget.GuidedAction);
++  public void onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction);
++  public static int add(android.support.v4.app.FragmentManager, android.support.v17.leanback.app.GuidedStepSupportFragment);
++  public static int add(android.support.v4.app.FragmentManager, android.support.v17.leanback.app.GuidedStepSupportFragment, int);
++  public static int addAsRoot(android.support.v4.app.FragmentActivity, android.support.v17.leanback.app.GuidedStepSupportFragment, int);
++  public static android.support.v17.leanback.app.GuidedStepSupportFragment getCurrentGuidedStepSupportFragment(android.support.v4.app.FragmentManager);
++  public android.support.v17.leanback.widget.GuidanceStylist getGuidanceStylist();
++  public android.support.v17.leanback.widget.GuidedActionsStylist getGuidedActionsStylist();
++  public java.util.List<android.support.v17.leanback.widget.GuidedAction> getActions();
++  public void setActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>);
++  public android.view.View getActionItemView(int);
++  public void setSelectedActionPosition(int);
++  public int getSelectedActionPosition();
++  public void setUiStyle(int);
++  public int getUiStyle();
++  public void onCreate(android.os.Bundle);
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepSupportFragment$DummyFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepSupportFragment$DummyFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepSupportFragment$DummyFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepSupportFragment$DummyFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.GuidedStepSupportFragment$DummyFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.GuidedStepSupportFragment$DummyFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.PlaybackControlSupportGlue leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.PlaybackControlSupportGlue
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.PlaybackControlSupportGlue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.PlaybackControlSupportGlue	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,46 @@
++public abstract class android.support.v17.leanback.app.PlaybackControlSupportGlue implements android.support.v17.leanback.widget.OnActionClickedListener,android.view.View$OnKeyListener {
++  public static final int ACTION_CUSTOM_LEFT_FIRST;
++  public static final int ACTION_SKIP_TO_PREVIOUS;
++  public static final int ACTION_REWIND;
++  public static final int ACTION_PLAY_PAUSE;
++  public static final int ACTION_FAST_FORWARD;
++  public static final int ACTION_SKIP_TO_NEXT;
++  public static final int ACTION_CUSTOM_RIGHT_FIRST;
++  public static final int PLAYBACK_SPEED_INVALID;
++  public static final int PLAYBACK_SPEED_PAUSED;
++  public static final int PLAYBACK_SPEED_NORMAL;
++  public static final int PLAYBACK_SPEED_FAST_L0;
++  public static final int PLAYBACK_SPEED_FAST_L1;
++  public static final int PLAYBACK_SPEED_FAST_L2;
++  public static final int PLAYBACK_SPEED_FAST_L3;
++  public static final int PLAYBACK_SPEED_FAST_L4;
++  public android.support.v17.leanback.app.PlaybackControlSupportGlue(android.content.Context, int[]);
++  public android.support.v17.leanback.app.PlaybackControlSupportGlue(android.content.Context, int[], int[]);
++  public android.support.v17.leanback.app.PlaybackControlSupportGlue(android.content.Context, android.support.v17.leanback.app.PlaybackOverlaySupportFragment, int[]);
++  public android.support.v17.leanback.app.PlaybackControlSupportGlue(android.content.Context, android.support.v17.leanback.app.PlaybackOverlaySupportFragment, int[], int[]);
++  public android.support.v17.leanback.widget.PlaybackControlsRowPresenter createControlsRowAndPresenter();
++  public android.support.v17.leanback.app.PlaybackOverlaySupportFragment getFragment();
++  public android.content.Context getContext();
++  public int[] getFastForwardSpeeds();
++  public int[] getRewindSpeeds();
++  public void setFadingEnabled(boolean);
++  public boolean isFadingEnabled();
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void setControlsRow(android.support.v17.leanback.widget.PlaybackControlsRow);
++  public android.support.v17.leanback.widget.PlaybackControlsRow getControlsRow();
++  public void enableProgressUpdating(boolean);
++  public int getUpdatePeriod();
++  public void updateProgress();
++  public void onActionClicked(android.support.v17.leanback.widget.Action);
++  public boolean onKey(android.view.View, int, android.view.KeyEvent);
++  public abstract boolean hasValidMedia();
++  public abstract boolean isMediaPlaying();
++  public abstract java.lang.CharSequence getMediaTitle();
++  public abstract java.lang.CharSequence getMediaSubtitle();
++  public abstract int getMediaDuration();
++  public abstract android.graphics.drawable.Drawable getMediaArt();
++  public abstract long getSupportedActions();
++  public abstract int getCurrentSpeedId();
++  public abstract int getCurrentPosition();
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.SearchFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.SearchFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.SearchFragment	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.SearchFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -20,0 +21 @@
++  public void displayCompletions(android.view.inputmethod.CompletionInfo[]);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.SearchSupportFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.SearchSupportFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.SearchSupportFragment	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.SearchSupportFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -20,0 +21 @@
++  public void displayCompletions(android.view.inputmethod.CompletionInfo[]);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.VerticalGridFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.VerticalGridFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.VerticalGridFragment	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.VerticalGridFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.app.VerticalGridFragment extends android.support.v17.leanback.app.BrandedFragment {
++public class android.support.v17.leanback.app.VerticalGridFragment extends android.support.v17.leanback.app.BaseFragment {
+@@ -14,0 +15,2 @@
++  public void startEntranceTransition();
++  public void prepareEntranceTransition();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.VerticalGridSupportFragment leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.VerticalGridSupportFragment
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.app.VerticalGridSupportFragment	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.app.VerticalGridSupportFragment extends android.support.v17.leanback.app.BrandedSupportFragment {
++public class android.support.v17.leanback.app.VerticalGridSupportFragment extends android.support.v17.leanback.app.BaseSupportFragment {
+@@ -14,0 +15,2 @@
++  public void startEntranceTransition();
++  public void prepareEntranceTransition();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.transition.FadeAndShortSlide leanback-v17-23.1.0_521072f2/android.support.v17.leanback.transition.FadeAndShortSlide
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.transition.FadeAndShortSlide	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.transition.FadeAndShortSlide	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,14 @@
++public class android.support.v17.leanback.transition.FadeAndShortSlide extends android.transition.Visibility {
++  public android.support.v17.leanback.transition.FadeAndShortSlide();
++  public android.support.v17.leanback.transition.FadeAndShortSlide(int);
++  public void setEpicenterCallback(android.transition.Transition$EpicenterCallback);
++  public void captureStartValues(android.transition.TransitionValues);
++  public void captureEndValues(android.transition.TransitionValues);
++  public void setSlideEdge(int);
++  public android.animation.Animator onAppear(android.view.ViewGroup, android.view.View, android.transition.TransitionValues, android.transition.TransitionValues);
++  public android.animation.Animator onDisappear(android.view.ViewGroup, android.view.View, android.transition.TransitionValues, android.transition.TransitionValues);
++  public android.transition.Transition addListener(android.transition.Transition$TransitionListener);
++  public android.transition.Transition removeListener(android.transition.Transition$TransitionListener);
++  public android.transition.Transition clone();
++  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.transition.TransitionHelper leanback-v17-23.1.0_521072f2/android.support.v17.leanback.transition.TransitionHelper
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.transition.TransitionHelper	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.transition.TransitionHelper	2015-10-17 20:26:41.000000000 +0900
+@@ -44,0 +45,6 @@
++  public void setEnterTransition(android.app.Fragment, java.lang.Object);
++  public void setExitTransition(android.app.Fragment, java.lang.Object);
++  public void setEnterTransition(android.support.v4.app.Fragment, java.lang.Object);
++  public void setExitTransition(android.support.v4.app.Fragment, java.lang.Object);
++  public java.lang.Object createFadeAndShortSlide(int);
++  public void setTransitionGroup(android.view.ViewGroup, boolean);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.FragmentAnimationProvider leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.FragmentAnimationProvider
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.FragmentAnimationProvider	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.FragmentAnimationProvider	2015-10-17 20:26:41.000000000 +0900
+@@ -2,6 +2,2 @@
+-  public abstract void onActivityEnter(java.util.List<android.animation.Animator>);
+-  public abstract void onActivityExit(java.util.List<android.animation.Animator>);
+-  public abstract void onFragmentEnter(java.util.List<android.animation.Animator>);
+-  public abstract void onFragmentExit(java.util.List<android.animation.Animator>);
+-  public abstract void onFragmentReenter(java.util.List<android.animation.Animator>);
+-  public abstract void onFragmentReturn(java.util.List<android.animation.Animator>);
++  public abstract void onImeAppearing(java.util.List<android.animation.Animator>);
++  public abstract void onImeDisappearing(java.util.List<android.animation.Animator>);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidanceStylist leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidanceStylist
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidanceStylist	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidanceStylist	2015-10-17 20:26:41.000000000 +0900
+@@ -9,6 +9,2 @@
+-  public void onActivityEnter(java.util.List<android.animation.Animator>);
+-  public void onActivityExit(java.util.List<android.animation.Animator>);
+-  public void onFragmentEnter(java.util.List<android.animation.Animator>);
+-  public void onFragmentExit(java.util.List<android.animation.Animator>);
+-  public void onFragmentReenter(java.util.List<android.animation.Animator>);
+-  public void onFragmentReturn(java.util.List<android.animation.Animator>);
++  public void onImeAppearing(java.util.List<android.animation.Animator>);
++  public void onImeDisappearing(java.util.List<android.animation.Animator>);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedAction leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedAction
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedAction	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedAction	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6,4 @@
++  public void setTitle(java.lang.CharSequence);
++  public java.lang.CharSequence getEditTitle();
++  public void setEditTitle(java.lang.CharSequence);
++  public boolean isEditTitleUsed();
+@@ -6,0 +11 @@
++  public void setDescription(java.lang.CharSequence);
+@@ -7,0 +13 @@
++  public boolean isEditable();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedAction$Builder leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedAction$Builder
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedAction$Builder	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedAction$Builder	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6 @@
++  public android.support.v17.leanback.widget.GuidedAction$Builder editTitle(java.lang.String);
+@@ -9,0 +11 @@
++  public android.support.v17.leanback.widget.GuidedAction$Builder editable(boolean);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedActionEditText leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedActionEditText
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedActionEditText	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedActionEditText	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v17.leanback.widget.GuidedActionEditText extends android.widget.EditText implements android.support.v17.leanback.widget.ImeKeyMonitor {
++  public android.support.v17.leanback.widget.GuidedActionEditText(android.content.Context);
++  public android.support.v17.leanback.widget.GuidedActionEditText(android.content.Context, android.util.AttributeSet);
++  public android.support.v17.leanback.widget.GuidedActionEditText(android.content.Context, android.util.AttributeSet, int);
++  public void setImeKeyListener(android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener);
++  public boolean onKeyPreIme(int, android.view.KeyEvent);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedActionsStylist leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedActionsStylist
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedActionsStylist	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedActionsStylist	2015-10-17 20:26:41.000000000 +0900
+@@ -12,6 +12,2 @@
+-  public void onActivityEnter(java.util.List<android.animation.Animator>);
+-  public void onActivityExit(java.util.List<android.animation.Animator>);
+-  public void onFragmentEnter(java.util.List<android.animation.Animator>);
+-  public void onFragmentExit(java.util.List<android.animation.Animator>);
+-  public void onFragmentReenter(java.util.List<android.animation.Animator>);
+-  public void onFragmentReturn(java.util.List<android.animation.Animator>);
++  public void onImeAppearing(java.util.List<android.animation.Animator>);
++  public void onImeDisappearing(java.util.List<android.animation.Animator>);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder	2015-10-17 20:26:41.000000000 +0900
+@@ -5,0 +6 @@
++  public android.widget.EditText getEditableTitleView();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ImageCardView leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ImageCardView
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ImageCardView	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ImageCardView	2015-10-17 20:26:41.000000000 +0900
+@@ -1,0 +2,7 @@
++  public static final int CARD_TYPE_FLAG_IMAGE_ONLY;
++  public static final int CARD_TYPE_FLAG_TITLE;
++  public static final int CARD_TYPE_FLAG_CONTENT;
++  public static final int CARD_TYPE_FLAG_ICON_RIGHT;
++  public static final int CARD_TYPE_FLAG_ICON_LEFT;
++  public android.support.v17.leanback.widget.ImageCardView(android.content.Context, int);
++  public android.support.v17.leanback.widget.ImageCardView(android.content.Context, android.util.AttributeSet, int);
+@@ -4 +10,0 @@
+-  public android.support.v17.leanback.widget.ImageCardView(android.content.Context, android.util.AttributeSet, int);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ImeKeyMonitor leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ImeKeyMonitor
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ImeKeyMonitor	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ImeKeyMonitor	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.ImeKeyMonitor {
++  public abstract void setImeKeyListener(android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.ImeKeyMonitor$ImeKeyListener {
++  public abstract boolean onKeyPreIme(android.widget.EditText, int, android.view.KeyEvent);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ItemBridgeAdapterShadowOverlayWrapper leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ItemBridgeAdapterShadowOverlayWrapper
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ItemBridgeAdapterShadowOverlayWrapper	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ItemBridgeAdapterShadowOverlayWrapper	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.widget.ItemBridgeAdapterShadowOverlayWrapper extends android.support.v17.leanback.widget.ItemBridgeAdapter$Wrapper {
++  public android.support.v17.leanback.widget.ItemBridgeAdapterShadowOverlayWrapper(android.support.v17.leanback.widget.ShadowOverlayHelper);
++  public android.view.View createWrapper(android.view.View);
++  public void wrap(android.view.View, android.view.View);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ListRowPresenter leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ListRowPresenter
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ListRowPresenter	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ListRowPresenter	2015-10-17 20:26:41.000000000 +0900
+@@ -24 +24,2 @@
+-  public boolean canDrawOutOfBounds();
++  public final void setKeepChildForeground(boolean);
++  public final boolean isKeepChildForeground();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.RowPresenter leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.RowPresenter
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.RowPresenter	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.RowPresenter	2015-10-17 20:26:41.000000000 +0900
+@@ -20 +19,0 @@
+-  public boolean canDrawOutOfBounds();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.SearchBar leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.SearchBar
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.SearchBar	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.SearchBar	2015-10-17 20:26:41.000000000 +0900
+@@ -12,0 +13 @@
++  public void displayCompletions(android.view.inputmethod.CompletionInfo[]);
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayContainer leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayContainer
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayContainer	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayContainer	2015-10-17 20:26:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.ShadowOverlayContainer extends android.view.ViewGroup {
++public class android.support.v17.leanback.widget.ShadowOverlayContainer extends android.widget.FrameLayout {
+@@ -16,0 +17 @@
++  public void draw(android.graphics.Canvas);
+@@ -20,0 +22 @@
++  public boolean hasOverlappingRendering();
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayHelper leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayHelper
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayHelper	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayHelper	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,20 @@
++public final class android.support.v17.leanback.widget.ShadowOverlayHelper {
++  public static final int SHADOW_NONE;
++  public static final int SHADOW_STATIC;
++  public static final int SHADOW_DYNAMIC;
++  public static boolean supportsShadow();
++  public static boolean supportsDynamicShadow();
++  public static boolean supportsRoundedCorner();
++  public static boolean supportsForeground();
++  public void prepareParentForShadow(android.view.ViewGroup);
++  public int getShadowType();
++  public boolean needsOverlay();
++  public boolean needsRoundedCorner();
++  public boolean needsWrapper();
++  public android.support.v17.leanback.widget.ShadowOverlayContainer createShadowOverlayContainer(android.content.Context);
++  public static void setNoneWrapperOverlayColor(android.view.View, int);
++  public void setOverlayColor(android.view.View, int);
++  public void onViewCreated(android.view.View);
++  public static void setNoneWrapperShadowFocusLevel(android.view.View, float);
++  public void setShadowFocusLevel(android.view.View, float);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayHelper$Builder leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayHelper$Builder
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayHelper$Builder	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayHelper$Builder	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,10 @@
++public final class android.support.v17.leanback.widget.ShadowOverlayHelper$Builder {
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder();
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder needsOverlay(boolean);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder needsShadow(boolean);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder needsRoundedCorner(boolean);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder preferZOrder(boolean);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder keepForegroundDrawable(boolean);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Builder options(android.support.v17.leanback.widget.ShadowOverlayHelper$Options);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper build(android.content.Context);
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayHelper$Options leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayHelper$Options
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.ShadowOverlayHelper$Options	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.ShadowOverlayHelper$Options	2015-10-17 20:26:41.000000000 +0900
+@@ -0,0 +1,9 @@
++public final class android.support.v17.leanback.widget.ShadowOverlayHelper$Options {
++  public static final android.support.v17.leanback.widget.ShadowOverlayHelper$Options DEFAULT;
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Options();
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Options roundedCornerRadius(int);
++  public android.support.v17.leanback.widget.ShadowOverlayHelper$Options dynamicShadowZ(float, float);
++  public final int getRoundedCornerRadius();
++  public final float getDynamicShadowUnfocusedZ();
++  public final float getDynamicShadowFocusedZ();
++}
+diff -U 0 -N leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.VerticalGridPresenter leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.VerticalGridPresenter
+--- leanback-v17-23.0.1_d25ea72a/android.support.v17.leanback.widget.VerticalGridPresenter	2015-10-17 20:26:38.000000000 +0900
++++ leanback-v17-23.1.0_521072f2/android.support.v17.leanback.widget.VerticalGridPresenter	2015-10-17 20:26:41.000000000 +0900
+@@ -15,0 +16,2 @@
++  public final void setKeepChildForeground(boolean);
++  public final boolean getKeepChildForeground();
+@@ -21,0 +24 @@
++  public void setEntranceTransitionState(android.support.v17.leanback.widget.VerticalGridPresenter$ViewHolder, boolean);

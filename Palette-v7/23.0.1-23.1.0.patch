@@ -1,0 +1,6 @@
+diff -U 0 -N palette-v7-23.0.1_7f1fb10e/android.support.v7.graphics.Palette$Builder palette-v7-23.1.0_65eb671e/android.support.v7.graphics.Palette$Builder
+--- palette-v7-23.0.1_7f1fb10e/android.support.v7.graphics.Palette$Builder	2015-10-17 20:26:37.000000000 +0900
++++ palette-v7-23.1.0_65eb671e/android.support.v7.graphics.Palette$Builder	2015-10-17 20:26:39.000000000 +0900
+@@ -7,0 +8,2 @@
++  public android.support.v7.graphics.Palette$Builder setRegion(int, int, int, int);
++  public android.support.v7.graphics.Palette$Builder clearRegion();

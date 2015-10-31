@@ -1,0 +1,269 @@
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.app.FragmentActivity support-v4-23.1.0_91e71d8a/android.support.v4.app.FragmentActivity
+--- support-v4-23.0.1_f17955e2/android.support.v4.app.FragmentActivity	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.app.FragmentActivity	2015-10-17 20:26:38.000000000 +0900
+@@ -3,0 +4,2 @@
++  public final void setSupportMediaController(android.support.v4.media.session.MediaControllerCompat);
++  public final android.support.v4.media.session.MediaControllerCompat getSupportMediaController();
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.content.ParallelExecutorCompat support-v4-23.1.0_91e71d8a/android.support.v4.content.ParallelExecutorCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.content.ParallelExecutorCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.content.ParallelExecutorCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.content.ParallelExecutorCompat {
++  public android.support.v4.content.ParallelExecutorCompat();
++  public static java.util.concurrent.Executor getParallelExecutor();
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.content.res.ResourcesCompat support-v4-23.1.0_91e71d8a/android.support.v4.content.res.ResourcesCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.content.res.ResourcesCompat	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.content.res.ResourcesCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -4,0 +5,2 @@
++  public int getColor(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
++  public android.content.res.ColorStateList getColorStateList(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompat support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,7 @@
++public interface android.support.v4.media.IMediaBrowserServiceCompat extends android.os.IInterface {
++  public abstract void connect(java.lang.String, android.os.Bundle, android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
++  public abstract void disconnect(android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
++  public abstract void addSubscription(java.lang.String, android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
++  public abstract void removeSubscription(java.lang.String, android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
++  public abstract void getMediaItem(java.lang.String, android.support.v4.os.ResultReceiver) throws android.os.RemoteException;
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompat$Stub support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompat$Stub
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompat$Stub	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompat$Stub	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,6 @@
++public abstract class android.support.v4.media.IMediaBrowserServiceCompat$Stub extends android.os.Binder implements android.support.v4.media.IMediaBrowserServiceCompat {
++  public android.support.v4.media.IMediaBrowserServiceCompat$Stub();
++  public static android.support.v4.media.IMediaBrowserServiceCompat asInterface(android.os.IBinder);
++  public android.os.IBinder asBinder();
++  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompatCallbacks support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompatCallbacks
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompatCallbacks	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompatCallbacks	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,5 @@
++public interface android.support.v4.media.IMediaBrowserServiceCompatCallbacks extends android.os.IInterface {
++  public abstract void onConnect(java.lang.String, android.support.v4.media.session.MediaSessionCompat$Token, android.os.Bundle) throws android.os.RemoteException;
++  public abstract void onConnectFailed() throws android.os.RemoteException;
++  public abstract void onLoadChildren(java.lang.String, java.util.List) throws android.os.RemoteException;
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,6 @@
++public abstract class android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub extends android.os.Binder implements android.support.v4.media.IMediaBrowserServiceCompatCallbacks {
++  public android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub();
++  public static android.support.v4.media.IMediaBrowserServiceCompatCallbacks asInterface(android.os.IBinder);
++  public android.os.IBinder asBinder();
++  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,13 @@
++public final class android.support.v4.media.MediaBrowserCompat {
++  public android.support.v4.media.MediaBrowserCompat(android.content.Context, android.content.ComponentName, android.support.v4.media.MediaBrowserCompat$ConnectionCallback, android.os.Bundle);
++  public void connect();
++  public void disconnect();
++  public boolean isConnected();
++  public android.content.ComponentName getServiceComponent();
++  public java.lang.String getRoot();
++  public android.os.Bundle getExtras();
++  public android.support.v4.media.session.MediaSessionCompat$Token getSessionToken();
++  public void subscribe(java.lang.String, android.support.v4.media.MediaBrowserCompat$SubscriptionCallback);
++  public void unsubscribe(java.lang.String);
++  public void getItem(java.lang.String, android.support.v4.media.MediaBrowserCompat$ItemCallback);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$ConnectionCallback support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$ConnectionCallback
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$ConnectionCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$ConnectionCallback	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v4.media.MediaBrowserCompat$ConnectionCallback {
++  public android.support.v4.media.MediaBrowserCompat$ConnectionCallback();
++  public void onConnected();
++  public void onConnectionSuspended();
++  public void onConnectionFailed();
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$ItemCallback support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$ItemCallback
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$ItemCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$ItemCallback	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v4.media.MediaBrowserCompat$ItemCallback {
++  public android.support.v4.media.MediaBrowserCompat$ItemCallback();
++  public void onItemLoaded(android.support.v4.media.MediaBrowserCompat$MediaItem);
++  public void onError(java.lang.String);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$MediaItem support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$MediaItem
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$MediaItem	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$MediaItem	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,14 @@
++public class android.support.v4.media.MediaBrowserCompat$MediaItem implements android.os.Parcelable {
++  public static final int FLAG_BROWSABLE;
++  public static final int FLAG_PLAYABLE;
++  public static final android.os.Parcelable$Creator<android.support.v4.media.MediaBrowserCompat$MediaItem> CREATOR;
++  public android.support.v4.media.MediaBrowserCompat$MediaItem(android.support.v4.media.MediaDescriptionCompat, int);
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++  public java.lang.String toString();
++  public int getFlags();
++  public boolean isBrowsable();
++  public boolean isPlayable();
++  public android.support.v4.media.MediaDescriptionCompat getDescription();
++  public java.lang.String getMediaId();
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$MediaItem$Flags support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$MediaItem$Flags
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$MediaItem$Flags	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$MediaItem$Flags	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v4.media.MediaBrowserCompat$MediaItem$Flags extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v4.media.MediaBrowserCompat$SubscriptionCallback {
++  public android.support.v4.media.MediaBrowserCompat$SubscriptionCallback();
++  public void onChildrenLoaded(java.lang.String, java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>);
++  public void onError(java.lang.String);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserServiceCompat support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserServiceCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserServiceCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserServiceCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,14 @@
++public abstract class android.support.v4.media.MediaBrowserServiceCompat extends android.app.Service {
++  public static final java.lang.String SERVICE_INTERFACE;
++  public static final java.lang.String KEY_MEDIA_ITEM;
++  public android.support.v4.media.MediaBrowserServiceCompat();
++  public void onCreate();
++  public android.os.IBinder onBind(android.content.Intent);
++  public void dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]);
++  public abstract android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot onGetRoot(java.lang.String, int, android.os.Bundle);
++  public abstract void onLoadChildren(java.lang.String, android.support.v4.media.MediaBrowserServiceCompat$Result<java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>>);
++  public void onLoadItem(java.lang.String, android.support.v4.media.MediaBrowserServiceCompat$Result<android.support.v4.media.MediaBrowserCompat$MediaItem>);
++  public void setSessionToken(android.support.v4.media.session.MediaSessionCompat$Token);
++  public android.support.v4.media.session.MediaSessionCompat$Token getSessionToken();
++  public void notifyChildrenChanged(java.lang.String);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot {
++  public android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot(java.lang.String, android.os.Bundle);
++  public java.lang.String getRootId();
++  public android.os.Bundle getExtras();
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserServiceCompat$Result<T> support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserServiceCompat$Result<T>
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.MediaBrowserServiceCompat$Result<T>	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.MediaBrowserServiceCompat$Result<T>	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.media.MediaBrowserServiceCompat$Result<T> {
++  public void sendResult(T);
++  public void detach();
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.session.MediaButtonReceiver support-v4-23.1.0_91e71d8a/android.support.v4.media.session.MediaButtonReceiver
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.session.MediaButtonReceiver	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.session.MediaButtonReceiver	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v4.media.session.MediaButtonReceiver extends android.content.BroadcastReceiver {
++  public android.support.v4.media.session.MediaButtonReceiver();
++  public void onReceive(android.content.Context, android.content.Intent);
++  public static android.view.KeyEvent handleIntent(android.support.v4.media.session.MediaSessionCompat, android.content.Intent);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.media.session.MediaSessionCompat support-v4-23.1.0_91e71d8a/android.support.v4.media.session.MediaSessionCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.media.session.MediaSessionCompat	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.media.session.MediaSessionCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -3,0 +4 @@
++  public android.support.v4.media.session.MediaSessionCompat(android.content.Context, java.lang.String);
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.os.IResultReceiver support-v4-23.1.0_91e71d8a/android.support.v4.os.IResultReceiver
+--- support-v4-23.0.1_f17955e2/android.support.v4.os.IResultReceiver	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.os.IResultReceiver	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v4.os.IResultReceiver extends android.os.IInterface {
++  public abstract void send(int, android.os.Bundle) throws android.os.RemoteException;
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.os.IResultReceiver$Stub support-v4-23.1.0_91e71d8a/android.support.v4.os.IResultReceiver$Stub
+--- support-v4-23.0.1_f17955e2/android.support.v4.os.IResultReceiver$Stub	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.os.IResultReceiver$Stub	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,6 @@
++public abstract class android.support.v4.os.IResultReceiver$Stub extends android.os.Binder implements android.support.v4.os.IResultReceiver {
++  public android.support.v4.os.IResultReceiver$Stub();
++  public static android.support.v4.os.IResultReceiver asInterface(android.os.IBinder);
++  public android.os.IBinder asBinder();
++  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.os.ResultReceiver support-v4-23.1.0_91e71d8a/android.support.v4.os.ResultReceiver
+--- support-v4-23.0.1_f17955e2/android.support.v4.os.ResultReceiver	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.os.ResultReceiver	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v4.os.ResultReceiver implements android.os.Parcelable {
++  public static final android.os.Parcelable$Creator<android.support.v4.os.ResultReceiver> CREATOR;
++  public android.support.v4.os.ResultReceiver(android.os.Handler);
++  public void send(int, android.os.Bundle);
++  public int describeContents();
++  public void writeToParcel(android.os.Parcel, int);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.view.ViewCompat support-v4-23.1.0_91e71d8a/android.support.v4.view.ViewCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.view.ViewCompat	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.view.ViewCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -25,0 +26,6 @@
++  public static final int SCROLL_INDICATOR_TOP;
++  public static final int SCROLL_INDICATOR_BOTTOM;
++  public static final int SCROLL_INDICATOR_LEFT;
++  public static final int SCROLL_INDICATOR_RIGHT;
++  public static final int SCROLL_INDICATOR_START;
++  public static final int SCROLL_INDICATOR_END;
+@@ -132,0 +139,4 @@
++  public static boolean hasOnClickListeners(android.view.View);
++  public static void setScrollIndicators(android.view.View, int);
++  public static void setScrollIndicators(android.view.View, int, int);
++  public static int getScrollIndicators(android.view.View);
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.view.ViewCompat$ScrollIndicators support-v4-23.1.0_91e71d8a/android.support.v4.view.ViewCompat$ScrollIndicators
+--- support-v4-23.0.1_f17955e2/android.support.v4.view.ViewCompat$ScrollIndicators	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.view.ViewCompat$ScrollIndicators	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v4.view.ViewCompat$ScrollIndicators extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.widget.NestedScrollView support-v4-23.1.0_91e71d8a/android.support.v4.widget.NestedScrollView
+--- support-v4-23.0.1_f17955e2/android.support.v4.widget.NestedScrollView	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.widget.NestedScrollView	2015-10-17 20:26:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.NestedScrollView extends android.widget.FrameLayout implements android.support.v4.view.NestedScrollingParent,android.support.v4.view.NestedScrollingChild {
++public class android.support.v4.widget.NestedScrollView extends android.widget.FrameLayout implements android.support.v4.view.NestedScrollingParent,android.support.v4.view.NestedScrollingChild,android.support.v4.view.ScrollingView {
+@@ -27,0 +28 @@
++  public void setOnScrollChangeListener(android.support.v4.widget.NestedScrollView$OnScrollChangeListener);
+@@ -42,0 +44,6 @@
++  public int computeVerticalScrollRange();
++  public int computeVerticalScrollOffset();
++  public int computeVerticalScrollExtent();
++  public int computeHorizontalScrollRange();
++  public int computeHorizontalScrollOffset();
++  public int computeHorizontalScrollExtent();
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.widget.NestedScrollView$OnScrollChangeListener support-v4-23.1.0_91e71d8a/android.support.v4.widget.NestedScrollView$OnScrollChangeListener
+--- support-v4-23.0.1_f17955e2/android.support.v4.widget.NestedScrollView$OnScrollChangeListener	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.widget.NestedScrollView$OnScrollChangeListener	2015-10-17 20:26:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v4.widget.NestedScrollView$OnScrollChangeListener {
++  public abstract void onScrollChange(android.support.v4.widget.NestedScrollView, int, int, int, int);
++}
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.widget.ScrollerCompat support-v4-23.1.0_91e71d8a/android.support.v4.widget.ScrollerCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.widget.ScrollerCompat	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.widget.ScrollerCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -14,0 +15 @@
++  public boolean springBack(int, int, int, int, int, int);
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.widget.SwipeRefreshLayout support-v4-23.1.0_91e71d8a/android.support.v4.widget.SwipeRefreshLayout
+--- support-v4-23.0.1_f17955e2/android.support.v4.widget.SwipeRefreshLayout	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.widget.SwipeRefreshLayout	2015-10-17 20:26:38.000000000 +0900
+@@ -30,2 +29,0 @@
+-  public boolean onNestedPreFling(android.view.View, float, float);
+-  public boolean onNestedFling(android.view.View, float, float, boolean);
+@@ -38,0 +37,2 @@
++  public boolean onNestedPreFling(android.view.View, float, float);
++  public boolean onNestedFling(android.view.View, float, float, boolean);
+diff -U 0 -N support-v4-23.0.1_f17955e2/android.support.v4.widget.TextViewCompat support-v4-23.1.0_91e71d8a/android.support.v4.widget.TextViewCompat
+--- support-v4-23.0.1_f17955e2/android.support.v4.widget.TextViewCompat	2015-10-17 20:26:37.000000000 +0900
++++ support-v4-23.1.0_91e71d8a/android.support.v4.widget.TextViewCompat	2015-10-17 20:26:38.000000000 +0900
+@@ -4,0 +5,2 @@
++  public static int getMaxLines(android.widget.TextView);
++  public static int getMinLines(android.widget.TextView);
