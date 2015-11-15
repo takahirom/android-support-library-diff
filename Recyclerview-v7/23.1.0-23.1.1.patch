@@ -1,0 +1,6 @@
+diff -U 0 -N recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.GridLayoutManager recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.GridLayoutManager
+--- recyclerview-v7-23.1.0_083f1f50/android.support.v7.widget.GridLayoutManager	2015-11-15 19:00:04.000000000 +0900
++++ recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.GridLayoutManager	2015-11-15 19:00:04.000000000 +0900
+@@ -21,0 +22,2 @@
++  public int scrollHorizontallyBy(int, android.support.v7.widget.RecyclerView$Recycler, android.support.v7.widget.RecyclerView$State);
++  public int scrollVerticallyBy(int, android.support.v7.widget.RecyclerView$Recycler, android.support.v7.widget.RecyclerView$State);
