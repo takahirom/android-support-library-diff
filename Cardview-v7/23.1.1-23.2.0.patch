@@ -1,0 +1,7 @@
+diff -U 0 -N cardview-v7-23.1.1_3502ddc0/android.support.v7.widget.CardView cardview-v7-23.2.0_ee6c8b20/android.support.v7.widget.CardView
+--- cardview-v7-23.1.1_3502ddc0/android.support.v7.widget.CardView	2016-02-28 15:19:37.000000000 +0900
++++ cardview-v7-23.2.0_ee6c8b20/android.support.v7.widget.CardView	2016-02-28 15:19:37.000000000 +0900
+@@ -9,0 +10,3 @@
++  public void setMinimumWidth(int);
++  public void setMinimumHeight(int);
++  public void setMinWidthHeightInternal(int, int);

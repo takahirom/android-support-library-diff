@@ -1,0 +1,57 @@
+diff -U 0 -N palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Palette palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Palette
+--- palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Palette	2016-02-28 15:19:38.000000000 +0900
++++ palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Palette	2016-02-28 15:19:38.000000000 +0900
+@@ -8,0 +9 @@
++  public java.util.List<android.support.v7.graphics.Target> getTargets();
+@@ -20,0 +22,2 @@
++  public android.support.v7.graphics.Palette$Swatch getSwatchForTarget(android.support.v7.graphics.Target);
++  public int getColorForTarget(android.support.v7.graphics.Target, int);
+diff -U 0 -N palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Palette$Builder palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Palette$Builder
+--- palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Palette$Builder	2016-02-28 15:19:38.000000000 +0900
++++ palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Palette$Builder	2016-02-28 15:19:38.000000000 +0900
+@@ -5,0 +6 @@
++  public android.support.v7.graphics.Palette$Builder resizeBitmapArea(int);
+@@ -9,0 +11,2 @@
++  public android.support.v7.graphics.Palette$Builder addTarget(android.support.v7.graphics.Target);
++  public android.support.v7.graphics.Palette$Builder clearTargets();
+diff -U 0 -N palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Target palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Target
+--- palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Target	1970-01-01 09:00:00.000000000 +0900
++++ palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Target	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,18 @@
++public final class android.support.v7.graphics.Target {
++  public static final android.support.v7.graphics.Target LIGHT_VIBRANT;
++  public static final android.support.v7.graphics.Target VIBRANT;
++  public static final android.support.v7.graphics.Target DARK_VIBRANT;
++  public static final android.support.v7.graphics.Target LIGHT_MUTED;
++  public static final android.support.v7.graphics.Target MUTED;
++  public static final android.support.v7.graphics.Target DARK_MUTED;
++  public float getMinimumSaturation();
++  public float getTargetSaturation();
++  public float getMaximumSaturation();
++  public float getMinimumLightness();
++  public float getTargetLightness();
++  public float getMaximumLightness();
++  public float getSaturationWeight();
++  public float getLightnessWeight();
++  public float getPopulationWeight();
++  public boolean isExclusive();
++}
+diff -U 0 -N palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Target$Builder palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Target$Builder
+--- palette-v7-23.1.1_a0e0c266/android.support.v7.graphics.Target$Builder	1970-01-01 09:00:00.000000000 +0900
++++ palette-v7-23.2.0_6c978b6e/android.support.v7.graphics.Target$Builder	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,15 @@
++public final class android.support.v7.graphics.Target$Builder {
++  public android.support.v7.graphics.Target$Builder();
++  public android.support.v7.graphics.Target$Builder(android.support.v7.graphics.Target);
++  public android.support.v7.graphics.Target$Builder setMinimumSaturation(float);
++  public android.support.v7.graphics.Target$Builder setTargetSaturation(float);
++  public android.support.v7.graphics.Target$Builder setMaximumSaturation(float);
++  public android.support.v7.graphics.Target$Builder setMinimumLightness(float);
++  public android.support.v7.graphics.Target$Builder setTargetLightness(float);
++  public android.support.v7.graphics.Target$Builder setMaximumLightness(float);
++  public android.support.v7.graphics.Target$Builder setSaturationWeight(float);
++  public android.support.v7.graphics.Target$Builder setLightnessWeight(float);
++  public android.support.v7.graphics.Target$Builder setPopulationWeight(float);
++  public android.support.v7.graphics.Target$Builder setExclusive(boolean);
++  public android.support.v7.graphics.Target build();
++}

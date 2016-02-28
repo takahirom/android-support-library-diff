@@ -1,0 +1,569 @@
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat support-v4-23.2.0_61a99bba/android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat {
++public final class android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.animation.AnimatorCompatHelper support-v4-23.2.0_61a99bba/android.support.v4.animation.AnimatorCompatHelper
+--- support-v4-23.1.1_637f00ae/android.support.v4.animation.AnimatorCompatHelper	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.animation.AnimatorCompatHelper	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public abstract class android.support.v4.animation.AnimatorCompatHelper {
++public final class android.support.v4.animation.AnimatorCompatHelper {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.AppOpsManagerCompat support-v4-23.2.0_61a99bba/android.support.v4.app.AppOpsManagerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.AppOpsManagerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.AppOpsManagerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.AppOpsManagerCompat {
++public final class android.support.v4.app.AppOpsManagerCompat {
+@@ -5 +4,0 @@
+-  public android.support.v4.app.AppOpsManagerCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.BundleCompat support-v4-23.2.0_61a99bba/android.support.v4.app.BundleCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.BundleCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.BundleCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.app.BundleCompat {
+-  public android.support.v4.app.BundleCompat();
++public final class android.support.v4.app.BundleCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.Fragment support-v4-23.2.0_61a99bba/android.support.v4.app.Fragment
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.Fragment	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.Fragment	2016-02-28 15:19:38.000000000 +0900
+@@ -43,0 +44 @@
++  public void startActivity(android.content.Intent, android.os.Bundle);
+@@ -44,0 +46 @@
++  public void startActivityForResult(android.content.Intent, int, android.os.Bundle);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.FragmentActivity support-v4-23.2.0_61a99bba/android.support.v4.app.FragmentActivity
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.FragmentActivity	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.FragmentActivity	2016-02-28 15:19:38.000000000 +0900
+@@ -30,0 +31 @@
++  public void startActivityFromFragment(android.support.v4.app.Fragment, android.content.Intent, int, android.os.Bundle);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.FragmentHostCallback<E> support-v4-23.2.0_61a99bba/android.support.v4.app.FragmentHostCallback<E>
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.FragmentHostCallback<E>	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.FragmentHostCallback<E>	2016-02-28 15:19:38.000000000 +0900
+@@ -8,0 +9 @@
++  public void onStartActivityFromFragment(android.support.v4.app.Fragment, android.content.Intent, int, android.os.Bundle);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.NavUtils support-v4-23.2.0_61a99bba/android.support.v4.app.NavUtils
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.NavUtils	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.NavUtils	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.NavUtils {
++public final class android.support.v4.app.NavUtils {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.NotificationManagerCompat support-v4-23.2.0_61a99bba/android.support.v4.app.NotificationManagerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.NotificationManagerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.NotificationManagerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.NotificationManagerCompat {
++public final class android.support.v4.app.NotificationManagerCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.RemoteInput support-v4-23.2.0_61a99bba/android.support.v4.app.RemoteInput
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.RemoteInput	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.RemoteInput	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.RemoteInput extends android.support.v4.app.RemoteInputCompatBase$RemoteInput {
++public final class android.support.v4.app.RemoteInput extends android.support.v4.app.RemoteInputCompatBase$RemoteInput {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.ServiceCompat support-v4-23.2.0_61a99bba/android.support.v4.app.ServiceCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.ServiceCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.ServiceCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.ServiceCompat {
++public final class android.support.v4.app.ServiceCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.ShareCompat support-v4-23.2.0_61a99bba/android.support.v4.app.ShareCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.ShareCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.ShareCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.ShareCompat {
++public final class android.support.v4.app.ShareCompat {
+@@ -4 +3,0 @@
+-  public android.support.v4.app.ShareCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.app.TaskStackBuilder support-v4-23.2.0_61a99bba/android.support.v4.app.TaskStackBuilder
+--- support-v4-23.1.1_637f00ae/android.support.v4.app.TaskStackBuilder	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.app.TaskStackBuilder	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.TaskStackBuilder implements java.lang.Iterable<android.content.Intent> {
++public final class android.support.v4.app.TaskStackBuilder implements java.lang.Iterable<android.content.Intent> {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.ContentResolverCompat support-v4-23.2.0_61a99bba/android.support.v4.content.ContentResolverCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.ContentResolverCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.ContentResolverCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.content.ContentResolverCompat {
++public final class android.support.v4.content.ContentResolverCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.ContextCompat support-v4-23.2.0_61a99bba/android.support.v4.content.ContextCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.ContextCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.ContextCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -13 +13 @@
+-  public final java.io.File getCodeCacheDir(android.content.Context);
++  public static java.io.File getCodeCacheDir(android.content.Context);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.IntentCompat support-v4-23.2.0_61a99bba/android.support.v4.content.IntentCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.IntentCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.IntentCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.content.IntentCompat {
++public final class android.support.v4.content.IntentCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.LocalBroadcastManager support-v4-23.2.0_61a99bba/android.support.v4.content.LocalBroadcastManager
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.LocalBroadcastManager	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.LocalBroadcastManager	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.content.LocalBroadcastManager {
++public final class android.support.v4.content.LocalBroadcastManager {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.ParallelExecutorCompat support-v4-23.2.0_61a99bba/android.support.v4.content.ParallelExecutorCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.ParallelExecutorCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.ParallelExecutorCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.content.ParallelExecutorCompat {
+-  public android.support.v4.content.ParallelExecutorCompat();
++public final class android.support.v4.content.ParallelExecutorCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.SharedPreferencesCompat support-v4-23.2.0_61a99bba/android.support.v4.content.SharedPreferencesCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.SharedPreferencesCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.SharedPreferencesCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.content.SharedPreferencesCompat {
+-  public android.support.v4.content.SharedPreferencesCompat();
++public final class android.support.v4.content.SharedPreferencesCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.SharedPreferencesCompat$EditorCompat support-v4-23.2.0_61a99bba/android.support.v4.content.SharedPreferencesCompat$EditorCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.SharedPreferencesCompat$EditorCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.SharedPreferencesCompat$EditorCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.content.SharedPreferencesCompat$EditorCompat {
++public final class android.support.v4.content.SharedPreferencesCompat$EditorCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.pm.ActivityInfoCompat support-v4-23.2.0_61a99bba/android.support.v4.content.pm.ActivityInfoCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.pm.ActivityInfoCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.pm.ActivityInfoCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.content.pm.ActivityInfoCompat {
++public final class android.support.v4.content.pm.ActivityInfoCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.content.res.ResourcesCompat support-v4-23.2.0_61a99bba/android.support.v4.content.res.ResourcesCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.content.res.ResourcesCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.content.res.ResourcesCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.content.res.ResourcesCompat {
+-  public android.support.v4.content.res.ResourcesCompat();
++public final class android.support.v4.content.res.ResourcesCompat {
+@@ -5,2 +4,2 @@
+-  public int getColor(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
+-  public android.content.res.ColorStateList getColorStateList(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
++  public static int getColor(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
++  public static android.content.res.ColorStateList getColorStateList(android.content.res.Resources, int, android.content.res.Resources$Theme) throws android.content.res.Resources$NotFoundException;
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.database.DatabaseUtilsCompat support-v4-23.2.0_61a99bba/android.support.v4.database.DatabaseUtilsCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.database.DatabaseUtilsCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.database.DatabaseUtilsCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.database.DatabaseUtilsCompat {
++public final class android.support.v4.database.DatabaseUtilsCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.graphics.BitmapCompat support-v4-23.2.0_61a99bba/android.support.v4.graphics.BitmapCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.graphics.BitmapCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.graphics.BitmapCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.graphics.BitmapCompat {
+-  public android.support.v4.graphics.BitmapCompat();
++public final class android.support.v4.graphics.BitmapCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.graphics.ColorUtils support-v4-23.2.0_61a99bba/android.support.v4.graphics.ColorUtils
+--- support-v4-23.1.1_637f00ae/android.support.v4.graphics.ColorUtils	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.graphics.ColorUtils	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.graphics.ColorUtils {
++public final class android.support.v4.graphics.ColorUtils {
+@@ -9,0 +10,12 @@
++  public static void colorToLAB(int, double[]);
++  public static void RGBToLAB(int, int, int, double[]);
++  public static void colorToXYZ(int, double[]);
++  public static void RGBToXYZ(int, int, int, double[]);
++  public static void XYZToLAB(double, double, double, double[]);
++  public static void LABToXYZ(double, double, double, double[]);
++  public static int XYZToColor(double, double, double);
++  public static int LABToColor(double, double, double);
++  public static double distanceEuclidean(double[], double[]);
++  public static int blendARGB(int, int, float);
++  public static void blendHSL(float[], float[], float, float[]);
++  public static void blendLAB(double[], double[], double, double[]);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.graphics.drawable.DrawableCompat support-v4-23.2.0_61a99bba/android.support.v4.graphics.drawable.DrawableCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.graphics.drawable.DrawableCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.graphics.drawable.DrawableCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.graphics.drawable.DrawableCompat {
+-  public android.support.v4.graphics.drawable.DrawableCompat();
++public final class android.support.v4.graphics.drawable.DrawableCompat {
+@@ -10,0 +10,5 @@
++  public static int getAlpha(android.graphics.drawable.Drawable);
++  public static void applyTheme(android.graphics.drawable.Drawable, android.content.res.Resources$Theme);
++  public static boolean canApplyTheme(android.graphics.drawable.Drawable);
++  public static android.graphics.ColorFilter getColorFilter(android.graphics.drawable.Drawable);
++  public static void inflate(android.graphics.drawable.Drawable, android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.util.AttributeSet, android.content.res.Resources$Theme) throws org.xmlpull.v1.XmlPullParserException, java.io.IOException;
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory support-v4-23.2.0_61a99bba/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory
+--- support-v4-23.1.1_637f00ae/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory {
+-  public android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory();
++public final class android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.hardware.fingerprint.FingerprintManagerCompat support-v4-23.2.0_61a99bba/android.support.v4.hardware.fingerprint.FingerprintManagerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.hardware.fingerprint.FingerprintManagerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.hardware.fingerprint.FingerprintManagerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.hardware.fingerprint.FingerprintManagerCompat {
++public final class android.support.v4.hardware.fingerprint.FingerprintManagerCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompat support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompat	1970-01-01 09:00:00.000000000 +0900
+@@ -1,7 +0,0 @@
+-public interface android.support.v4.media.IMediaBrowserServiceCompat extends android.os.IInterface {
+-  public abstract void connect(java.lang.String, android.os.Bundle, android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
+-  public abstract void disconnect(android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
+-  public abstract void addSubscription(java.lang.String, android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
+-  public abstract void removeSubscription(java.lang.String, android.support.v4.media.IMediaBrowserServiceCompatCallbacks) throws android.os.RemoteException;
+-  public abstract void getMediaItem(java.lang.String, android.support.v4.os.ResultReceiver) throws android.os.RemoteException;
+-}
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompat$Stub support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompat$Stub
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompat$Stub	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompat$Stub	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public abstract class android.support.v4.media.IMediaBrowserServiceCompat$Stub extends android.os.Binder implements android.support.v4.media.IMediaBrowserServiceCompat {
+-  public android.support.v4.media.IMediaBrowserServiceCompat$Stub();
+-  public static android.support.v4.media.IMediaBrowserServiceCompat asInterface(android.os.IBinder);
+-  public android.os.IBinder asBinder();
+-  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
+-}
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompatCallbacks support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompatCallbacks
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompatCallbacks	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompatCallbacks	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public interface android.support.v4.media.IMediaBrowserServiceCompatCallbacks extends android.os.IInterface {
+-  public abstract void onConnect(java.lang.String, android.support.v4.media.session.MediaSessionCompat$Token, android.os.Bundle) throws android.os.RemoteException;
+-  public abstract void onConnectFailed() throws android.os.RemoteException;
+-  public abstract void onLoadChildren(java.lang.String, java.util.List) throws android.os.RemoteException;
+-}
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public abstract class android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub extends android.os.Binder implements android.support.v4.media.IMediaBrowserServiceCompatCallbacks {
+-  public android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub();
+-  public static android.support.v4.media.IMediaBrowserServiceCompatCallbacks asInterface(android.os.IBinder);
+-  public android.os.IBinder asBinder();
+-  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
+-}
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserCompat support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,0 +2,2 @@
++  public static final java.lang.String EXTRA_PAGE;
++  public static final java.lang.String EXTRA_PAGE_SIZE;
+@@ -10,0 +13 @@
++  public void subscribe(java.lang.String, android.os.Bundle, android.support.v4.media.MediaBrowserCompat$SubscriptionCallback);
+@@ -11,0 +15 @@
++  public void unsubscribe(java.lang.String, android.os.Bundle);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserCompat$SubscriptionCallback	2016-02-28 15:19:38.000000000 +0900
+@@ -3,0 +4 @@
++  public void onChildrenLoaded(java.lang.String, java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>, android.os.Bundle);
+@@ -4,0 +6 @@
++  public void onError(java.lang.String, android.os.Bundle);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserCompatUtils support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserCompatUtils
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserCompatUtils	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserCompatUtils	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v4.media.MediaBrowserCompatUtils {
++  public android.support.v4.media.MediaBrowserCompatUtils();
++  public static boolean areSameOptions(android.os.Bundle, android.os.Bundle);
++  public static boolean hasDuplicatedItems(android.os.Bundle, android.os.Bundle);
++  public static java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem> applyOptions(java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>, android.os.Bundle);
++}
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserServiceCompat support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserServiceCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserServiceCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserServiceCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -9,0 +10 @@
++  public void onLoadChildren(java.lang.String, android.support.v4.media.MediaBrowserServiceCompat$Result<java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>>, android.os.Bundle);
+@@ -13,0 +15 @@
++  public void notifyChildrenChanged(java.lang.String, android.os.Bundle);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.MediaBrowserServiceCompat$BrowserRoot	2016-02-28 15:19:38.000000000 +0900
+@@ -1,0 +2,3 @@
++  public static final java.lang.String EXTRA_RECENT;
++  public static final java.lang.String EXTRA_OFFLINE;
++  public static final java.lang.String EXTRA_SUGGESTED;
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.MediaDescriptionCompat support-v4-23.2.0_61a99bba/android.support.v4.media.MediaDescriptionCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.MediaDescriptionCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.MediaDescriptionCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,0 +2,2 @@
++  public static final java.lang.String DESCRIPTION_KEY_MEDIA_URI;
++  public static final java.lang.String DESCRIPTION_KEY_NULL_BUNDLE_FLAG;
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.media.session.MediaSessionCompat support-v4-23.2.0_61a99bba/android.support.v4.media.session.MediaSessionCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.media.session.MediaSessionCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.media.session.MediaSessionCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -3,0 +4,3 @@
++  public static final java.lang.String ACTION_PLAY_FROM_URI;
++  public static final java.lang.String ACTION_ARGUMENT_URI;
++  public static final java.lang.String ACTION_ARGUMENT_EXTRAS;
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.net.ConnectivityManagerCompat support-v4-23.2.0_61a99bba/android.support.v4.net.ConnectivityManagerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.net.ConnectivityManagerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.net.ConnectivityManagerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.net.ConnectivityManagerCompat {
+-  public android.support.v4.net.ConnectivityManagerCompat();
++public final class android.support.v4.net.ConnectivityManagerCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.net.TrafficStatsCompat support-v4-23.2.0_61a99bba/android.support.v4.net.TrafficStatsCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.net.TrafficStatsCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.net.TrafficStatsCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.net.TrafficStatsCompat {
+-  public android.support.v4.net.TrafficStatsCompat();
++public final class android.support.v4.net.TrafficStatsCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.os.AsyncTaskCompat support-v4-23.2.0_61a99bba/android.support.v4.os.AsyncTaskCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.os.AsyncTaskCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.os.AsyncTaskCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.os.AsyncTaskCompat {
+-  public android.support.v4.os.AsyncTaskCompat();
++public final class android.support.v4.os.AsyncTaskCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.os.EnvironmentCompat support-v4-23.2.0_61a99bba/android.support.v4.os.EnvironmentCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.os.EnvironmentCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.os.EnvironmentCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.os.EnvironmentCompat {
++public final class android.support.v4.os.EnvironmentCompat {
+@@ -3 +2,0 @@
+-  public android.support.v4.os.EnvironmentCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.os.ParcelableCompat support-v4-23.2.0_61a99bba/android.support.v4.os.ParcelableCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.os.ParcelableCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.os.ParcelableCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.os.ParcelableCompat {
+-  public android.support.v4.os.ParcelableCompat();
++public final class android.support.v4.os.ParcelableCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.os.TraceCompat support-v4-23.2.0_61a99bba/android.support.v4.os.TraceCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.os.TraceCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.os.TraceCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.os.TraceCompat {
+-  public android.support.v4.os.TraceCompat();
++public final class android.support.v4.os.TraceCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.text.ICUCompat support-v4-23.2.0_61a99bba/android.support.v4.text.ICUCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.text.ICUCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.text.ICUCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.text.ICUCompat {
+-  public android.support.v4.text.ICUCompat();
++public final class android.support.v4.text.ICUCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.text.TextDirectionHeuristicsCompat support-v4-23.2.0_61a99bba/android.support.v4.text.TextDirectionHeuristicsCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.text.TextDirectionHeuristicsCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.text.TextDirectionHeuristicsCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.text.TextDirectionHeuristicsCompat {
++public final class android.support.v4.text.TextDirectionHeuristicsCompat {
+@@ -8 +7,0 @@
+-  public android.support.v4.text.TextDirectionHeuristicsCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.text.TextUtilsCompat support-v4-23.2.0_61a99bba/android.support.v4.text.TextUtilsCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.text.TextUtilsCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.text.TextUtilsCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.text.TextUtilsCompat {
++public final class android.support.v4.text.TextUtilsCompat {
+@@ -3 +2,0 @@
+-  public android.support.v4.text.TextUtilsCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.util.TimeUtils support-v4-23.2.0_61a99bba/android.support.v4.util.TimeUtils
+--- support-v4-23.1.1_637f00ae/android.support.v4.util.TimeUtils	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.util.TimeUtils	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.util.TimeUtils {
++public final class android.support.v4.util.TimeUtils {
+@@ -3 +2,0 @@
+-  public android.support.v4.util.TimeUtils();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.GestureDetectorCompat support-v4-23.2.0_61a99bba/android.support.v4.view.GestureDetectorCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.GestureDetectorCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.GestureDetectorCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.GestureDetectorCompat {
++public final class android.support.v4.view.GestureDetectorCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.GravityCompat support-v4-23.2.0_61a99bba/android.support.v4.view.GravityCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.GravityCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.GravityCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.GravityCompat {
++public final class android.support.v4.view.GravityCompat {
+@@ -6 +5,0 @@
+-  public android.support.v4.view.GravityCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.InputDeviceCompat support-v4-23.2.0_61a99bba/android.support.v4.view.InputDeviceCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.InputDeviceCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.InputDeviceCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.InputDeviceCompat {
++public final class android.support.v4.view.InputDeviceCompat {
+@@ -22 +21,0 @@
+-  public android.support.v4.view.InputDeviceCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.KeyEventCompat support-v4-23.2.0_61a99bba/android.support.v4.view.KeyEventCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.KeyEventCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.KeyEventCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.view.KeyEventCompat {
+-  public android.support.v4.view.KeyEventCompat();
++public final class android.support.v4.view.KeyEventCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.LayoutInflaterCompat support-v4-23.2.0_61a99bba/android.support.v4.view.LayoutInflaterCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.LayoutInflaterCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.LayoutInflaterCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.LayoutInflaterCompat {
++public final class android.support.v4.view.LayoutInflaterCompat {
+@@ -2,0 +3 @@
++  public static android.support.v4.view.LayoutInflaterFactory getFactory(android.view.LayoutInflater);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.MarginLayoutParamsCompat support-v4-23.2.0_61a99bba/android.support.v4.view.MarginLayoutParamsCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.MarginLayoutParamsCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.MarginLayoutParamsCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.view.MarginLayoutParamsCompat {
+-  public android.support.v4.view.MarginLayoutParamsCompat();
++public final class android.support.v4.view.MarginLayoutParamsCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.MenuCompat support-v4-23.2.0_61a99bba/android.support.v4.view.MenuCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.MenuCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.MenuCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.view.MenuCompat {
+-  public android.support.v4.view.MenuCompat();
++public final class android.support.v4.view.MenuCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.MenuItemCompat support-v4-23.2.0_61a99bba/android.support.v4.view.MenuItemCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.MenuItemCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.MenuItemCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.MenuItemCompat {
++public final class android.support.v4.view.MenuItemCompat {
+@@ -7 +6,0 @@
+-  public android.support.v4.view.MenuItemCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.MotionEventCompat support-v4-23.2.0_61a99bba/android.support.v4.view.MotionEventCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.MotionEventCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.MotionEventCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.MotionEventCompat {
++public final class android.support.v4.view.MotionEventCompat {
+@@ -53 +52,0 @@
+-  public android.support.v4.view.MotionEventCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.ScaleGestureDetectorCompat support-v4-23.2.0_61a99bba/android.support.v4.view.ScaleGestureDetectorCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.ScaleGestureDetectorCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.ScaleGestureDetectorCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.ScaleGestureDetectorCompat {
++public final class android.support.v4.view.ScaleGestureDetectorCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.VelocityTrackerCompat support-v4-23.2.0_61a99bba/android.support.v4.view.VelocityTrackerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.VelocityTrackerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.VelocityTrackerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.view.VelocityTrackerCompat {
+-  public android.support.v4.view.VelocityTrackerCompat();
++public final class android.support.v4.view.VelocityTrackerCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.ViewCompat support-v4-23.2.0_61a99bba/android.support.v4.view.ViewCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.ViewCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.ViewCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.ViewCompat {
++public final class android.support.v4.view.ViewCompat {
+@@ -32 +31,0 @@
+-  public android.support.v4.view.ViewCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.ViewConfigurationCompat support-v4-23.2.0_61a99bba/android.support.v4.view.ViewConfigurationCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.ViewConfigurationCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.ViewConfigurationCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.view.ViewConfigurationCompat {
+-  public android.support.v4.view.ViewConfigurationCompat();
++public final class android.support.v4.view.ViewConfigurationCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.ViewGroupCompat support-v4-23.2.0_61a99bba/android.support.v4.view.ViewGroupCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.ViewGroupCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.ViewGroupCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.ViewGroupCompat {
++public final class android.support.v4.view.ViewGroupCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.ViewParentCompat support-v4-23.2.0_61a99bba/android.support.v4.view.ViewParentCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.ViewParentCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.ViewParentCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.ViewParentCompat {
++public final class android.support.v4.view.ViewParentCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.ViewPropertyAnimatorCompat support-v4-23.2.0_61a99bba/android.support.v4.view.ViewPropertyAnimatorCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.ViewPropertyAnimatorCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.ViewPropertyAnimatorCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.ViewPropertyAnimatorCompat {
++public final class android.support.v4.view.ViewPropertyAnimatorCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.WindowCompat support-v4-23.2.0_61a99bba/android.support.v4.view.WindowCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.WindowCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.WindowCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.WindowCompat {
++public final class android.support.v4.view.WindowCompat {
+@@ -5 +4,0 @@
+-  public android.support.v4.view.WindowCompat();
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.accessibility.AccessibilityEventCompat support-v4-23.2.0_61a99bba/android.support.v4.view.accessibility.AccessibilityEventCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.accessibility.AccessibilityEventCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.accessibility.AccessibilityEventCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.accessibility.AccessibilityEventCompat {
++public final class android.support.v4.view.accessibility.AccessibilityEventCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.accessibility.AccessibilityManagerCompat support-v4-23.2.0_61a99bba/android.support.v4.view.accessibility.AccessibilityManagerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.accessibility.AccessibilityManagerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.accessibility.AccessibilityManagerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v4.view.accessibility.AccessibilityManagerCompat {
+-  public android.support.v4.view.accessibility.AccessibilityManagerCompat();
++public final class android.support.v4.view.accessibility.AccessibilityManagerCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.view.animation.PathInterpolatorCompat support-v4-23.2.0_61a99bba/android.support.v4.view.animation.PathInterpolatorCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.view.animation.PathInterpolatorCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.view.animation.PathInterpolatorCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.view.animation.PathInterpolatorCompat {
++public final class android.support.v4.view.animation.PathInterpolatorCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.DrawerLayout support-v4-23.2.0_61a99bba/android.support.v4.widget.DrawerLayout
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.DrawerLayout	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.DrawerLayout	2016-02-28 15:19:38.000000000 +0900
+@@ -7,0 +8 @@
++  public static final int LOCK_MODE_UNDEFINED;
+@@ -17,0 +19,2 @@
++  public void addDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener);
++  public void removeDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener);
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.EdgeEffectCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.EdgeEffectCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.EdgeEffectCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.EdgeEffectCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.EdgeEffectCompat {
++public final class android.support.v4.widget.EdgeEffectCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.ListPopupWindowCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.ListPopupWindowCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.ListPopupWindowCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.ListPopupWindowCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.ListPopupWindowCompat {
++public final class android.support.v4.widget.ListPopupWindowCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.ListViewCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.ListViewCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.ListViewCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.ListViewCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v4.widget.ListViewCompat {
++  public static void scrollListBy(android.widget.ListView, int);
++}
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.PopupMenuCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.PopupMenuCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.PopupMenuCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.PopupMenuCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.PopupMenuCompat {
++public final class android.support.v4.widget.PopupMenuCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.PopupWindowCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.PopupWindowCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.PopupWindowCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.PopupWindowCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.PopupWindowCompat {
++public final class android.support.v4.widget.PopupWindowCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.ScrollerCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.ScrollerCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.ScrollerCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.ScrollerCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.ScrollerCompat {
++public final class android.support.v4.widget.ScrollerCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.SearchViewCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.SearchViewCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.SearchViewCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.SearchViewCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.SearchViewCompat {
++public final class android.support.v4.widget.SearchViewCompat {
+diff -U 0 -N support-v4-23.1.1_637f00ae/android.support.v4.widget.TextViewCompat support-v4-23.2.0_61a99bba/android.support.v4.widget.TextViewCompat
+--- support-v4-23.1.1_637f00ae/android.support.v4.widget.TextViewCompat	2016-02-28 15:19:38.000000000 +0900
++++ support-v4-23.2.0_61a99bba/android.support.v4.widget.TextViewCompat	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.widget.TextViewCompat {
++public final class android.support.v4.widget.TextViewCompat {
+@@ -6,0 +7 @@
++  public static void setTextAppearance(android.widget.TextView, int);

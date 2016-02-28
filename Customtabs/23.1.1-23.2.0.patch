@@ -1,0 +1,25 @@
+diff -U 0 -N customtabs-23.1.1_162ebbc2/android.support.customtabs.CustomTabsIntent customtabs-23.2.0_fd974a96/android.support.customtabs.CustomTabsIntent
+--- customtabs-23.1.1_162ebbc2/android.support.customtabs.CustomTabsIntent	2016-02-28 15:19:37.000000000 +0900
++++ customtabs-23.2.0_fd974a96/android.support.customtabs.CustomTabsIntent	2016-02-28 15:19:37.000000000 +0900
+@@ -9,0 +10,2 @@
++  public static final java.lang.String EXTRA_TOOLBAR_ITEMS;
++  public static final java.lang.String EXTRA_SECONDARY_TOOLBAR_COLOR;
+@@ -16,0 +19,3 @@
++  public static final java.lang.String EXTRA_DEFAULT_SHARE_MENU_ITEM;
++  public static final java.lang.String KEY_ID;
++  public static final int TOOLBAR_ACTION_BUTTON_ID;
+@@ -19,0 +25 @@
++  public static int getMaxToolbarItems();
+diff -U 0 -N customtabs-23.1.1_162ebbc2/android.support.customtabs.CustomTabsIntent$Builder customtabs-23.2.0_fd974a96/android.support.customtabs.CustomTabsIntent$Builder
+--- customtabs-23.1.1_162ebbc2/android.support.customtabs.CustomTabsIntent$Builder	2016-02-28 15:19:37.000000000 +0900
++++ customtabs-23.2.0_fd974a96/android.support.customtabs.CustomTabsIntent$Builder	2016-02-28 15:19:37.000000000 +0900
+@@ -8,0 +9 @@
++  public android.support.customtabs.CustomTabsIntent$Builder addDefaultShareMenuItem();
+@@ -10,0 +12,2 @@
++  public android.support.customtabs.CustomTabsIntent$Builder addToolbarItem(int, android.graphics.Bitmap, java.lang.String, android.app.PendingIntent) throws java.lang.IllegalStateException;
++  public android.support.customtabs.CustomTabsIntent$Builder setSecondaryToolbarColor(int);
+diff -U 0 -N customtabs-23.1.1_162ebbc2/android.support.customtabs.CustomTabsSession customtabs-23.2.0_fd974a96/android.support.customtabs.CustomTabsSession
+--- customtabs-23.1.1_162ebbc2/android.support.customtabs.CustomTabsSession	2016-02-28 15:19:37.000000000 +0900
++++ customtabs-23.2.0_fd974a96/android.support.customtabs.CustomTabsSession	2016-02-28 15:19:37.000000000 +0900
+@@ -3,0 +4 @@
++  public boolean setToolbarItem(int, android.graphics.Bitmap, java.lang.String);

@@ -1,0 +1,786 @@
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.BrowseFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.BrowseFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.BrowseFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.BrowseFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -12,0 +13,2 @@
++  public android.support.v17.leanback.app.RowsFragment getRowsFragment();
++  public android.support.v17.leanback.app.HeadersFragment getHeadersFragment();
+@@ -25,0 +28 @@
++  public int getSelectedPosition();
+@@ -26,0 +30 @@
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.BrowseSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.BrowseSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.BrowseSupportFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.BrowseSupportFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -12,0 +13,2 @@
++  public android.support.v17.leanback.app.RowsSupportFragment getRowsSupportFragment();
++  public android.support.v17.leanback.app.HeadersSupportFragment getHeadersSupportFragment();
+@@ -25,0 +28 @@
++  public int getSelectedPosition();
+@@ -26,0 +30 @@
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.DetailsFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.DetailsFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.DetailsFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.DetailsFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -9,0 +10 @@
++  public android.support.v17.leanback.app.RowsFragment getRowsFragment();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.DetailsSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.DetailsSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.DetailsSupportFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.DetailsSupportFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -9,0 +10 @@
++  public android.support.v17.leanback.app.RowsSupportFragment getRowsSupportFragment();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedActionAdapter$ClickListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedActionAdapter$ClickListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedActionAdapter$ClickListener	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedActionAdapter$ClickListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v17.leanback.app.GuidedActionAdapter$ClickListener {
+-  public abstract void onGuidedActionClicked(android.support.v17.leanback.widget.GuidedAction);
+-}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedActionAdapter$EditListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedActionAdapter$EditListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedActionAdapter$EditListener	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedActionAdapter$EditListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v17.leanback.app.GuidedActionAdapter$EditListener {
+-  public abstract void onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction, boolean);
+-}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedActionAdapter$FocusListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedActionAdapter$FocusListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedActionAdapter$FocusListener	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedActionAdapter$FocusListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v17.leanback.app.GuidedActionAdapter$FocusListener {
+-  public abstract void onGuidedActionFocused(android.support.v17.leanback.widget.GuidedAction);
+-}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.app.GuidedStepFragment extends android.app.Fragment implements android.support.v17.leanback.app.GuidedActionAdapter$ClickListener,android.support.v17.leanback.app.GuidedActionAdapter$FocusListener {
++public class android.support.v17.leanback.app.GuidedStepFragment extends android.app.Fragment implements android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener {
+@@ -2,0 +3 @@
++  public static final int UI_STYLE_REPLACE;
+@@ -5,0 +7,2 @@
++  public static final int SLIDE_FROM_SIDE;
++  public static final int SLIDE_FROM_BOTTOM;
+@@ -8,0 +12 @@
++  public android.support.v17.leanback.widget.GuidedActionsStylist onCreateButtonActionsStylist();
+@@ -11,0 +16 @@
++  public void onCreateButtonActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>, android.os.Bundle);
+@@ -12,0 +18,4 @@
++  public boolean onSubGuidedActionClicked(android.support.v17.leanback.widget.GuidedAction);
++  public boolean isSubActionsExpanded();
++  public void expandSubActions(android.support.v17.leanback.widget.GuidedAction);
++  public void collapseSubActions();
+@@ -14,0 +24 @@
++  public long onGuidedActionEditedAndProceed(android.support.v17.leanback.widget.GuidedAction);
+@@ -20,0 +31,9 @@
++  public java.util.List<android.support.v17.leanback.widget.GuidedAction> getButtonActions();
++  public android.support.v17.leanback.widget.GuidedAction findButtonActionById(long);
++  public int findButtonActionPositionById(long);
++  public android.support.v17.leanback.widget.GuidedActionsStylist getGuidedButtonActionsStylist();
++  public void setButtonActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>);
++  public void notifyButtonActionChanged(int);
++  public android.view.View getButtonActionItemView(int);
++  public void setSelectedButtonActionPosition(int);
++  public int getSelectedButtonActionPosition();
+@@ -21,0 +41,2 @@
++  public android.support.v17.leanback.widget.GuidedAction findActionById(long);
++  public int findActionPositionById(long);
+@@ -22,0 +44 @@
++  public void notifyActionChanged(int);
+@@ -25,0 +48 @@
++  public android.view.View onCreateBackgroundView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+@@ -28,0 +52 @@
++  public void onDestroyView();
+@@ -29,0 +54 @@
++  public void onResume();
+@@ -30,0 +56,5 @@
++  public void finishGuidedStepFragments();
++  public void popBackStackToGuidedStepFragment(java.lang.Class, int);
++  public boolean isFocusOutStartAllowed();
++  public boolean isFocusOutEndAllowed();
++  public void setEntranceTransitionType(int);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public class android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment extends android.app.Fragment {
+-  public android.support.v17.leanback.app.GuidedStepFragment$GuidedStepBackgroundFragment();
+-  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+-}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepSupportFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepSupportFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.app.GuidedStepSupportFragment extends android.support.v4.app.Fragment implements android.support.v17.leanback.app.GuidedActionAdapter$ClickListener,android.support.v17.leanback.app.GuidedActionAdapter$FocusListener {
++public class android.support.v17.leanback.app.GuidedStepSupportFragment extends android.support.v4.app.Fragment implements android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener {
+@@ -2,0 +3 @@
++  public static final int UI_STYLE_REPLACE;
+@@ -5,0 +7,2 @@
++  public static final int SLIDE_FROM_SIDE;
++  public static final int SLIDE_FROM_BOTTOM;
+@@ -8,0 +12 @@
++  public android.support.v17.leanback.widget.GuidedActionsStylist onCreateButtonActionsStylist();
+@@ -11,0 +16 @@
++  public void onCreateButtonActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>, android.os.Bundle);
+@@ -12,0 +18,4 @@
++  public boolean onSubGuidedActionClicked(android.support.v17.leanback.widget.GuidedAction);
++  public boolean isSubActionsExpanded();
++  public void expandSubActions(android.support.v17.leanback.widget.GuidedAction);
++  public void collapseSubActions();
+@@ -14,0 +24 @@
++  public long onGuidedActionEditedAndProceed(android.support.v17.leanback.widget.GuidedAction);
+@@ -20,0 +31,9 @@
++  public java.util.List<android.support.v17.leanback.widget.GuidedAction> getButtonActions();
++  public android.support.v17.leanback.widget.GuidedAction findButtonActionById(long);
++  public int findButtonActionPositionById(long);
++  public android.support.v17.leanback.widget.GuidedActionsStylist getGuidedButtonActionsStylist();
++  public void setButtonActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>);
++  public void notifyButtonActionChanged(int);
++  public android.view.View getButtonActionItemView(int);
++  public void setSelectedButtonActionPosition(int);
++  public int getSelectedButtonActionPosition();
+@@ -21,0 +41,2 @@
++  public android.support.v17.leanback.widget.GuidedAction findActionById(long);
++  public int findActionPositionById(long);
+@@ -22,0 +44 @@
++  public void notifyActionChanged(int);
+@@ -25,0 +48 @@
++  public android.view.View onCreateBackgroundView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+@@ -28,0 +52 @@
++  public void onDestroyView();
+@@ -29,0 +54 @@
++  public void onResume();
+@@ -30,0 +56,5 @@
++  public void finishGuidedStepSupportFragments();
++  public void popBackStackToGuidedStepSupportFragment(java.lang.Class, int);
++  public boolean isFocusOutStartAllowed();
++  public boolean isFocusOutEndAllowed();
++  public void setEntranceTransitionType(int);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public class android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment extends android.support.v4.app.Fragment {
+-  public android.support.v17.leanback.app.GuidedStepSupportFragment$GuidedStepBackgroundSupportFragment();
+-  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+-}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -6,0 +7 @@
++  public int getSelectedPosition();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersFragment$OnHeaderClickedListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersFragment$OnHeaderClickedListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersFragment$OnHeaderClickedListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersFragment$OnHeaderClickedListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.HeadersFragment$OnHeaderClickedListener {
++  public abstract void onHeaderClicked(android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersFragment$OnHeaderViewSelectedListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersFragment$OnHeaderViewSelectedListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersFragment$OnHeaderViewSelectedListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersFragment$OnHeaderViewSelectedListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.HeadersFragment$OnHeaderViewSelectedListener {
++  public abstract void onHeaderSelected(android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersSupportFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersSupportFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -6,0 +7 @@
++  public int getSelectedPosition();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderClickedListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderClickedListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderClickedListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderClickedListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderClickedListener {
++  public abstract void onHeaderClicked(android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderViewSelectedListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderViewSelectedListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderViewSelectedListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderViewSelectedListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.HeadersSupportFragment$OnHeaderViewSelectedListener {
++  public abstract void onHeaderSelected(android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.OnboardingFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.OnboardingFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.OnboardingFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.OnboardingFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,8 @@
++public abstract class android.support.v17.leanback.app.OnboardingFragment extends android.app.Fragment {
++  public android.support.v17.leanback.app.OnboardingFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
++  public int onProvideTheme();
++  public final void setLogoResourceId(int);
++  public final int getLogoResourceId();
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.OnboardingSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.OnboardingSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.OnboardingSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.OnboardingSupportFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,8 @@
++public abstract class android.support.v17.leanback.app.OnboardingSupportFragment extends android.support.v4.app.Fragment {
++  public android.support.v17.leanback.app.OnboardingSupportFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
++  public int onProvideTheme();
++  public final void setLogoResourceId(int);
++  public final int getLogoResourceId();
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.RowsFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.RowsFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.RowsFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.RowsFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -8,0 +9 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder getRowViewHolder(int);
+@@ -12,0 +14 @@
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
+@@ -13,0 +16 @@
++  public int getSelectedPosition();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.RowsSupportFragment leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.RowsSupportFragment
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.app.RowsSupportFragment	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.app.RowsSupportFragment	2016-02-28 15:19:38.000000000 +0900
+@@ -8,0 +9 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder getRowViewHolder(int);
+@@ -12,0 +14 @@
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
+@@ -13,0 +16 @@
++  public int getSelectedPosition();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.FadeAndShortSlide leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.FadeAndShortSlide
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.FadeAndShortSlide	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.FadeAndShortSlide	2016-02-28 15:19:38.000000000 +0900
+@@ -3,0 +4 @@
++  public android.support.v17.leanback.transition.FadeAndShortSlide(android.content.Context, android.util.AttributeSet);
+@@ -11,0 +13,2 @@
++  public float getDistance();
++  public void setDistance(float);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.LeanbackTransitionHelper leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.LeanbackTransitionHelper
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.LeanbackTransitionHelper	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.LeanbackTransitionHelper	2016-02-28 15:19:38.000000000 +0900
+@@ -3,2 +3,2 @@
+-  public static java.lang.Object loadTitleInTransition(android.content.Context, android.support.v17.leanback.transition.TransitionHelper);
+-  public static java.lang.Object loadTitleOutTransition(android.content.Context, android.support.v17.leanback.transition.TransitionHelper);
++  public static java.lang.Object loadTitleInTransition(android.content.Context);
++  public static java.lang.Object loadTitleOutTransition(android.content.Context);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.TransitionHelper leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.TransitionHelper
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.TransitionHelper	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.TransitionHelper	2016-02-28 15:19:38.000000000 +0900
+@@ -7,0 +8 @@
++  public android.support.v17.leanback.transition.TransitionHelper();
+@@ -9,0 +11,48 @@
++  public static java.lang.Object getSharedElementEnterTransition(android.view.Window);
++  public static java.lang.Object getSharedElementReturnTransition(android.view.Window);
++  public static java.lang.Object getSharedElementExitTransition(android.view.Window);
++  public static java.lang.Object getSharedElementReenterTransition(android.view.Window);
++  public static java.lang.Object getEnterTransition(android.view.Window);
++  public static java.lang.Object getReturnTransition(android.view.Window);
++  public static java.lang.Object getExitTransition(android.view.Window);
++  public static java.lang.Object getReenterTransition(android.view.Window);
++  public static java.lang.Object createScene(android.view.ViewGroup, java.lang.Runnable);
++  public static java.lang.Object createChangeBounds(boolean);
++  public static java.lang.Object createChangeTransform();
++  public static void setChangeBoundsStartDelay(java.lang.Object, android.view.View, int);
++  public static void setChangeBoundsStartDelay(java.lang.Object, int, int);
++  public static void setChangeBoundsStartDelay(java.lang.Object, java.lang.String, int);
++  public static void setChangeBoundsDefaultStartDelay(java.lang.Object, int);
++  public static java.lang.Object createTransitionSet(boolean);
++  public static java.lang.Object createSlide(int);
++  public static java.lang.Object createScale();
++  public static void addTransition(java.lang.Object, java.lang.Object);
++  public static void exclude(java.lang.Object, int, boolean);
++  public static void exclude(java.lang.Object, android.view.View, boolean);
++  public static void excludeChildren(java.lang.Object, int, boolean);
++  public static void excludeChildren(java.lang.Object, android.view.View, boolean);
++  public static void include(java.lang.Object, int);
++  public static void include(java.lang.Object, android.view.View);
++  public static void setStartDelay(java.lang.Object, long);
++  public static void setDuration(java.lang.Object, long);
++  public static java.lang.Object createAutoTransition();
++  public static java.lang.Object createFadeTransition(int);
++  public static void addTransitionListener(java.lang.Object, android.support.v17.leanback.transition.TransitionListener);
++  public static void removeTransitionListener(java.lang.Object, android.support.v17.leanback.transition.TransitionListener);
++  public static void runTransition(java.lang.Object, java.lang.Object);
++  public static void setInterpolator(java.lang.Object, java.lang.Object);
++  public static void addTarget(java.lang.Object, android.view.View);
++  public static java.lang.Object createDefaultInterpolator(android.content.Context);
++  public static java.lang.Object loadTransition(android.content.Context, int);
++  public static void setEnterTransition(android.app.Fragment, java.lang.Object);
++  public static void setExitTransition(android.app.Fragment, java.lang.Object);
++  public static void setSharedElementEnterTransition(android.app.Fragment, java.lang.Object);
++  public static void addSharedElement(android.app.FragmentTransaction, android.view.View, java.lang.String);
++  public static void setEnterTransition(android.support.v4.app.Fragment, java.lang.Object);
++  public static void setExitTransition(android.support.v4.app.Fragment, java.lang.Object);
++  public static void setSharedElementEnterTransition(android.support.v4.app.Fragment, java.lang.Object);
++  public static void addSharedElement(android.support.v4.app.FragmentTransaction, android.view.View, java.lang.String);
++  public static java.lang.Object createFadeAndShortSlide(int);
++  public static java.lang.Object createFadeAndShortSlide(int, float);
++  public static void beginDelayedTransition(android.view.ViewGroup, java.lang.Object);
++  public static void setTransitionGroup(android.view.ViewGroup, boolean);
+@@ -11,40 +60 @@
+-  public java.lang.Object getSharedElementEnterTransition(android.view.Window);
+-  public java.lang.Object getSharedElementReturnTransition(android.view.Window);
+-  public java.lang.Object getSharedElementExitTransition(android.view.Window);
+-  public java.lang.Object getSharedElementReenterTransition(android.view.Window);
+-  public java.lang.Object getEnterTransition(android.view.Window);
+-  public java.lang.Object getReturnTransition(android.view.Window);
+-  public java.lang.Object getExitTransition(android.view.Window);
+-  public java.lang.Object getReenterTransition(android.view.Window);
+-  public java.lang.Object createScene(android.view.ViewGroup, java.lang.Runnable);
+-  public java.lang.Object createChangeBounds(boolean);
+-  public void setChangeBoundsStartDelay(java.lang.Object, android.view.View, int);
+-  public void setChangeBoundsStartDelay(java.lang.Object, int, int);
+-  public void setChangeBoundsStartDelay(java.lang.Object, java.lang.String, int);
+-  public void setChangeBoundsDefaultStartDelay(java.lang.Object, int);
+-  public java.lang.Object createTransitionSet(boolean);
+-  public java.lang.Object createSlide(int);
+-  public java.lang.Object createScale();
+-  public void addTransition(java.lang.Object, java.lang.Object);
+-  public void exclude(java.lang.Object, int, boolean);
+-  public void exclude(java.lang.Object, android.view.View, boolean);
+-  public void excludeChildren(java.lang.Object, int, boolean);
+-  public void excludeChildren(java.lang.Object, android.view.View, boolean);
+-  public void include(java.lang.Object, int);
+-  public void include(java.lang.Object, android.view.View);
+-  public void setStartDelay(java.lang.Object, long);
+-  public void setDuration(java.lang.Object, long);
+-  public java.lang.Object createAutoTransition();
+-  public java.lang.Object createFadeTransition(int);
+-  public void setTransitionListener(java.lang.Object, android.support.v17.leanback.transition.TransitionListener);
+-  public void runTransition(java.lang.Object, java.lang.Object);
+-  public void setInterpolator(java.lang.Object, java.lang.Object);
+-  public void addTarget(java.lang.Object, android.view.View);
+-  public java.lang.Object createDefaultInterpolator(android.content.Context);
+-  public java.lang.Object loadTransition(android.content.Context, int);
+-  public void setEnterTransition(android.app.Fragment, java.lang.Object);
+-  public void setExitTransition(android.app.Fragment, java.lang.Object);
+-  public void setEnterTransition(android.support.v4.app.Fragment, java.lang.Object);
+-  public void setExitTransition(android.support.v4.app.Fragment, java.lang.Object);
+-  public java.lang.Object createFadeAndShortSlide(int);
+-  public void setTransitionGroup(android.view.ViewGroup, boolean);
++  public static void setTransitionListener(java.lang.Object, android.support.v17.leanback.transition.TransitionListener);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.TransitionListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.TransitionListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.transition.TransitionListener	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.transition.TransitionListener	2016-02-28 15:19:38.000000000 +0900
+@@ -4,0 +5,3 @@
++  public void onTransitionCancel(java.lang.Object);
++  public void onTransitionPause(java.lang.Object);
++  public void onTransitionResume(java.lang.Object);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter	2016-02-28 15:19:38.000000000 +0900
+@@ -2,0 +3 @@
++  public android.view.View onCreateView(android.view.ViewGroup);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.DetailsOverviewLogoPresenter$ViewHolder	2016-02-28 15:19:38.000000000 +0900
+@@ -2,0 +3,4 @@
++  public android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter getParentPresenter();
++  public android.support.v17.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder getParentViewHolder();
++  public boolean isSizeFromDrawableIntrinsic();
++  public void setSizeFromDrawableIntrinsic(boolean);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidanceStylist leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidanceStylist
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidanceStylist	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidanceStylist	2016-02-28 15:19:38.000000000 +0900
+@@ -3,0 +4 @@
++  public void onDestroyView();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedAction leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedAction
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedAction	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedAction	2016-02-28 15:19:38.000000000 +0900
+@@ -2 +1,0 @@
+-  public static final int NO_DRAWABLE;
+@@ -4,0 +4,9 @@
++  public static final int CHECKBOX_CHECK_SET_ID;
++  public static final long ACTION_ID_NEXT;
++  public static final long ACTION_ID_CURRENT;
++  public static final long ACTION_ID_OK;
++  public static final long ACTION_ID_CANCEL;
++  public static final long ACTION_ID_FINISH;
++  public static final long ACTION_ID_CONTINUE;
++  public static final long ACTION_ID_YES;
++  public static final long ACTION_ID_NO;
+@@ -8,0 +17,2 @@
++  public java.lang.CharSequence getEditDescription();
++  public void setEditDescription(java.lang.CharSequence);
+@@ -12,0 +23 @@
++  public void setIntent(android.content.Intent);
+@@ -13,0 +25,7 @@
++  public boolean isDescriptionEditable();
++  public boolean hasTextEditable();
++  public boolean hasEditableActivatorView();
++  public int getEditInputType();
++  public int getDescriptionEditInputType();
++  public int getInputType();
++  public int getDescriptionInputType();
+@@ -19,0 +38,2 @@
++  public boolean isFocusable();
++  public void setFocusable(boolean);
+@@ -21,0 +42,3 @@
++  public void setSubActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>);
++  public java.util.List<android.support.v17.leanback.widget.GuidedAction> getSubActions();
++  public boolean hasSubActions();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedAction$Builder leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedAction$Builder
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedAction$Builder	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedAction$Builder	2016-02-28 15:19:38.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.GuidedAction$Builder {
++public class android.support.v17.leanback.widget.GuidedAction$Builder extends android.support.v17.leanback.widget.GuidedAction$BuilderBase<android.support.v17.leanback.widget.GuidedAction$Builder> {
+@@ -2,0 +3 @@
++  public android.support.v17.leanback.widget.GuidedAction$Builder(android.content.Context);
+@@ -4,14 +4,0 @@
+-  public android.support.v17.leanback.widget.GuidedAction$Builder id(long);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder title(java.lang.String);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder editTitle(java.lang.String);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder description(java.lang.String);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder intent(android.content.Intent);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder icon(android.graphics.drawable.Drawable);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder iconResourceId(int, android.content.Context);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder editable(boolean);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder checked(boolean);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder checkSetId(int);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder multilineDescription(boolean);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder hasNext(boolean);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder infoOnly(boolean);
+-  public android.support.v17.leanback.widget.GuidedAction$Builder enabled(boolean);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedAction$BuilderBase<B leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedAction$BuilderBase<B
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedAction$BuilderBase<B	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedAction$BuilderBase<B	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,33 @@
++public abstract class android.support.v17.leanback.widget.GuidedAction$BuilderBase<B extends android.support.v17.leanback.widget.GuidedAction$BuilderBase> {
++  public android.support.v17.leanback.widget.GuidedAction$BuilderBase(android.content.Context);
++  public android.content.Context getContext();
++  public B clickAction(long);
++  public B id(long);
++  public B title(java.lang.CharSequence);
++  public B title(int);
++  public B editTitle(java.lang.CharSequence);
++  public B editTitle(int);
++  public B description(java.lang.CharSequence);
++  public B description(int);
++  public B editDescription(java.lang.CharSequence);
++  public B editDescription(int);
++  public B intent(android.content.Intent);
++  public B icon(android.graphics.drawable.Drawable);
++  public B iconResourceId(int, android.content.Context);
++  public B icon(int);
++  public B editable(boolean);
++  public B descriptionEditable(boolean);
++  public B hasEditableActivatorView(boolean);
++  public B inputType(int);
++  public B descriptionInputType(int);
++  public B editInputType(int);
++  public B descriptionEditInputType(int);
++  public B checked(boolean);
++  public B checkSetId(int);
++  public B multilineDescription(boolean);
++  public B hasNext(boolean);
++  public B infoOnly(boolean);
++  public B enabled(boolean);
++  public B focusable(boolean);
++  public B subActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,18 @@
++public class android.support.v17.leanback.widget.GuidedActionAdapter extends android.support.v7.widget.RecyclerView$Adapter {
++  public android.support.v17.leanback.widget.GuidedActionAdapter(java.util.List<android.support.v17.leanback.widget.GuidedAction>, android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener, android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener, android.support.v17.leanback.widget.GuidedActionsStylist, boolean);
++  public void setActions(java.util.List<android.support.v17.leanback.widget.GuidedAction>);
++  public int getCount();
++  public android.support.v17.leanback.widget.GuidedAction getItem(int);
++  public int indexOf(android.support.v17.leanback.widget.GuidedAction);
++  public android.support.v17.leanback.widget.GuidedActionsStylist getGuidedActionsStylist();
++  public void setClickListener(android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener);
++  public void setFocusListener(android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener);
++  public java.util.List<android.support.v17.leanback.widget.GuidedAction> getActions();
++  public int getItemViewType(int);
++  public android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup, int);
++  public void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder, int);
++  public int getItemCount();
++  public android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder findSubChildViewHolder(android.view.View);
++  public void handleCheckedActions(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
++  public void performOnActionClick(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.GuidedActionAdapter$ClickListener {
++  public abstract void onGuidedActionClicked(android.support.v17.leanback.widget.GuidedAction);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,5 @@
++public interface android.support.v17.leanback.widget.GuidedActionAdapter$EditListener {
++  public abstract long onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction);
++  public abstract void onImeOpen();
++  public abstract void onImeClose();
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.GuidedActionAdapter$FocusListener {
++  public abstract void onGuidedActionFocused(android.support.v17.leanback.widget.GuidedAction);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapterGroup leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapterGroup
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionAdapterGroup	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionAdapterGroup	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.widget.GuidedActionAdapterGroup {
++  public android.support.v17.leanback.widget.GuidedActionAdapterGroup();
++  public void addAdpter(android.support.v17.leanback.widget.GuidedActionAdapter, android.support.v17.leanback.widget.GuidedActionAdapter);
++  public android.support.v17.leanback.widget.GuidedActionAdapter getNextAdapter(android.support.v17.leanback.widget.GuidedActionAdapter);
++  public void setEditListener(android.support.v17.leanback.widget.GuidedActionAdapter$EditListener);
++  public void openIme(android.support.v17.leanback.widget.GuidedActionAdapter, android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
++  public void closeIme(android.view.View);
++  public void fillAndStay(android.support.v17.leanback.widget.GuidedActionAdapter, android.widget.TextView);
++  public void fillAndGoNext(android.support.v17.leanback.widget.GuidedActionAdapter, android.widget.TextView);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionEditText leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionEditText
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionEditText	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionEditText	2016-02-28 15:19:38.000000000 +0900
+@@ -6,0 +7 @@
++  public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionsStylist leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionsStylist
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionsStylist	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionsStylist	2016-02-28 15:19:38.000000000 +0900
+@@ -1,0 +2,2 @@
++  public static final int VIEW_TYPE_DEFAULT;
++  public static final int VIEW_TYPE_DATE_PICKER;
+@@ -3,0 +6,3 @@
++  public void setAsButtonActions();
++  public boolean isButtonActions();
++  public void onDestroyView();
+@@ -4,0 +10 @@
++  public android.support.v17.leanback.widget.VerticalGridView getSubActionsGridView();
+@@ -5,0 +12 @@
++  public int getItemViewType(android.support.v17.leanback.widget.GuidedAction);
+@@ -6,0 +14 @@
++  public int onProvideItemLayoutId(int);
+@@ -7,0 +16 @@
++  public android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder onCreateViewHolder(android.view.ViewGroup, int);
+@@ -8,0 +18 @@
++  public void setEditingMode(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder, android.support.v17.leanback.widget.GuidedAction, boolean);
+@@ -10,0 +21 @@
++  public void onAnimateItemPressedCancelled(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
+@@ -11,0 +23,12 @@
++  public void onBindCheckMarkView(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder, android.support.v17.leanback.widget.GuidedAction);
++  public void onBindActivatorView(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder, android.support.v17.leanback.widget.GuidedAction);
++  public boolean onUpdateActivatorView(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder, android.support.v17.leanback.widget.GuidedAction);
++  public void setEditListener(android.support.v17.leanback.widget.GuidedActionAdapter$EditListener);
++  public void onBindChevronView(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder, android.support.v17.leanback.widget.GuidedAction);
++  public void setExpandedViewHolder(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
++  public boolean isInExpandTransition();
++  public boolean isExpandTransitionSupported();
++  public void startExpandedTransition(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
++  public boolean isSubActionsExpanded();
++  public android.support.v17.leanback.widget.GuidedAction getExpandedAction();
++  public void onUpdateExpandedViewHolder(android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder	2016-02-28 15:19:38.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder {
+-  public final android.view.View view;
++public class android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder extends android.support.v7.widget.RecyclerView$ViewHolder {
+@@ -3,0 +3 @@
++  public android.support.v17.leanback.widget.GuidedActionsStylist$ViewHolder(android.view.View, boolean);
+@@ -7,0 +8 @@
++  public android.widget.EditText getEditableDescriptionView();
+@@ -10,0 +12,8 @@
++  public boolean isInEditing();
++  public boolean isInEditingText();
++  public boolean isInEditingTitle();
++  public boolean isInEditingDescription();
++  public boolean isInEditingActivatorView();
++  public android.view.View getEditingView();
++  public boolean isSubAction();
++  public android.support.v17.leanback.widget.GuidedAction getAction();
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedDatePickerAction leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedDatePickerAction
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedDatePickerAction	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedDatePickerAction	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v17.leanback.widget.GuidedDatePickerAction extends android.support.v17.leanback.widget.GuidedAction {
++  public android.support.v17.leanback.widget.GuidedDatePickerAction();
++  public java.lang.String getDatePickerFormat();
++  public long getDate();
++  public void setDate(long);
++  public long getMinDate();
++  public long getMaxDate();
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedDatePickerAction$Builder leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedDatePickerAction$Builder
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedDatePickerAction$Builder	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedDatePickerAction$Builder	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v17.leanback.widget.GuidedDatePickerAction$Builder extends android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase<android.support.v17.leanback.widget.GuidedDatePickerAction$Builder> {
++  public android.support.v17.leanback.widget.GuidedDatePickerAction$Builder(android.content.Context);
++  public android.support.v17.leanback.widget.GuidedDatePickerAction build();
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase<B leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase<B
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase<B	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase<B	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,7 @@
++public abstract class android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase<B extends android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase> extends android.support.v17.leanback.widget.GuidedAction$BuilderBase<B> {
++  public android.support.v17.leanback.widget.GuidedDatePickerAction$BuilderBase(android.content.Context);
++  public B datePickerFormat(java.lang.String);
++  public B date(long);
++  public B minDate(long);
++  public B maxDate(long);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.HorizontalGridView leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.HorizontalGridView
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.HorizontalGridView	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.HorizontalGridView	2016-02-28 15:19:38.000000000 +0900
+@@ -50,0 +51,2 @@
++  public void setSelectedPosition(int, android.support.v17.leanback.widget.ViewHolderTask);
++  public void setSelectedPositionSmooth(int, android.support.v17.leanback.widget.ViewHolderTask);
+@@ -56,0 +59,2 @@
++  public void removeOnChildViewHolderSelectedListener(android.support.v17.leanback.widget.OnChildViewHolderSelectedListener);
++  public void addOnChildViewHolderSelectedListener(android.support.v17.leanback.widget.OnChildViewHolderSelectedListener);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.ListRowPresenter$SelectItemViewHolderTask leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.ListRowPresenter$SelectItemViewHolderTask
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.ListRowPresenter$SelectItemViewHolderTask	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.ListRowPresenter$SelectItemViewHolderTask	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.widget.ListRowPresenter$SelectItemViewHolderTask extends android.support.v17.leanback.widget.Presenter$ViewHolderTask {
++  public android.support.v17.leanback.widget.ListRowPresenter$SelectItemViewHolderTask(int);
++  public void setItemPosition(int);
++  public int getItemPosition();
++  public void setSmoothScroll(boolean);
++  public boolean isSmoothScroll();
++  public android.support.v17.leanback.widget.Presenter$ViewHolderTask getItemTask();
++  public void setItemTask(android.support.v17.leanback.widget.Presenter$ViewHolderTask);
++  public void run(android.support.v17.leanback.widget.Presenter$ViewHolder);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder	2016-02-28 15:19:38.000000000 +0900
+@@ -5,0 +6,2 @@
++  public int getSelectedPosition();
++  public android.support.v17.leanback.widget.Presenter$ViewHolder getItemViewHolder(int);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.PagingIndicator leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.PagingIndicator
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.PagingIndicator	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.PagingIndicator	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v17.leanback.widget.PagingIndicator extends android.view.View {
++  public android.support.v17.leanback.widget.PagingIndicator(android.content.Context);
++  public android.support.v17.leanback.widget.PagingIndicator(android.content.Context, android.util.AttributeSet);
++  public android.support.v17.leanback.widget.PagingIndicator(android.content.Context, android.util.AttributeSet, int);
++  public void setPageCount(int);
++  public void onPageSelected(int, boolean);
++  public void onRtlPropertiesChanged(int);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.PagingIndicator$Dot leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.PagingIndicator$Dot
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.PagingIndicator$Dot	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.PagingIndicator$Dot	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.widget.PagingIndicator$Dot {
++  public android.support.v17.leanback.widget.PagingIndicator$Dot(android.support.v17.leanback.widget.PagingIndicator);
++  public void adjustAlpha();
++  public float getAlpha();
++  public void setAlpha(float);
++  public float getTranslationX();
++  public void setTranslationX(float);
++  public float getDiameter();
++  public void setDiameter(float);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.Presenter$ViewHolderTask leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.Presenter$ViewHolderTask
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.Presenter$ViewHolderTask	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.Presenter$ViewHolderTask	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.widget.Presenter$ViewHolderTask {
++  public android.support.v17.leanback.widget.Presenter$ViewHolderTask();
++  public void run(android.support.v17.leanback.widget.Presenter$ViewHolder);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.Util leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.Util
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.Util	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.Util	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.widget.Util {
++  public android.support.v17.leanback.widget.Util();
++  public static boolean isDescendant(android.view.ViewGroup, android.view.View);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.VerticalGridView leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.VerticalGridView
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.VerticalGridView	2016-02-28 15:19:38.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.VerticalGridView	2016-02-28 15:19:38.000000000 +0900
+@@ -37,0 +38,2 @@
++  public void setSelectedPosition(int, android.support.v17.leanback.widget.ViewHolderTask);
++  public void setSelectedPositionSmooth(int, android.support.v17.leanback.widget.ViewHolderTask);
+@@ -43,0 +46,2 @@
++  public void removeOnChildViewHolderSelectedListener(android.support.v17.leanback.widget.OnChildViewHolderSelectedListener);
++  public void addOnChildViewHolderSelectedListener(android.support.v17.leanback.widget.OnChildViewHolderSelectedListener);
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.ViewHolderTask leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.ViewHolderTask
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.ViewHolderTask	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.ViewHolderTask	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.ViewHolderTask {
++  public abstract void run(android.support.v7.widget.RecyclerView$ViewHolder);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.DatePicker leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.DatePicker
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.DatePicker	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.DatePicker	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,13 @@
++public class android.support.v17.leanback.widget.picker.DatePicker extends android.support.v17.leanback.widget.picker.Picker {
++  public android.support.v17.leanback.widget.picker.DatePicker(android.content.Context, android.util.AttributeSet);
++  public android.support.v17.leanback.widget.picker.DatePicker(android.content.Context, android.util.AttributeSet, int);
++  public void setDatePickerFormat(java.lang.String);
++  public java.lang.String getDatePickerFormat();
++  public final void onColumnValueChanged(int, int);
++  public void setMinDate(long);
++  public long getMinDate();
++  public void setMaxDate(long);
++  public long getMaxDate();
++  public long getDate();
++  public void updateDate(int, int, int, boolean);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.Picker leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.Picker
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.Picker	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.Picker	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,25 @@
++public class android.support.v17.leanback.widget.picker.Picker extends android.widget.FrameLayout {
++  public final java.lang.CharSequence getSeparator();
++  public final void setSeparator(java.lang.CharSequence);
++  public final int getPickerItemLayoutId();
++  public final int getPickerItemTextViewId();
++  public final void setPickerItemTextViewId(int);
++  public android.support.v17.leanback.widget.picker.Picker(android.content.Context, android.util.AttributeSet, int);
++  public android.support.v17.leanback.widget.picker.PickerColumn getColumnAt(int);
++  public int getColumnsCount();
++  public void setColumns(java.util.List<android.support.v17.leanback.widget.picker.PickerColumn>);
++  public void setColumnAt(int, android.support.v17.leanback.widget.picker.PickerColumn);
++  public void setColumnValue(int, int, boolean);
++  public void addOnValueChangedListener(android.support.v17.leanback.widget.picker.Picker$PickerValueListener);
++  public void removeOnValueChangedListener(android.support.v17.leanback.widget.picker.Picker$PickerValueListener);
++  public void onColumnValueChanged(int, int);
++  public boolean dispatchKeyEvent(android.view.KeyEvent);
++  public float getActivatedVisibleItemCount();
++  public void setActivatedVisibleItemCount(float);
++  public float getVisibleItemCount();
++  public void setVisibleItemCount(float);
++  public void setActivated(boolean);
++  public void requestChildFocus(android.view.View, android.view.View);
++  public void setSelectedColumn(int);
++  public int getSelectedColumn();
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.Picker$PickerValueListener leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.Picker$PickerValueListener
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.Picker$PickerValueListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.Picker$PickerValueListener	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.picker.Picker$PickerValueListener {
++  public abstract void onValueChanged(android.support.v17.leanback.widget.picker.Picker, int);
++}
+diff -U 0 -N leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.PickerColumn leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.PickerColumn
+--- leanback-v17-23.1.1_1eeb03fe/android.support.v17.leanback.widget.picker.PickerColumn	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-23.2.0_a3e0c1ce/android.support.v17.leanback.widget.picker.PickerColumn	2016-02-28 15:19:38.000000000 +0900
+@@ -0,0 +1,15 @@
++public class android.support.v17.leanback.widget.picker.PickerColumn {
++  public android.support.v17.leanback.widget.picker.PickerColumn();
++  public void setLabelFormat(java.lang.String);
++  public java.lang.String getLabelFormat();
++  public void setStaticLabels(java.lang.CharSequence[]);
++  public java.lang.CharSequence[] getStaticLabels();
++  public java.lang.CharSequence getLabelFor(int);
++  public int getCurrentValue();
++  public void setCurrentValue(int);
++  public int getCount();
++  public int getMinValue();
++  public int getMaxValue();
++  public void setMinValue(int);
++  public void setMaxValue(int);
++}

@@ -1,0 +1,67 @@
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.DefaultItemAnimator recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.DefaultItemAnimator
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.DefaultItemAnimator	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.DefaultItemAnimator	2016-02-28 15:19:38.000000000 +0900
+@@ -10,0 +11 @@
++  public boolean canReuseUpdatedViewHolder(android.support.v7.widget.RecyclerView$ViewHolder, java.util.List<java.lang.Object>);
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.GridLayoutManager recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.GridLayoutManager
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.GridLayoutManager	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.GridLayoutManager	2016-02-28 15:19:38.000000000 +0900
+@@ -21,0 +22 @@
++  public void setMeasuredDimension(android.graphics.Rect, int, int);
+@@ -25,0 +27 @@
++  public android.view.View onFocusSearchFailed(android.view.View, int, android.support.v7.widget.RecyclerView$Recycler, android.support.v7.widget.RecyclerView$State);
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.OrientationHelper recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.OrientationHelper
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.OrientationHelper	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.OrientationHelper	2016-02-28 15:19:38.000000000 +0900
+@@ -16,0 +17,2 @@
++  public abstract int getMode();
++  public abstract int getModeInOther();
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView	2016-02-28 15:19:38.000000000 +0900
+@@ -82,0 +83,2 @@
++  public android.view.View findContainingItemView(android.view.View);
++  public android.support.v7.widget.RecyclerView$ViewHolder findContainingViewHolder(android.view.View);
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView$ItemAnimator recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView$ItemAnimator
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView$ItemAnimator	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView$ItemAnimator	2016-02-28 15:19:38.000000000 +0900
+@@ -31,0 +32 @@
++  public boolean canReuseUpdatedViewHolder(android.support.v7.widget.RecyclerView$ViewHolder, java.util.List<java.lang.Object>);
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView$LayoutManager	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView$LayoutManager	2016-02-28 15:19:38.000000000 +0900
+@@ -2,0 +3 @@
++  public void setMeasuredDimension(android.graphics.Rect, int, int);
+@@ -4,0 +6 @@
++  public static int chooseSize(int, int, int);
+@@ -5,0 +8,2 @@
++  public void setAutoMeasureEnabled(boolean);
++  public boolean isAutoMeasureEnabled();
+@@ -38,0 +43 @@
++  public android.view.View findContainingItemView(android.view.View);
+@@ -52,0 +58,2 @@
++  public int getWidthMode();
++  public int getHeightMode();
+@@ -70,0 +78,2 @@
++  public boolean isMeasurementCacheEnabled();
++  public void setMeasurementCacheEnabled(boolean);
+@@ -72,0 +82 @@
++  public static int getChildMeasureSpec(int, int, int, int, boolean);
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView$State recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView$State
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.RecyclerView$State	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.RecyclerView$State	2016-02-28 15:19:38.000000000 +0900
+@@ -2,0 +3 @@
++  public boolean isMeasuring();
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.StaggeredGridLayoutManager recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.StaggeredGridLayoutManager
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.StaggeredGridLayoutManager	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.StaggeredGridLayoutManager	2016-02-28 15:19:38.000000000 +0900
+@@ -20,0 +21 @@
++  public void setMeasuredDimension(android.graphics.Rect, int, int);
+@@ -57,0 +59 @@
++  public android.view.View onFocusSearchFailed(android.view.View, int, android.support.v7.widget.RecyclerView$Recycler, android.support.v7.widget.RecyclerView$State);
+diff -U 0 -N recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.helper.ItemTouchHelper$Callback recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.helper.ItemTouchHelper$Callback
+--- recyclerview-v7-23.1.1_8d5401ba/android.support.v7.widget.helper.ItemTouchHelper$Callback	2016-02-28 15:19:38.000000000 +0900
++++ recyclerview-v7-23.2.0_c334bd46/android.support.v7.widget.helper.ItemTouchHelper$Callback	2016-02-28 15:19:38.000000000 +0900
+@@ -17,0 +18,2 @@
++  public float getSwipeEscapeVelocity(float);
++  public float getSwipeVelocityThreshold(float);

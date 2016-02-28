@@ -1,0 +1,172 @@
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.internal.NavigationMenuPresenter design-23.2.0_a95fd7a6/android.support.design.internal.NavigationMenuPresenter
+--- design-23.1.1_aff7f3a6/android.support.design.internal.NavigationMenuPresenter	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.internal.NavigationMenuPresenter	2016-02-28 15:19:37.000000000 +0900
+@@ -29,0 +30 @@
++  public void setPaddingTopDefault(int);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.AppBarLayout$ScrollingViewBehavior design-23.2.0_a95fd7a6/android.support.design.widget.AppBarLayout$ScrollingViewBehavior
+--- design-23.1.1_aff7f3a6/android.support.design.widget.AppBarLayout$ScrollingViewBehavior	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.AppBarLayout$ScrollingViewBehavior	2016-02-28 15:19:37.000000000 +0900
+@@ -5 +4,0 @@
+-  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, android.view.View, int);
+@@ -7,2 +5,0 @@
+-  public void setOverlayTop(int);
+-  public int getOverlayTop();
+@@ -13,0 +11 @@
++  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, android.view.View, int);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior$BottomSheetCallback design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior$BottomSheetCallback
+--- design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior$BottomSheetCallback	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior$BottomSheetCallback	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.design.widget.BottomSheetBehavior$BottomSheetCallback {
++  public android.support.design.widget.BottomSheetBehavior$BottomSheetCallback();
++  public abstract void onStateChanged(android.view.View, int);
++  public abstract void onSlide(android.view.View, float);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior$SavedState design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior$SavedState
+--- design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior$SavedState	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior$SavedState	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.design.widget.BottomSheetBehavior$SavedState extends android.view.View$BaseSavedState {
++  public static final android.os.Parcelable$Creator<android.support.design.widget.BottomSheetBehavior$SavedState> CREATOR;
++  public android.support.design.widget.BottomSheetBehavior$SavedState(android.os.Parcel);
++  public android.support.design.widget.BottomSheetBehavior$SavedState(android.os.Parcelable, int);
++  public void writeToParcel(android.os.Parcel, int);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior$State design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior$State
+--- design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior$State	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior$State	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.design.widget.BottomSheetBehavior$State extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior<V design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior<V
+--- design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetBehavior<V	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetBehavior<V	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,26 @@
++public class android.support.design.widget.BottomSheetBehavior<V extends android.view.View> extends android.support.design.widget.CoordinatorLayout$Behavior<V> {
++  public static final int STATE_DRAGGING;
++  public static final int STATE_SETTLING;
++  public static final int STATE_EXPANDED;
++  public static final int STATE_COLLAPSED;
++  public static final int STATE_HIDDEN;
++  public android.support.design.widget.BottomSheetBehavior();
++  public android.support.design.widget.BottomSheetBehavior(android.content.Context, android.util.AttributeSet);
++  public android.os.Parcelable onSaveInstanceState(android.support.design.widget.CoordinatorLayout, V);
++  public void onRestoreInstanceState(android.support.design.widget.CoordinatorLayout, V, android.os.Parcelable);
++  public boolean onLayoutChild(android.support.design.widget.CoordinatorLayout, V, int);
++  public boolean onInterceptTouchEvent(android.support.design.widget.CoordinatorLayout, V, android.view.MotionEvent);
++  public boolean onTouchEvent(android.support.design.widget.CoordinatorLayout, V, android.view.MotionEvent);
++  public boolean onStartNestedScroll(android.support.design.widget.CoordinatorLayout, V, android.view.View, android.view.View, int);
++  public void onNestedPreScroll(android.support.design.widget.CoordinatorLayout, V, android.view.View, int, int, int[]);
++  public void onStopNestedScroll(android.support.design.widget.CoordinatorLayout, V, android.view.View);
++  public boolean onNestedPreFling(android.support.design.widget.CoordinatorLayout, V, android.view.View, float, float);
++  public final void setPeekHeight(int);
++  public final int getPeekHeight();
++  public void setHideable(boolean);
++  public boolean isHideable();
++  public void setBottomSheetCallback(android.support.design.widget.BottomSheetBehavior$BottomSheetCallback);
++  public final void setState(int);
++  public final int getState();
++  public static <V extends android.view.View> android.support.design.widget.BottomSheetBehavior<V> from(V);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetDialog design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetDialog
+--- design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetDialog	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetDialog	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.design.widget.BottomSheetDialog extends android.support.v7.app.AppCompatDialog {
++  public android.support.design.widget.BottomSheetDialog(android.content.Context);
++  public android.support.design.widget.BottomSheetDialog(android.content.Context, int);
++  public void setContentView(int);
++  public void setContentView(android.view.View);
++  public void setContentView(android.view.View, android.view.ViewGroup$LayoutParams);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetDialogFragment design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetDialogFragment
+--- design-23.1.1_aff7f3a6/android.support.design.widget.BottomSheetDialogFragment	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetDialogFragment	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.design.widget.BottomSheetDialogFragment extends android.support.v7.app.AppCompatDialogFragment {
++  public android.support.design.widget.BottomSheetDialogFragment();
++  public android.app.Dialog onCreateDialog(android.os.Bundle);
++  public void setupDialog(android.app.Dialog, int);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.CollapsingToolbarLayout design-23.2.0_a95fd7a6/android.support.design.widget.CollapsingToolbarLayout
+--- design-23.1.1_aff7f3a6/android.support.design.widget.CollapsingToolbarLayout	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.CollapsingToolbarLayout	2016-02-28 15:19:37.000000000 +0900
+@@ -16,0 +17 @@
++  public void setVisibility(int);
+@@ -31,0 +33,9 @@
++  public void setExpandedTitleMargin(int, int, int, int);
++  public int getExpandedTitleMarginStart();
++  public void setExpandedTitleMarginStart(int);
++  public int getExpandedTitleMarginTop();
++  public void setExpandedTitleMarginTop(int);
++  public int getExpandedTitleMarginEnd();
++  public void setExpandedTitleMarginEnd(int);
++  public int getExpandedTitleMarginBottom();
++  public void setExpandedTitleMarginBottom(int);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.CoordinatorLayout design-23.2.0_a95fd7a6/android.support.design.widget.CoordinatorLayout
+--- design-23.1.1_aff7f3a6/android.support.design.widget.CoordinatorLayout	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.CoordinatorLayout	2016-02-28 15:19:37.000000000 +0900
+@@ -9,0 +10 @@
++  public void setVisibility(int);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.CoordinatorLayout$Behavior<V design-23.2.0_a95fd7a6/android.support.design.widget.CoordinatorLayout$Behavior<V
+--- design-23.1.1_aff7f3a6/android.support.design.widget.CoordinatorLayout$Behavior<V	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.CoordinatorLayout$Behavior<V	2016-02-28 15:19:37.000000000 +0900
+@@ -6,2 +6,2 @@
+-  public final int getScrimColor(android.support.design.widget.CoordinatorLayout, V);
+-  public final float getScrimOpacity(android.support.design.widget.CoordinatorLayout, V);
++  public int getScrimColor(android.support.design.widget.CoordinatorLayout, V);
++  public float getScrimOpacity(android.support.design.widget.CoordinatorLayout, V);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.FloatingActionButton design-23.2.0_a95fd7a6/android.support.design.widget.FloatingActionButton
+--- design-23.1.1_aff7f3a6/android.support.design.widget.FloatingActionButton	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.FloatingActionButton	2016-02-28 15:19:37.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.FloatingActionButton extends android.widget.ImageButton {
++public class android.support.design.widget.FloatingActionButton extends android.support.design.widget.VisibilityAwareImageButton {
+@@ -16,0 +17,2 @@
++  public void setUseCompatPadding(boolean);
++  public boolean getUseCompatPadding();
+@@ -17,0 +20,5 @@
++  public boolean getContentRect(android.graphics.Rect);
++  public android.graphics.drawable.Drawable getContentBackground();
++  public float getCompatElevation();
++  public void setCompatElevation(float);
++  public void setVisibility(int);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.TabItem design-23.2.0_a95fd7a6/android.support.design.widget.TabItem
+--- design-23.1.1_aff7f3a6/android.support.design.widget.TabItem	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.TabItem	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.design.widget.TabItem extends android.view.View {
++  public android.support.design.widget.TabItem(android.content.Context);
++  public android.support.design.widget.TabItem(android.content.Context, android.util.AttributeSet);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.TabLayout design-23.2.0_a95fd7a6/android.support.design.widget.TabLayout
+--- design-23.1.1_aff7f3a6/android.support.design.widget.TabLayout	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.TabLayout	2016-02-28 15:19:37.000000000 +0900
+@@ -32,0 +33,7 @@
++  public boolean shouldDelayChildPressedState();
++  public void addView(android.view.View);
++  public void addView(android.view.View, int);
++  public void addView(android.view.View, android.view.ViewGroup$LayoutParams);
++  public void addView(android.view.View, int, android.view.ViewGroup$LayoutParams);
++  public android.widget.FrameLayout$LayoutParams generateLayoutParams(android.util.AttributeSet);
++  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.TextInputEditText design-23.2.0_a95fd7a6/android.support.design.widget.TextInputEditText
+--- design-23.1.1_aff7f3a6/android.support.design.widget.TextInputEditText	1970-01-01 09:00:00.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.TextInputEditText	2016-02-28 15:19:37.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.design.widget.TextInputEditText extends android.support.v7.widget.AppCompatEditText {
++  public android.support.design.widget.TextInputEditText(android.content.Context);
++  public android.support.design.widget.TextInputEditText(android.content.Context, android.util.AttributeSet);
++  public android.support.design.widget.TextInputEditText(android.content.Context, android.util.AttributeSet, int);
++  public android.view.inputmethod.InputConnection onCreateInputConnection(android.view.inputmethod.EditorInfo);
++}
+diff -U 0 -N design-23.1.1_aff7f3a6/android.support.design.widget.TextInputLayout design-23.2.0_a95fd7a6/android.support.design.widget.TextInputLayout
+--- design-23.1.1_aff7f3a6/android.support.design.widget.TextInputLayout	2016-02-28 15:19:37.000000000 +0900
++++ design-23.2.0_a95fd7a6/android.support.design.widget.TextInputLayout	2016-02-28 15:19:37.000000000 +0900
+@@ -10,0 +11,2 @@
++  public void setHintEnabled(boolean);
++  public boolean isHintEnabled();
+@@ -15,0 +18 @@
++  public boolean isCounterEnabled();
+@@ -17,0 +21 @@
++  public android.os.Parcelable onSaveInstanceState();
