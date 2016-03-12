@@ -1,0 +1,10 @@
+diff -U 0 -N design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetDialogFragment design-23.2.1_3e65d726/android.support.design.widget.BottomSheetDialogFragment
+--- design-23.2.0_a95fd7a6/android.support.design.widget.BottomSheetDialogFragment	2016-03-10 19:56:36.000000000 +0900
++++ design-23.2.1_3e65d726/android.support.design.widget.BottomSheetDialogFragment	2016-03-10 19:57:22.000000000 +0900
+@@ -4 +3,0 @@
+-  public void setupDialog(android.app.Dialog, int);
+diff -U 0 -N design-23.2.0_a95fd7a6/android.support.design.widget.FloatingActionButton design-23.2.1_3e65d726/android.support.design.widget.FloatingActionButton
+--- design-23.2.0_a95fd7a6/android.support.design.widget.FloatingActionButton	2016-03-10 19:56:36.000000000 +0900
++++ design-23.2.1_3e65d726/android.support.design.widget.FloatingActionButton	2016-03-10 19:57:22.000000000 +0900
+@@ -12,0 +13 @@
++  public void setImageResource(int);
