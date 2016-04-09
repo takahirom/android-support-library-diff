@@ -1,0 +1,5 @@
+diff -U 0 -N mediarouter-v7-23.2.1_882c65c2/android.support.v7.media.MediaRouteProviderService mediarouter-v7-23.3.0_e6c99972/android.support.v7.media.MediaRouteProviderService
+--- mediarouter-v7-23.2.1_882c65c2/android.support.v7.media.MediaRouteProviderService	2016-04-09 19:46:21.000000000 +0900
++++ mediarouter-v7-23.3.0_e6c99972/android.support.v7.media.MediaRouteProviderService	2016-04-09 19:46:21.000000000 +0900
+@@ -6,0 +7 @@
++  public boolean onUnbind(android.content.Intent);

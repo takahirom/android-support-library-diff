@@ -1,0 +1,43 @@
+diff -U 0 -N appcompat-v7-23.2.1_a5c5d54a/android.support.v7.app.AppCompatActivity appcompat-v7-23.3.0_6b81518a/android.support.v7.app.AppCompatActivity
+--- appcompat-v7-23.2.1_a5c5d54a/android.support.v7.app.AppCompatActivity	2016-04-09 19:46:21.000000000 +0900
++++ appcompat-v7-23.3.0_6b81518a/android.support.v7.app.AppCompatActivity	2016-04-09 19:46:21.000000000 +0900
+@@ -38 +37,0 @@
+-  public android.content.res.Resources getResources();
+diff -U 0 -N appcompat-v7-23.2.1_a5c5d54a/android.support.v7.app.AppCompatDelegate$NightMode appcompat-v7-23.3.0_6b81518a/android.support.v7.app.AppCompatDelegate$NightMode
+--- appcompat-v7-23.2.1_a5c5d54a/android.support.v7.app.AppCompatDelegate$NightMode	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.3.0_6b81518a/android.support.v7.app.AppCompatDelegate$NightMode	2016-04-09 19:46:21.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.app.AppCompatDelegate$NightMode extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.AppCompatDrawableManager appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.AppCompatDrawableManager
+--- appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.AppCompatDrawableManager	2016-04-09 19:46:21.000000000 +0900
++++ appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.AppCompatDrawableManager	2016-04-09 19:46:21.000000000 +0900
+@@ -6 +5,0 @@
+-  public final android.graphics.drawable.Drawable onDrawableLoadedFromResources(android.content.Context, android.support.v7.widget.TintResources, int);
+diff -U 0 -N appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.DrawableUtils appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.DrawableUtils
+--- appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.DrawableUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.DrawableUtils	2016-04-09 19:46:21.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.widget.DrawableUtils {
++  public static final android.graphics.Rect INSETS_NONE;
++  public static android.graphics.Rect getOpticalBounds(android.graphics.drawable.Drawable);
++  public static boolean canSafelyMutateDrawable(android.graphics.drawable.Drawable);
++}
+diff -U 0 -N appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.TintContextWrapper appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.TintContextWrapper
+--- appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.TintContextWrapper	2016-04-09 19:46:21.000000000 +0900
++++ appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.TintContextWrapper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public class android.support.v7.widget.TintContextWrapper extends android.content.ContextWrapper {
+-  public static android.content.Context wrap(android.content.Context);
+-  public android.content.res.Resources$Theme getTheme();
+-  public void setTheme(int);
+-  public android.content.res.Resources getResources();
+-}
+diff -U 0 -N appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.TintResources appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.TintResources
+--- appcompat-v7-23.2.1_a5c5d54a/android.support.v7.widget.TintResources	2016-04-09 19:46:21.000000000 +0900
++++ appcompat-v7-23.3.0_6b81518a/android.support.v7.widget.TintResources	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public class android.support.v7.widget.TintResources extends android.content.res.Resources {
+-  public android.support.v7.widget.TintResources(android.content.Context, android.content.res.Resources);
+-  public android.graphics.drawable.Drawable getDrawable(int) throws android.content.res.Resources$NotFoundException;
+-}

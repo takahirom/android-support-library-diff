@@ -1,0 +1,14 @@
+diff -U 0 -N support-v4-23.2.1_2c99753e/android.support.v4.app.AppLaunchChecker support-v4-23.3.0_f1df3086/android.support.v4.app.AppLaunchChecker
+--- support-v4-23.2.1_2c99753e/android.support.v4.app.AppLaunchChecker	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-23.3.0_f1df3086/android.support.v4.app.AppLaunchChecker	2016-04-09 19:46:22.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v4.app.AppLaunchChecker {
++  public android.support.v4.app.AppLaunchChecker();
++  public static boolean hasStartedFromLauncher(android.content.Context);
++  public static void onActivityCreate(android.app.Activity);
++}
+diff -U 0 -N support-v4-23.2.1_2c99753e/android.support.v4.content.IntentCompat support-v4-23.3.0_f1df3086/android.support.v4.content.IntentCompat
+--- support-v4-23.2.1_2c99753e/android.support.v4.content.IntentCompat	2016-04-09 19:46:22.000000000 +0900
++++ support-v4-23.3.0_f1df3086/android.support.v4.content.IntentCompat	2016-04-09 19:46:22.000000000 +0900
+@@ -6,0 +7 @@
++  public static final java.lang.String CATEGORY_LEANBACK_LAUNCHER;

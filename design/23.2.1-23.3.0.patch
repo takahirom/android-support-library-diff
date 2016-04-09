@@ -1,0 +1,7 @@
+diff -U 0 -N design-23.2.1_3e65d726/android.support.design.widget.AppBarLayout$Behavior design-23.3.0_5f7c6b42/android.support.design.widget.AppBarLayout$Behavior
+--- design-23.2.1_3e65d726/android.support.design.widget.AppBarLayout$Behavior	2016-04-09 19:46:21.000000000 +0900
++++ design-23.3.0_5f7c6b42/android.support.design.widget.AppBarLayout$Behavior	2016-04-09 19:46:21.000000000 +0900
+@@ -9,0 +10 @@
++  public boolean onMeasureChild(android.support.design.widget.CoordinatorLayout, android.support.design.widget.AppBarLayout, int, int, int, int);
+@@ -24,0 +26 @@
++  public boolean onMeasureChild(android.support.design.widget.CoordinatorLayout, android.view.View, int, int, int, int);
