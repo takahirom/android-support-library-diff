@@ -1,0 +1,71 @@
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.AppLaunchChecker support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.AppLaunchChecker
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.AppLaunchChecker	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.AppLaunchChecker	2016-04-16 19:37:20.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v4.app.AppLaunchChecker {
++  public android.support.v4.app.AppLaunchChecker();
++  public static boolean hasStartedFromLauncher(android.content.Context);
++  public static void onActivityCreate(android.app.Activity);
++}
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.Fragment support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.Fragment
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.Fragment	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.Fragment	2016-04-16 19:37:20.000000000 +0900
+@@ -65,0 +66,2 @@
++  public void onMultiWindowModeChanged(boolean);
++  public void onPictureInPictureModeChanged(boolean);
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.FragmentActivity support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.FragmentActivity
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.FragmentActivity	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.FragmentActivity	2016-04-16 19:37:20.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v4.app.FragmentActivity extends android.support.v4.app.BaseFragmentActivityHoneycomb implements android.support.v4.app.ActivityCompat$OnRequestPermissionsResultCallback,android.support.v4.app.ActivityCompatApi23$RequestPermissionsRequestCodeValidator {
++public class android.support.v4.app.FragmentActivity extends android.support.v4.app.BaseFragmentActivityApi24 implements android.support.v4.app.ActivityCompat$OnRequestPermissionsResultCallback,android.support.v4.app.ActivityCompatApi23$RequestPermissionsRequestCodeValidator {
+@@ -31,0 +32,2 @@
++  public void onPictureInPictureModeChanged(boolean);
++  public void onMultiWindowModeChanged(boolean);
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.FragmentController support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.FragmentController
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.app.FragmentController	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.app.FragmentController	2016-04-16 19:37:20.000000000 +0900
+@@ -23,0 +24,2 @@
++  public void dispatchMultiWindowModeChanged(boolean);
++  public void dispatchPictureInPictureModeChanged(boolean);
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.content.ContextCompat support-v4-24.0.0-alpha2_d29bf872/android.support.v4.content.ContextCompat
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.content.ContextCompat	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.content.ContextCompat	2016-04-16 19:37:20.000000000 +0900
+@@ -4,0 +5 @@
++  public static java.io.File getDataDir(android.content.Context);
+@@ -13,0 +15 @@
++  public static android.content.Context createDeviceProtectedStorageContext(android.content.Context);
+@@ -14,0 +17 @@
++  public static boolean isDeviceProtectedStorage(android.content.Context);
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.content.IntentCompat support-v4-24.0.0-alpha2_d29bf872/android.support.v4.content.IntentCompat
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.content.IntentCompat	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.content.IntentCompat	2016-04-16 19:37:20.000000000 +0900
+@@ -6,0 +7 @@
++  public static final java.lang.String CATEGORY_LEANBACK_LAUNCHER;
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.content.res.ConfigurationHelper support-v4-24.0.0-alpha2_d29bf872/android.support.v4.content.res.ConfigurationHelper
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.content.res.ConfigurationHelper	1970-01-01 09:00:00.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.content.res.ConfigurationHelper	2016-04-16 19:37:20.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v4.content.res.ConfigurationHelper {
++  public static int getScreenHeightDp(android.content.res.Resources);
++  public static int getScreenWidthDp(android.content.res.Resources);
++  public static int getSmallestScreenWidthDp(android.content.res.Resources);
++  public static int getDensityDpi(android.content.res.Resources);
++}
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.media.session.MediaSessionCompat support-v4-24.0.0-alpha2_d29bf872/android.support.v4.media.session.MediaSessionCompat
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.media.session.MediaSessionCompat	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.media.session.MediaSessionCompat	2016-04-16 19:37:20.000000000 +0900
+@@ -26,0 +27 @@
++  public java.lang.String getCallingPackage();
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.os.BuildCompat support-v4-24.0.0-alpha2_d29bf872/android.support.v4.os.BuildCompat
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.os.BuildCompat	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.os.BuildCompat	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public class android.support.v4.os.BuildCompat {
+-  public static boolean isAtLeastN();
+-}
+diff -U 0 -N support-v4-24.0.0-alpha1_718c0e98/android.support.v4.os.UserManagerCompat support-v4-24.0.0-alpha2_d29bf872/android.support.v4.os.UserManagerCompat
+--- support-v4-24.0.0-alpha1_718c0e98/android.support.v4.os.UserManagerCompat	2016-04-16 19:37:20.000000000 +0900
++++ support-v4-24.0.0-alpha2_d29bf872/android.support.v4.os.UserManagerCompat	2016-04-16 19:37:20.000000000 +0900
+@@ -2 +1,0 @@
+-  public android.support.v4.os.UserManagerCompat();
