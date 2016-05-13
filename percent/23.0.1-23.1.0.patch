@@ -1,0 +1,5 @@
+diff -U 0 -N percent-23.0.1_f9cf4e2e/android.support.percent.PercentLayoutHelper$PercentLayoutInfo percent-23.1.0_b7c2c516/android.support.percent.PercentLayoutHelper$PercentLayoutInfo
+--- percent-23.0.1_f9cf4e2e/android.support.percent.PercentLayoutHelper$PercentLayoutInfo	2016-05-13 21:21:43.000000000 +0900
++++ percent-23.1.0_b7c2c516/android.support.percent.PercentLayoutHelper$PercentLayoutInfo	2016-05-13 21:21:43.000000000 +0900
+@@ -9,0 +10 @@
++  public float aspectRatio;

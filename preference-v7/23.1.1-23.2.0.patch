@@ -1,0 +1,42 @@
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.EditTextPreferenceDialogFragmentCompat preference-v7-23.2.0_42df960c/android.support.v7.preference.EditTextPreferenceDialogFragmentCompat
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.EditTextPreferenceDialogFragmentCompat	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.EditTextPreferenceDialogFragmentCompat	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4,2 @@
++  public void onCreate(android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.ListPreferenceDialogFragmentCompat preference-v7-23.2.0_42df960c/android.support.v7.preference.ListPreferenceDialogFragmentCompat
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.ListPreferenceDialogFragmentCompat	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.ListPreferenceDialogFragmentCompat	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4,2 @@
++  public void onCreate(android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceDialogFragmentCompat preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceDialogFragmentCompat
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceDialogFragmentCompat	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceDialogFragmentCompat	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4 @@
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceFragmentCompat preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceFragmentCompat
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceFragmentCompat	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceFragmentCompat	2016-05-13 21:21:43.000000000 +0900
+@@ -6,0 +7,2 @@
++  public void setDivider(android.graphics.drawable.Drawable);
++  public void setDividerHeight(int);
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceGroup preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceGroup
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceGroup	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceGroup	2016-05-13 21:21:43.000000000 +0900
+@@ -13,0 +14 @@
++  public boolean isAttached();
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceScreen preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceScreen
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceScreen	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceScreen	2016-05-13 21:21:43.000000000 +0900
+@@ -2,0 +3,2 @@
++  public boolean shouldUseGeneratedIds();
++  public void setShouldUseGeneratedIds(boolean);
+diff -U 0 -N preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceViewHolder preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceViewHolder
+--- preference-v7-23.1.1_96f46c3c/android.support.v7.preference.PreferenceViewHolder	2016-05-13 21:21:43.000000000 +0900
++++ preference-v7-23.2.0_42df960c/android.support.v7.preference.PreferenceViewHolder	2016-05-13 21:21:43.000000000 +0900
+@@ -2,0 +3,4 @@
++  public boolean isDividerAllowedAbove();
++  public void setDividerAllowedAbove(boolean);
++  public boolean isDividerAllowedBelow();
++  public void setDividerAllowedBelow(boolean);

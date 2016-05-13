@@ -1,0 +1,5 @@
+diff -U 0 -N percent-23.1.1_f70c6e24/android.support.percent.PercentLayoutHelper$PercentLayoutInfo percent-23.2.0_003655f8/android.support.percent.PercentLayoutHelper$PercentLayoutInfo
+--- percent-23.1.1_f70c6e24/android.support.percent.PercentLayoutHelper$PercentLayoutInfo	2016-05-13 21:21:43.000000000 +0900
++++ percent-23.2.0_003655f8/android.support.percent.PercentLayoutHelper$PercentLayoutInfo	2016-05-13 21:21:43.000000000 +0900
+@@ -13,0 +14 @@
++  public void fillMarginLayoutParams(android.view.View, android.view.ViewGroup$MarginLayoutParams, int, int);

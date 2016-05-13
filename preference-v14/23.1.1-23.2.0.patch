@@ -1,0 +1,29 @@
+diff -U 0 -N preference-v14-23.1.1_673e47e6/android.support.v14.preference.EditTextPreferenceDialogFragment preference-v14-23.2.0_6b15cac2/android.support.v14.preference.EditTextPreferenceDialogFragment
+--- preference-v14-23.1.1_673e47e6/android.support.v14.preference.EditTextPreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
++++ preference-v14-23.2.0_6b15cac2/android.support.v14.preference.EditTextPreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4,2 @@
++  public void onCreate(android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v14-23.1.1_673e47e6/android.support.v14.preference.ListPreferenceDialogFragment preference-v14-23.2.0_6b15cac2/android.support.v14.preference.ListPreferenceDialogFragment
+--- preference-v14-23.1.1_673e47e6/android.support.v14.preference.ListPreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
++++ preference-v14-23.2.0_6b15cac2/android.support.v14.preference.ListPreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4,2 @@
++  public void onCreate(android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v14-23.1.1_673e47e6/android.support.v14.preference.MultiSelectListPreferenceDialogFragment preference-v14-23.2.0_6b15cac2/android.support.v14.preference.MultiSelectListPreferenceDialogFragment
+--- preference-v14-23.1.1_673e47e6/android.support.v14.preference.MultiSelectListPreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
++++ preference-v14-23.2.0_6b15cac2/android.support.v14.preference.MultiSelectListPreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4,2 @@
++  public void onCreate(android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v14-23.1.1_673e47e6/android.support.v14.preference.PreferenceDialogFragment preference-v14-23.2.0_6b15cac2/android.support.v14.preference.PreferenceDialogFragment
+--- preference-v14-23.1.1_673e47e6/android.support.v14.preference.PreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
++++ preference-v14-23.2.0_6b15cac2/android.support.v14.preference.PreferenceDialogFragment	2016-05-13 21:21:43.000000000 +0900
+@@ -3,0 +4 @@
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N preference-v14-23.1.1_673e47e6/android.support.v14.preference.PreferenceFragment preference-v14-23.2.0_6b15cac2/android.support.v14.preference.PreferenceFragment
+--- preference-v14-23.1.1_673e47e6/android.support.v14.preference.PreferenceFragment	2016-05-13 21:21:43.000000000 +0900
++++ preference-v14-23.2.0_6b15cac2/android.support.v14.preference.PreferenceFragment	2016-05-13 21:21:43.000000000 +0900
+@@ -6,0 +7,2 @@
++  public void setDivider(android.graphics.drawable.Drawable);
++  public void setDividerHeight(int);
