@@ -1,0 +1,7 @@
+diff -U 0 -N leanback-v17-23.3.0_2e76ba4e/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener leanback-v17-23.4.0_df32e336/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener
+--- leanback-v17-23.3.0_2e76ba4e/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener	2016-05-13 21:21:43.000000000 +0900
++++ leanback-v17-23.4.0_df32e336/android.support.v17.leanback.widget.GuidedActionAdapter$EditListener	2016-05-13 21:21:43.000000000 +0900
+@@ -2 +2,2 @@
+-  public abstract long onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction);
++  public abstract void onGuidedActionEdited(android.support.v17.leanback.widget.GuidedAction);
++  public abstract long onGuidedActionEditedAndProceed(android.support.v17.leanback.widget.GuidedAction);

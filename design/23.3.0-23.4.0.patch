@@ -1,0 +1,7 @@
+diff -U 0 -N design-23.3.0_5f7c6b42/android.support.design.widget.FloatingActionButton$Behavior design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton$Behavior
+--- design-23.3.0_5f7c6b42/android.support.design.widget.FloatingActionButton$Behavior	2016-05-13 21:21:42.000000000 +0900
++++ design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton$Behavior	2016-05-13 21:21:42.000000000 +0900
+@@ -4,0 +5 @@
++  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, android.view.View);
+@@ -6,0 +8 @@
++  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.View);
