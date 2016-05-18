@@ -1,5 +1,0 @@
-diff -U 0 -N cardview-v7-24.0.0-alpha1_de579e82/android.support.v7.widget.CardView cardview-v7-24.0.0-alpha2_3bdd22b2/android.support.v7.widget.CardView
---- cardview-v7-24.0.0-alpha1_de579e82/android.support.v7.widget.CardView	2016-04-16 19:37:19.000000000 +0900
-+++ cardview-v7-24.0.0-alpha2_3bdd22b2/android.support.v7.widget.CardView	2016-04-16 19:37:19.000000000 +0900
-@@ -13,0 +14 @@
-+  public void setCardBackgroundColor(android.content.res.ColorStateList);

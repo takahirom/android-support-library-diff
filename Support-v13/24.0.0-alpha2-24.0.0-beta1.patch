@@ -1,0 +1,22 @@
+diff -U 0 -N support-v13-24.0.0-alpha2_a487048e/android.support.v13.app.ActivityCompat support-v13-24.0.0-beta1_7ab47120/android.support.v13.app.ActivityCompat
+--- support-v13-24.0.0-alpha2_a487048e/android.support.v13.app.ActivityCompat	2016-05-16 18:10:00.000000000 +0900
++++ support-v13-24.0.0-beta1_7ab47120/android.support.v13.app.ActivityCompat	2016-05-16 18:11:06.000000000 +0900
+@@ -2 +2 @@
+-  public static android.support.v13.view.DropPermissionsCompat requestDropPermissions(android.app.Activity, android.view.DragEvent);
++  public static android.support.v13.view.DragAndDropPermissionsCompat requestDragAndDropPermissions(android.app.Activity, android.view.DragEvent);
+diff -U 0 -N support-v13-24.0.0-alpha2_a487048e/android.support.v13.view.DragAndDropPermissionsCompat support-v13-24.0.0-beta1_7ab47120/android.support.v13.view.DragAndDropPermissionsCompat
+--- support-v13-24.0.0-alpha2_a487048e/android.support.v13.view.DragAndDropPermissionsCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v13-24.0.0-beta1_7ab47120/android.support.v13.view.DragAndDropPermissionsCompat	2016-05-16 18:11:06.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v13.view.DragAndDropPermissionsCompat {
++  public static android.support.v13.view.DragAndDropPermissionsCompat request(android.app.Activity, android.view.DragEvent);
++  public void release();
++}
+diff -U 0 -N support-v13-24.0.0-alpha2_a487048e/android.support.v13.view.DropPermissionsCompat support-v13-24.0.0-beta1_7ab47120/android.support.v13.view.DropPermissionsCompat
+--- support-v13-24.0.0-alpha2_a487048e/android.support.v13.view.DropPermissionsCompat	2016-05-16 18:10:00.000000000 +0900
++++ support-v13-24.0.0-beta1_7ab47120/android.support.v13.view.DropPermissionsCompat	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public final class android.support.v13.view.DropPermissionsCompat {
+-  public static android.support.v13.view.DropPermissionsCompat request(android.app.Activity, android.view.DragEvent);
+-  public void release();
+-}

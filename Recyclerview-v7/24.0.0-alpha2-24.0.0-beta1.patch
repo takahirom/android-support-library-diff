@@ -1,0 +1,45 @@
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.GridLayoutManager recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.GridLayoutManager
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.GridLayoutManager	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.GridLayoutManager	2016-05-16 18:11:06.000000000 +0900
+@@ -10,0 +11 @@
++  public void onLayoutCompleted(android.support.v7.widget.RecyclerView$State);
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.LinearLayoutManager recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.LinearLayoutManager
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.LinearLayoutManager	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.LinearLayoutManager	2016-05-16 18:11:06.000000000 +0900
+@@ -26,0 +27 @@
++  public void onLayoutCompleted(android.support.v7.widget.RecyclerView$State);
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.OrientationHelper recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.OrientationHelper
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.OrientationHelper	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.OrientationHelper	2016-05-16 18:11:06.000000000 +0900
+@@ -7,0 +8,2 @@
++  public abstract int getTransformedEndWithDecoration(android.view.View);
++  public abstract int getTransformedStartWithDecoration(android.view.View);
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerView	2016-05-16 18:11:06.000000000 +0900
+@@ -81,0 +82,2 @@
++  public boolean getPreserveFocusAfterLayout();
++  public void setPreserveFocusAfterLayout(boolean);
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView$LayoutManager	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerView$LayoutManager	2016-05-16 18:11:06.000000000 +0900
+@@ -18,0 +19 @@
++  public void onLayoutCompleted(android.support.v7.widget.RecyclerView$State);
+@@ -86,0 +88 @@
++  public void getTransformedBoundingBox(android.view.View, boolean, android.graphics.Rect);
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView$SavedState recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerView$SavedState
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView$SavedState	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerView$SavedState	2016-05-16 18:11:06.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.RecyclerView$SavedState extends android.view.View$BaseSavedState {
++public class android.support.v7.widget.RecyclerView$SavedState extends android.support.v4.view.AbsSavedState {
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerViewAccessibilityDelegate recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerViewAccessibilityDelegate
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerViewAccessibilityDelegate	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.RecyclerViewAccessibilityDelegate	2016-05-16 18:11:06.000000000 +0900
+@@ -5,0 +6 @@
++  public android.support.v4.view.AccessibilityDelegateCompat getItemDelegate();
+diff -U 0 -N recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.StaggeredGridLayoutManager recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.StaggeredGridLayoutManager
+--- recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.StaggeredGridLayoutManager	2016-05-16 18:10:00.000000000 +0900
++++ recyclerview-v7-24.0.0-beta1_e937e000/android.support.v7.widget.StaggeredGridLayoutManager	2016-05-16 18:11:06.000000000 +0900
+@@ -22,0 +23 @@
++  public void onLayoutCompleted(android.support.v7.widget.RecyclerView$State);

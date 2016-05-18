@@ -1,0 +1,12 @@
+diff -U 0 -N cardview-v7-24.0.0-alpha2_3bdd22b2/android.support.v7.widget.CardView cardview-v7-24.0.0-beta1_5ee6fcf6/android.support.v7.widget.CardView
+--- cardview-v7-24.0.0-alpha2_3bdd22b2/android.support.v7.widget.CardView	2016-05-16 18:10:00.000000000 +0900
++++ cardview-v7-24.0.0-beta1_5ee6fcf6/android.support.v7.widget.CardView	2016-05-16 18:10:42.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.CardView extends android.widget.FrameLayout implements android.support.v7.widget.CardViewDelegate {
++public class android.support.v7.widget.CardView extends android.widget.FrameLayout {
+@@ -12 +11,0 @@
+-  public void setMinWidthHeightInternal(int, int);
+@@ -14,0 +14 @@
++  public android.content.res.ColorStateList getCardBackgroundColor();
+@@ -21 +20,0 @@
+-  public void setShadowPadding(int, int, int, int);
