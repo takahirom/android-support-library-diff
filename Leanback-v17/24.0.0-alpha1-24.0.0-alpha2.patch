@@ -1,0 +1,437 @@
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.Adaptable leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.Adaptable
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.Adaptable	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.Adaptable	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.Adaptable {
++  public abstract java.lang.Object getAdapter(java.lang.Class);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -9,0 +10 @@
++  public final android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry getMainFragmentRegistry();
+@@ -21,0 +23 @@
++  public void enableMainFragmentScaling(boolean);
+@@ -23,0 +26 @@
++  public void onDestroyView();
+@@ -50 +52,0 @@
+-  public void onDestroyView();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$FragmentFactory<T leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$FragmentFactory<T
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$FragmentFactory<T	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$FragmentFactory<T	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.app.BrowseFragment$FragmentFactory<T extends android.app.Fragment> {
++  public android.support.v17.leanback.app.BrowseFragment$FragmentFactory();
++  public abstract T createFragment(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$ListRowFragmentFactory leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$ListRowFragmentFactory
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$ListRowFragmentFactory	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$ListRowFragmentFactory	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.BrowseFragment$ListRowFragmentFactory extends android.support.v17.leanback.app.BrowseFragment$FragmentFactory<android.support.v17.leanback.app.RowsFragment> {
++  public android.support.v17.leanback.app.BrowseFragment$ListRowFragmentFactory();
++  public android.support.v17.leanback.app.RowsFragment createFragment(java.lang.Object);
++  public android.app.Fragment createFragment(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter<T leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter<T
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter<T	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter<T	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,13 @@
++public class android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter<T extends android.app.Fragment> {
++  public android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter(T);
++  public final T getFragment();
++  public boolean isScrolling();
++  public void setExpand(boolean);
++  public void setEntranceTransitionState(boolean);
++  public void setAlignment(int);
++  public boolean onTransitionPrepare();
++  public void onTransitionStart();
++  public void onTransitionEnd();
++  public boolean isScalingEnabled();
++  public void setScalingEnabled(boolean);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry {
++  public android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapterRegistry();
++  public void registerFragment(java.lang.Class, android.support.v17.leanback.app.BrowseFragment$FragmentFactory);
++  public android.app.Fragment createFragment(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T extends android.app.Fragment> {
++  public android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter(T);
++  public final T getFragment();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
++  public void setSelectedPosition(int, boolean);
++  public int getSelectedPosition();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -9,0 +10 @@
++  public final android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry getMainFragmentRegistry();
+@@ -21,0 +23 @@
++  public void enableMainFragmentScaling(boolean);
+@@ -23,0 +26 @@
++  public void onDestroyView();
+@@ -50 +52,0 @@
+-  public void onDestroyView();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory<T leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory<T
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory<T	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory<T	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory<T extends android.support.v4.app.Fragment> {
++  public android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory();
++  public abstract T createFragment(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$ListRowFragmentFactory leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$ListRowFragmentFactory
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$ListRowFragmentFactory	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$ListRowFragmentFactory	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.BrowseSupportFragment$ListRowFragmentFactory extends android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory<android.support.v17.leanback.app.RowsSupportFragment> {
++  public android.support.v17.leanback.app.BrowseSupportFragment$ListRowFragmentFactory();
++  public android.support.v17.leanback.app.RowsSupportFragment createFragment(java.lang.Object);
++  public android.support.v4.app.Fragment createFragment(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter<T leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter<T
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter<T	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter<T	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,13 @@
++public class android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter<T extends android.support.v4.app.Fragment> {
++  public android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter(T);
++  public final T getFragment();
++  public boolean isScrolling();
++  public void setExpand(boolean);
++  public void setEntranceTransitionState(boolean);
++  public void setAlignment(int);
++  public boolean onTransitionPrepare();
++  public void onTransitionStart();
++  public void onTransitionEnd();
++  public boolean isScalingEnabled();
++  public void setScalingEnabled(boolean);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry {
++  public android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapterRegistry();
++  public void registerFragment(java.lang.Class, android.support.v17.leanback.app.BrowseSupportFragment$FragmentFactory);
++  public android.support.v4.app.Fragment createFragment(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T extends android.support.v4.app.Fragment> {
++  public android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter(T);
++  public final T getFragment();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
++  public void setSelectedPosition(int, boolean);
++  public int getSelectedPosition();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.DetailsFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.DetailsFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.DetailsFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.DetailsFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -5,3 +5,3 @@
+-  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
+-  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
+-  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public android.support.v17.leanback.widget.BaseOnItemViewClickedListener getOnItemViewClickedListener();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.DetailsSupportFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.DetailsSupportFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.DetailsSupportFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.DetailsSupportFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -5,3 +5,3 @@
+-  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
+-  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
+-  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public android.support.v17.leanback.widget.BaseOnItemViewClickedListener getOnItemViewClickedListener();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.GuidedStepFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.GuidedStepFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.GuidedStepFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.GuidedStepFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -54 +53,0 @@
+-  public void onResume();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.GuidedStepSupportFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.GuidedStepSupportFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.GuidedStepSupportFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.GuidedStepSupportFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -54 +53,0 @@
+-  public void onResume();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.HeadersFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.HeadersFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.HeadersFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.HeadersFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -13,0 +14 @@
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.HeadersSupportFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.HeadersSupportFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.HeadersSupportFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.HeadersSupportFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -13,0 +14 @@
++  public void onSaveInstanceState(android.os.Bundle);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.PermissionHelper leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.PermissionHelper
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.PermissionHelper	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.PermissionHelper	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.PermissionHelper {
++  public android.support.v17.leanback.app.PermissionHelper();
++  public static void requestPermissions(android.app.Fragment, java.lang.String[], int);
++  public static void requestPermissions(android.support.v4.app.Fragment, java.lang.String[], int);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.ProgressBarManager leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.ProgressBarManager
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.ProgressBarManager	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.ProgressBarManager	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,11 @@
++public final class android.support.v17.leanback.app.ProgressBarManager {
++  public android.support.v17.leanback.app.ProgressBarManager();
++  public void setRootView(android.view.ViewGroup);
++  public void show();
++  public void hide();
++  public void setProgressBarView(android.view.View);
++  public long getInitialDelay();
++  public void setInitialDelay(long);
++  public void disableProgressBar();
++  public void enableProgressBar();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.app.RowsFragment extends android.support.v17.leanback.app.BaseRowFragment implements android.support.v17.leanback.app.BrowseFragment$MainFragment {
++public class android.support.v17.leanback.app.RowsFragment extends android.support.v17.leanback.app.BaseRowFragment implements android.support.v17.leanback.app.Adaptable {
+@@ -3,5 +3,3 @@
+-  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
+-  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
+-  public void setExpand(boolean);
+-  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
+-  public android.support.v17.leanback.widget.OnItemViewSelectedListener getOnItemViewSelectedListener();
++  public java.lang.Object getAdapter(java.lang.Class);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public android.support.v17.leanback.widget.BaseOnItemViewClickedListener getOnItemViewClickedListener();
+@@ -8,0 +7,3 @@
++  public void setExpand(boolean);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
++  public android.support.v17.leanback.widget.BaseOnItemViewSelectedListener getOnItemViewSelectedListener();
+@@ -11 +11,0 @@
+-  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+@@ -15 +14,0 @@
+-  public void onExpandTransitionStart(boolean, java.lang.Runnable);
+@@ -19 +17,0 @@
+-  public void setScalingEnabled(boolean);
+@@ -25,0 +24,2 @@
++  public void onSaveInstanceState(android.os.Bundle);
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsFragment$MainFragmentAdapter leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsFragment$MainFragmentAdapter
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsFragment$MainFragmentAdapter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsFragment$MainFragmentAdapter	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.app.RowsFragment$MainFragmentAdapter extends android.support.v17.leanback.app.BrowseFragment$MainFragmentAdapter<android.support.v17.leanback.app.RowsFragment> {
++  public android.support.v17.leanback.app.RowsFragment$MainFragmentAdapter(android.support.v17.leanback.app.RowsFragment);
++  public boolean isScrolling();
++  public void setExpand(boolean);
++  public void setEntranceTransitionState(boolean);
++  public void setAlignment(int);
++  public boolean onTransitionPrepare();
++  public void onTransitionStart();
++  public void onTransitionEnd();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter extends android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<android.support.v17.leanback.app.RowsFragment> {
++  public android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter(android.support.v17.leanback.app.RowsFragment);
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
++  public void setSelectedPosition(int, boolean);
++  public int getSelectedPosition();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsSupportFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsSupportFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsSupportFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsSupportFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.app.RowsSupportFragment extends android.support.v17.leanback.app.BaseRowSupportFragment implements android.support.v17.leanback.app.BrowseSupportFragment$MainFragment {
++public class android.support.v17.leanback.app.RowsSupportFragment extends android.support.v17.leanback.app.BaseRowSupportFragment implements android.support.v17.leanback.app.Adaptable {
+@@ -3,5 +3,3 @@
+-  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
+-  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
+-  public void setExpand(boolean);
+-  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
+-  public android.support.v17.leanback.widget.OnItemViewSelectedListener getOnItemViewSelectedListener();
++  public java.lang.Object getAdapter(java.lang.Class);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public android.support.v17.leanback.widget.BaseOnItemViewClickedListener getOnItemViewClickedListener();
+@@ -8,0 +7,3 @@
++  public void setExpand(boolean);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
++  public android.support.v17.leanback.widget.BaseOnItemViewSelectedListener getOnItemViewSelectedListener();
+@@ -11 +11,0 @@
+-  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+@@ -15 +14,0 @@
+-  public void onExpandTransitionStart(boolean, java.lang.Runnable);
+@@ -19 +17,0 @@
+-  public void setScalingEnabled(boolean);
+@@ -25,0 +24,2 @@
++  public void onSaveInstanceState(android.os.Bundle);
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentAdapter leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentAdapter
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentAdapter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentAdapter	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.app.RowsSupportFragment$MainFragmentAdapter extends android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentAdapter<android.support.v17.leanback.app.RowsSupportFragment> {
++  public android.support.v17.leanback.app.RowsSupportFragment$MainFragmentAdapter(android.support.v17.leanback.app.RowsSupportFragment);
++  public boolean isScrolling();
++  public void setExpand(boolean);
++  public void setEntranceTransitionState(boolean);
++  public void setAlignment(int);
++  public boolean onTransitionPrepare();
++  public void onTransitionStart();
++  public void onTransitionEnd();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter extends android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<android.support.v17.leanback.app.RowsSupportFragment> {
++  public android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter(android.support.v17.leanback.app.RowsSupportFragment);
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
++  public void setSelectedPosition(int, boolean, android.support.v17.leanback.widget.Presenter$ViewHolderTask);
++  public void setSelectedPosition(int, boolean);
++  public int getSelectedPosition();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.SearchFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.SearchFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.SearchFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.SearchFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -2,0 +3 @@
++  public void onRequestPermissionsResult(int, java.lang.String[], int[]);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.SearchSupportFragment leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.SearchSupportFragment
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.app.SearchSupportFragment	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.app.SearchSupportFragment	2016-04-16 19:37:19.000000000 +0900
+@@ -2,0 +3 @@
++  public void onRequestPermissionsResult(int, java.lang.String[], int[]);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.util.StateMachine leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.util.StateMachine
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.util.StateMachine	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.util.StateMachine	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,12 @@
++public final class android.support.v17.leanback.util.StateMachine {
++  public static final int STATUS_ZERO;
++  public static final int STATUS_INVOKED;
++  public static final int STATUS_EXECUTED;
++  public android.support.v17.leanback.util.StateMachine();
++  public void addState(android.support.v17.leanback.util.StateMachine$State);
++  public void addState(android.support.v17.leanback.util.StateMachine$State, android.support.v17.leanback.util.StateMachine$State);
++  public void runState(android.support.v17.leanback.util.StateMachine$State);
++  public void runPendingStates();
++  public void resetStatus();
++  public void sort();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.util.StateMachine$State leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.util.StateMachine$State
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.util.StateMachine$State	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.util.StateMachine$State	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v17.leanback.util.StateMachine$State {
++  public android.support.v17.leanback.util.StateMachine$State();
++  public void run();
++  public boolean canRun();
++  public final int getStatus();
++  public final boolean equals(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.BaseOnItemViewClickedListener<T> leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.BaseOnItemViewClickedListener<T>
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.BaseOnItemViewClickedListener<T>	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.BaseOnItemViewClickedListener<T>	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.BaseOnItemViewClickedListener<T> {
++  public abstract void onItemClicked(android.support.v17.leanback.widget.Presenter$ViewHolder, java.lang.Object, android.support.v17.leanback.widget.RowPresenter$ViewHolder, T);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.BaseOnItemViewSelectedListener<T> leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.BaseOnItemViewSelectedListener<T>
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.BaseOnItemViewSelectedListener<T>	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.BaseOnItemViewSelectedListener<T>	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.BaseOnItemViewSelectedListener<T> {
++  public abstract void onItemSelected(android.support.v17.leanback.widget.Presenter$ViewHolder, java.lang.Object, android.support.v17.leanback.widget.RowPresenter$ViewHolder, T);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.ClassPresenterSelector leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.ClassPresenterSelector
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.ClassPresenterSelector	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.ClassPresenterSelector	2016-04-16 19:37:19.000000000 +0900
+@@ -3 +3,2 @@
+-  public void addClassPresenter(java.lang.Class<?>, android.support.v17.leanback.widget.Presenter);
++  public android.support.v17.leanback.widget.ClassPresenterSelector addClassPresenter(java.lang.Class<?>, android.support.v17.leanback.widget.Presenter);
++  public android.support.v17.leanback.widget.ClassPresenterSelector addClassPresenterSelector(java.lang.Class<?>, android.support.v17.leanback.widget.PresenterSelector);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.OnItemViewClickedListener leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.OnItemViewClickedListener
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.OnItemViewClickedListener	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.OnItemViewClickedListener	2016-04-16 19:37:19.000000000 +0900
+@@ -1,2 +1 @@
+-public interface android.support.v17.leanback.widget.OnItemViewClickedListener {
+-  public abstract void onItemClicked(android.support.v17.leanback.widget.Presenter$ViewHolder, java.lang.Object, android.support.v17.leanback.widget.RowPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++public interface android.support.v17.leanback.widget.OnItemViewClickedListener extends android.support.v17.leanback.widget.BaseOnItemViewClickedListener<android.support.v17.leanback.widget.Row> {
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.OnItemViewSelectedListener leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.OnItemViewSelectedListener
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.OnItemViewSelectedListener	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.OnItemViewSelectedListener	2016-04-16 19:37:19.000000000 +0900
+@@ -1,2 +1 @@
+-public interface android.support.v17.leanback.widget.OnItemViewSelectedListener {
+-  public abstract void onItemSelected(android.support.v17.leanback.widget.Presenter$ViewHolder, java.lang.Object, android.support.v17.leanback.widget.RowPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++public interface android.support.v17.leanback.widget.OnItemViewSelectedListener extends android.support.v17.leanback.widget.BaseOnItemViewSelectedListener<android.support.v17.leanback.widget.Row> {
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.PageRow leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.PageRow
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.PageRow	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.PageRow	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v17.leanback.widget.PageRow extends android.support.v17.leanback.widget.Row {
++  public android.support.v17.leanback.widget.PageRow(android.support.v17.leanback.widget.HeaderItem);
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.PageRowPresenter leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.PageRowPresenter
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.PageRowPresenter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.PageRowPresenter	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v17.leanback.widget.PageRowPresenter extends android.support.v17.leanback.widget.RowPresenter {
++  public android.support.v17.leanback.widget.PageRowPresenter();
++}
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.RowPresenter$ViewHolder leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.RowPresenter$ViewHolder
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.RowPresenter$ViewHolder	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.RowPresenter$ViewHolder	2016-04-16 19:37:19.000000000 +0900
+@@ -3,0 +4 @@
++  public final java.lang.Object getRowObject();
+@@ -12,4 +13,4 @@
+-  public final void setOnItemViewSelectedListener(android.support.v17.leanback.widget.OnItemViewSelectedListener);
+-  public final android.support.v17.leanback.widget.OnItemViewSelectedListener getOnItemViewSelectedListener();
+-  public final void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
+-  public final android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
++  public final void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
++  public final android.support.v17.leanback.widget.BaseOnItemViewSelectedListener getOnItemViewSelectedListener();
++  public final void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public final android.support.v17.leanback.widget.BaseOnItemViewClickedListener getOnItemViewClickedListener();
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.ScaleFrameLayout leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.ScaleFrameLayout
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.ScaleFrameLayout	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.ScaleFrameLayout	2016-04-16 19:37:19.000000000 +0900
+@@ -6,0 +7,2 @@
++  public void setChildScale(float);
++  public void addView(android.view.View, int, android.view.ViewGroup$LayoutParams);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.SearchBar leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.SearchBar
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.SearchBar	2016-04-16 19:37:19.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.SearchBar	2016-04-16 19:37:19.000000000 +0900
+@@ -15,0 +16 @@
++  public boolean isRecognizing();
+@@ -16,0 +18 @@
++  public void setPermissionListener(android.support.v17.leanback.widget.SearchBar$SearchBarPermissionListener);
+diff -U 0 -N leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.SearchBar$SearchBarPermissionListener leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.SearchBar$SearchBarPermissionListener
+--- leanback-v17-24.0.0-alpha1_633513bc/android.support.v17.leanback.widget.SearchBar$SearchBarPermissionListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.0.0-alpha2_7197b9e6/android.support.v17.leanback.widget.SearchBar$SearchBarPermissionListener	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.widget.SearchBar$SearchBarPermissionListener {
++  public abstract void requestAudioPermission();
++}

@@ -1,0 +1,92 @@
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatActivity appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatActivity
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatActivity	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatActivity	2016-04-16 19:37:19.000000000 +0900
+@@ -11,0 +12 @@
++  public android.view.View findViewById(int);
+@@ -37 +37,0 @@
+-  public android.content.res.Resources getResources();
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatDelegate appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatDelegate
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatDelegate	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatDelegate	2016-04-16 19:37:19.000000000 +0900
+@@ -18,0 +19 @@
++  public abstract android.view.View findViewById(int);
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatDelegate$NightMode appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatDelegate$NightMode
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatDelegate$NightMode	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatDelegate$NightMode	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.app.AppCompatDelegate$NightMode extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatDialog appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatDialog
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.app.AppCompatDialog	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.app.AppCompatDialog	2016-04-16 19:37:19.000000000 +0900
+@@ -7,0 +8 @@
++  public android.view.View findViewById(int);
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.view.WindowCallbackWrapper appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.view.WindowCallbackWrapper
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.view.WindowCallbackWrapper	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.view.WindowCallbackWrapper	2016-04-16 19:37:19.000000000 +0900
+@@ -26 +26 @@
+-  public void onProvideKeyboardShortcuts(java.util.List<android.view.KeyboardShortcutGroup>, android.view.Menu);
++  public void onProvideKeyboardShortcuts(java.util.List<android.view.KeyboardShortcutGroup>, android.view.Menu, int);
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatDrawableManager appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatDrawableManager
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatDrawableManager	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatDrawableManager	2016-04-16 19:37:19.000000000 +0900
+@@ -6 +5,0 @@
+-  public final android.graphics.drawable.Drawable onDrawableLoadedFromResources(android.content.Context, android.support.v7.widget.TintResources, int);
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatImageButton appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatImageButton
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatImageButton	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatImageButton	2016-04-16 19:37:19.000000000 +0900
+@@ -11,0 +12 @@
++  public boolean hasOverlappingRendering();
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatImageHelper appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatImageHelper
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatImageHelper	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatImageHelper	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.widget.AppCompatImageHelper {
++  public android.support.v7.widget.AppCompatImageHelper(android.widget.ImageView, android.support.v7.widget.AppCompatDrawableManager);
++  public void loadFromAttributes(android.util.AttributeSet, int);
++  public void setImageResource(int);
++}
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatImageView appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatImageView
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.AppCompatImageView	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.AppCompatImageView	2016-04-16 19:37:19.000000000 +0900
+@@ -11,0 +12 @@
++  public boolean hasOverlappingRendering();
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.DrawableUtils appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.DrawableUtils
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.DrawableUtils	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.DrawableUtils	2016-04-16 19:37:19.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.widget.DrawableUtils {
++  public static final android.graphics.Rect INSETS_NONE;
++  public static android.graphics.Rect getOpticalBounds(android.graphics.drawable.Drawable);
++  public static boolean canSafelyMutateDrawable(android.graphics.drawable.Drawable);
++}
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.TintContextWrapper appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.TintContextWrapper
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.TintContextWrapper	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.TintContextWrapper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public class android.support.v7.widget.TintContextWrapper extends android.content.ContextWrapper {
+-  public static android.content.Context wrap(android.content.Context);
+-  public android.content.res.Resources$Theme getTheme();
+-  public void setTheme(int);
+-  public android.content.res.Resources getResources();
+-}
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.TintResources appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.TintResources
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.TintResources	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.TintResources	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public class android.support.v7.widget.TintResources extends android.content.res.Resources {
+-  public android.support.v7.widget.TintResources(android.content.Context, android.content.res.Resources);
+-  public android.graphics.drawable.Drawable getDrawable(int) throws android.content.res.Resources$NotFoundException;
+-}
+diff -U 0 -N appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.Toolbar appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.Toolbar
+--- appcompat-v7-24.0.0-alpha1_e49083ee/android.support.v7.widget.Toolbar	2016-04-16 19:37:19.000000000 +0900
++++ appcompat-v7-24.0.0-alpha2_1169c664/android.support.v7.widget.Toolbar	2016-04-16 19:37:19.000000000 +0900
+@@ -60,0 +61,8 @@
++  public int getContentInsetStartWithNavigation();
++  public void setContentInsetStartWithNavigation(int);
++  public int getContentInsetEndWithActions();
++  public void setContentInsetEndWithActions(int);
++  public int getCurrentContentInsetStart();
++  public int getCurrentContentInsetEnd();
++  public int getCurrentContentInsetLeft();
++  public int getCurrentContentInsetRight();
