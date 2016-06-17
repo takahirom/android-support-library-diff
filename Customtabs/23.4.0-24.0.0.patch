@@ -1,0 +1,20 @@
+diff -U 0 -N customtabs-23.4.0_cf906a02/android.support.customtabs.CustomTabsClient customtabs-24.0.0_a2f6edaa/android.support.customtabs.CustomTabsClient
+--- customtabs-23.4.0_cf906a02/android.support.customtabs.CustomTabsClient	2016-06-17 23:47:14.000000000 +0900
++++ customtabs-24.0.0_a2f6edaa/android.support.customtabs.CustomTabsClient	2016-06-17 23:47:12.000000000 +0900
+@@ -2,0 +3,3 @@
++  public static java.lang.String getPackageName(android.content.Context, java.util.List<java.lang.String>);
++  public static java.lang.String getPackageName(android.content.Context, java.util.List<java.lang.String>, boolean);
++  public static boolean connectAndInitialize(android.content.Context, java.lang.String);
+diff -U 0 -N customtabs-23.4.0_cf906a02/android.support.customtabs.CustomTabsIntent customtabs-24.0.0_a2f6edaa/android.support.customtabs.CustomTabsIntent
+--- customtabs-23.4.0_cf906a02/android.support.customtabs.CustomTabsIntent	2016-06-17 23:47:14.000000000 +0900
++++ customtabs-24.0.0_a2f6edaa/android.support.customtabs.CustomTabsIntent	2016-06-17 23:47:12.000000000 +0900
+@@ -19,0 +20,4 @@
++  public static final java.lang.String EXTRA_REMOTEVIEWS;
++  public static final java.lang.String EXTRA_REMOTEVIEWS_VIEW_IDS;
++  public static final java.lang.String EXTRA_REMOTEVIEWS_PENDINGINTENT;
++  public static final java.lang.String EXTRA_REMOTEVIEWS_CLICKED_ID;
+diff -U 0 -N customtabs-23.4.0_cf906a02/android.support.customtabs.CustomTabsIntent$Builder customtabs-24.0.0_a2f6edaa/android.support.customtabs.CustomTabsIntent$Builder
+--- customtabs-23.4.0_cf906a02/android.support.customtabs.CustomTabsIntent$Builder	2016-06-17 23:47:14.000000000 +0900
++++ customtabs-24.0.0_a2f6edaa/android.support.customtabs.CustomTabsIntent$Builder	2016-06-17 23:47:12.000000000 +0900
+@@ -13,0 +14 @@
++  public android.support.customtabs.CustomTabsIntent$Builder setSecondaryToolbarViews(android.widget.RemoteViews, int[], android.app.PendingIntent);

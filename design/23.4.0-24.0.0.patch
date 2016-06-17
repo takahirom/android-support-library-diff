@@ -1,0 +1,71 @@
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.AppBarLayout$Behavior$SavedState design-24.0.0_a3dff6ca/android.support.design.widget.AppBarLayout$Behavior$SavedState
+--- design-23.4.0_523b7d66/android.support.design.widget.AppBarLayout$Behavior$SavedState	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.AppBarLayout$Behavior$SavedState	2016-06-17 23:47:27.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.AppBarLayout$Behavior$SavedState extends android.view.View$BaseSavedState {
++public class android.support.design.widget.AppBarLayout$Behavior$SavedState extends android.support.v4.view.AbsSavedState {
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.BottomSheetBehavior$SavedState design-24.0.0_a3dff6ca/android.support.design.widget.BottomSheetBehavior$SavedState
+--- design-23.4.0_523b7d66/android.support.design.widget.BottomSheetBehavior$SavedState	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.BottomSheetBehavior$SavedState	2016-06-17 23:47:27.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.BottomSheetBehavior$SavedState extends android.view.View$BaseSavedState {
++public class android.support.design.widget.BottomSheetBehavior$SavedState extends android.support.v4.view.AbsSavedState {
+@@ -3,0 +4 @@
++  public android.support.design.widget.BottomSheetBehavior$SavedState(android.os.Parcel, java.lang.ClassLoader);
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.BottomSheetBehavior<V design-24.0.0_a3dff6ca/android.support.design.widget.BottomSheetBehavior<V
+--- design-23.4.0_523b7d66/android.support.design.widget.BottomSheetBehavior<V	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.BottomSheetBehavior<V	2016-06-17 23:47:27.000000000 +0900
+@@ -21,0 +22,2 @@
++  public void setSkipCollapsed(boolean);
++  public boolean getSkipCollapsed();
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.CollapsingToolbarLayout design-24.0.0_a3dff6ca/android.support.design.widget.CollapsingToolbarLayout
+--- design-23.4.0_523b7d66/android.support.design.widget.CollapsingToolbarLayout	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.CollapsingToolbarLayout	2016-06-17 23:47:27.000000000 +0900
+@@ -41,0 +42,4 @@
++  public void setScrimVisibleHeightTrigger(int);
++  public int getScrimVisibleHeightTrigger();
++  public void setScrimAnimationDuration(long);
++  public long getScrimAnimationDuration();
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.CoordinatorLayout$SavedState design-24.0.0_a3dff6ca/android.support.design.widget.CoordinatorLayout$SavedState
+--- design-23.4.0_523b7d66/android.support.design.widget.CoordinatorLayout$SavedState	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.CoordinatorLayout$SavedState	2016-06-17 23:47:27.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.CoordinatorLayout$SavedState extends android.view.View$BaseSavedState {
++public class android.support.design.widget.CoordinatorLayout$SavedState extends android.support.v4.view.AbsSavedState {
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton design-24.0.0_a3dff6ca/android.support.design.widget.FloatingActionButton
+--- design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.FloatingActionButton	2016-06-17 23:47:27.000000000 +0900
+@@ -1,0 +2,3 @@
++  public static final int SIZE_MINI;
++  public static final int SIZE_NORMAL;
++  public static final int SIZE_AUTO;
+@@ -19,0 +23,2 @@
++  public void setSize(int);
++  public int getSize();
+@@ -22,0 +28 @@
++  public boolean onTouchEvent(android.view.MotionEvent);
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton$Behavior design-24.0.0_a3dff6ca/android.support.design.widget.FloatingActionButton$Behavior
+--- design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton$Behavior	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.FloatingActionButton$Behavior	2016-06-17 23:47:27.000000000 +0900
+@@ -2,0 +3 @@
++  public android.support.design.widget.FloatingActionButton$Behavior(android.content.Context, android.util.AttributeSet);
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton$Size design-24.0.0_a3dff6ca/android.support.design.widget.FloatingActionButton$Size
+--- design-23.4.0_523b7d66/android.support.design.widget.FloatingActionButton$Size	1970-01-01 09:00:00.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.FloatingActionButton$Size	2016-06-17 23:47:27.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.design.widget.FloatingActionButton$Size extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.NavigationView$SavedState design-24.0.0_a3dff6ca/android.support.design.widget.NavigationView$SavedState
+--- design-23.4.0_523b7d66/android.support.design.widget.NavigationView$SavedState	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.NavigationView$SavedState	2016-06-17 23:47:27.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.NavigationView$SavedState extends android.view.View$BaseSavedState {
++public class android.support.design.widget.NavigationView$SavedState extends android.support.v4.view.AbsSavedState {
+diff -U 0 -N design-23.4.0_523b7d66/android.support.design.widget.TabLayout design-24.0.0_a3dff6ca/android.support.design.widget.TabLayout
+--- design-23.4.0_523b7d66/android.support.design.widget.TabLayout	2016-06-17 23:47:24.000000000 +0900
++++ design-24.0.0_a3dff6ca/android.support.design.widget.TabLayout	2016-06-17 23:47:27.000000000 +0900
+@@ -16,0 +17,2 @@
++  public void addOnTabSelectedListener(android.support.design.widget.TabLayout$OnTabSelectedListener);
++  public void removeOnTabSelectedListener(android.support.design.widget.TabLayout$OnTabSelectedListener);
+@@ -31,0 +34 @@
++  public void setupWithViewPager(android.support.v4.view.ViewPager, boolean);

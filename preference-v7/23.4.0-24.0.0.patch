@@ -1,0 +1,87 @@
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.AndroidResources preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.AndroidResources
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.AndroidResources	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.AndroidResources	2016-06-17 23:47:15.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v7.preference.AndroidResources {
++  public static final int ANDROID_R_ICON_FRAME;
++  public static final int ANDROID_R_LIST_CONTAINER;
++  public static final int ANDROID_R_SWITCH_WIDGET;
++  public static final int ANDROID_R_PREFERENCE_FRAGMENT_STYLE;
++  public static final int ANDROID_R_EDITTEXT_PREFERENCE_STYLE;
++  public android.support.v7.preference.AndroidResources();
++}
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.DropDownPreference preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.DropDownPreference
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.DropDownPreference	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.DropDownPreference	2016-06-17 23:47:15.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v7.preference.DropDownPreference extends android.support.v7.preference.ListPreference {
++  public android.support.v7.preference.DropDownPreference(android.content.Context);
++  public android.support.v7.preference.DropDownPreference(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.preference.DropDownPreference(android.content.Context, android.util.AttributeSet, int);
++  public android.support.v7.preference.DropDownPreference(android.content.Context, android.util.AttributeSet, int, int);
++  public void setEntries(java.lang.CharSequence[]);
++  public void setValueIndex(int);
++  public int findSpinnerIndexOfValue(java.lang.String);
++  public void onBindViewHolder(android.support.v7.preference.PreferenceViewHolder);
++}
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.Preference preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.Preference
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.Preference	2016-06-17 23:47:24.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.Preference	2016-06-17 23:47:15.000000000 +0900
+@@ -19,0 +20 @@
++  public void setViewId(int);
+@@ -52,0 +54 @@
++  public void onDetached();
+@@ -62,0 +65 @@
++  public void onInitializeAccessibilityNodeInfo(android.support.v4.view.accessibility.AccessibilityNodeInfoCompat);
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceCategory preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceCategory
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceCategory	2016-06-17 23:47:24.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceCategory	2016-06-17 23:47:15.000000000 +0900
+@@ -7,0 +8 @@
++  public void onInitializeAccessibilityNodeInfo(android.support.v4.view.accessibility.AccessibilityNodeInfoCompat);
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceFragmentCompat preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceFragmentCompat
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceFragmentCompat	2016-06-17 23:47:24.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceFragmentCompat	2016-06-17 23:47:15.000000000 +0900
+@@ -8,0 +9 @@
++  public void onViewCreated(android.view.View, android.os.Bundle);
+@@ -26,0 +28,2 @@
++  public void scrollToPreference(java.lang.String);
++  public void scrollToPreference(android.support.v7.preference.Preference);
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceGroup preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceGroup
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceGroup	2016-06-17 23:47:24.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceGroup	2016-06-17 23:47:15.000000000 +0900
+@@ -15,0 +16 @@
++  public void onDetached();
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceGroup$PreferencePositionCallback preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceGroup$PreferencePositionCallback
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceGroup$PreferencePositionCallback	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceGroup$PreferencePositionCallback	2016-06-17 23:47:15.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.preference.PreferenceGroup$PreferencePositionCallback {
++  public abstract int getPreferenceAdapterPosition(java.lang.String);
++  public abstract int getPreferenceAdapterPosition(android.support.v7.preference.Preference);
++}
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceGroupAdapter preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceGroupAdapter
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceGroupAdapter	2016-06-17 23:47:24.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceGroupAdapter	2016-06-17 23:47:15.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.preference.PreferenceGroupAdapter extends android.support.v7.widget.RecyclerView$Adapter<android.support.v7.preference.PreferenceViewHolder> implements android.support.v7.preference.Preference$OnPreferenceChangeInternalListener {
++public class android.support.v7.preference.PreferenceGroupAdapter extends android.support.v7.widget.RecyclerView$Adapter<android.support.v7.preference.PreferenceViewHolder> implements android.support.v7.preference.Preference$OnPreferenceChangeInternalListener, android.support.v7.preference.PreferenceGroup$PreferencePositionCallback {
+@@ -11,0 +12,2 @@
++  public int getPreferenceAdapterPosition(java.lang.String);
++  public int getPreferenceAdapterPosition(android.support.v7.preference.Preference);
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceManager preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceManager
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceManager	2016-06-17 23:47:24.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceManager	2016-06-17 23:47:15.000000000 +0900
+@@ -9,0 +10,5 @@
++  public void setStorageDefault();
++  public void setStorageDeviceProtected();
++  public void setStorageDeviceEncrypted();
++  public boolean isStorageDefault();
++  public boolean isStorageDeviceProtected();
+diff -U 0 -N preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceRecyclerViewAccessibilityDelegate preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceRecyclerViewAccessibilityDelegate
+--- preference-v7-23.4.0_751fc1dc/android.support.v7.preference.PreferenceRecyclerViewAccessibilityDelegate	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-24.0.0_ec63e3aa/android.support.v7.preference.PreferenceRecyclerViewAccessibilityDelegate	2016-06-17 23:47:15.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.preference.PreferenceRecyclerViewAccessibilityDelegate extends android.support.v7.widget.RecyclerViewAccessibilityDelegate {
++  public android.support.v7.preference.PreferenceRecyclerViewAccessibilityDelegate(android.support.v7.widget.RecyclerView);
++  public android.support.v4.view.AccessibilityDelegateCompat getItemDelegate();
++}

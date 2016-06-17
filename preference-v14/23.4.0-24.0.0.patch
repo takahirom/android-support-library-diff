@@ -1,0 +1,8 @@
+diff -U 0 -N preference-v14-23.4.0_a77103c2/android.support.v14.preference.PreferenceFragment preference-v14-24.0.0_b41c0e56/android.support.v14.preference.PreferenceFragment
+--- preference-v14-23.4.0_a77103c2/android.support.v14.preference.PreferenceFragment	2016-06-17 23:47:22.000000000 +0900
++++ preference-v14-24.0.0_b41c0e56/android.support.v14.preference.PreferenceFragment	2016-06-17 23:47:26.000000000 +0900
+@@ -8,0 +9 @@
++  public void onViewCreated(android.view.View, android.os.Bundle);
+@@ -26,0 +28,2 @@
++  public void scrollToPreference(java.lang.String);
++  public void scrollToPreference(android.support.v7.preference.Preference);

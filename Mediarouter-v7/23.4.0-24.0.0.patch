@@ -1,0 +1,31 @@
+diff -U 0 -N mediarouter-v7-23.4.0_8a267756/android.support.v7.media.MediaControlIntent mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.MediaControlIntent
+--- mediarouter-v7-23.4.0_8a267756/android.support.v7.media.MediaControlIntent	2016-06-17 23:47:11.000000000 +0900
++++ mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.MediaControlIntent	2016-06-17 23:47:16.000000000 +0900
+@@ -15,0 +16 @@
++  public static final java.lang.String ACTION_SEND_MESSAGE;
+@@ -18,0 +20 @@
++  public static final java.lang.String EXTRA_MESSAGE_RECEIVER;
+@@ -24,0 +27 @@
++  public static final java.lang.String EXTRA_MESSAGE;
+diff -U 0 -N mediarouter-v7-23.4.0_8a267756/android.support.v7.media.MediaRouter$RouteInfo mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.MediaRouter$RouteInfo
+--- mediarouter-v7-23.4.0_8a267756/android.support.v7.media.MediaRouter$RouteInfo	2016-06-17 23:47:11.000000000 +0900
++++ mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.MediaRouter$RouteInfo	2016-06-17 23:47:16.000000000 +0900
+@@ -33 +33 @@
+-  public boolean isDeviceTypeBluetooth();
++  public boolean isDefaultOrBluetooth();
+diff -U 0 -N mediarouter-v7-23.4.0_8a267756/android.support.v7.media.RemotePlaybackClient mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.RemotePlaybackClient
+--- mediarouter-v7-23.4.0_8a267756/android.support.v7.media.RemotePlaybackClient	2016-06-17 23:47:11.000000000 +0900
++++ mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.RemotePlaybackClient	2016-06-17 23:47:16.000000000 +0900
+@@ -6,0 +7 @@
++  public boolean isMessagingSupported();
+@@ -10,0 +12 @@
++  public void setOnMessageReceivedListener(android.support.v7.media.RemotePlaybackClient$OnMessageReceivedListener);
+@@ -19,0 +22 @@
++  public void sendMessage(android.os.Bundle, android.support.v7.media.RemotePlaybackClient$SessionActionCallback);
+diff -U 0 -N mediarouter-v7-23.4.0_8a267756/android.support.v7.media.RemotePlaybackClient$OnMessageReceivedListener mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.RemotePlaybackClient$OnMessageReceivedListener
+--- mediarouter-v7-23.4.0_8a267756/android.support.v7.media.RemotePlaybackClient$OnMessageReceivedListener	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-24.0.0_ba79244a/android.support.v7.media.RemotePlaybackClient$OnMessageReceivedListener	2016-06-17 23:47:16.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.media.RemotePlaybackClient$OnMessageReceivedListener {
++  public abstract void onMessageReceived(java.lang.String, android.os.Bundle);
++}

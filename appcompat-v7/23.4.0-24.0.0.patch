@@ -1,0 +1,273 @@
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState appcompat-v7-24.0.0_94676a26/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState {
++  public boolean qwertyMode;
++  public boolean hasPanelItems();
++  public void clearMenuPresenters();
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.content.res.AppCompatResources appcompat-v7-24.0.0_94676a26/android.support.v7.content.res.AppCompatResources
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.content.res.AppCompatResources	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.content.res.AppCompatResources	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v7.content.res.AppCompatResources {
++  public static android.content.res.ColorStateList getColorStateList(android.content.Context, int);
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.WindowCallbackWrapper appcompat-v7-24.0.0_94676a26/android.support.v7.view.WindowCallbackWrapper
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.WindowCallbackWrapper	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.WindowCallbackWrapper	2016-06-17 23:47:24.000000000 +0900
+@@ -25,0 +26 @@
++  public void onProvideKeyboardShortcuts(java.util.List<android.view.KeyboardShortcutGroup>, android.view.Menu, int);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ActionMenuItemView appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ActionMenuItemView
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ActionMenuItemView	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ActionMenuItemView	2016-06-17 23:47:24.000000000 +0900
+@@ -24,0 +25 @@
++  public void onRestoreInstanceState(android.os.Parcelable);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ActionMenuItemView$PopupCallback appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ActionMenuItemView$PopupCallback
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ActionMenuItemView$PopupCallback	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ActionMenuItemView$PopupCallback	2016-06-17 23:47:24.000000000 +0900
+@@ -3 +3 @@
+-  public abstract android.support.v7.widget.ListPopupWindow getPopup();
++  public abstract android.support.v7.view.menu.ShowableListMenu getPopup();
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.CascadingMenuPopup$HorizPosition appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.CascadingMenuPopup$HorizPosition
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.CascadingMenuPopup$HorizPosition	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.CascadingMenuPopup$HorizPosition	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.view.menu.CascadingMenuPopup$HorizPosition extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ListMenuItemView appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ListMenuItemView
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ListMenuItemView	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ListMenuItemView	2016-06-17 23:47:24.000000000 +0900
+@@ -2 +1,0 @@
+-  public android.support.v7.view.menu.ListMenuItemView(android.content.Context, android.util.AttributeSet, int);
+@@ -3,0 +3 @@
++  public android.support.v7.view.menu.ListMenuItemView(android.content.Context, android.util.AttributeSet, int);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.MenuAdapter appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.MenuAdapter
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.MenuAdapter	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.MenuAdapter	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.v7.view.menu.MenuAdapter extends android.widget.BaseAdapter {
++  public android.support.v7.view.menu.MenuAdapter(android.support.v7.view.menu.MenuBuilder, android.view.LayoutInflater, boolean);
++  public boolean getForceShowIcon();
++  public void setForceShowIcon(boolean);
++  public int getCount();
++  public android.support.v7.view.menu.MenuBuilder getAdapterMenu();
++  public android.support.v7.view.menu.MenuItemImpl getItem(int);
++  public long getItemId(int);
++  public android.view.View getView(int, android.view.View, android.view.ViewGroup);
++  public void notifyDataSetChanged();
++  public java.lang.Object getItem(int);
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.MenuBuilder appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.MenuBuilder
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.MenuBuilder	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.MenuBuilder	2016-06-17 23:47:24.000000000 +0900
+@@ -60,0 +61 @@
++  public void setOptionalIconsVisible(boolean);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.MenuPopupHelper appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.MenuPopupHelper
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.MenuPopupHelper	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.MenuPopupHelper	2016-06-17 23:47:24.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.view.menu.MenuPopupHelper implements android.widget.AdapterView$OnItemClickListener,android.view.View$OnKeyListener,android.view.ViewTreeObserver$OnGlobalLayoutListener,android.widget.PopupWindow$OnDismissListener,android.support.v7.view.menu.MenuPresenter {
++public class android.support.v7.view.menu.MenuPopupHelper implements android.support.v7.view.menu.MenuHelper {
+@@ -5,0 +6 @@
++  public void setOnDismissListener(android.widget.PopupWindow$OnDismissListener);
+@@ -11 +12,2 @@
+-  public android.support.v7.widget.ListPopupWindow getPopup();
++  public void show(int, int);
++  public android.support.v7.view.menu.MenuPopup getPopup();
+@@ -12,0 +15 @@
++  public boolean tryShow(int, int);
+@@ -14 +16,0 @@
+-  public void onDismiss();
+@@ -16,15 +18 @@
+-  public void onItemClick(android.widget.AdapterView<?>, android.view.View, int, long);
+-  public boolean onKey(android.view.View, int, android.view.KeyEvent);
+-  public void onGlobalLayout();
+-  public void initForMenu(android.content.Context, android.support.v7.view.menu.MenuBuilder);
+-  public android.support.v7.view.menu.MenuView getMenuView(android.view.ViewGroup);
+-  public void updateMenuView(boolean);
+-  public void setCallback(android.support.v7.view.menu.MenuPresenter$Callback);
+-  public boolean onSubMenuSelected(android.support.v7.view.menu.SubMenuBuilder);
+-  public void onCloseMenu(android.support.v7.view.menu.MenuBuilder, boolean);
+-  public boolean flagActionItems();
+-  public boolean expandItemActionView(android.support.v7.view.menu.MenuBuilder, android.support.v7.view.menu.MenuItemImpl);
+-  public boolean collapseItemActionView(android.support.v7.view.menu.MenuBuilder, android.support.v7.view.menu.MenuItemImpl);
+-  public int getId();
+-  public android.os.Parcelable onSaveInstanceState();
+-  public void onRestoreInstanceState(android.os.Parcelable);
++  public void setPresenterCallback(android.support.v7.view.menu.MenuPresenter$Callback);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ShowableListMenu appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ShowableListMenu
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.view.menu.ShowableListMenu	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.view.menu.ShowableListMenu	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,6 @@
++public interface android.support.v7.view.menu.ShowableListMenu {
++  public abstract void show();
++  public abstract void dismiss();
++  public abstract boolean isShowing();
++  public abstract android.widget.ListView getListView();
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ActionBarContainer appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ActionBarContainer
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ActionBarContainer	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ActionBarContainer	2016-06-17 23:47:24.000000000 +0900
+@@ -15 +14,0 @@
+-  public android.support.v7.view.ActionMode startActionModeForChild(android.view.View, android.support.v7.view.ActionMode$Callback);
+@@ -16,0 +16 @@
++  public android.view.ActionMode startActionModeForChild(android.view.View, android.view.ActionMode$Callback, int);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatImageButton appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatImageButton
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatImageButton	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatImageButton	2016-06-17 23:47:24.000000000 +0900
+@@ -11,0 +12 @@
++  public boolean hasOverlappingRendering();
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatImageView appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatImageView
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatImageView	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatImageView	2016-06-17 23:47:24.000000000 +0900
+@@ -11,0 +12 @@
++  public boolean hasOverlappingRendering();
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatPopupWindow appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatPopupWindow
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatPopupWindow	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatPopupWindow	1970-01-01 09:00:00.000000000 +0900
+@@ -1,8 +0,0 @@
+-public class android.support.v7.widget.AppCompatPopupWindow extends android.widget.PopupWindow {
+-  public android.support.v7.widget.AppCompatPopupWindow(android.content.Context, android.util.AttributeSet, int);
+-  public void showAsDropDown(android.view.View, int, int);
+-  public void showAsDropDown(android.view.View, int, int, int);
+-  public void update(android.view.View, int, int, int, int);
+-  public void setSupportOverlapAnchor(boolean);
+-  public boolean getSupportOverlapAnchor();
+-}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatSeekBar appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatSeekBar
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.AppCompatSeekBar	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.AppCompatSeekBar	2016-06-17 23:47:24.000000000 +0900
+@@ -4,0 +5 @@
++  public void jumpDrawablesToCurrentState();
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ForwardingListener appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ForwardingListener
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ForwardingListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ForwardingListener	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v7.widget.ForwardingListener implements android.view.View$OnTouchListener {
++  public android.support.v7.widget.ForwardingListener(android.view.View);
++  public abstract android.support.v7.view.menu.ShowableListMenu getPopup();
++  public boolean onTouch(android.view.View, android.view.MotionEvent);
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ListPopupWindow appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ListPopupWindow
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ListPopupWindow	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ListPopupWindow	2016-06-17 23:47:24.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.ListPopupWindow {
++public class android.support.v7.widget.ListPopupWindow implements android.support.v7.view.menu.ShowableListMenu {
+@@ -33,0 +34 @@
++  public void setEpicenterBounds(android.graphics.Rect);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ListPopupWindow$ForwardingListener appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ListPopupWindow$ForwardingListener
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ListPopupWindow$ForwardingListener	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ListPopupWindow$ForwardingListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public abstract class android.support.v7.widget.ListPopupWindow$ForwardingListener implements android.view.View$OnTouchListener {
+-  public android.support.v7.widget.ListPopupWindow$ForwardingListener(android.view.View);
+-  public abstract android.support.v7.widget.ListPopupWindow getPopup();
+-  public boolean onTouch(android.view.View, android.view.MotionEvent);
+-}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.MenuItemHoverListener appcompat-v7-24.0.0_94676a26/android.support.v7.widget.MenuItemHoverListener
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.MenuItemHoverListener	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.MenuItemHoverListener	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.widget.MenuItemHoverListener {
++  public abstract void onItemHoverExit(android.support.v7.view.menu.MenuBuilder, android.view.MenuItem);
++  public abstract void onItemHoverEnter(android.support.v7.view.menu.MenuBuilder, android.view.MenuItem);
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.MenuPopupWindow appcompat-v7-24.0.0_94676a26/android.support.v7.widget.MenuPopupWindow
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.MenuPopupWindow	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.MenuPopupWindow	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v7.widget.MenuPopupWindow extends android.support.v7.widget.ListPopupWindow implements android.support.v7.widget.MenuItemHoverListener {
++  public android.support.v7.widget.MenuPopupWindow(android.content.Context, android.util.AttributeSet, int, int);
++  public void setEnterTransition(java.lang.Object);
++  public void setExitTransition(java.lang.Object);
++  public void setHoverListener(android.support.v7.widget.MenuItemHoverListener);
++  public void setTouchModal(boolean);
++  public void onItemHoverEnter(android.support.v7.view.menu.MenuBuilder, android.view.MenuItem);
++  public void onItemHoverExit(android.support.v7.view.menu.MenuBuilder, android.view.MenuItem);
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.MenuPopupWindow$MenuDropDownListView appcompat-v7-24.0.0_94676a26/android.support.v7.widget.MenuPopupWindow$MenuDropDownListView
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.MenuPopupWindow$MenuDropDownListView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.MenuPopupWindow$MenuDropDownListView	2016-06-17 23:47:24.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.v7.widget.MenuPopupWindow$MenuDropDownListView extends android.support.v7.widget.DropDownListView {
++  public android.support.v7.widget.MenuPopupWindow$MenuDropDownListView(android.content.Context, boolean);
++  public void setHoverListener(android.support.v7.widget.MenuItemHoverListener);
++  public void clearSelection();
++  public boolean onKeyDown(int, android.view.KeyEvent);
++  public boolean onHoverEvent(android.view.MotionEvent);
++  public boolean hasFocus();
++  public boolean isFocused();
++  public boolean hasWindowFocus();
++  public boolean isInTouchMode();
++  public boolean onForwardedEvent(android.view.MotionEvent, int);
++}
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.PopupMenu appcompat-v7-24.0.0_94676a26/android.support.v7.widget.PopupMenu
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.PopupMenu	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.PopupMenu	2016-06-17 23:47:24.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.PopupMenu implements android.support.v7.view.menu.MenuBuilder$Callback,android.support.v7.view.menu.MenuPresenter$Callback {
++public class android.support.v7.widget.PopupMenu {
+@@ -15,5 +14,0 @@
+-  public boolean onMenuItemSelected(android.support.v7.view.menu.MenuBuilder, android.view.MenuItem);
+-  public void onCloseMenu(android.support.v7.view.menu.MenuBuilder, boolean);
+-  public boolean onOpenSubMenu(android.support.v7.view.menu.MenuBuilder);
+-  public void onCloseSubMenu(android.support.v7.view.menu.SubMenuBuilder);
+-  public void onMenuModeChange(android.support.v7.view.menu.MenuBuilder);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.SwitchCompat appcompat-v7-24.0.0_94676a26/android.support.v7.widget.SwitchCompat
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.SwitchCompat	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.SwitchCompat	2016-06-17 23:47:24.000000000 +0900
+@@ -16,0 +17,4 @@
++  public void setTrackTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getTrackTintList();
++  public void setTrackTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getTrackTintMode();
+@@ -19,0 +24,4 @@
++  public void setThumbTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getThumbTintList();
++  public void setThumbTintMode(android.graphics.PorterDuff$Mode);
++  public android.graphics.PorterDuff$Mode getThumbTintMode();
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.TintTypedArray appcompat-v7-24.0.0_94676a26/android.support.v7.widget.TintTypedArray
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.TintTypedArray	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.TintTypedArray	2016-06-17 23:47:24.000000000 +0900
+@@ -3,0 +4 @@
++  public static android.support.v7.widget.TintTypedArray obtainStyledAttributes(android.content.Context, int, int[]);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.Toolbar appcompat-v7-24.0.0_94676a26/android.support.v7.widget.Toolbar
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.Toolbar	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.Toolbar	2016-06-17 23:47:24.000000000 +0900
+@@ -6,0 +7,9 @@
++  public void setTitleMargin(int, int, int, int);
++  public int getTitleMarginStart();
++  public void setTitleMarginStart(int);
++  public int getTitleMarginTop();
++  public void setTitleMarginTop(int);
++  public int getTitleMarginEnd();
++  public void setTitleMarginEnd(int);
++  public int getTitleMarginBottom();
++  public void setTitleMarginBottom(int);
+@@ -51,0 +61,8 @@
++  public int getContentInsetStartWithNavigation();
++  public void setContentInsetStartWithNavigation(int);
++  public int getContentInsetEndWithActions();
++  public void setContentInsetEndWithActions(int);
++  public int getCurrentContentInsetStart();
++  public int getCurrentContentInsetEnd();
++  public int getCurrentContentInsetLeft();
++  public int getCurrentContentInsetRight();
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.Toolbar$SavedState appcompat-v7-24.0.0_94676a26/android.support.v7.widget.Toolbar$SavedState
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.Toolbar$SavedState	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.Toolbar$SavedState	2016-06-17 23:47:24.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.Toolbar$SavedState extends android.view.View$BaseSavedState {
++public class android.support.v7.widget.Toolbar$SavedState extends android.support.v4.view.AbsSavedState {
+@@ -3,0 +4 @@
++  public android.support.v7.widget.Toolbar$SavedState(android.os.Parcel, java.lang.ClassLoader);
+diff -U 0 -N appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ToolbarWidgetWrapper appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ToolbarWidgetWrapper
+--- appcompat-v7-23.4.0_63d982b2/android.support.v7.widget.ToolbarWidgetWrapper	2016-06-17 23:47:14.000000000 +0900
++++ appcompat-v7-24.0.0_94676a26/android.support.v7.widget.ToolbarWidgetWrapper	2016-06-17 23:47:24.000000000 +0900
+@@ -5 +4,0 @@
+-  public void setDefaultNavigationIcon(android.graphics.drawable.Drawable);
+@@ -50,0 +50 @@
++  public void setDefaultNavigationIcon(android.graphics.drawable.Drawable);
