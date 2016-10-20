@@ -1,9 +1,0 @@
-diff -U 0 -N preference-v7-24.0.0-alpha1_49bc36ce/android.support.v7.preference.PreferenceManager preference-v7-24.0.0-alpha2_203e405e/android.support.v7.preference.PreferenceManager
---- preference-v7-24.0.0-alpha1_49bc36ce/android.support.v7.preference.PreferenceManager	2016-05-13 21:21:43.000000000 +0900
-+++ preference-v7-24.0.0-alpha2_203e405e/android.support.v7.preference.PreferenceManager	2016-05-13 21:21:43.000000000 +0900
-@@ -9,0 +10,5 @@
-+  public void setStorageDefault();
-+  public void setStorageDeviceProtected();
-+  public void setStorageDeviceEncrypted();
-+  public boolean isStorageDefault();
-+  public boolean isStorageDeviceProtected();

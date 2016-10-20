@@ -1,6 +1,0 @@
-diff -U 0 -N recyclerview-v7-24.0.0-alpha1_9668155e/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView$LayoutManager
---- recyclerview-v7-24.0.0-alpha1_9668155e/android.support.v7.widget.RecyclerView$LayoutManager	2016-04-16 19:37:20.000000000 +0900
-+++ recyclerview-v7-24.0.0-alpha2_25eb3ece/android.support.v7.widget.RecyclerView$LayoutManager	2016-04-16 19:37:20.000000000 +0900
-@@ -85,0 +86,2 @@
-+  public void layoutDecoratedWithMargins(android.view.View, int, int, int, int);
-+  public void getDecoratedBoundsWithMargins(android.view.View, android.graphics.Rect);
