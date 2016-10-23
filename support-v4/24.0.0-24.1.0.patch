@@ -1,0 +1,6 @@
+diff -U 0 -N support-v4-24.0.0_8ff3daf6/android.support.v4.app.NotificationCompat$Action$WearableExtender support-v4-24.1.0_b2379dda/android.support.v4.app.NotificationCompat$Action$WearableExtender
+--- support-v4-24.0.0_8ff3daf6/android.support.v4.app.NotificationCompat$Action$WearableExtender	2016-10-21 01:01:15.000000000 +0900
++++ support-v4-24.1.0_b2379dda/android.support.v4.app.NotificationCompat$Action$WearableExtender	2016-10-21 01:01:15.000000000 +0900
+@@ -15,0 +16,2 @@
++  public android.support.v4.app.NotificationCompat$Action$WearableExtender setHintDisplayActionInline(boolean);
++  public boolean getHintDisplayActionInline();

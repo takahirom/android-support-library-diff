@@ -1,0 +1,5 @@
+diff -U 0 -N design-24.0.0_a3dff6ca/android.support.design.widget.CoordinatorLayout design-24.1.0_71910b82/android.support.design.widget.CoordinatorLayout
+--- design-24.0.0_a3dff6ca/android.support.design.widget.CoordinatorLayout	2016-10-21 01:01:14.000000000 +0900
++++ design-24.1.0_71910b82/android.support.design.widget.CoordinatorLayout	2016-10-21 01:01:14.000000000 +0900
+@@ -18,0 +19 @@
++  public void setFitsSystemWindows(boolean);
