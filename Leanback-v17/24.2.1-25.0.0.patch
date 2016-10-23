@@ -1,0 +1,10 @@
+diff -U 0 -N leanback-v17-24.2.1_c609465e/android.support.v17.leanback.app.PlaybackOverlayFragment leanback-v17-25.0.0_a85b00d6/android.support.v17.leanback.app.PlaybackOverlayFragment
+--- leanback-v17-24.2.1_c609465e/android.support.v17.leanback.app.PlaybackOverlayFragment	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-25.0.0_a85b00d6/android.support.v17.leanback.app.PlaybackOverlayFragment	2016-10-21 01:01:19.000000000 +0900
+@@ -20,0 +21 @@
++  public void onStart();
+diff -U 0 -N leanback-v17-24.2.1_c609465e/android.support.v17.leanback.app.PlaybackOverlaySupportFragment leanback-v17-25.0.0_a85b00d6/android.support.v17.leanback.app.PlaybackOverlaySupportFragment
+--- leanback-v17-24.2.1_c609465e/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-25.0.0_a85b00d6/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2016-10-21 01:01:19.000000000 +0900
+@@ -20,0 +21 @@
++  public void onStart();

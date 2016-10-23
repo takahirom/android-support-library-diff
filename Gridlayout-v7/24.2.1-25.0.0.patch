@@ -1,0 +1,9 @@
+diff -U 0 -N gridlayout-v7-24.2.1_c945e13a/android.support.v7.widget.Space gridlayout-v7-25.0.0_11a0a606/android.support.v7.widget.Space
+--- gridlayout-v7-24.2.1_c945e13a/android.support.v7.widget.Space	2016-10-21 01:01:13.000000000 +0900
++++ gridlayout-v7-25.0.0_11a0a606/android.support.v7.widget.Space	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public final class android.support.v7.widget.Space extends android.support.v4.widget.Space {
+-  public android.support.v7.widget.Space(android.content.Context);
+-  public android.support.v7.widget.Space(android.content.Context, android.util.AttributeSet);
+-  public android.support.v7.widget.Space(android.content.Context, android.util.AttributeSet, int);
+-}

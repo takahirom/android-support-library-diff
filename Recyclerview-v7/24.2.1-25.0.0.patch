@@ -1,0 +1,26 @@
+diff -U 0 -N recyclerview-v7-24.2.1_f19cb78a/android.support.v7.widget.DividerItemDecoration recyclerview-v7-25.0.0_4ace1c82/android.support.v7.widget.DividerItemDecoration
+--- recyclerview-v7-24.2.1_f19cb78a/android.support.v7.widget.DividerItemDecoration	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-25.0.0_4ace1c82/android.support.v7.widget.DividerItemDecoration	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v7.widget.DividerItemDecoration extends android.support.v7.widget.RecyclerView$ItemDecoration {
++  public static final int HORIZONTAL;
++  public static final int VERTICAL;
++  public android.support.v7.widget.DividerItemDecoration(android.content.Context, int);
++  public void setOrientation(int);
++  public void setDrawable(android.graphics.drawable.Drawable);
++  public void onDraw(android.graphics.Canvas, android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView$State);
++  public void getItemOffsets(android.graphics.Rect, android.view.View, android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView$State);
++}
+diff -U 0 -N recyclerview-v7-24.2.1_f19cb78a/android.support.v7.widget.RecyclerView recyclerview-v7-25.0.0_4ace1c82/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-24.2.1_f19cb78a/android.support.v7.widget.RecyclerView	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-25.0.0_4ace1c82/android.support.v7.widget.RecyclerView	2016-10-21 01:01:13.000000000 +0900
+@@ -19,0 +20 @@
++  public boolean getClipToPadding();
+@@ -102,0 +104 @@
++  public void getDecoratedBoundsWithMargins(android.view.View, android.graphics.Rect);
+diff -U 0 -N recyclerview-v7-24.2.1_f19cb78a/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-25.0.0_4ace1c82/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-24.2.1_f19cb78a/android.support.v7.widget.RecyclerView$LayoutManager	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-25.0.0_4ace1c82/android.support.v7.widget.RecyclerView$LayoutManager	2016-10-21 01:01:13.000000000 +0900
+@@ -10,0 +11,2 @@
++  public final void setItemPrefetchEnabled(boolean);
++  public final boolean isItemPrefetchEnabled();

@@ -1,0 +1,133 @@
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.BaselineLayout design-25.0.0_0c631b66/android.support.design.internal.BaselineLayout
+--- design-24.2.1_410a8fd2/android.support.design.internal.BaselineLayout	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.BaselineLayout	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.design.internal.BaselineLayout extends android.view.ViewGroup {
++  public android.support.design.internal.BaselineLayout(android.content.Context);
++  public android.support.design.internal.BaselineLayout(android.content.Context, android.util.AttributeSet);
++  public android.support.design.internal.BaselineLayout(android.content.Context, android.util.AttributeSet, int);
++  public int getBaseline();
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationItemView design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationItemView
+--- design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationItemView	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationItemView	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,23 @@
++public class android.support.design.internal.BottomNavigationItemView extends android.widget.FrameLayout implements android.support.v7.view.menu.MenuView$ItemView {
++  public static final int INVALID_ITEM_POSITION;
++  public android.support.design.internal.BottomNavigationItemView(android.content.Context);
++  public android.support.design.internal.BottomNavigationItemView(android.content.Context, android.util.AttributeSet);
++  public android.support.design.internal.BottomNavigationItemView(android.content.Context, android.util.AttributeSet, int);
++  public void initialize(android.support.v7.view.menu.MenuItemImpl, int);
++  public void setItemPosition(int);
++  public int getItemPosition();
++  public void setShiftingMode(boolean);
++  public android.support.v7.view.menu.MenuItemImpl getItemData();
++  public void setTitle(java.lang.CharSequence);
++  public void setCheckable(boolean);
++  public void setChecked(boolean);
++  public void setEnabled(boolean);
++  public int[] onCreateDrawableState(int);
++  public void setShortcut(boolean, char);
++  public void setIcon(android.graphics.drawable.Drawable);
++  public boolean prefersCondensedTitle();
++  public boolean showsIcon();
++  public void setIconTintList(android.content.res.ColorStateList);
++  public void setTextColor(android.content.res.ColorStateList);
++  public void setItemBackground(int);
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationMenu design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationMenu
+--- design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationMenu	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationMenu	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.design.internal.BottomNavigationMenu extends android.support.v7.view.menu.MenuBuilder {
++  public static final int MAX_ITEM_COUNT;
++  public android.support.design.internal.BottomNavigationMenu(android.content.Context);
++  public android.view.SubMenu addSubMenu(int, int, int, java.lang.CharSequence);
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationMenuView design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationMenuView
+--- design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationMenuView	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationMenuView	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,15 @@
++public class android.support.design.internal.BottomNavigationMenuView extends android.view.ViewGroup implements android.support.v7.view.menu.MenuView {
++  public android.support.design.internal.BottomNavigationMenuView(android.content.Context);
++  public android.support.design.internal.BottomNavigationMenuView(android.content.Context, android.util.AttributeSet);
++  public void initialize(android.support.v7.view.menu.MenuBuilder);
++  public int getWindowAnimations();
++  public void setIconTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getIconTintList();
++  public void setItemTextColor(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getItemTextColor();
++  public void setItemBackgroundRes(int);
++  public int getItemBackgroundRes();
++  public void setPresenter(android.support.design.internal.BottomNavigationPresenter);
++  public void buildMenuView();
++  public void updateMenuView();
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationPresenter design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationPresenter
+--- design-24.2.1_410a8fd2/android.support.design.internal.BottomNavigationPresenter	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.BottomNavigationPresenter	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,17 @@
++public class android.support.design.internal.BottomNavigationPresenter implements android.support.v7.view.menu.MenuPresenter {
++  public android.support.design.internal.BottomNavigationPresenter();
++  public void setBottomNavigationMenuView(android.support.design.internal.BottomNavigationMenuView);
++  public void initForMenu(android.content.Context, android.support.v7.view.menu.MenuBuilder);
++  public android.support.v7.view.menu.MenuView getMenuView(android.view.ViewGroup);
++  public void updateMenuView(boolean);
++  public void setCallback(android.support.v7.view.menu.MenuPresenter$Callback);
++  public boolean onSubMenuSelected(android.support.v7.view.menu.SubMenuBuilder);
++  public void onCloseMenu(android.support.v7.view.menu.MenuBuilder, boolean);
++  public boolean flagActionItems();
++  public boolean expandItemActionView(android.support.v7.view.menu.MenuBuilder, android.support.v7.view.menu.MenuItemImpl);
++  public boolean collapseItemActionView(android.support.v7.view.menu.MenuBuilder, android.support.v7.view.menu.MenuItemImpl);
++  public int getId();
++  public android.os.Parcelable onSaveInstanceState();
++  public void onRestoreInstanceState(android.os.Parcelable);
++  public void setUpdateSuspended(boolean);
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.NavigationMenuItemView design-25.0.0_0c631b66/android.support.design.internal.NavigationMenuItemView
+--- design-24.2.1_410a8fd2/android.support.design.internal.NavigationMenuItemView	2016-10-21 01:01:14.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.NavigationMenuItemView	2016-10-21 01:01:14.000000000 +0900
+@@ -15 +15 @@
+-  public void setTextAppearance(android.content.Context, int);
++  public void setTextAppearance(int);
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.internal.TextScale design-25.0.0_0c631b66/android.support.design.internal.TextScale
+--- design-24.2.1_410a8fd2/android.support.design.internal.TextScale	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.internal.TextScale	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.design.internal.TextScale extends android.support.transition.Transition {
++  public android.support.design.internal.TextScale();
++  public void captureStartValues(android.support.transition.TransitionValues);
++  public void captureEndValues(android.support.transition.TransitionValues);
++  public android.animation.Animator createAnimator(android.view.ViewGroup, android.support.transition.TransitionValues, android.support.transition.TransitionValues);
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.widget.BottomNavigationView design-25.0.0_0c631b66/android.support.design.widget.BottomNavigationView
+--- design-24.2.1_410a8fd2/android.support.design.widget.BottomNavigationView	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.widget.BottomNavigationView	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,15 @@
++public class android.support.design.widget.BottomNavigationView extends android.widget.FrameLayout {
++  public android.support.design.widget.BottomNavigationView(android.content.Context);
++  public android.support.design.widget.BottomNavigationView(android.content.Context, android.util.AttributeSet);
++  public android.support.design.widget.BottomNavigationView(android.content.Context, android.util.AttributeSet, int);
++  public void setOnNavigationItemSelectedListener(android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener);
++  public android.view.Menu getMenu();
++  public void inflateMenu(int);
++  public int getMaxItemCount();
++  public android.content.res.ColorStateList getItemIconTintList();
++  public void setItemIconTintList(android.content.res.ColorStateList);
++  public android.content.res.ColorStateList getItemTextColor();
++  public void setItemTextColor(android.content.res.ColorStateList);
++  public int getItemBackgroundResource();
++  public void setItemBackgroundResource(int);
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener design-25.0.0_0c631b66/android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener
+--- design-24.2.1_410a8fd2/android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener	1970-01-01 09:00:00.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.design.widget.BottomNavigationView$OnNavigationItemSelectedListener {
++  public abstract boolean onNavigationItemSelected(android.view.MenuItem);
++}
+diff -U 0 -N design-24.2.1_410a8fd2/android.support.design.widget.FloatingActionButton design-25.0.0_0c631b66/android.support.design.widget.FloatingActionButton
+--- design-24.2.1_410a8fd2/android.support.design.widget.FloatingActionButton	2016-10-21 01:01:14.000000000 +0900
++++ design-25.0.0_0c631b66/android.support.design.widget.FloatingActionButton	2016-10-21 01:01:14.000000000 +0900
+@@ -7,0 +8 @@
++  public int getRippleColor();

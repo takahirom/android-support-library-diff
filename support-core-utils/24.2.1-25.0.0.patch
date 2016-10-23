@@ -1,0 +1,13 @@
+diff -U 0 -N support-core-utils-24.2.1_d72307e6/android.support.v4.text.BidiFormatter support-core-utils-25.0.0_d14c8eee/android.support.v4.text.BidiFormatter
+--- support-core-utils-24.2.1_d72307e6/android.support.v4.text.BidiFormatter	2016-10-21 01:01:14.000000000 +0900
++++ support-core-utils-25.0.0_d14c8eee/android.support.v4.text.BidiFormatter	2016-10-21 01:01:14.000000000 +0900
+@@ -7,0 +8 @@
++  public boolean isRtl(java.lang.CharSequence);
+@@ -8,0 +10 @@
++  public java.lang.CharSequence unicodeWrap(java.lang.CharSequence, android.support.v4.text.TextDirectionHeuristicCompat, boolean);
+@@ -9,0 +12 @@
++  public java.lang.CharSequence unicodeWrap(java.lang.CharSequence, android.support.v4.text.TextDirectionHeuristicCompat);
+@@ -10,0 +14 @@
++  public java.lang.CharSequence unicodeWrap(java.lang.CharSequence, boolean);
+@@ -11,0 +16 @@
++  public java.lang.CharSequence unicodeWrap(java.lang.CharSequence);

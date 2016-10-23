@@ -1,0 +1,11 @@
+diff -U 0 -N support-core-ui-24.2.1_d469715e/android.support.v4.view.ViewPager support-core-ui-25.0.0_0765ed32/android.support.v4.view.ViewPager
+--- support-core-ui-24.2.1_d469715e/android.support.v4.view.ViewPager	2016-10-21 01:01:13.000000000 +0900
++++ support-core-ui-25.0.0_0765ed32/android.support.v4.view.ViewPager	2016-10-21 01:01:13.000000000 +0900
+@@ -18,0 +19 @@
++  public void setPageTransformer(boolean, android.support.v4.view.ViewPager$PageTransformer, int);
+diff -U 0 -N support-core-ui-24.2.1_d469715e/android.support.v4.widget.SwipeRefreshLayout support-core-ui-25.0.0_0765ed32/android.support.v4.widget.SwipeRefreshLayout
+--- support-core-ui-24.2.1_d469715e/android.support.v4.widget.SwipeRefreshLayout	2016-10-21 01:01:13.000000000 +0900
++++ support-core-ui-25.0.0_0765ed32/android.support.v4.widget.SwipeRefreshLayout	2016-10-21 01:01:13.000000000 +0900
+@@ -5,0 +6,2 @@
++  public int getProgressViewStartOffset();
++  public int getProgressViewEndOffset();

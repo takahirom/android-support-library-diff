@@ -1,0 +1,10 @@
+diff -U 0 -N animated-vector-drawable-24.2.1_56f2e422/android.support.graphics.drawable.AnimatedVectorDrawableCompat animated-vector-drawable-25.0.0_3446262a/android.support.graphics.drawable.AnimatedVectorDrawableCompat
+--- animated-vector-drawable-24.2.1_56f2e422/android.support.graphics.drawable.AnimatedVectorDrawableCompat	2016-10-21 01:01:13.000000000 +0900
++++ animated-vector-drawable-25.0.0_3446262a/android.support.graphics.drawable.AnimatedVectorDrawableCompat	2016-10-21 01:01:13.000000000 +0900
+@@ -18,0 +19,2 @@
++  public boolean isAutoMirrored();
++  public void setAutoMirrored(boolean);
+@@ -35,3 +36,0 @@
+-  public int getLayoutDirection();
+-  public boolean isAutoMirrored();
+-  public void setAutoMirrored(boolean);

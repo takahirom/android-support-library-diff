@@ -1,0 +1,6 @@
+diff -U 0 -N customtabs-24.2.1_29ac417e/android.support.customtabs.CustomTabsIntent customtabs-25.0.0_979c2fb2/android.support.customtabs.CustomTabsIntent
+--- customtabs-24.2.1_29ac417e/android.support.customtabs.CustomTabsIntent	2016-10-21 01:01:18.000000000 +0900
++++ customtabs-25.0.0_979c2fb2/android.support.customtabs.CustomTabsIntent	2016-10-21 01:01:18.000000000 +0900
+@@ -29 +29 @@
+-  public void launchUrl(android.app.Activity, android.net.Uri);
++  public void launchUrl(android.content.Context, android.net.Uri);

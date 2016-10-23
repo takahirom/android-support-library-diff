@@ -1,0 +1,40 @@
+diff -U 0 -N support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.EditorInfoCompat support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.EditorInfoCompat
+--- support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.EditorInfoCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.EditorInfoCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v13.view.inputmethod.EditorInfoCompat {
++  public android.support.v13.view.inputmethod.EditorInfoCompat();
++  public static void setContentMimeTypes(android.view.inputmethod.EditorInfo, java.lang.String[]);
++  public static java.lang.String[] getContentMimeTypes(android.view.inputmethod.EditorInfo);
++}
+diff -U 0 -N support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.InputConnectionCompat support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.InputConnectionCompat
+--- support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.InputConnectionCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.InputConnectionCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v13.view.inputmethod.InputConnectionCompat {
++  public static int INPUT_CONTENT_GRANT_READ_URI_PERMISSION;
++  public android.support.v13.view.inputmethod.InputConnectionCompat();
++  public static boolean commitContent(android.view.inputmethod.InputConnection, android.view.inputmethod.EditorInfo, android.support.v13.view.inputmethod.InputContentInfoCompat, int, android.os.Bundle);
++  public static android.view.inputmethod.InputConnection createWrapper(android.view.inputmethod.InputConnection, android.view.inputmethod.EditorInfo, android.support.v13.view.inputmethod.InputConnectionCompat$OnCommitContentListener);
++}
+diff -U 0 -N support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.InputConnectionCompat$OnCommitContentListener support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.InputConnectionCompat$OnCommitContentListener
+--- support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.InputConnectionCompat$OnCommitContentListener	1970-01-01 09:00:00.000000000 +0900
++++ support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.InputConnectionCompat$OnCommitContentListener	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v13.view.inputmethod.InputConnectionCompat$OnCommitContentListener {
++  public abstract boolean onCommitContent(android.support.v13.view.inputmethod.InputContentInfoCompat, int, android.os.Bundle);
++}
+diff -U 0 -N support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.InputContentInfoCompat support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.InputContentInfoCompat
+--- support-v13-24.2.1_b910ab9e/android.support.v13.view.inputmethod.InputContentInfoCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-v13-25.0.0_9ff04b6a/android.support.v13.view.inputmethod.InputContentInfoCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,10 @@
++public final class android.support.v13.view.inputmethod.InputContentInfoCompat {
++  public android.support.v13.view.inputmethod.InputContentInfoCompat(android.net.Uri, android.content.ClipDescription, android.net.Uri);
++  public android.net.Uri getContentUri();
++  public android.content.ClipDescription getDescription();
++  public android.net.Uri getLinkUri();
++  public static android.support.v13.view.inputmethod.InputContentInfoCompat wrap(java.lang.Object);
++  public java.lang.Object unwrap();
++  public void requestPermission();
++  public void releasePermission();
++}

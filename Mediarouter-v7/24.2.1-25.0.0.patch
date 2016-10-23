@@ -1,0 +1,6 @@
+diff -U 0 -N mediarouter-v7-24.2.1_097fd136/android.support.v7.app.MediaRouteChooserDialog mediarouter-v7-25.0.0_d72ca1f2/android.support.v7.app.MediaRouteChooserDialog
+--- mediarouter-v7-24.2.1_097fd136/android.support.v7.app.MediaRouteChooserDialog	2016-10-21 01:01:15.000000000 +0900
++++ mediarouter-v7-25.0.0_d72ca1f2/android.support.v7.app.MediaRouteChooserDialog	2016-10-21 01:01:15.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.app.MediaRouteChooserDialog extends android.app.Dialog {
++public class android.support.v7.app.MediaRouteChooserDialog extends android.support.v7.app.AppCompatDialog {

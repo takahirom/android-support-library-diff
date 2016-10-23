@@ -1,0 +1,64 @@
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.app.ActivityCompat support-compat-25.0.0_465a1fba/android.support.v4.app.ActivityCompat
+--- support-compat-24.2.1_98283ed2/android.support.v4.app.ActivityCompat	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.app.ActivityCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -2 +1,0 @@
+-  public android.support.v4.app.ActivityCompat();
+@@ -4 +2,0 @@
+-  public static void startActivity(android.app.Activity, android.content.Intent, android.os.Bundle);
+@@ -9 +7 @@
+-  public android.net.Uri getReferrer(android.app.Activity);
++  public static android.net.Uri getReferrer(android.app.Activity);
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.app.NotificationCompat$Builder support-compat-25.0.0_465a1fba/android.support.v4.app.NotificationCompat$Builder
+--- support-compat-24.2.1_98283ed2/android.support.v4.app.NotificationCompat$Builder	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.app.NotificationCompat$Builder	2016-10-21 01:01:14.000000000 +0900
+@@ -64,0 +65,6 @@
++  public android.widget.RemoteViews getContentView();
++  public android.widget.RemoteViews getBigContentView();
++  public android.widget.RemoteViews getHeadsUpContentView();
++  public long getWhenIfShowing();
++  public int getPriority();
++  public int getColor();
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.app.NotificationCompat$WearableExtender support-compat-25.0.0_465a1fba/android.support.v4.app.NotificationCompat$WearableExtender
+--- support-compat-24.2.1_98283ed2/android.support.v4.app.NotificationCompat$WearableExtender	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.app.NotificationCompat$WearableExtender	2016-10-21 01:01:14.000000000 +0900
+@@ -56,0 +57,2 @@
++  public android.support.v4.app.NotificationCompat$WearableExtender setBridgeTag(java.lang.String);
++  public java.lang.String getBridgeTag();
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.content.ContextCompat support-compat-25.0.0_465a1fba/android.support.v4.content.ContextCompat
+--- support-compat-24.2.1_98283ed2/android.support.v4.content.ContextCompat	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.content.ContextCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -2 +1,0 @@
+-  public android.support.v4.content.ContextCompat();
+@@ -4,0 +4 @@
++  public static void startActivity(android.content.Context, android.content.Intent, android.os.Bundle);
+@@ -16 +15,0 @@
+-  public static android.content.Context createDeviceEncryptedStorageContext(android.content.Context);
+@@ -18 +16,0 @@
+-  public static boolean isDeviceEncryptedStorage(android.content.Context);
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.net.ConnectivityManagerCompat support-compat-25.0.0_465a1fba/android.support.v4.net.ConnectivityManagerCompat
+--- support-compat-24.2.1_98283ed2/android.support.v4.net.ConnectivityManagerCompat	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.net.ConnectivityManagerCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -1,0 +2,3 @@
++  public static final int RESTRICT_BACKGROUND_STATUS_DISABLED;
++  public static final int RESTRICT_BACKGROUND_STATUS_WHITELISTED;
++  public static final int RESTRICT_BACKGROUND_STATUS_ENABLED;
+@@ -3,0 +7 @@
++  public static int getRestrictBackgroundStatus(android.net.ConnectivityManager);
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.net.ConnectivityManagerCompat$RestrictBackgroundStatus support-compat-25.0.0_465a1fba/android.support.v4.net.ConnectivityManagerCompat$RestrictBackgroundStatus
+--- support-compat-24.2.1_98283ed2/android.support.v4.net.ConnectivityManagerCompat$RestrictBackgroundStatus	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.net.ConnectivityManagerCompat$RestrictBackgroundStatus	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v4.net.ConnectivityManagerCompat$RestrictBackgroundStatus extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.util.Pair<F, support-compat-25.0.0_465a1fba/android.support.v4.util.Pair<F,
+--- support-compat-24.2.1_98283ed2/android.support.v4.util.Pair<F,	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.util.Pair<F,	2016-10-21 01:01:14.000000000 +0900
+@@ -6,0 +7 @@
++  public java.lang.String toString();
+diff -U 0 -N support-compat-24.2.1_98283ed2/android.support.v4.view.ViewCompat support-compat-25.0.0_465a1fba/android.support.v4.view.ViewCompat
+--- support-compat-24.2.1_98283ed2/android.support.v4.view.ViewCompat	2016-10-21 01:01:14.000000000 +0900
++++ support-compat-25.0.0_465a1fba/android.support.v4.view.ViewCompat	2016-10-21 01:01:14.000000000 +0900
+@@ -119,0 +120 @@
++  public static void setBackground(android.view.View, android.graphics.drawable.Drawable);
+@@ -147,0 +149 @@
++  public static android.view.Display getDisplay(android.view.View);
