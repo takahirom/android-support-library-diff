@@ -1,0 +1,6 @@
+diff -U 0 -N support-vector-drawable-23.3.0_5e84e0ec/android.support.graphics.drawable.VectorDrawableCompat support-vector-drawable-23.4.0_5983fcba/android.support.graphics.drawable.VectorDrawableCompat
+--- support-vector-drawable-23.3.0_5e84e0ec/android.support.graphics.drawable.VectorDrawableCompat	2016-10-21 01:01:15.000000000 +0900
++++ support-vector-drawable-23.4.0_5983fcba/android.support.graphics.drawable.VectorDrawableCompat	2016-10-21 01:01:15.000000000 +0900
+@@ -21,2 +20,0 @@
+-  public void setBounds(int, int, int, int);
+-  public void setBounds(android.graphics.Rect);
