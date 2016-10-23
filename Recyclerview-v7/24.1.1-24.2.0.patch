@@ -1,0 +1,130 @@
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.util.BatchingListUpdateCallback recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.BatchingListUpdateCallback
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.util.BatchingListUpdateCallback	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.BatchingListUpdateCallback	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v7.util.BatchingListUpdateCallback implements android.support.v7.util.ListUpdateCallback {
++  public android.support.v7.util.BatchingListUpdateCallback(android.support.v7.util.ListUpdateCallback);
++  public void dispatchLastEvent();
++  public void onInserted(int, int);
++  public void onRemoved(int, int);
++  public void onMoved(int, int);
++  public void onChanged(int, int, java.lang.Object);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.util.DiffUtil recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.DiffUtil
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.util.DiffUtil	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.DiffUtil	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.util.DiffUtil {
++  public static android.support.v7.util.DiffUtil$DiffResult calculateDiff(android.support.v7.util.DiffUtil$Callback);
++  public static android.support.v7.util.DiffUtil$DiffResult calculateDiff(android.support.v7.util.DiffUtil$Callback, boolean);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.util.DiffUtil$Callback recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.DiffUtil$Callback
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.util.DiffUtil$Callback	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.DiffUtil$Callback	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,8 @@
++public abstract class android.support.v7.util.DiffUtil$Callback {
++  public android.support.v7.util.DiffUtil$Callback();
++  public abstract int getOldListSize();
++  public abstract int getNewListSize();
++  public abstract boolean areItemsTheSame(int, int);
++  public abstract boolean areContentsTheSame(int, int);
++  public java.lang.Object getChangePayload(int, int);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.util.DiffUtil$DiffResult recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.DiffUtil$DiffResult
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.util.DiffUtil$DiffResult	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.DiffUtil$DiffResult	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.util.DiffUtil$DiffResult {
++  public void dispatchUpdatesTo(android.support.v7.widget.RecyclerView$Adapter);
++  public void dispatchUpdatesTo(android.support.v7.util.ListUpdateCallback);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.util.ListUpdateCallback recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.ListUpdateCallback
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.util.ListUpdateCallback	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.ListUpdateCallback	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,6 @@
++public interface android.support.v7.util.ListUpdateCallback {
++  public abstract void onInserted(int, int);
++  public abstract void onRemoved(int, int);
++  public abstract void onMoved(int, int);
++  public abstract void onChanged(int, int, java.lang.Object);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.util.SortedList$Callback<T2> recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.SortedList$Callback<T2>
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.util.SortedList$Callback<T2>	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.util.SortedList$Callback<T2>	2016-10-21 01:01:13.000000000 +0900
+@@ -1 +1 @@
+-public abstract class android.support.v7.util.SortedList$Callback<T2> implements java.util.Comparator<T2> {
++public abstract class android.support.v7.util.SortedList$Callback<T2> implements java.util.Comparator<T2>, android.support.v7.util.ListUpdateCallback {
+@@ -4,3 +3,0 @@
+-  public abstract void onInserted(int, int);
+-  public abstract void onRemoved(int, int);
+-  public abstract void onMoved(int, int);
+@@ -7,0 +5 @@
++  public void onChanged(int, int, java.lang.Object);
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.LinearLayoutManager recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.LinearLayoutManager
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.LinearLayoutManager	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.LinearLayoutManager	2016-10-21 01:01:13.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.widget.LinearLayoutManager extends android.support.v7.widget.RecyclerView$LayoutManager implements android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler {
++public class android.support.v7.widget.LinearLayoutManager extends android.support.v7.widget.RecyclerView$LayoutManager implements android.support.v7.widget.helper.ItemTouchHelper$ViewDropHandler,android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider {
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.LinearSmoothScroller recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.LinearSmoothScroller
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.LinearSmoothScroller	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.LinearSmoothScroller	2016-10-21 01:01:13.000000000 +0900
+@@ -1 +1 @@
+-public abstract class android.support.v7.widget.LinearSmoothScroller extends android.support.v7.widget.RecyclerView$SmoothScroller {
++public class android.support.v7.widget.LinearSmoothScroller extends android.support.v7.widget.RecyclerView$SmoothScroller {
+@@ -9 +9 @@
+-  public abstract android.graphics.PointF computeScrollVectorForPosition(int);
++  public android.graphics.PointF computeScrollVectorForPosition(int);
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.LinearSnapHelper recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.LinearSnapHelper
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.LinearSnapHelper	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.LinearSnapHelper	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.widget.LinearSnapHelper extends android.support.v7.widget.SnapHelper {
++  public android.support.v7.widget.LinearSnapHelper();
++  public int[] calculateDistanceToFinalSnap(android.support.v7.widget.RecyclerView$LayoutManager, android.view.View);
++  public int findTargetSnapPosition(android.support.v7.widget.RecyclerView$LayoutManager, int, int);
++  public android.view.View findSnapView(android.support.v7.widget.RecyclerView$LayoutManager);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.RecyclerView recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.RecyclerView	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.RecyclerView	2016-10-21 01:01:13.000000000 +0900
+@@ -29,0 +30,2 @@
++  public void setOnFlingListener(android.support.v7.widget.RecyclerView$OnFlingListener);
++  public android.support.v7.widget.RecyclerView$OnFlingListener getOnFlingListener();
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.RecyclerView$OnFlingListener recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.RecyclerView$OnFlingListener
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.RecyclerView$OnFlingListener	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.RecyclerView$OnFlingListener	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v7.widget.RecyclerView$OnFlingListener {
++  public android.support.v7.widget.RecyclerView$OnFlingListener();
++  public abstract boolean onFling(int, int);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider {
++  public abstract android.graphics.PointF computeScrollVectorForPosition(int);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.SnapHelper recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.SnapHelper
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.SnapHelper	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.SnapHelper	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v7.widget.SnapHelper extends android.support.v7.widget.RecyclerView$OnFlingListener {
++  public android.support.v7.widget.SnapHelper();
++  public boolean onFling(int, int);
++  public void attachToRecyclerView(android.support.v7.widget.RecyclerView) throws java.lang.IllegalStateException;
++  public int[] calculateScrollDistance(int, int);
++  public abstract int[] calculateDistanceToFinalSnap(android.support.v7.widget.RecyclerView$LayoutManager, android.view.View);
++  public abstract android.view.View findSnapView(android.support.v7.widget.RecyclerView$LayoutManager);
++  public abstract int findTargetSnapPosition(android.support.v7.widget.RecyclerView$LayoutManager, int, int);
++}
+diff -U 0 -N recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.StaggeredGridLayoutManager recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.StaggeredGridLayoutManager
+--- recyclerview-v7-24.1.1_5211b750/android.support.v7.widget.StaggeredGridLayoutManager	2016-10-21 01:01:13.000000000 +0900
++++ recyclerview-v7-24.2.0_4ceaee70/android.support.v7.widget.StaggeredGridLayoutManager	2016-10-21 01:01:13.000000000 +0900
+@@ -1,2 +1 @@
+-public class android.support.v7.widget.StaggeredGridLayoutManager extends android.support.v7.widget.RecyclerView$LayoutManager {
+-  public static final java.lang.String TAG;
++public class android.support.v7.widget.StaggeredGridLayoutManager extends android.support.v7.widget.RecyclerView$LayoutManager implements android.support.v7.widget.RecyclerView$SmoothScroller$ScrollVectorProvider {
+@@ -51,0 +51 @@
++  public android.graphics.PointF computeScrollVectorForPosition(int);

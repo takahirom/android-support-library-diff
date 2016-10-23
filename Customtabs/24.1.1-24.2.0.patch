@@ -1,0 +1,18 @@
+diff -U 0 -N customtabs-24.1.1_19c111d6/android.support.customtabs.CustomTabsIntent customtabs-24.2.0_2ead16c2/android.support.customtabs.CustomTabsIntent
+--- customtabs-24.1.1_19c111d6/android.support.customtabs.CustomTabsIntent	2016-10-21 01:01:18.000000000 +0900
++++ customtabs-24.2.0_2ead16c2/android.support.customtabs.CustomTabsIntent	2016-10-21 01:01:18.000000000 +0900
+@@ -23,0 +24 @@
++  public static final java.lang.String EXTRA_ENABLE_INSTANT_APPS;
+@@ -29,0 +31,2 @@
++  public static android.content.Intent setAlwaysUseBrowserUI(android.content.Intent);
++  public static boolean shouldAlwaysUseBrowserUI(android.content.Intent);
+diff -U 0 -N customtabs-24.1.1_19c111d6/android.support.customtabs.CustomTabsIntent$Builder customtabs-24.2.0_2ead16c2/android.support.customtabs.CustomTabsIntent$Builder
+--- customtabs-24.1.1_19c111d6/android.support.customtabs.CustomTabsIntent$Builder	2016-10-21 01:01:18.000000000 +0900
++++ customtabs-24.2.0_2ead16c2/android.support.customtabs.CustomTabsIntent$Builder	2016-10-21 01:01:18.000000000 +0900
+@@ -14,0 +15 @@
++  public android.support.customtabs.CustomTabsIntent$Builder setInstantAppsEnabled(boolean);
+diff -U 0 -N customtabs-24.1.1_19c111d6/android.support.customtabs.CustomTabsSession customtabs-24.2.0_2ead16c2/android.support.customtabs.CustomTabsSession
+--- customtabs-24.1.1_19c111d6/android.support.customtabs.CustomTabsSession	2016-10-21 01:01:18.000000000 +0900
++++ customtabs-24.2.0_2ead16c2/android.support.customtabs.CustomTabsSession	2016-10-21 01:01:18.000000000 +0900
+@@ -3,0 +4 @@
++  public boolean setSecondaryToolbarViews(android.widget.RemoteViews, int[], android.app.PendingIntent);

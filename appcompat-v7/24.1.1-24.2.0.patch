@@ -1,0 +1,54 @@
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.ActionBarDrawerToggle appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.ActionBarDrawerToggle
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.ActionBarDrawerToggle	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.ActionBarDrawerToggle	2016-10-21 01:01:18.000000000 +0900
+@@ -10,0 +11,2 @@
++  public android.support.v7.graphics.drawable.DrawerArrowDrawable getDrawerArrowDrawable();
++  public void setDrawerArrowDrawable(android.support.v7.graphics.drawable.DrawerArrowDrawable);
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.AppCompatDelegate appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.AppCompatDelegate
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.AppCompatDelegate	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.AppCompatDelegate	2016-10-21 01:01:18.000000000 +0900
+@@ -16,0 +17 @@
++  public abstract void onStart();
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public final class android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState {
+-  public boolean qwertyMode;
+-  public boolean hasPanelItems();
+-  public void clearMenuPresenters();
+-}
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.AppCompatDelegateImplV9$PanelFeatureState appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.AppCompatDelegateImplV9$PanelFeatureState
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.AppCompatDelegateImplV9$PanelFeatureState	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.AppCompatDelegateImplV9$PanelFeatureState	2016-10-21 01:01:18.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v7.app.AppCompatDelegateImplV9$PanelFeatureState {
++  public boolean qwertyMode;
++  public boolean hasPanelItems();
++  public void clearMenuPresenters();
++}
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.NotificationCompat appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.NotificationCompat
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.app.NotificationCompat	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.app.NotificationCompat	2016-10-21 01:01:18.000000000 +0900
+@@ -2,0 +3 @@
++  public static android.support.v4.media.session.MediaSessionCompat$Token getMediaSession(android.app.Notification);
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.content.res.AppCompatResources appcompat-v7-24.2.0_7e60fd3a/android.support.v7.content.res.AppCompatResources
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.content.res.AppCompatResources	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.content.res.AppCompatResources	2016-10-21 01:01:18.000000000 +0900
+@@ -2,0 +3 @@
++  public static android.graphics.drawable.Drawable getDrawable(android.content.Context, int);
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.widget.AppCompatDrawableManager appcompat-v7-24.2.0_7e60fd3a/android.support.v7.widget.AppCompatDrawableManager
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.widget.AppCompatDrawableManager	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.widget.AppCompatDrawableManager	2016-10-21 01:01:18.000000000 +0900
+@@ -5,4 +5 @@
+-  public android.graphics.drawable.Drawable getDrawable(android.content.Context, int, boolean);
+-  public final android.graphics.drawable.Drawable onDrawableLoadedFromResources(android.content.Context, android.support.v7.widget.VectorEnabledTintResources, int);
+-  public final android.content.res.ColorStateList getTintList(android.content.Context, int);
+-  public static void tintDrawable(android.graphics.drawable.Drawable, android.support.v7.widget.TintInfo, int[]);
++  public void onConfigurationChanged(android.content.Context);
+diff -U 0 -N appcompat-v7-24.1.1_cdde7bae/android.support.v7.widget.AppCompatImageHelper appcompat-v7-24.2.0_7e60fd3a/android.support.v7.widget.AppCompatImageHelper
+--- appcompat-v7-24.1.1_cdde7bae/android.support.v7.widget.AppCompatImageHelper	2016-10-21 01:01:18.000000000 +0900
++++ appcompat-v7-24.2.0_7e60fd3a/android.support.v7.widget.AppCompatImageHelper	2016-10-21 01:01:18.000000000 +0900
+@@ -2 +2 @@
+-  public android.support.v7.widget.AppCompatImageHelper(android.widget.ImageView, android.support.v7.widget.AppCompatDrawableManager);
++  public android.support.v7.widget.AppCompatImageHelper(android.widget.ImageView);

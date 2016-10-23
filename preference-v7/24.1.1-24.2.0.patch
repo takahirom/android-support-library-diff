@@ -1,0 +1,25 @@
+diff -U 0 -N preference-v7-24.1.1_ff380202/android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat preference-v7-24.2.0_c3e2c562/android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat
+--- preference-v7-24.1.1_ff380202/android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-24.2.0_c3e2c562/android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat extends android.support.v7.preference.PreferenceDialogFragmentCompat {
++  public android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat();
++  public static android.support.v7.preference.MultiSelectListPreferenceDialogFragmentCompat newInstance(java.lang.String);
++  public void onCreate(android.os.Bundle);
++  public void onSaveInstanceState(android.os.Bundle);
++  public void onDialogClosed(boolean);
++}
+diff -U 0 -N preference-v7-24.1.1_ff380202/android.support.v7.preference.internal.AbstractMultiSelectListPreference preference-v7-24.2.0_c3e2c562/android.support.v7.preference.internal.AbstractMultiSelectListPreference
+--- preference-v7-24.1.1_ff380202/android.support.v7.preference.internal.AbstractMultiSelectListPreference	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-24.2.0_c3e2c562/android.support.v7.preference.internal.AbstractMultiSelectListPreference	2016-10-21 01:01:13.000000000 +0900
+@@ -0,0 +1,10 @@
++public abstract class android.support.v7.preference.internal.AbstractMultiSelectListPreference extends android.support.v7.preference.DialogPreference {
++  public android.support.v7.preference.internal.AbstractMultiSelectListPreference(android.content.Context, android.util.AttributeSet, int, int);
++  public android.support.v7.preference.internal.AbstractMultiSelectListPreference(android.content.Context, android.util.AttributeSet, int);
++  public android.support.v7.preference.internal.AbstractMultiSelectListPreference(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.preference.internal.AbstractMultiSelectListPreference(android.content.Context);
++  public abstract java.lang.CharSequence[] getEntries();
++  public abstract java.util.Set<java.lang.String> getValues();
++  public abstract java.lang.CharSequence[] getEntryValues();
++  public abstract void setValues(java.util.Set<java.lang.String>);
++}

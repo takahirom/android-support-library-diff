@@ -1,0 +1,6 @@
+diff -U 0 -N preference-v14-24.1.1_f6bd7d5a/android.support.v14.preference.MultiSelectListPreference preference-v14-24.2.0_8c0bc996/android.support.v14.preference.MultiSelectListPreference
+--- preference-v14-24.1.1_f6bd7d5a/android.support.v14.preference.MultiSelectListPreference	2016-10-21 01:01:14.000000000 +0900
++++ preference-v14-24.2.0_8c0bc996/android.support.v14.preference.MultiSelectListPreference	2016-10-21 01:01:14.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v14.preference.MultiSelectListPreference extends android.support.v7.preference.DialogPreference {
++public class android.support.v14.preference.MultiSelectListPreference extends android.support.v7.preference.internal.AbstractMultiSelectListPreference {

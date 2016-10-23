@@ -1,0 +1,115 @@
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.internal.NavigationMenuItemView design-24.2.0_60464a0e/android.support.design.internal.NavigationMenuItemView
+--- design-24.1.1_d912e336/android.support.design.internal.NavigationMenuItemView	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.internal.NavigationMenuItemView	2016-10-21 01:01:14.000000000 +0900
+@@ -16,0 +17 @@
++  public void setNeedsEmptyIcon(boolean);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.internal.NavigationMenuPresenter design-24.2.0_60464a0e/android.support.design.internal.NavigationMenuPresenter
+--- design-24.1.1_d912e336/android.support.design.internal.NavigationMenuPresenter	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.internal.NavigationMenuPresenter	2016-10-21 01:01:14.000000000 +0900
+@@ -30 +30 @@
+-  public void setPaddingTopDefault(int);
++  public void dispatchApplyWindowInsets(android.support.v4.view.WindowInsetsCompat);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.AppBarLayout$ScrollingViewBehavior design-24.2.0_60464a0e/android.support.design.widget.AppBarLayout$ScrollingViewBehavior
+--- design-24.1.1_d912e336/android.support.design.widget.AppBarLayout$ScrollingViewBehavior	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.AppBarLayout$ScrollingViewBehavior	2016-10-21 01:01:14.000000000 +0900
+@@ -5,0 +6 @@
++  public boolean onRequestChildRectangleOnScreen(android.support.design.widget.CoordinatorLayout, android.view.View, android.graphics.Rect, boolean);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.BottomSheetBehavior<V design-24.2.0_60464a0e/android.support.design.widget.BottomSheetBehavior<V
+--- design-24.1.1_d912e336/android.support.design.widget.BottomSheetBehavior<V	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.BottomSheetBehavior<V	2016-10-21 01:01:14.000000000 +0900
+@@ -6,0 +7 @@
++  public static final int PEEK_HEIGHT_AUTO;
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.BottomSheetDialog design-24.2.0_60464a0e/android.support.design.widget.BottomSheetDialog
+--- design-24.1.1_d912e336/android.support.design.widget.BottomSheetDialog	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.BottomSheetDialog	2016-10-21 01:01:14.000000000 +0900
+@@ -6,0 +7,2 @@
++  public void setCancelable(boolean);
++  public void setCanceledOnTouchOutside(boolean);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.CheckableImageButton design-24.2.0_60464a0e/android.support.design.widget.CheckableImageButton
+--- design-24.1.1_d912e336/android.support.design.widget.CheckableImageButton	1970-01-01 09:00:00.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.CheckableImageButton	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.design.widget.CheckableImageButton extends android.support.v7.widget.AppCompatImageButton implements android.widget.Checkable {
++  public android.support.design.widget.CheckableImageButton(android.content.Context);
++  public android.support.design.widget.CheckableImageButton(android.content.Context, android.util.AttributeSet);
++  public android.support.design.widget.CheckableImageButton(android.content.Context, android.util.AttributeSet, int);
++  public void setChecked(boolean);
++  public boolean isChecked();
++  public void toggle();
++  public int[] onCreateDrawableState(int);
++}
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.CollapsingToolbarLayout design-24.2.0_60464a0e/android.support.design.widget.CollapsingToolbarLayout
+--- design-24.1.1_d912e336/android.support.design.widget.CollapsingToolbarLayout	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.CollapsingToolbarLayout	2016-10-21 01:01:14.000000000 +0900
+@@ -22,0 +23 @@
++  public void setCollapsedTitleTextColor(android.content.res.ColorStateList);
+@@ -26,0 +28 @@
++  public void setExpandedTitleTextColor(android.content.res.ColorStateList);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout
+--- design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout	2016-10-21 01:01:14.000000000 +0900
+@@ -21,0 +22 @@
++  public java.util.List<android.view.View> getDependents(android.view.View);
+@@ -32,0 +34 @@
++  public boolean requestChildRectangleOnScreen(android.view.View, android.graphics.Rect, boolean);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout$Behavior<V design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout$Behavior<V
+--- design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout$Behavior<V	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout$Behavior<V	2016-10-21 01:01:14.000000000 +0900
+@@ -3,0 +4,2 @@
++  public void onAttachedToLayoutParams(android.support.design.widget.CoordinatorLayout$LayoutParams);
++  public void onDetachedFromLayoutParams();
+@@ -24,0 +27 @@
++  public boolean onRequestChildRectangleOnScreen(android.support.design.widget.CoordinatorLayout, V, android.graphics.Rect, boolean);
+@@ -26,0 +30 @@
++  public boolean getInsetDodgeRect(android.support.design.widget.CoordinatorLayout, V, android.graphics.Rect);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout$DispatchChangeEvent design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout$DispatchChangeEvent
+--- design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout$DispatchChangeEvent	1970-01-01 09:00:00.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout$DispatchChangeEvent	2016-10-21 01:01:14.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.design.widget.CoordinatorLayout$DispatchChangeEvent extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout$LayoutParams design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout$LayoutParams
+--- design-24.1.1_d912e336/android.support.design.widget.CoordinatorLayout$LayoutParams	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.CoordinatorLayout$LayoutParams	2016-10-21 01:01:14.000000000 +0900
+@@ -4,0 +5,2 @@
++  public int insetEdge;
++  public int dodgeInsetEdges;
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.FloatingActionButton$Behavior design-24.2.0_60464a0e/android.support.design.widget.FloatingActionButton$Behavior
+--- design-24.1.1_d912e336/android.support.design.widget.FloatingActionButton$Behavior	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.FloatingActionButton$Behavior	2016-10-21 01:01:14.000000000 +0900
+@@ -4 +4,3 @@
+-  public boolean layoutDependsOn(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, android.view.View);
++  public void setAutoHideEnabled(boolean);
++  public boolean isAutoHideEnabled();
++  public void onAttachedToLayoutParams(android.support.design.widget.CoordinatorLayout$LayoutParams);
+@@ -6 +7,0 @@
+-  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, android.view.View);
+@@ -7,0 +9,2 @@
++  public boolean getInsetDodgeRect(android.support.design.widget.CoordinatorLayout, android.support.design.widget.FloatingActionButton, android.graphics.Rect);
++  public boolean getInsetDodgeRect(android.support.design.widget.CoordinatorLayout, android.view.View, android.graphics.Rect);
+@@ -9 +11,0 @@
+-  public void onDependentViewRemoved(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.View);
+@@ -11 +12,0 @@
+-  public boolean layoutDependsOn(android.support.design.widget.CoordinatorLayout, android.view.View, android.view.View);
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.TabLayout design-24.2.0_60464a0e/android.support.design.widget.TabLayout
+--- design-24.1.1_d912e336/android.support.design.widget.TabLayout	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.TabLayout	2016-10-21 01:01:14.000000000 +0900
+@@ -18,0 +19 @@
++  public void clearOnTabSelectedListeners();
+diff -U 0 -N design-24.1.1_d912e336/android.support.design.widget.TextInputLayout design-24.2.0_60464a0e/android.support.design.widget.TextInputLayout
+--- design-24.1.1_d912e336/android.support.design.widget.TextInputLayout	2016-10-21 01:01:14.000000000 +0900
++++ design-24.2.0_60464a0e/android.support.design.widget.TextInputLayout	2016-10-21 01:01:14.000000000 +0900
+@@ -19,0 +20 @@
++  public void setEnabled(boolean);
+@@ -26 +27,10 @@
+-  public void refreshDrawableState();
++  public void setPasswordVisibilityToggleDrawable(int);
++  public void setPasswordVisibilityToggleDrawable(android.graphics.drawable.Drawable);
++  public void setPasswordVisibilityToggleContentDescription(int);
++  public void setPasswordVisibilityToggleContentDescription(java.lang.CharSequence);
++  public android.graphics.drawable.Drawable getPasswordVisibilityToggleDrawable();
++  public java.lang.CharSequence getPasswordVisibilityToggleContentDescription();
++  public boolean isPasswordVisibilityToggleEnabled();
++  public void setPasswordVisibilityToggleEnabled(boolean);
++  public void setPasswordVisibilityToggleTintList(android.content.res.ColorStateList);
++  public void setPasswordVisibilityToggleTintMode(android.graphics.PorterDuff$Mode);

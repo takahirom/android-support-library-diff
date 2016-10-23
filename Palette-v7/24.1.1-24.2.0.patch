@@ -1,0 +1,6 @@
+diff -U 0 -N palette-v7-24.1.1_77a19de6/android.support.v7.graphics.Palette palette-v7-24.2.0_9fead436/android.support.v7.graphics.Palette
+--- palette-v7-24.1.1_77a19de6/android.support.v7.graphics.Palette	2016-10-21 01:01:13.000000000 +0900
++++ palette-v7-24.2.0_9fead436/android.support.v7.graphics.Palette	2016-10-21 01:01:12.000000000 +0900
+@@ -23,0 +24,2 @@
++  public android.support.v7.graphics.Palette$Swatch getDominantSwatch();
++  public int getDominantColor(int);

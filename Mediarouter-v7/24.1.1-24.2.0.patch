@@ -1,0 +1,17 @@
+diff -U 0 -N mediarouter-v7-24.1.1_63ec1002/android.support.v7.media.MediaRouteDescriptor mediarouter-v7-24.2.0_85da8a2a/android.support.v7.media.MediaRouteDescriptor
+--- mediarouter-v7-24.1.1_63ec1002/android.support.v7.media.MediaRouteDescriptor	2016-10-21 01:01:15.000000000 +0900
++++ mediarouter-v7-24.2.0_85da8a2a/android.support.v7.media.MediaRouteDescriptor	2016-10-21 01:01:15.000000000 +0900
+@@ -20,0 +21,2 @@
++  public int getMinClientVersion();
++  public int getMaxClientVersion();
+diff -U 0 -N mediarouter-v7-24.1.1_63ec1002/android.support.v7.media.MediaRouteDescriptor$Builder mediarouter-v7-24.2.0_85da8a2a/android.support.v7.media.MediaRouteDescriptor$Builder
+--- mediarouter-v7-24.1.1_63ec1002/android.support.v7.media.MediaRouteDescriptor$Builder	2016-10-21 01:01:15.000000000 +0900
++++ mediarouter-v7-24.2.0_85da8a2a/android.support.v7.media.MediaRouteDescriptor$Builder	2016-10-21 01:01:15.000000000 +0900
+@@ -24,0 +25,2 @@
++  public android.support.v7.media.MediaRouteDescriptor$Builder setMinClientVersion(int);
++  public android.support.v7.media.MediaRouteDescriptor$Builder setMaxClientVersion(int);
+diff -U 0 -N mediarouter-v7-24.1.1_63ec1002/android.support.v7.media.MediaRouteProvider mediarouter-v7-24.2.0_85da8a2a/android.support.v7.media.MediaRouteProvider
+--- mediarouter-v7-24.1.1_63ec1002/android.support.v7.media.MediaRouteProvider	2016-10-21 01:01:15.000000000 +0900
++++ mediarouter-v7-24.2.0_85da8a2a/android.support.v7.media.MediaRouteProvider	2016-10-21 01:01:15.000000000 +0900
+@@ -12,0 +13 @@
++  public android.support.v7.media.MediaRouteProvider$RouteController onCreateRouteController(java.lang.String, java.lang.String);

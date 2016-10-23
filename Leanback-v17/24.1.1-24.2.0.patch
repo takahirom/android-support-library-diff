@@ -1,0 +1,49 @@
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.AbstractMediaItemPresenter leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.AbstractMediaItemPresenter
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.AbstractMediaItemPresenter	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.AbstractMediaItemPresenter	2016-10-21 01:01:18.000000000 +0900
+@@ -1,0 +2,3 @@
++  public static final int PLAY_STATE_INITIAL;
++  public static final int PLAY_STATE_PAUSED;
++  public static final int PLAY_STATE_PLAYING;
+@@ -11,0 +15,2 @@
++  public void onBindMediaPlayState(android.support.v17.leanback.widget.AbstractMediaItemPresenter$ViewHolder);
++  public void onUnbindMediaPlayState(android.support.v17.leanback.widget.AbstractMediaItemPresenter$ViewHolder);
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.AbstractMediaItemPresenter$ViewHolder leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.AbstractMediaItemPresenter$ViewHolder
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.AbstractMediaItemPresenter$ViewHolder	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.AbstractMediaItemPresenter$ViewHolder	2016-10-21 01:01:18.000000000 +0900
+@@ -5,0 +6 @@
++  public void notifyPlayStateChanged();
+@@ -6,0 +8 @@
++  public android.widget.ViewFlipper getMediaItemNumberViewFlipper();
+@@ -7,0 +10,3 @@
++  public android.view.View getMediaItemPausedView();
++  public android.view.View getMediaItemPlayingView();
++  public void setSelectedMediaItemNumberView(int);
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.ArrayObjectAdapter leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.ArrayObjectAdapter
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.ArrayObjectAdapter	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.ArrayObjectAdapter	2016-10-21 01:01:18.000000000 +0900
+@@ -16,0 +17 @@
++  public boolean isImmediateNotifySupported();
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.CursorObjectAdapter leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.CursorObjectAdapter
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.CursorObjectAdapter	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.CursorObjectAdapter	2016-10-21 01:01:18.000000000 +0900
+@@ -13,0 +14 @@
++  public boolean isImmediateNotifySupported();
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.MediaNowPlayingView leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.MediaNowPlayingView
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.MediaNowPlayingView	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.MediaNowPlayingView	2016-10-21 01:01:18.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.widget.MediaNowPlayingView extends android.widget.LinearLayout {
++  public android.support.v17.leanback.widget.MediaNowPlayingView(android.content.Context, android.util.AttributeSet);
++  public void setVisibility(int);
++}
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.ObjectAdapter leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.ObjectAdapter
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.ObjectAdapter	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.ObjectAdapter	2016-10-21 01:01:18.000000000 +0900
+@@ -16,0 +17 @@
++  public boolean isImmediateNotifySupported();
+diff -U 0 -N leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.SparseArrayObjectAdapter leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.SparseArrayObjectAdapter
+--- leanback-v17-24.1.1_4233f636/android.support.v17.leanback.widget.SparseArrayObjectAdapter	2016-10-21 01:01:18.000000000 +0900
++++ leanback-v17-24.2.0_b39b03ce/android.support.v17.leanback.widget.SparseArrayObjectAdapter	2016-10-21 01:01:18.000000000 +0900
+@@ -13,0 +14 @@
++  public boolean isImmediateNotifySupported();
