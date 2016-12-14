@@ -1,0 +1,46 @@
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.LinearLayoutManager recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.LinearLayoutManager
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.LinearLayoutManager	2016-12-15 02:15:58.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.LinearLayoutManager	2016-12-15 02:15:58.000000000 +0900
+@@ -39,0 +40,4 @@
++  public void collectInitialPrefetchPositions(int, android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry);
++  public void setInitialPrefetchItemCount(int);
++  public int getInitialItemPrefetchCount();
++  public void collectAdjacentPrefetchPositions(int, int, android.support.v7.widget.RecyclerView$State, android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry);
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.PagerSnapHelper recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.PagerSnapHelper
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.PagerSnapHelper	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.PagerSnapHelper	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v7.widget.PagerSnapHelper extends android.support.v7.widget.SnapHelper {
++  public android.support.v7.widget.PagerSnapHelper();
++  public int[] calculateDistanceToFinalSnap(android.support.v7.widget.RecyclerView$LayoutManager, android.view.View);
++  public android.view.View findSnapView(android.support.v7.widget.RecyclerView$LayoutManager);
++  public int findTargetSnapPosition(android.support.v7.widget.RecyclerView$LayoutManager, int, int);
++}
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView	2016-12-15 02:15:58.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView	2016-12-15 02:15:58.000000000 +0900
+@@ -59,0 +60 @@
++  public void smoothScrollBy(int, int, android.view.animation.Interpolator);
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView$LayoutManager	2016-12-15 02:15:58.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView$LayoutManager	2016-12-15 02:15:58.000000000 +0900
+@@ -12,0 +13,2 @@
++  public void collectAdjacentPrefetchPositions(int, int, android.support.v7.widget.RecyclerView$State, android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry);
++  public void collectInitialPrefetchPositions(int, android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry);
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry {
++  public abstract void addPosition(int, int);
++}
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView$RecycledViewPool recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView$RecycledViewPool
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.RecyclerView$RecycledViewPool	2016-12-15 02:15:58.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.RecyclerView$RecycledViewPool	2016-12-15 02:15:58.000000000 +0900
+@@ -4,0 +5 @@
++  public int getRecycledViewCount(int);
+diff -U 0 -N recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.StaggeredGridLayoutManager recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.StaggeredGridLayoutManager
+--- recyclerview-v7-25.0.1_01e01f30/android.support.v7.widget.StaggeredGridLayoutManager	2016-12-15 02:15:58.000000000 +0900
++++ recyclerview-v7-25.1.0_7d382e90/android.support.v7.widget.StaggeredGridLayoutManager	2016-12-15 02:15:58.000000000 +0900
+@@ -54,0 +55 @@
++  public void collectAdjacentPrefetchPositions(int, int, android.support.v7.widget.RecyclerView$State, android.support.v7.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry);

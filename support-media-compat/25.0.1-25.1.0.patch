@@ -1,0 +1,158 @@
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v4.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy {
++  public abstract android.support.v4.media.MediaBrowserServiceCompatApi21$BrowserRoot onGetRoot(java.lang.String, int, android.os.Bundle);
++  public abstract void onLoadChildren(java.lang.String, android.support.v4.media.MediaBrowserServiceCompatApi21$ResultWrapper<java.util.List<android.os.Parcel>>);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v4.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy extends android.support.v4.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy {
++  public abstract void onLoadItem(java.lang.String, android.support.v4.media.MediaBrowserServiceCompatApi21$ResultWrapper<android.os.Parcel>);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaBrowserServiceCompatApi24$ServiceCompatProxy support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaBrowserServiceCompatApi24$ServiceCompatProxy
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaBrowserServiceCompatApi24$ServiceCompatProxy	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaBrowserServiceCompatApi24$ServiceCompatProxy	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v4.media.MediaBrowserServiceCompatApi24$ServiceCompatProxy extends android.support.v4.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy {
++  public abstract void onLoadChildren(java.lang.String, android.support.v4.media.MediaBrowserServiceCompatApi24$ResultWrapper, android.os.Bundle);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaMetadataCompatApi21$Builder support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaMetadataCompatApi21$Builder
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.MediaMetadataCompatApi21$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.MediaMetadataCompatApi21$Builder	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v4.media.MediaMetadataCompatApi21$Builder {
++  public android.support.v4.media.MediaMetadataCompatApi21$Builder();
++  public static java.lang.Object newInstance();
++  public static void putBitmap(java.lang.Object, java.lang.String, android.graphics.Bitmap);
++  public static void putLong(java.lang.Object, java.lang.String, long);
++  public static void putRating(java.lang.Object, java.lang.String, java.lang.Object);
++  public static void putText(java.lang.Object, java.lang.String, java.lang.CharSequence);
++  public static void putString(java.lang.Object, java.lang.String, java.lang.String);
++  public static java.lang.Object build(java.lang.Object);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.VolumeProviderCompatApi21$Delegate support-media-compat-25.1.0_cf69657e/android.support.v4.media.VolumeProviderCompatApi21$Delegate
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.VolumeProviderCompatApi21$Delegate	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.VolumeProviderCompatApi21$Delegate	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v4.media.VolumeProviderCompatApi21$Delegate {
++  public abstract void onSetVolumeTo(int);
++  public abstract void onAdjustVolume(int);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.IMediaSession support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.IMediaSession
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.IMediaSession	2016-12-15 02:15:54.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.IMediaSession	2016-12-15 02:15:54.000000000 +0900
+@@ -13,0 +14,10 @@
++  public abstract android.support.v4.media.MediaMetadataCompat getMetadata() throws android.os.RemoteException;
++  public abstract android.support.v4.media.session.PlaybackStateCompat getPlaybackState() throws android.os.RemoteException;
++  public abstract java.util.List<android.support.v4.media.session.MediaSessionCompat$QueueItem> getQueue() throws android.os.RemoteException;
++  public abstract java.lang.CharSequence getQueueTitle() throws android.os.RemoteException;
++  public abstract android.os.Bundle getExtras() throws android.os.RemoteException;
++  public abstract int getRatingType() throws android.os.RemoteException;
++  public abstract void prepare() throws android.os.RemoteException;
++  public abstract void prepareFromMediaId(java.lang.String, android.os.Bundle) throws android.os.RemoteException;
++  public abstract void prepareFromSearch(java.lang.String, android.os.Bundle) throws android.os.RemoteException;
++  public abstract void prepareFromUri(android.net.Uri, android.os.Bundle) throws android.os.RemoteException;
+@@ -28,10 +37,0 @@
+-  public abstract android.support.v4.media.MediaMetadataCompat getMetadata() throws android.os.RemoteException;
+-  public abstract android.support.v4.media.session.PlaybackStateCompat getPlaybackState() throws android.os.RemoteException;
+-  public abstract java.util.List<android.support.v4.media.session.MediaSessionCompat$QueueItem> getQueue() throws android.os.RemoteException;
+-  public abstract java.lang.CharSequence getQueueTitle() throws android.os.RemoteException;
+-  public abstract android.os.Bundle getExtras() throws android.os.RemoteException;
+-  public abstract int getRatingType() throws android.os.RemoteException;
+-  public abstract void prepare() throws android.os.RemoteException;
+-  public abstract void prepareFromMediaId(java.lang.String, android.os.Bundle) throws android.os.RemoteException;
+-  public abstract void prepareFromSearch(java.lang.String, android.os.Bundle) throws android.os.RemoteException;
+-  public abstract void prepareFromUri(android.net.Uri, android.os.Bundle) throws android.os.RemoteException;
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompat support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompat
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompat	2016-12-15 02:15:54.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompat	2016-12-15 02:15:54.000000000 +0900
+@@ -1,0 +2,2 @@
++  public static void setMediaController(android.app.Activity, android.support.v4.media.session.MediaControllerCompat);
++  public static android.support.v4.media.session.MediaControllerCompat getMediaController(android.app.Activity);
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi21$Callback support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi21$Callback
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi21$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi21$Callback	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,10 @@
++public interface android.support.v4.media.session.MediaControllerCompatApi21$Callback {
++  public abstract void onSessionDestroyed();
++  public abstract void onSessionEvent(java.lang.String, android.os.Bundle);
++  public abstract void onPlaybackStateChanged(java.lang.Object);
++  public abstract void onMetadataChanged(java.lang.Object);
++  public abstract void onQueueChanged(java.util.List<?>);
++  public abstract void onQueueTitleChanged(java.lang.CharSequence);
++  public abstract void onExtrasChanged(android.os.Bundle);
++  public abstract void onAudioInfoChanged(int, int, int, int, int);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,9 @@
++public class android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo {
++  public android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo();
++  public static int getPlaybackType(java.lang.Object);
++  public static android.media.AudioAttributes getAudioAttributes(java.lang.Object);
++  public static int getLegacyAudioStream(java.lang.Object);
++  public static int getVolumeControl(java.lang.Object);
++  public static int getMaxVolume(java.lang.Object);
++  public static int getCurrentVolume(java.lang.Object);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi21$TransportControls support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi21$TransportControls
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi21$TransportControls	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi21$TransportControls	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,16 @@
++public class android.support.v4.media.session.MediaControllerCompatApi21$TransportControls {
++  public android.support.v4.media.session.MediaControllerCompatApi21$TransportControls();
++  public static void play(java.lang.Object);
++  public static void pause(java.lang.Object);
++  public static void stop(java.lang.Object);
++  public static void seekTo(java.lang.Object, long);
++  public static void fastForward(java.lang.Object);
++  public static void rewind(java.lang.Object);
++  public static void skipToNext(java.lang.Object);
++  public static void skipToPrevious(java.lang.Object);
++  public static void setRating(java.lang.Object, java.lang.Object);
++  public static void playFromMediaId(java.lang.Object, java.lang.String, android.os.Bundle);
++  public static void playFromSearch(java.lang.Object, java.lang.String, android.os.Bundle);
++  public static void skipToQueueItem(java.lang.Object, long);
++  public static void sendCustomAction(java.lang.Object, java.lang.String, android.os.Bundle);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi23$TransportControls support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi23$TransportControls
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi23$TransportControls	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi23$TransportControls	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.media.session.MediaControllerCompatApi23$TransportControls extends android.support.v4.media.session.MediaControllerCompatApi21$TransportControls {
++  public android.support.v4.media.session.MediaControllerCompatApi23$TransportControls();
++  public static void playFromUri(java.lang.Object, android.net.Uri, android.os.Bundle);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi24$TransportControls support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi24$TransportControls
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaControllerCompatApi24$TransportControls	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaControllerCompatApi24$TransportControls	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,7 @@
++public class android.support.v4.media.session.MediaControllerCompatApi24$TransportControls extends android.support.v4.media.session.MediaControllerCompatApi23$TransportControls {
++  public android.support.v4.media.session.MediaControllerCompatApi24$TransportControls();
++  public static void prepare(java.lang.Object);
++  public static void prepareFromMediaId(java.lang.Object, java.lang.String, android.os.Bundle);
++  public static void prepareFromSearch(java.lang.Object, java.lang.String, android.os.Bundle);
++  public static void prepareFromUri(java.lang.Object, android.net.Uri, android.os.Bundle);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaSessionCompatApi23$Callback support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaSessionCompatApi23$Callback
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaSessionCompatApi23$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaSessionCompatApi23$Callback	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v4.media.session.MediaSessionCompatApi23$Callback extends android.support.v4.media.session.MediaSessionCompatApi21$Callback {
++  public abstract void onPlayFromUri(android.net.Uri, android.os.Bundle);
++}
+diff -U 0 -N support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaSessionCompatApi24$Callback support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaSessionCompatApi24$Callback
+--- support-media-compat-25.0.1_b6cfd352/android.support.v4.media.session.MediaSessionCompatApi24$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.1.0_cf69657e/android.support.v4.media.session.MediaSessionCompatApi24$Callback	2016-12-15 02:15:54.000000000 +0900
+@@ -0,0 +1,6 @@
++public interface android.support.v4.media.session.MediaSessionCompatApi24$Callback extends android.support.v4.media.session.MediaSessionCompatApi23$Callback {
++  public abstract void onPrepare();
++  public abstract void onPrepareFromMediaId(java.lang.String, android.os.Bundle);
++  public abstract void onPrepareFromSearch(java.lang.String, android.os.Bundle);
++  public abstract void onPrepareFromUri(android.net.Uri, android.os.Bundle);
++}

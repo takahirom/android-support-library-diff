@@ -1,0 +1,120 @@
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.internal.SnackbarContentLayout design-25.1.0_4e5db1fa/android.support.design.internal.SnackbarContentLayout
+--- design-25.0.1_62b23b8a/android.support.design.internal.SnackbarContentLayout	1970-01-01 09:00:00.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.internal.SnackbarContentLayout	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.design.internal.SnackbarContentLayout extends android.widget.LinearLayout implements android.support.design.widget.BaseTransientBottomBar$ContentViewCallback {
++  public android.support.design.internal.SnackbarContentLayout(android.content.Context);
++  public android.support.design.internal.SnackbarContentLayout(android.content.Context, android.util.AttributeSet);
++  public android.widget.TextView getMessageView();
++  public android.widget.Button getActionView();
++  public void animateContentIn(int, int);
++  public void animateContentOut(int, int);
++}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$BaseCallback$DismissEvent design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$BaseCallback$DismissEvent
+--- design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$BaseCallback$DismissEvent	1970-01-01 09:00:00.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$BaseCallback$DismissEvent	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.design.widget.BaseTransientBottomBar$BaseCallback$DismissEvent extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$BaseCallback<B> design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$BaseCallback<B>
+--- design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$BaseCallback<B>	1970-01-01 09:00:00.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$BaseCallback<B>	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,10 @@
++public abstract class android.support.design.widget.BaseTransientBottomBar$BaseCallback<B> {
++  public static final int DISMISS_EVENT_SWIPE;
++  public static final int DISMISS_EVENT_ACTION;
++  public static final int DISMISS_EVENT_TIMEOUT;
++  public static final int DISMISS_EVENT_MANUAL;
++  public static final int DISMISS_EVENT_CONSECUTIVE;
++  public android.support.design.widget.BaseTransientBottomBar$BaseCallback();
++  public void onDismissed(B, int);
++  public void onShown(B);
++}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$ContentViewCallback design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$ContentViewCallback
+--- design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$ContentViewCallback	1970-01-01 09:00:00.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$ContentViewCallback	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.design.widget.BaseTransientBottomBar$ContentViewCallback {
++  public abstract void animateContentIn(int, int);
++  public abstract void animateContentOut(int, int);
++}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$Duration design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$Duration
+--- design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar$Duration	1970-01-01 09:00:00.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar$Duration	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.design.widget.BaseTransientBottomBar$Duration extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar<B design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar<B
+--- design-25.0.1_62b23b8a/android.support.design.widget.BaseTransientBottomBar<B	1970-01-01 09:00:00.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.BaseTransientBottomBar<B	2016-12-15 02:15:58.000000000 +0900
+@@ -0,0 +1,15 @@
++public abstract class android.support.design.widget.BaseTransientBottomBar<B extends android.support.design.widget.BaseTransientBottomBar<B>> {
++  public static final int LENGTH_INDEFINITE;
++  public static final int LENGTH_SHORT;
++  public static final int LENGTH_LONG;
++  public B setDuration(int);
++  public int getDuration();
++  public android.content.Context getContext();
++  public android.view.View getView();
++  public void show();
++  public void dismiss();
++  public B addCallback(android.support.design.widget.BaseTransientBottomBar$BaseCallback<B>);
++  public B removeCallback(android.support.design.widget.BaseTransientBottomBar$BaseCallback<B>);
++  public boolean isShown();
++  public boolean isShownOrQueued();
++}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.Snackbar design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar
+--- design-25.0.1_62b23b8a/android.support.design.widget.Snackbar	2016-12-15 02:15:58.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar	2016-12-15 02:15:58.000000000 +0900
+@@ -1 +1 @@
+-public final class android.support.design.widget.Snackbar {
++public final class android.support.design.widget.Snackbar extends android.support.design.widget.BaseTransientBottomBar<android.support.design.widget.Snackbar> {
+@@ -6,0 +7,2 @@
++  public android.support.design.widget.Snackbar setText(java.lang.CharSequence);
++  public android.support.design.widget.Snackbar setText(int);
+@@ -11,7 +12,0 @@
+-  public android.support.design.widget.Snackbar setText(java.lang.CharSequence);
+-  public android.support.design.widget.Snackbar setText(int);
+-  public android.support.design.widget.Snackbar setDuration(int);
+-  public int getDuration();
+-  public android.view.View getView();
+-  public void show();
+-  public void dismiss();
+@@ -19,2 +13,0 @@
+-  public boolean isShown();
+-  public boolean isShownOrQueued();
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$Callback design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$Callback
+--- design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$Callback	2016-12-15 02:15:58.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$Callback	2016-12-15 02:15:58.000000000 +0900
+@@ -1 +1 @@
+-public abstract class android.support.design.widget.Snackbar$Callback {
++public class android.support.design.widget.Snackbar$Callback extends android.support.design.widget.BaseTransientBottomBar$BaseCallback<android.support.design.widget.Snackbar> {
+@@ -8 +7,0 @@
+-  public void onDismissed(android.support.design.widget.Snackbar, int);
+@@ -9,0 +9,3 @@
++  public void onDismissed(android.support.design.widget.Snackbar, int);
++  public void onShown(java.lang.Object);
++  public void onDismissed(java.lang.Object, int);
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$Callback$DismissEvent design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$Callback$DismissEvent
+--- design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$Callback$DismissEvent	2016-12-15 02:15:58.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$Callback$DismissEvent	1970-01-01 09:00:00.000000000 +0900
+@@ -1,2 +0,0 @@
+-public interface android.support.design.widget.Snackbar$Callback$DismissEvent extends java.lang.annotation.Annotation {
+-}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$Duration design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$Duration
+--- design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$Duration	2016-12-15 02:15:58.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$Duration	1970-01-01 09:00:00.000000000 +0900
+@@ -1,2 +0,0 @@
+-public interface android.support.design.widget.Snackbar$Duration extends java.lang.annotation.Annotation {
+-}
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$SnackbarLayout design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$SnackbarLayout
+--- design-25.0.1_62b23b8a/android.support.design.widget.Snackbar$SnackbarLayout	2016-12-15 02:15:58.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.Snackbar$SnackbarLayout	2016-12-15 02:15:58.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.design.widget.Snackbar$SnackbarLayout extends android.widget.LinearLayout {
++public final class android.support.design.widget.Snackbar$SnackbarLayout extends android.support.design.widget.BaseTransientBottomBar$SnackbarBaseLayout {
+diff -U 0 -N design-25.0.1_62b23b8a/android.support.design.widget.TextInputLayout design-25.1.0_4e5db1fa/android.support.design.widget.TextInputLayout
+--- design-25.0.1_62b23b8a/android.support.design.widget.TextInputLayout	2016-12-15 02:15:58.000000000 +0900
++++ design-25.1.0_4e5db1fa/android.support.design.widget.TextInputLayout	2016-12-15 02:15:58.000000000 +0900
+@@ -14,0 +15 @@
++  public void setErrorTextAppearance(int);

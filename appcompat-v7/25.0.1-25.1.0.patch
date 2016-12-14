@@ -1,0 +1,32 @@
+diff -U 0 -N appcompat-v7-25.0.1_eabfc9ba/android.support.v7.app.AlertController$RecycleListView appcompat-v7-25.1.0_50f9b21e/android.support.v7.app.AlertController$RecycleListView
+--- appcompat-v7-25.0.1_eabfc9ba/android.support.v7.app.AlertController$RecycleListView	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-25.1.0_50f9b21e/android.support.v7.app.AlertController$RecycleListView	2016-12-15 02:16:03.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.app.AlertController$RecycleListView extends android.widget.ListView {
++  public android.support.v7.app.AlertController$RecycleListView(android.content.Context);
++  public android.support.v7.app.AlertController$RecycleListView(android.content.Context, android.util.AttributeSet);
++  public void setHasDecor(boolean, boolean);
++}
+diff -U 0 -N appcompat-v7-25.0.1_eabfc9ba/android.support.v7.view.ContextThemeWrapper appcompat-v7-25.1.0_50f9b21e/android.support.v7.view.ContextThemeWrapper
+--- appcompat-v7-25.0.1_eabfc9ba/android.support.v7.view.ContextThemeWrapper	2016-12-15 02:16:02.000000000 +0900
++++ appcompat-v7-25.1.0_50f9b21e/android.support.v7.view.ContextThemeWrapper	2016-12-15 02:16:03.000000000 +0900
+@@ -7,0 +8 @@
++  public android.content.res.AssetManager getAssets();
+diff -U 0 -N appcompat-v7-25.0.1_eabfc9ba/android.support.v7.widget.AlertDialogLayout appcompat-v7-25.1.0_50f9b21e/android.support.v7.widget.AlertDialogLayout
+--- appcompat-v7-25.0.1_eabfc9ba/android.support.v7.widget.AlertDialogLayout	1970-01-01 09:00:00.000000000 +0900
++++ appcompat-v7-25.1.0_50f9b21e/android.support.v7.widget.AlertDialogLayout	2016-12-15 02:16:03.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.widget.AlertDialogLayout extends android.support.v7.widget.LinearLayoutCompat {
++  public android.support.v7.widget.AlertDialogLayout(android.content.Context);
++  public android.support.v7.widget.AlertDialogLayout(android.content.Context, android.util.AttributeSet);
++}
+diff -U 0 -N appcompat-v7-25.0.1_eabfc9ba/android.support.v7.widget.LinearLayoutCompat appcompat-v7-25.1.0_50f9b21e/android.support.v7.widget.LinearLayoutCompat
+--- appcompat-v7-25.0.1_eabfc9ba/android.support.v7.widget.LinearLayoutCompat	2016-12-15 02:16:02.000000000 +0900
++++ appcompat-v7-25.1.0_50f9b21e/android.support.v7.widget.LinearLayoutCompat	2016-12-15 02:16:03.000000000 +0900
+@@ -30,0 +31 @@
++  public int getGravity();
+diff -U 0 -N appcompat-v7-25.0.1_eabfc9ba/android.support.v7.widget.TintContextWrapper appcompat-v7-25.1.0_50f9b21e/android.support.v7.widget.TintContextWrapper
+--- appcompat-v7-25.0.1_eabfc9ba/android.support.v7.widget.TintContextWrapper	2016-12-15 02:16:02.000000000 +0900
++++ appcompat-v7-25.1.0_50f9b21e/android.support.v7.widget.TintContextWrapper	2016-12-15 02:16:03.000000000 +0900
+@@ -5,0 +6 @@
++  public android.content.res.AssetManager getAssets();

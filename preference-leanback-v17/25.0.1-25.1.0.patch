@@ -1,0 +1,5 @@
+diff -U 0 -N preference-leanback-v17-25.0.1_d3bd3260/android.support.v17.preference.LeanbackPreferenceFragment preference-leanback-v17-25.1.0_07a07c80/android.support.v17.preference.LeanbackPreferenceFragment
+--- preference-leanback-v17-25.0.1_d3bd3260/android.support.v17.preference.LeanbackPreferenceFragment	2016-12-15 02:15:52.000000000 +0900
++++ preference-leanback-v17-25.1.0_07a07c80/android.support.v17.preference.LeanbackPreferenceFragment	2016-12-15 02:15:52.000000000 +0900
+@@ -4,0 +5 @@
++  public void setTitle(java.lang.CharSequence);

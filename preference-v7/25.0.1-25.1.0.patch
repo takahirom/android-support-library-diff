@@ -1,0 +1,66 @@
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.Preference preference-v7-25.1.0_384e5df2/android.support.v7.preference.Preference
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.Preference	2016-12-15 02:15:59.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.Preference	2016-12-15 02:15:59.000000000 +0900
+@@ -54,0 +55,2 @@
++  public final boolean wasDetached();
++  public final void clearWasDetached();
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceManager preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceManager
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceManager	2016-12-15 02:15:59.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceManager	2016-12-15 02:15:59.000000000 +0900
+@@ -12 +11,0 @@
+-  public void setStorageDeviceEncrypted();
+@@ -22,0 +22,2 @@
++  public android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback getPreferenceComparisonCallback();
++  public void setPreferenceComparisonCallback(android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback);
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback	2016-12-15 02:15:59.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback {
++  public android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback();
++  public abstract boolean arePreferenceItemsTheSame(android.support.v7.preference.Preference, android.support.v7.preference.Preference);
++  public abstract boolean arePreferenceContentsTheSame(android.support.v7.preference.Preference, android.support.v7.preference.Preference);
++}
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceManager$SimplePreferenceComparisonCallback preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceManager$SimplePreferenceComparisonCallback
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceManager$SimplePreferenceComparisonCallback	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceManager$SimplePreferenceComparisonCallback	2016-12-15 02:15:59.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.preference.PreferenceManager$SimplePreferenceComparisonCallback extends android.support.v7.preference.PreferenceManager$PreferenceComparisonCallback {
++  public android.support.v7.preference.PreferenceManager$SimplePreferenceComparisonCallback();
++  public boolean arePreferenceItemsTheSame(android.support.v7.preference.Preference, android.support.v7.preference.Preference);
++  public boolean arePreferenceContentsTheSame(android.support.v7.preference.Preference, android.support.v7.preference.Preference);
++}
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceViewHolder preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceViewHolder
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.PreferenceViewHolder	2016-12-15 02:15:59.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.PreferenceViewHolder	2016-12-15 02:15:59.000000000 +0900
+@@ -1,0 +2 @@
++  public android.support.v7.preference.PreferenceViewHolder(android.view.View);
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.SeekBarPreference preference-v7-25.1.0_384e5df2/android.support.v7.preference.SeekBarPreference
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.SeekBarPreference	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.SeekBarPreference	2016-12-15 02:15:59.000000000 +0900
+@@ -0,0 +1,17 @@
++public class android.support.v7.preference.SeekBarPreference extends android.support.v7.preference.Preference {
++  public android.support.v7.preference.SeekBarPreference(android.content.Context, android.util.AttributeSet, int, int);
++  public android.support.v7.preference.SeekBarPreference(android.content.Context, android.util.AttributeSet, int);
++  public android.support.v7.preference.SeekBarPreference(android.content.Context, android.util.AttributeSet);
++  public android.support.v7.preference.SeekBarPreference(android.content.Context);
++  public void onBindViewHolder(android.support.v7.preference.PreferenceViewHolder);
++  public void setMin(int);
++  public int getMin();
++  public final void setMax(int);
++  public final int getSeekBarIncrement();
++  public final void setSeekBarIncrement(int);
++  public int getMax();
++  public void setAdjustable(boolean);
++  public boolean isAdjustable();
++  public void setValue(int);
++  public int getValue();
++}
+diff -U 0 -N preference-v7-25.0.1_122773aa/android.support.v7.preference.UnPressableLinearLayout preference-v7-25.1.0_384e5df2/android.support.v7.preference.UnPressableLinearLayout
+--- preference-v7-25.0.1_122773aa/android.support.v7.preference.UnPressableLinearLayout	1970-01-01 09:00:00.000000000 +0900
++++ preference-v7-25.1.0_384e5df2/android.support.v7.preference.UnPressableLinearLayout	2016-12-15 02:15:59.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v7.preference.UnPressableLinearLayout extends android.widget.LinearLayout {
++  public android.support.v7.preference.UnPressableLinearLayout(android.content.Context);
++  public android.support.v7.preference.UnPressableLinearLayout(android.content.Context, android.util.AttributeSet);
++}

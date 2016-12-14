@@ -1,0 +1,1075 @@
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BackgroundFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BackgroundFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BackgroundFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BackgroundFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -1 +1 @@
+-public final class android.support.v17.leanback.app.BackgroundFragment extends android.app.Fragment implements android.support.v17.leanback.app.BackgroundManager$FragmentStateQueriable {
++public final class android.support.v17.leanback.app.BackgroundFragment extends android.app.Fragment {
+@@ -4,0 +5 @@
++  public void onStop();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BackgroundManager leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BackgroundManager
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BackgroundManager	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BackgroundManager	2016-12-15 02:15:57.000000000 +0900
+@@ -4,0 +5 @@
++  public void attachToView(android.view.View);
+@@ -11,0 +13 @@
++  public void clearDrawable();
+@@ -12,0 +15,2 @@
++  public void setAutoReleaseOnStop(boolean);
++  public boolean isAutoReleaseOnStop();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BackgroundSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BackgroundSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BackgroundSupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BackgroundSupportFragment	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public final class android.support.v17.leanback.app.BackgroundSupportFragment extends android.support.v4.app.Fragment implements android.support.v17.leanback.app.BackgroundManager$FragmentStateQueriable {
+-  public android.support.v17.leanback.app.BackgroundSupportFragment();
+-  public void onStart();
+-  public void onResume();
+-  public void onDestroy();
+-}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -14,0 +15 @@
++  public android.app.Fragment getMainFragment();
+@@ -31,0 +33 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder getSelectedRowViewHolder();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseFragment$MainFragmentRowsAdapter<T	2016-12-15 02:15:57.000000000 +0900
+@@ -9,0 +10 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder findRowViewHolderByPosition(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseSupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -14,0 +15 @@
++  public android.support.v4.app.Fragment getMainFragment();
+@@ -31,0 +33 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder getSelectedRowViewHolder();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.BrowseSupportFragment$MainFragmentRowsAdapter<T	2016-12-15 02:15:57.000000000 +0900
+@@ -9,0 +10 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder findRowViewHolderByPosition(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v17.leanback.app.DetailsBackgroundParallaxHelper {
++  public android.graphics.drawable.Drawable getCoverImageDrawable();
++  public android.graphics.drawable.Drawable getDrawable();
++  public void setCoverImageBitmap(android.graphics.Bitmap);
++  public void setColor(int);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder {
++  public android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder(android.content.Context, android.support.v17.leanback.app.DetailsParallaxManager);
++  public android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder setCoverImageMinVerticalOffset(int);
++  public android.support.v17.leanback.app.DetailsBackgroundParallaxHelper$ParallaxBuilder setColor(int);
++  public android.support.v17.leanback.app.DetailsBackgroundParallaxHelper build();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -13,0 +14,4 @@
++  public android.app.Fragment onCreateVideoFragment();
++  public android.support.v17.leanback.media.PlaybackGlueHost onCreateVideoFragmentHost(android.app.Fragment);
++  public final android.app.Fragment findOrCreateVideoFragment();
++  public final android.support.v17.leanback.media.PlaybackGlueHost createPlaybackGlueHost();
+@@ -14,0 +19,3 @@
++  public android.support.v17.leanback.app.DetailsParallaxManager onCreateParallaxManager();
++  public android.support.v17.leanback.app.DetailsParallaxManager getParallaxManager();
++  public android.view.View getBackgroundView();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsFragmentVideoHelper leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsFragmentVideoHelper
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsFragmentVideoHelper	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsFragmentVideoHelper	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.DetailsFragmentVideoHelper {
++  public android.support.v17.leanback.app.DetailsFragmentVideoHelper(android.support.v17.leanback.media.PlaybackGlue, android.support.v17.leanback.app.DetailsParallaxManager);
++  public void setBackgroundDrawable(android.graphics.drawable.Drawable);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsParallaxManager leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsParallaxManager
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsParallaxManager	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsParallaxManager	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.v17.leanback.app.DetailsParallaxManager {
++  public android.support.v17.leanback.app.DetailsParallaxManager();
++  public android.support.v17.leanback.widget.Parallax getParallax();
++  public android.support.v7.widget.RecyclerView getRecyclerView();
++  public void setRecyclerView(android.support.v7.widget.RecyclerView);
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty getFrameTop();
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty getFrameBottom();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.DetailsSupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.DetailsSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -13,0 +14,4 @@
++  public android.support.v4.app.Fragment onCreateVideoSupportFragment();
++  public android.support.v17.leanback.media.PlaybackGlueHost onCreateVideoSupportFragmentHost(android.support.v4.app.Fragment);
++  public final android.support.v4.app.Fragment findOrCreateVideoSupportFragment();
++  public final android.support.v17.leanback.media.PlaybackGlueHost createPlaybackGlueHost();
+@@ -14,0 +19,3 @@
++  public android.support.v17.leanback.app.DetailsParallaxManager onCreateParallaxManager();
++  public android.support.v17.leanback.app.DetailsParallaxManager getParallaxManager();
++  public android.view.View getBackgroundView();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.GuidedStepFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.GuidedStepFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.GuidedStepFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.GuidedStepFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -18,0 +19 @@
++  public boolean isExpanded();
+@@ -20,0 +22 @@
++  public void expandAction(android.support.v17.leanback.widget.GuidedAction, boolean);
+@@ -21,0 +24 @@
++  public void collapseAction(boolean);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.GuidedStepSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.GuidedStepSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.GuidedStepSupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.GuidedStepSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -18,0 +19 @@
++  public boolean isExpanded();
+@@ -20,0 +22 @@
++  public void expandAction(android.support.v17.leanback.widget.GuidedAction, boolean);
+@@ -21,0 +24 @@
++  public void collapseAction(boolean);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackControlGlue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackControlGlue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackControlGlue	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackControlGlue	2016-12-15 02:15:57.000000000 +0900
+@@ -1,16 +1 @@
+-public abstract class android.support.v17.leanback.app.PlaybackControlGlue implements android.support.v17.leanback.widget.OnActionClickedListener,android.view.View$OnKeyListener {
+-  public static final int ACTION_CUSTOM_LEFT_FIRST;
+-  public static final int ACTION_SKIP_TO_PREVIOUS;
+-  public static final int ACTION_REWIND;
+-  public static final int ACTION_PLAY_PAUSE;
+-  public static final int ACTION_FAST_FORWARD;
+-  public static final int ACTION_SKIP_TO_NEXT;
+-  public static final int ACTION_CUSTOM_RIGHT_FIRST;
+-  public static final int PLAYBACK_SPEED_INVALID;
+-  public static final int PLAYBACK_SPEED_PAUSED;
+-  public static final int PLAYBACK_SPEED_NORMAL;
+-  public static final int PLAYBACK_SPEED_FAST_L0;
+-  public static final int PLAYBACK_SPEED_FAST_L1;
+-  public static final int PLAYBACK_SPEED_FAST_L2;
+-  public static final int PLAYBACK_SPEED_FAST_L3;
+-  public static final int PLAYBACK_SPEED_FAST_L4;
++public abstract class android.support.v17.leanback.app.PlaybackControlGlue extends android.support.v17.leanback.media.PlaybackControlGlue {
+@@ -21 +5,0 @@
+-  public android.support.v17.leanback.widget.PlaybackControlsRowPresenter createControlsRowAndPresenter();
+@@ -23,5 +7,4 @@
+-  public android.content.Context getContext();
+-  public int[] getFastForwardSpeeds();
+-  public int[] getRewindSpeeds();
+-  public void setFadingEnabled(boolean);
+-  public boolean isFadingEnabled();
++  public final void next();
++  public final void previous();
++  public final void play(int);
++  public final void pause();
+@@ -30,16 +13 @@
+-  public void setControlsRow(android.support.v17.leanback.widget.PlaybackControlsRow);
+-  public android.support.v17.leanback.widget.PlaybackControlsRow getControlsRow();
+-  public void enableProgressUpdating(boolean);
+-  public int getUpdatePeriod();
+-  public void updateProgress();
+-  public void onActionClicked(android.support.v17.leanback.widget.Action);
+-  public boolean onKey(android.view.View, int, android.view.KeyEvent);
+-  public abstract boolean hasValidMedia();
+-  public abstract boolean isMediaPlaying();
+-  public abstract java.lang.CharSequence getMediaTitle();
+-  public abstract java.lang.CharSequence getMediaSubtitle();
+-  public abstract int getMediaDuration();
+-  public abstract android.graphics.drawable.Drawable getMediaArt();
+-  public abstract long getSupportedActions();
+-  public abstract int getCurrentSpeedId();
+-  public abstract int getCurrentPosition();
++  public android.support.v17.leanback.widget.PlaybackControlsRowPresenter createControlsRowAndPresenter();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler {
++  public abstract boolean handleInputEvent(android.view.InputEvent);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackControlSupportGlue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackControlSupportGlue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackControlSupportGlue	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackControlSupportGlue	2016-12-15 02:15:57.000000000 +0900
+@@ -1 +1 @@
+-public abstract class android.support.v17.leanback.app.PlaybackControlSupportGlue implements android.support.v17.leanback.widget.OnActionClickedListener,android.view.View$OnKeyListener {
++public abstract class android.support.v17.leanback.app.PlaybackControlSupportGlue extends android.support.v17.leanback.app.PlaybackControlGlue {
+@@ -21,25 +20,0 @@
+-  public android.support.v17.leanback.widget.PlaybackControlsRowPresenter createControlsRowAndPresenter();
+-  public android.support.v17.leanback.app.PlaybackOverlaySupportFragment getFragment();
+-  public android.content.Context getContext();
+-  public int[] getFastForwardSpeeds();
+-  public int[] getRewindSpeeds();
+-  public void setFadingEnabled(boolean);
+-  public boolean isFadingEnabled();
+-  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.OnItemViewClickedListener);
+-  public android.support.v17.leanback.widget.OnItemViewClickedListener getOnItemViewClickedListener();
+-  public void setControlsRow(android.support.v17.leanback.widget.PlaybackControlsRow);
+-  public android.support.v17.leanback.widget.PlaybackControlsRow getControlsRow();
+-  public void enableProgressUpdating(boolean);
+-  public int getUpdatePeriod();
+-  public void updateProgress();
+-  public void onActionClicked(android.support.v17.leanback.widget.Action);
+-  public boolean onKey(android.view.View, int, android.view.KeyEvent);
+-  public abstract boolean hasValidMedia();
+-  public abstract boolean isMediaPlaying();
+-  public abstract java.lang.CharSequence getMediaTitle();
+-  public abstract java.lang.CharSequence getMediaSubtitle();
+-  public abstract int getMediaDuration();
+-  public abstract android.graphics.drawable.Drawable getMediaArt();
+-  public abstract long getSupportedActions();
+-  public abstract int getCurrentSpeedId();
+-  public abstract int getCurrentPosition();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,33 @@
++public class android.support.v17.leanback.app.PlaybackFragment extends android.app.Fragment {
++  public static final int BG_NONE;
++  public static final int BG_DARK;
++  public static final int BG_LIGHT;
++  public android.support.v17.leanback.app.PlaybackFragment();
++  public void resetFocus();
++  public android.support.v17.leanback.widget.ObjectAdapter getAdapter();
++  public void setFadingEnabled(boolean);
++  public boolean isFadingEnabled();
++  public void setFadeCompleteListener(android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener);
++  public android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener getFadeCompleteListener();
++  public final void setOnKeyInterceptListener(android.view.View$OnKeyListener);
++  public void tickle();
++  public void fadeOut();
++  public void onResume();
++  public void setSelectedPosition(int);
++  public void setSelectedPosition(int, boolean);
++  public void onCreate(android.os.Bundle);
++  public void setBackgroundType(int);
++  public int getBackgroundType();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void setHostCallback(android.support.v17.leanback.media.PlaybackGlueHost$HostCallback);
++  public void onStart();
++  public void onStop();
++  public void onPause();
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public void setOnPlaybackItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public void onDestroyView();
++  public void setPlaybackRow(android.support.v17.leanback.widget.Row);
++  public void setPlaybackRowPresenter(android.support.v17.leanback.widget.PlaybackRowPresenter);
++  public void notifyPlaybackRowChanged();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener {
++  public android.support.v17.leanback.app.PlaybackFragment$OnFadeCompleteListener();
++  public void onFadeInComplete();
++  public void onFadeOutComplete();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackFragmentGlueHost leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragmentGlueHost
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackFragmentGlueHost	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragmentGlueHost	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,11 @@
++public class android.support.v17.leanback.app.PlaybackFragmentGlueHost extends android.support.v17.leanback.media.PlaybackGlueHost {
++  public android.support.v17.leanback.app.PlaybackFragmentGlueHost(android.support.v17.leanback.app.PlaybackFragment);
++  public void setFadingEnabled(boolean);
++  public void setOnKeyInterceptListener(android.view.View$OnKeyListener);
++  public void setOnActionClickedListener(android.support.v17.leanback.widget.OnActionClickedListener);
++  public void setHostCallback(android.support.v17.leanback.media.PlaybackGlueHost$HostCallback);
++  public void notifyPlaybackRowChanged();
++  public void setPlaybackRowPresenter(android.support.v17.leanback.widget.PlaybackRowPresenter);
++  public void setPlaybackRow(android.support.v17.leanback.widget.Row);
++  public void fadeOut();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlayFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlayFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlayFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlayFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -11,0 +12,2 @@
++  public final void setEventHandler(android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler);
++  public final android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler getEventHandler();
+@@ -13,0 +16,2 @@
++  public void onStop();
++  public void onPause();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler	2016-12-15 02:15:57.000000000 +0900
+@@ -1,2 +1 @@
+-public interface android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler {
+-  public abstract boolean handleInputEvent(android.view.InputEvent);
++public interface android.support.v17.leanback.app.PlaybackOverlayFragment$InputEventHandler extends android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler {
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlaySupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlaySupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlaySupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -11,0 +12,2 @@
++  public final void setEventHandler(android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler);
++  public final android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler getEventHandler();
+@@ -13,0 +16,2 @@
++  public void onStop();
++  public void onPause();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler	2016-12-15 02:15:57.000000000 +0900
+@@ -1,2 +1 @@
+-public interface android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler {
+-  public abstract boolean handleInputEvent(android.view.InputEvent);
++public interface android.support.v17.leanback.app.PlaybackOverlaySupportFragment$InputEventHandler extends android.support.v17.leanback.app.PlaybackControlGlue$InputEventHandler {
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,33 @@
++public class android.support.v17.leanback.app.PlaybackSupportFragment extends android.support.v4.app.Fragment {
++  public static final int BG_NONE;
++  public static final int BG_DARK;
++  public static final int BG_LIGHT;
++  public android.support.v17.leanback.app.PlaybackSupportFragment();
++  public void resetFocus();
++  public android.support.v17.leanback.widget.ObjectAdapter getAdapter();
++  public void setFadingEnabled(boolean);
++  public boolean isFadingEnabled();
++  public void setFadeCompleteListener(android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener);
++  public android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener getFadeCompleteListener();
++  public final void setOnKeyInterceptListener(android.view.View$OnKeyListener);
++  public void tickle();
++  public void fadeOut();
++  public void onResume();
++  public void setSelectedPosition(int);
++  public void setSelectedPosition(int, boolean);
++  public void onCreate(android.os.Bundle);
++  public void setBackgroundType(int);
++  public int getBackgroundType();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void setHostCallback(android.support.v17.leanback.media.PlaybackGlueHost$HostCallback);
++  public void onStart();
++  public void onStop();
++  public void onPause();
++  public void setOnItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public void setOnPlaybackItemViewClickedListener(android.support.v17.leanback.widget.BaseOnItemViewClickedListener);
++  public void onDestroyView();
++  public void setPlaybackRow(android.support.v17.leanback.widget.Row);
++  public void setPlaybackRowPresenter(android.support.v17.leanback.widget.PlaybackRowPresenter);
++  public void notifyPlaybackRowChanged();
++  public void setAdapter(android.support.v17.leanback.widget.ObjectAdapter);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener {
++  public android.support.v17.leanback.app.PlaybackSupportFragment$OnFadeCompleteListener();
++  public void onFadeInComplete();
++  public void onFadeOutComplete();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,11 @@
++public class android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost extends android.support.v17.leanback.media.PlaybackGlueHost {
++  public android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost(android.support.v17.leanback.app.PlaybackSupportFragment);
++  public void setFadingEnabled(boolean);
++  public void setOnKeyInterceptListener(android.view.View$OnKeyListener);
++  public void setOnActionClickedListener(android.support.v17.leanback.widget.OnActionClickedListener);
++  public void setHostCallback(android.support.v17.leanback.media.PlaybackGlueHost$HostCallback);
++  public void notifyPlaybackRowChanged();
++  public void setPlaybackRowPresenter(android.support.v17.leanback.widget.PlaybackRowPresenter);
++  public void setPlaybackRow(android.support.v17.leanback.widget.Row);
++  public void fadeOut();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -20,0 +21 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder findRowViewHolderByPosition(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsFragment$MainFragmentRowsAdapter	2016-12-15 02:15:57.000000000 +0900
+@@ -8,0 +9 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder findRowViewHolderByPosition(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsSupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -20,0 +21 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder findRowViewHolderByPosition(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.RowsSupportFragment$MainFragmentRowsAdapter	2016-12-15 02:15:57.000000000 +0900
+@@ -8,0 +9 @@
++  public android.support.v17.leanback.widget.RowPresenter$ViewHolder findRowViewHolderByPosition(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.SearchFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.SearchFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.SearchFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.SearchFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -20,0 +21,2 @@
++  public void setSearchAffordanceColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
++  public void setSearchAffordanceColorsInListening(android.support.v17.leanback.widget.SearchOrbView$Colors);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.SearchSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.SearchSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.SearchSupportFragment	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.SearchSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -20,0 +21,2 @@
++  public void setSearchAffordanceColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
++  public void setSearchAffordanceColorsInListening(android.support.v17.leanback.widget.SearchOrbView$Colors);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v17.leanback.app.VideoFragment extends android.support.v17.leanback.app.PlaybackFragment {
++  public android.support.v17.leanback.app.VideoFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void setSurfaceHolderCallback(android.view.SurfaceHolder$Callback);
++  public android.view.SurfaceView getSurfaceView();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoFragmentGlueHost leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoFragmentGlueHost
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoFragmentGlueHost	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoFragmentGlueHost	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.VideoFragmentGlueHost extends android.support.v17.leanback.app.PlaybackFragmentGlueHost implements android.support.v17.leanback.media.SurfaceHolderGlueHost {
++  public android.support.v17.leanback.app.VideoFragmentGlueHost(android.support.v17.leanback.app.VideoFragment);
++  public void setSurfaceHolderCallback(android.view.SurfaceHolder$Callback);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoSupportFragment leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoSupportFragment
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoSupportFragment	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoSupportFragment	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v17.leanback.app.VideoSupportFragment extends android.support.v17.leanback.app.PlaybackSupportFragment {
++  public android.support.v17.leanback.app.VideoSupportFragment();
++  public android.view.View onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle);
++  public void setSurfaceHolderCallback(android.view.SurfaceHolder$Callback);
++  public android.view.SurfaceView getSurfaceView();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoSupportFragmentGlueHost leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoSupportFragmentGlueHost
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.app.VideoSupportFragmentGlueHost	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.VideoSupportFragmentGlueHost	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.app.VideoSupportFragmentGlueHost extends android.support.v17.leanback.app.PlaybackSupportFragmentGlueHost implements android.support.v17.leanback.media.SurfaceHolderGlueHost {
++  public android.support.v17.leanback.app.VideoSupportFragmentGlueHost(android.support.v17.leanback.app.VideoSupportFragment);
++  public void setSurfaceHolderCallback(android.view.SurfaceHolder$Callback);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.BoundsRule leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.BoundsRule
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.BoundsRule	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.BoundsRule	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.v17.leanback.graphics.BoundsRule {
++  public android.support.v17.leanback.graphics.BoundsRule$ValueRule mLeft;
++  public android.support.v17.leanback.graphics.BoundsRule$ValueRule mTop;
++  public android.support.v17.leanback.graphics.BoundsRule$ValueRule mRight;
++  public android.support.v17.leanback.graphics.BoundsRule$ValueRule mBottom;
++  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule inheritFromParent(float);
++  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule absoluteValue(int);
++  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule inheritFromParentWithOffset(float, int);
++  public void calculateBounds(android.graphics.Rect, android.graphics.Rect);
++  public android.support.v17.leanback.graphics.BoundsRule();
++  public android.support.v17.leanback.graphics.BoundsRule(android.support.v17.leanback.graphics.BoundsRule);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.BoundsRule$ValueRule leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.BoundsRule$ValueRule
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.BoundsRule$ValueRule	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.BoundsRule$ValueRule	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v17.leanback.graphics.BoundsRule$ValueRule {
++  public void setFraction(float);
++  public float getFraction();
++  public void setAbsoluteValue(int);
++  public int getAbsoluteValue();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.CompositeDrawable leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.CompositeDrawable
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.CompositeDrawable	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.CompositeDrawable	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,19 @@
++public class android.support.v17.leanback.graphics.CompositeDrawable extends android.graphics.drawable.Drawable implements android.graphics.drawable.Drawable$Callback {
++  public android.support.v17.leanback.graphics.CompositeDrawable();
++  public android.graphics.drawable.Drawable$ConstantState getConstantState();
++  public android.graphics.drawable.Drawable mutate();
++  public void addChildDrawable(android.graphics.drawable.Drawable);
++  public android.graphics.drawable.Drawable getDrawable(int);
++  public android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable getChildAt(int);
++  public void removeChild(int);
++  public void removeDrawable(android.graphics.drawable.Drawable);
++  public int getChildCount();
++  public void draw(android.graphics.Canvas);
++  public void setColorFilter(android.graphics.ColorFilter);
++  public int getOpacity();
++  public void setAlpha(int);
++  public int getAlpha();
++  public void invalidateDrawable(android.graphics.drawable.Drawable);
++  public void scheduleDrawable(android.graphics.drawable.Drawable, java.lang.Runnable, long);
++  public void unscheduleDrawable(android.graphics.drawable.Drawable, java.lang.Runnable);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,14 @@
++public final class android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable {
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Integer> TOP_ABSOLUTE;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Integer> BOTTOM_ABSOLUTE;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Integer> LEFT_ABSOLUTE;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Integer> RIGHT_ABSOLUTE;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Float> TOP_FRACTION;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Float> BOTTOM_FRACTION;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Float> LEFT_FRACTION;
++  public static final android.util.Property<android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable, java.lang.Float> RIGHT_FRACTION;
++  public android.support.v17.leanback.graphics.CompositeDrawable$ChildDrawable(android.graphics.drawable.Drawable, android.support.v17.leanback.graphics.CompositeDrawable);
++  public android.support.v17.leanback.graphics.BoundsRule getBoundsRule();
++  public android.graphics.drawable.Drawable getDrawable();
++  public void recomputeBounds();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.FitWidthBitmapDrawable leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.FitWidthBitmapDrawable
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.graphics.FitWidthBitmapDrawable	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.graphics.FitWidthBitmapDrawable	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,16 @@
++public class android.support.v17.leanback.graphics.FitWidthBitmapDrawable extends android.graphics.drawable.Drawable {
++  public android.support.v17.leanback.graphics.FitWidthBitmapDrawable();
++  public android.graphics.drawable.Drawable$ConstantState getConstantState();
++  public android.graphics.drawable.Drawable mutate();
++  public void setBitmap(android.graphics.Bitmap);
++  public android.graphics.Bitmap getBitmap();
++  public void setSource(android.graphics.Rect);
++  public android.graphics.Rect getSource();
++  public void setVerticalOffset(int);
++  public int getVerticalOffset();
++  public void draw(android.graphics.Canvas);
++  public void setAlpha(int);
++  public int getAlpha();
++  public void setColorFilter(android.graphics.ColorFilter);
++  public int getOpacity();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.MediaControllerGlue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.MediaControllerGlue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.MediaControllerGlue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.MediaControllerGlue	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,19 @@
++public abstract class android.support.v17.leanback.media.MediaControllerGlue extends android.support.v17.leanback.media.PlaybackControlGlue {
++  public android.support.v17.leanback.media.MediaControllerGlue(android.content.Context, int[], int[]);
++  public void attachToMediaController(android.support.v4.media.session.MediaControllerCompat);
++  public void detach();
++  public final android.support.v4.media.session.MediaControllerCompat getMediaController();
++  public boolean hasValidMedia();
++  public boolean isMediaPlaying();
++  public int getCurrentSpeedId();
++  public java.lang.CharSequence getMediaTitle();
++  public java.lang.CharSequence getMediaSubtitle();
++  public int getMediaDuration();
++  public int getCurrentPosition();
++  public android.graphics.drawable.Drawable getMediaArt();
++  public long getSupportedActions();
++  public void play(int);
++  public void pause();
++  public void next();
++  public void previous();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.MediaPlayerGlue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.MediaPlayerGlue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.MediaPlayerGlue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.MediaPlayerGlue	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,37 @@
++public class android.support.v17.leanback.media.MediaPlayerGlue extends android.support.v17.leanback.media.PlaybackControlGlue implements android.support.v17.leanback.widget.OnItemViewSelectedListener {
++  public static final int NO_REPEAT;
++  public static final int REPEAT_ONE;
++  public static final int REPEAT_ALL;
++  public static final int FAST_FORWARD_REWIND_STEP;
++  public static final int FAST_FORWARD_REWIND_REPEAT_DELAY;
++  public void setCover(android.graphics.drawable.Drawable);
++  public void setArtist(java.lang.String);
++  public void setTitle(java.lang.String);
++  public void setVideoUrl(java.lang.String);
++  public android.support.v17.leanback.media.MediaPlayerGlue(android.content.Context);
++  public android.support.v17.leanback.media.MediaPlayerGlue(android.content.Context, int[], int[]);
++  public void setPlayerCallback(android.support.v17.leanback.media.PlaybackGlue$PlayerCallback);
++  public void reset();
++  public void release();
++  public void setDisplay(android.view.SurfaceHolder);
++  public void enableProgressUpdating(boolean);
++  public void onActionClicked(android.support.v17.leanback.widget.Action);
++  public boolean onKey(android.view.View, int, android.view.KeyEvent);
++  public boolean hasValidMedia();
++  public boolean isMediaPlaying();
++  public java.lang.CharSequence getMediaTitle();
++  public java.lang.CharSequence getMediaSubtitle();
++  public int getMediaDuration();
++  public android.graphics.drawable.Drawable getMediaArt();
++  public long getSupportedActions();
++  public int getCurrentSpeedId();
++  public int getCurrentPosition();
++  public void play(int);
++  public void pause();
++  public void setMode(int);
++  public boolean setMediaSource(android.net.Uri);
++  public boolean setMediaSource(java.lang.String);
++  public void onItemSelected(android.support.v17.leanback.widget.Presenter$ViewHolder, java.lang.Object, android.support.v17.leanback.widget.RowPresenter$ViewHolder, android.support.v17.leanback.widget.Row);
++  public boolean isReadyForPlayback();
++  public void onItemSelected(android.support.v17.leanback.widget.Presenter$ViewHolder, java.lang.Object, android.support.v17.leanback.widget.RowPresenter$ViewHolder, java.lang.Object);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackControlGlue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackControlGlue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackControlGlue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackControlGlue	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,43 @@
++public abstract class android.support.v17.leanback.media.PlaybackControlGlue extends android.support.v17.leanback.media.PlaybackGlue implements android.support.v17.leanback.widget.OnActionClickedListener,android.view.View$OnKeyListener {
++  public static final int ACTION_CUSTOM_LEFT_FIRST;
++  public static final int ACTION_SKIP_TO_PREVIOUS;
++  public static final int ACTION_REWIND;
++  public static final int ACTION_PLAY_PAUSE;
++  public static final int ACTION_FAST_FORWARD;
++  public static final int ACTION_SKIP_TO_NEXT;
++  public static final int ACTION_CUSTOM_RIGHT_FIRST;
++  public static final int PLAYBACK_SPEED_INVALID;
++  public static final int PLAYBACK_SPEED_PAUSED;
++  public static final int PLAYBACK_SPEED_NORMAL;
++  public static final int PLAYBACK_SPEED_FAST_L0;
++  public static final int PLAYBACK_SPEED_FAST_L1;
++  public static final int PLAYBACK_SPEED_FAST_L2;
++  public static final int PLAYBACK_SPEED_FAST_L3;
++  public static final int PLAYBACK_SPEED_FAST_L4;
++  public android.support.v17.leanback.media.PlaybackControlGlue(android.content.Context, int[]);
++  public android.support.v17.leanback.media.PlaybackControlGlue(android.content.Context, int[], int[]);
++  public int[] getFastForwardSpeeds();
++  public int[] getRewindSpeeds();
++  public void setFadingEnabled(boolean);
++  public boolean isFadingEnabled();
++  public void setControlsRow(android.support.v17.leanback.widget.PlaybackControlsRow);
++  public void setControlsRowPresenter(android.support.v17.leanback.widget.PlaybackControlsRowPresenter);
++  public android.support.v17.leanback.widget.PlaybackControlsRow getControlsRow();
++  public android.support.v17.leanback.widget.PlaybackControlsRowPresenter getControlsRowPresenter();
++  public void enableProgressUpdating(boolean);
++  public int getUpdatePeriod();
++  public void updateProgress();
++  public void onActionClicked(android.support.v17.leanback.widget.Action);
++  public boolean onKey(android.view.View, int, android.view.KeyEvent);
++  public void play(int);
++  public final void play();
++  public abstract boolean hasValidMedia();
++  public abstract boolean isMediaPlaying();
++  public abstract java.lang.CharSequence getMediaTitle();
++  public abstract java.lang.CharSequence getMediaSubtitle();
++  public abstract int getMediaDuration();
++  public abstract android.graphics.drawable.Drawable getMediaArt();
++  public abstract long getSupportedActions();
++  public abstract int getCurrentSpeedId();
++  public abstract int getCurrentPosition();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlue	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,12 @@
++public abstract class android.support.v17.leanback.media.PlaybackGlue {
++  public android.support.v17.leanback.media.PlaybackGlue(android.content.Context);
++  public android.content.Context getContext();
++  public boolean isReadyForPlayback();
++  public void setPlayerCallback(android.support.v17.leanback.media.PlaybackGlue$PlayerCallback);
++  public void play();
++  public void pause();
++  public void next();
++  public void previous();
++  public final void setHost(android.support.v17.leanback.media.PlaybackGlueHost);
++  public android.support.v17.leanback.media.PlaybackGlueHost getHost();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlue$PlayerCallback leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlue$PlayerCallback
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlue$PlayerCallback	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlue$PlayerCallback	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.media.PlaybackGlue$PlayerCallback {
++  public android.support.v17.leanback.media.PlaybackGlue$PlayerCallback();
++  public abstract void onReadyForPlayback();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlueHost leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlueHost
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlueHost	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlueHost	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,11 @@
++public abstract class android.support.v17.leanback.media.PlaybackGlueHost {
++  public android.support.v17.leanback.media.PlaybackGlueHost();
++  public void setFadingEnabled(boolean);
++  public void fadeOut();
++  public void setOnKeyInterceptListener(android.view.View$OnKeyListener);
++  public void setOnActionClickedListener(android.support.v17.leanback.widget.OnActionClickedListener);
++  public void setHostCallback(android.support.v17.leanback.media.PlaybackGlueHost$HostCallback);
++  public void notifyPlaybackRowChanged();
++  public void setPlaybackRowPresenter(android.support.v17.leanback.widget.PlaybackRowPresenter);
++  public void setPlaybackRow(android.support.v17.leanback.widget.Row);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlueHost$HostCallback leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlueHost$HostCallback
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.PlaybackGlueHost$HostCallback	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.PlaybackGlueHost$HostCallback	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,7 @@
++public abstract class android.support.v17.leanback.media.PlaybackGlueHost$HostCallback {
++  public android.support.v17.leanback.media.PlaybackGlueHost$HostCallback();
++  public void onHostStart();
++  public void onHostStop();
++  public void onHostPause();
++  public void onHostResume();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.SurfaceHolderGlueHost leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.SurfaceHolderGlueHost
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.media.SurfaceHolderGlueHost	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.media.SurfaceHolderGlueHost	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v17.leanback.media.SurfaceHolderGlueHost {
++  public abstract void setSurfaceHolderCallback(android.view.SurfaceHolder$Callback);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.os.TraceHelper leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.os.TraceHelper
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.os.TraceHelper	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.os.TraceHelper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public final class android.support.v17.leanback.os.TraceHelper {
+-  public static void beginSection(java.lang.String);
+-  public static void endSection();
+-}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.transition.ParallaxTransition leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.transition.ParallaxTransition
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.transition.ParallaxTransition	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.transition.ParallaxTransition	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v17.leanback.transition.ParallaxTransition extends android.transition.Visibility {
++  public android.support.v17.leanback.transition.ParallaxTransition();
++  public android.support.v17.leanback.transition.ParallaxTransition(android.content.Context, android.util.AttributeSet);
++  public android.animation.Animator onAppear(android.view.ViewGroup, android.view.View, android.transition.TransitionValues, android.transition.TransitionValues);
++  public android.animation.Animator onDisappear(android.view.ViewGroup, android.view.View, android.transition.TransitionValues, android.transition.TransitionValues);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.transition.TransitionEpicenterCallback leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.transition.TransitionEpicenterCallback
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.transition.TransitionEpicenterCallback	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.transition.TransitionEpicenterCallback	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.transition.TransitionEpicenterCallback {
++  public android.support.v17.leanback.transition.TransitionEpicenterCallback();
++  public abstract android.graphics.Rect onGetEpicenter(java.lang.Object);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.transition.TransitionHelper leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.transition.TransitionHelper
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.transition.TransitionHelper	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.transition.TransitionHelper	2016-12-15 02:15:57.000000000 +0900
+@@ -58,0 +59 @@
++  public static void setEpicenterCallback(java.lang.Object, android.support.v17.leanback.transition.TransitionEpicenterCallback);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.util.MathUtil leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.util.MathUtil
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.util.MathUtil	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.util.MathUtil	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v17.leanback.util.MathUtil {
++  public static int safeLongToInt(long);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.BrowseFrameLayout leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.BrowseFrameLayout
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.BrowseFrameLayout	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.BrowseFrameLayout	2016-12-15 02:15:57.000000000 +0900
+@@ -10,0 +11,2 @@
++  public boolean dispatchKeyEvent(android.view.KeyEvent);
++  public void setOnDispatchKeyListener(android.view.View$OnKeyListener);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.GridLayoutManager$OnLayoutCompleteListener leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.GridLayoutManager$OnLayoutCompleteListener
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.GridLayoutManager$OnLayoutCompleteListener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.GridLayoutManager$OnLayoutCompleteListener	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.widget.GridLayoutManager$OnLayoutCompleteListener {
++  public android.support.v17.leanback.widget.GridLayoutManager$OnLayoutCompleteListener();
++  public void onLayoutCompleted(android.support.v7.widget.RecyclerView$State);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.GuidedActionsStylist leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.GuidedActionsStylist
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.GuidedActionsStylist	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.GuidedActionsStylist	2016-12-15 02:15:57.000000000 +0900
+@@ -31,0 +32,6 @@
++  public final void setBackKeyToCollapseSubActions(boolean);
++  public final boolean isBackKeyToCollapseSubActions();
++  public final void setBackKeyToCollapseActivatorView(boolean);
++  public final boolean isBackKeyToCollapseActivatorView();
++  public void expandAction(android.support.v17.leanback.widget.GuidedAction, boolean);
++  public void collapseAction(boolean);
+@@ -32,0 +39 @@
++  public boolean isExpanded();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.HeaderItem leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.HeaderItem
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.HeaderItem	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.HeaderItem	2016-12-15 02:15:57.000000000 +0900
+@@ -7,0 +8,2 @@
++  public void setDescription(java.lang.CharSequence);
++  public java.lang.CharSequence getDescription();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.HorizontalGridView leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.HorizontalGridView
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.HorizontalGridView	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.HorizontalGridView	2016-12-15 02:15:57.000000000 +0900
+@@ -19,0 +20,2 @@
++  public void animateIn();
++  public void animateOut();
+@@ -63,0 +66,4 @@
++  public int getHorizontalSpacing();
++  public void setHorizontalSpacing(int);
++  public int getVerticalSpacing();
++  public void setVerticalSpacing(int);
+@@ -67,0 +74 @@
++  public void setItemSpacing(int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ListRowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
+@@ -7,0 +8,2 @@
++  public android.support.v17.leanback.widget.Presenter$ViewHolder getSelectedItemViewHolder();
++  public java.lang.Object getSelectedItem();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ObjectAdapter leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ObjectAdapter
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ObjectAdapter	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ObjectAdapter	2016-12-15 02:15:57.000000000 +0900
+@@ -10,0 +11 @@
++  public final void notifyItemRangeChanged(int, int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.OnChildViewHolderSelectedListener	2016-12-15 02:15:57.000000000 +0900
+@@ -3,0 +4 @@
++  public void onChildViewHolderSelectedAndPositioned(android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView$ViewHolder, int, int);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.Parallax leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.Parallax
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.Parallax	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.Parallax	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,11 @@
++public final class android.support.v17.leanback.widget.Parallax {
++  public android.support.v17.leanback.widget.Parallax();
++  public void setSource(android.support.v17.leanback.widget.ParallaxSource);
++  public android.support.v17.leanback.widget.ParallaxSource getSource();
++  public void addEffect(android.support.v17.leanback.widget.ParallaxEffect);
++  public java.util.List<android.support.v17.leanback.widget.ParallaxEffect> getEffects();
++  public void removeEffect(android.support.v17.leanback.widget.ParallaxEffect);
++  public void removeAllEffects();
++  public android.support.v17.leanback.widget.ParallaxEffect addEffect(android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue...);
++  public android.support.v17.leanback.widget.ParallaxEffect addEffect(android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue...);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v17.leanback.widget.ParallaxEffect$FloatEffect extends android.support.v17.leanback.widget.ParallaxEffect<android.support.v17.leanback.widget.ParallaxEffect$FloatEffect, android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue> {
++  public android.support.v17.leanback.widget.ParallaxEffect$FloatEffect();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxEffect$IntEffect leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxEffect$IntEffect
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxEffect$IntEffect	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxEffect$IntEffect	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v17.leanback.widget.ParallaxEffect$IntEffect extends android.support.v17.leanback.widget.ParallaxEffect<android.support.v17.leanback.widget.ParallaxEffect$IntEffect, android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue> {
++  public android.support.v17.leanback.widget.ParallaxEffect$IntEffect();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,14 @@
++public abstract class android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT extends android.support.v17.leanback.widget.ParallaxEffect, PropertyKeyValueT extends android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue> {
++  public android.support.v17.leanback.widget.ParallaxEffect();
++  public final java.util.List<PropertyKeyValueT> getPropertyRanges();
++  public final java.util.List<java.lang.Float> getWeights();
++  public final void setPropertyRanges(PropertyKeyValueT...);
++  public final void setWeights(float...);
++  public final android.support.v17.leanback.widget.ParallaxEffect weights(float...);
++  public final void addTarget(android.support.v17.leanback.widget.ParallaxTarget);
++  public final android.support.v17.leanback.widget.ParallaxEffect target(android.support.v17.leanback.widget.ParallaxTarget);
++  public final android.support.v17.leanback.widget.ParallaxEffect target(java.lang.Object, android.animation.PropertyValuesHolder);
++  public final java.util.List<android.support.v17.leanback.widget.ParallaxTarget> getTargets();
++  public final void removeTarget(android.support.v17.leanback.widget.ParallaxTarget);
++  public final void performMapping(android.support.v17.leanback.widget.ParallaxSource);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxRecyclerViewSource leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxRecyclerViewSource
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxRecyclerViewSource	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxRecyclerViewSource	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,10 @@
++public class android.support.v17.leanback.widget.ParallaxRecyclerViewSource extends android.support.v17.leanback.widget.ParallaxSource$IntSource<android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty> {
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource();
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty createProperty(java.lang.String, int);
++  public void setListener(android.support.v17.leanback.widget.ParallaxSource$Listener);
++  public int getMaxParentVisibleSize();
++  public void setRecyclerView(android.support.v7.widget.RecyclerView);
++  public void updateValues();
++  public android.support.v7.widget.RecyclerView getRecyclerView();
++  public android.util.Property createProperty(java.lang.String, int);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,10 @@
++public final class android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty extends android.support.v17.leanback.widget.ParallaxSource$IntProperty {
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty adapterPosition(int);
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty viewId(int);
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty offset(int);
++  public android.support.v17.leanback.widget.ParallaxRecyclerViewSource$ChildPositionProperty fraction(float);
++  public int getAdapterPosition();
++  public int getViewId();
++  public int getOffset();
++  public float getFraction();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$FloatProperty leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$FloatProperty
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$FloatProperty	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$FloatProperty	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,13 @@
++public class android.support.v17.leanback.widget.ParallaxSource$FloatProperty extends android.util.Property<android.support.v17.leanback.widget.ParallaxSource$FloatSource, java.lang.Float> {
++  public static final float UNKNOWN_BEFORE;
++  public static final float UNKNOWN_AFTER;
++  public android.support.v17.leanback.widget.ParallaxSource$FloatProperty(java.lang.String, int);
++  public final java.lang.Float get(android.support.v17.leanback.widget.ParallaxSource$FloatSource);
++  public final void set(android.support.v17.leanback.widget.ParallaxSource$FloatSource, java.lang.Float);
++  public final int getIndex();
++  public final android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue atAbsolute(float);
++  public final android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue atFraction(float);
++  public final android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue at(float, float);
++  public java.lang.Object get(java.lang.Object);
++  public void set(java.lang.Object, java.lang.Object);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue extends android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<android.support.v17.leanback.widget.ParallaxSource$FloatProperty> {
++  public android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue(android.support.v17.leanback.widget.ParallaxSource$FloatProperty, float);
++  public android.support.v17.leanback.widget.ParallaxSource$FloatPropertyKeyValue(android.support.v17.leanback.widget.ParallaxSource$FloatProperty, float, float);
++  public final float getKeyValue(android.support.v17.leanback.widget.ParallaxSource$FloatSource);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$FloatSource<FloatPropertyT leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$FloatSource<FloatPropertyT
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$FloatSource<FloatPropertyT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$FloatSource<FloatPropertyT	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v17.leanback.widget.ParallaxSource$FloatSource<FloatPropertyT extends android.support.v17.leanback.widget.ParallaxSource$FloatProperty> extends android.support.v17.leanback.widget.ParallaxSource<FloatPropertyT> {
++  public android.support.v17.leanback.widget.ParallaxSource$FloatSource();
++  public final float getPropertyValue(int);
++  public final void setPropertyValue(int, float);
++  public abstract float getMaxParentVisibleSize();
++  public final FloatPropertyT addProperty(java.lang.String);
++  public final void verifyProperties() throws java.lang.IllegalStateException;
++  public android.util.Property addProperty(java.lang.String);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$IntProperty leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$IntProperty
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$IntProperty	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$IntProperty	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,13 @@
++public class android.support.v17.leanback.widget.ParallaxSource$IntProperty extends android.util.Property<android.support.v17.leanback.widget.ParallaxSource$IntSource, java.lang.Integer> {
++  public static final int UNKNOWN_BEFORE;
++  public static final int UNKNOWN_AFTER;
++  public android.support.v17.leanback.widget.ParallaxSource$IntProperty(java.lang.String, int);
++  public final java.lang.Integer get(android.support.v17.leanback.widget.ParallaxSource$IntSource);
++  public final void set(android.support.v17.leanback.widget.ParallaxSource$IntSource, java.lang.Integer);
++  public final int getIndex();
++  public final android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue atAbsolute(int);
++  public final android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue atFraction(float);
++  public final android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue at(int, float);
++  public java.lang.Object get(java.lang.Object);
++  public void set(java.lang.Object, java.lang.Object);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue extends android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<android.support.v17.leanback.widget.ParallaxSource$IntProperty> {
++  public android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue(android.support.v17.leanback.widget.ParallaxSource$IntProperty, int);
++  public android.support.v17.leanback.widget.ParallaxSource$IntPropertyKeyValue(android.support.v17.leanback.widget.ParallaxSource$IntProperty, int, float);
++  public final int getKeyValue(android.support.v17.leanback.widget.ParallaxSource$IntSource);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$IntSource<IntPropertyT leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$IntSource<IntPropertyT
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$IntSource<IntPropertyT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$IntSource<IntPropertyT	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v17.leanback.widget.ParallaxSource$IntSource<IntPropertyT extends android.support.v17.leanback.widget.ParallaxSource$IntProperty> extends android.support.v17.leanback.widget.ParallaxSource<IntPropertyT> {
++  public android.support.v17.leanback.widget.ParallaxSource$IntSource();
++  public final int getPropertyValue(int);
++  public final void setPropertyValue(int, int);
++  public abstract int getMaxParentVisibleSize();
++  public final IntPropertyT addProperty(java.lang.String);
++  public final void verifyProperties() throws java.lang.IllegalStateException;
++  public android.util.Property addProperty(java.lang.String);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$Listener leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$Listener
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$Listener	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$Listener	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.widget.ParallaxSource$Listener {
++  public android.support.v17.leanback.widget.ParallaxSource$Listener();
++  public void onPropertiesChanged(android.support.v17.leanback.widget.ParallaxSource);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<PropertyT leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<PropertyT
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<PropertyT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<PropertyT	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue<PropertyT extends android.util.Property> {
++  public android.support.v17.leanback.widget.ParallaxSource$PropertyKeyValue(PropertyT);
++  public PropertyT getProperty();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource<PropertyT leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource<PropertyT
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxSource<PropertyT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxSource<PropertyT	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v17.leanback.widget.ParallaxSource<PropertyT extends android.util.Property> {
++  public android.support.v17.leanback.widget.ParallaxSource();
++  public final java.util.List<PropertyT> getProperties();
++  public abstract PropertyT addProperty(java.lang.String);
++  public abstract PropertyT createProperty(java.lang.String, int);
++  public abstract void verifyProperties() throws java.lang.IllegalStateException;
++  public abstract void setListener(android.support.v17.leanback.widget.ParallaxSource$Listener);
++  public void updateValues();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxTarget leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxTarget
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxTarget	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxTarget	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v17.leanback.widget.ParallaxTarget {
++  public android.support.v17.leanback.widget.ParallaxTarget();
++  public abstract void update(float);
++  public abstract float getFraction();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget extends android.support.v17.leanback.widget.ParallaxTarget {
++  public android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget(java.lang.Object, android.animation.PropertyValuesHolder);
++  public void update(float);
++  public float getFraction();
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackControlsRow leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackControlsRow
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackControlsRow	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackControlsRow	2016-12-15 02:15:57.000000000 +0900
+@@ -12,0 +13 @@
++  public void setTotalTimeLong(long);
+@@ -13,0 +15 @@
++  public long getTotalTimeLong();
+@@ -14,0 +17 @@
++  public void setCurrentTimeLong(long);
+@@ -15,0 +19 @@
++  public long getCurrentTimeLong();
+@@ -16,0 +21 @@
++  public void setBufferedProgressLong(long);
+@@ -17,0 +23 @@
++  public long getBufferedProgressLong();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackControlsRowPresenter leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackControlsRowPresenter
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackControlsRowPresenter	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackControlsRowPresenter	2016-12-15 02:15:57.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.PlaybackControlsRowPresenter extends android.support.v17.leanback.widget.RowPresenter {
++public class android.support.v17.leanback.widget.PlaybackControlsRowPresenter extends android.support.v17.leanback.widget.PlaybackRowPresenter {
+@@ -13,0 +14 @@
++  public void onReappear(android.support.v17.leanback.widget.RowPresenter$ViewHolder);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackControlsRowPresenter$ViewHolder leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackControlsRowPresenter$ViewHolder
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackControlsRowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackControlsRowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.PlaybackControlsRowPresenter$ViewHolder extends android.support.v17.leanback.widget.RowPresenter$ViewHolder {
++public class android.support.v17.leanback.widget.PlaybackControlsRowPresenter$ViewHolder extends android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder {
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackRowPresenter leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackRowPresenter
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackRowPresenter	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackRowPresenter	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,4 @@
++public abstract class android.support.v17.leanback.widget.PlaybackRowPresenter extends android.support.v17.leanback.widget.RowPresenter {
++  public android.support.v17.leanback.widget.PlaybackRowPresenter();
++  public void onReappear(android.support.v17.leanback.widget.RowPresenter$ViewHolder);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
+@@ -0,0 +1,3 @@
++public class android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder extends android.support.v17.leanback.widget.RowPresenter$ViewHolder {
++  public android.support.v17.leanback.widget.PlaybackRowPresenter$ViewHolder(android.view.View);
++}
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.RowPresenter$ViewHolder leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.RowPresenter$ViewHolder
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.RowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.RowPresenter$ViewHolder	2016-12-15 02:15:57.000000000 +0900
+@@ -16,0 +17,2 @@
++  public android.support.v17.leanback.widget.Presenter$ViewHolder getSelectedItemViewHolder();
++  public java.lang.Object getSelectedItem();
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.SearchBar leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.SearchBar
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.SearchBar	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.SearchBar	2016-12-15 02:15:57.000000000 +0900
+@@ -7,0 +8,2 @@
++  public void setSearchAffordanceColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
++  public void setSearchAffordanceColorsInListening(android.support.v17.leanback.widget.SearchOrbView$Colors);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.SpeechOrbView leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.SpeechOrbView
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.SpeechOrbView	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.SpeechOrbView	2016-12-15 02:15:57.000000000 +0900
+@@ -4,0 +5,2 @@
++  public void setListeningOrbColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
++  public void setNotListeningOrbColors(android.support.v17.leanback.widget.SearchOrbView$Colors);
+diff -U 0 -N leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.VerticalGridView leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.VerticalGridView
+--- leanback-v17-25.0.1_aca629e6/android.support.v17.leanback.widget.VerticalGridView	2016-12-15 02:15:57.000000000 +0900
++++ leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.VerticalGridView	2016-12-15 02:15:57.000000000 +0900
+@@ -6,0 +7,2 @@
++  public void animateIn();
++  public void animateOut();
+@@ -50,0 +53,4 @@
++  public int getHorizontalSpacing();
++  public void setHorizontalSpacing(int);
++  public int getVerticalSpacing();
++  public void setVerticalSpacing(int);
+@@ -54,0 +61 @@
++  public void setItemSpacing(int);

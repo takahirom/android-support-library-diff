@@ -1,0 +1,48 @@
+diff -U 0 -N support-fragment-25.0.1_763f92e2/android.support.v4.app.BackStackRecord$TransitionState support-fragment-25.1.0_1a6290b2/android.support.v4.app.BackStackRecord$TransitionState
+--- support-fragment-25.0.1_763f92e2/android.support.v4.app.BackStackRecord$TransitionState	2016-12-15 02:15:52.000000000 +0900
++++ support-fragment-25.1.0_1a6290b2/android.support.v4.app.BackStackRecord$TransitionState	1970-01-01 09:00:00.000000000 +0900
+@@ -1,7 +0,0 @@
+-public class android.support.v4.app.BackStackRecord$TransitionState {
+-  public android.support.v4.util.ArrayMap<java.lang.String, java.lang.String> nameOverrides;
+-  public java.util.ArrayList<android.view.View> hiddenFragmentViews;
+-  public android.support.v4.app.FragmentTransitionCompat21$EpicenterView enteringEpicenterView;
+-  public android.view.View nonExistentView;
+-  public android.support.v4.app.BackStackRecord$TransitionState(android.support.v4.app.BackStackRecord);
+-}
+diff -U 0 -N support-fragment-25.0.1_763f92e2/android.support.v4.app.Fragment support-fragment-25.1.0_1a6290b2/android.support.v4.app.Fragment
+--- support-fragment-25.0.1_763f92e2/android.support.v4.app.Fragment	2016-12-15 02:15:52.000000000 +0900
++++ support-fragment-25.1.0_1a6290b2/android.support.v4.app.Fragment	2016-12-15 02:15:52.000000000 +0900
+@@ -103,0 +104,2 @@
++  public void postponeEnterTransition();
++  public void startPostponedEnterTransition();
+diff -U 0 -N support-fragment-25.0.1_763f92e2/android.support.v4.app.FragmentManager support-fragment-25.1.0_1a6290b2/android.support.v4.app.FragmentManager
+--- support-fragment-25.0.1_763f92e2/android.support.v4.app.FragmentManager	2016-12-15 02:15:52.000000000 +0900
++++ support-fragment-25.1.0_1a6290b2/android.support.v4.app.FragmentManager	2016-12-15 02:15:52.000000000 +0900
+@@ -23,0 +24,2 @@
++  public abstract void registerFragmentLifecycleCallbacks(android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks, boolean);
++  public abstract void unregisterFragmentLifecycleCallbacks(android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks);
+diff -U 0 -N support-fragment-25.0.1_763f92e2/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks support-fragment-25.1.0_1a6290b2/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks
+--- support-fragment-25.0.1_763f92e2/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks	1970-01-01 09:00:00.000000000 +0900
++++ support-fragment-25.1.0_1a6290b2/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks	2016-12-15 02:15:52.000000000 +0900
+@@ -0,0 +1,16 @@
++public abstract class android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks {
++  public android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks(android.support.v4.app.FragmentManager);
++  public void onFragmentPreAttached(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment, android.content.Context);
++  public void onFragmentAttached(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment, android.content.Context);
++  public void onFragmentCreated(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment, android.os.Bundle);
++  public void onFragmentActivityCreated(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment, android.os.Bundle);
++  public void onFragmentViewCreated(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment, android.view.View, android.os.Bundle);
++  public void onFragmentStarted(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++  public void onFragmentResumed(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++  public void onFragmentPaused(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++  public void onFragmentStopped(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++  public void onFragmentSaveInstanceState(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment, android.os.Bundle);
++  public void onFragmentViewDestroyed(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++  public void onFragmentDestroyed(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++  public void onFragmentDetached(android.support.v4.app.FragmentManager, android.support.v4.app.Fragment);
++}
+diff -U 0 -N support-fragment-25.0.1_763f92e2/android.support.v4.app.FragmentTransaction support-fragment-25.1.0_1a6290b2/android.support.v4.app.FragmentTransaction
+--- support-fragment-25.0.1_763f92e2/android.support.v4.app.FragmentTransaction	2016-12-15 02:15:52.000000000 +0900
++++ support-fragment-25.1.0_1a6290b2/android.support.v4.app.FragmentTransaction	2016-12-15 02:15:52.000000000 +0900
+@@ -32,0 +33 @@
++  public abstract android.support.v4.app.FragmentTransaction setAllowOptimization(boolean);
