@@ -1,0 +1,17 @@
+diff -U 0 -N recyclerview-v7-25.2.0_18f74e0a/android.support.v7.widget.LinearLayoutManager recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.LinearLayoutManager
+--- recyclerview-v7-25.2.0_18f74e0a/android.support.v7.widget.LinearLayoutManager	2017-03-16 08:31:03.000000000 +0900
++++ recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.LinearLayoutManager	2017-03-16 08:31:03.000000000 +0900
+@@ -41,0 +42 @@
++  public int getInitialPrefetchItemCount();
+diff -U 0 -N recyclerview-v7-25.2.0_18f74e0a/android.support.v7.widget.RecyclerView$LayoutManager recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.RecyclerView$LayoutManager
+--- recyclerview-v7-25.2.0_18f74e0a/android.support.v7.widget.RecyclerView$LayoutManager	2017-03-16 08:31:03.000000000 +0900
++++ recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.RecyclerView$LayoutManager	2017-03-16 08:31:03.000000000 +0900
+@@ -105,0 +106,2 @@
++  public boolean requestChildRectangleOnScreen(android.support.v7.widget.RecyclerView, android.view.View, android.graphics.Rect, boolean, boolean);
++  public boolean isViewPartiallyVisible(android.view.View, boolean, boolean);
+diff -U 0 -N recyclerview-v7-25.2.0_18f74e0a/android.support.v7.widget.ViewBoundsCheck$ViewBounds recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.ViewBoundsCheck$ViewBounds
+--- recyclerview-v7-25.2.0_18f74e0a/android.support.v7.widget.ViewBoundsCheck$ViewBounds	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.ViewBoundsCheck$ViewBounds	2017-03-16 08:31:03.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v7.widget.ViewBoundsCheck$ViewBounds extends java.lang.annotation.Annotation {
++}

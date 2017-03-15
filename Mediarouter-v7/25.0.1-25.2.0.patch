@@ -1,0 +1,172 @@
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.app.MediaRouteChooserDialog mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.app.MediaRouteChooserDialog
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.app.MediaRouteChooserDialog	2017-03-16 08:30:48.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.app.MediaRouteChooserDialog	2017-03-16 08:30:48.000000000 +0900
+@@ -7,0 +8,2 @@
++  public void setTitle(java.lang.CharSequence);
++  public void setTitle(int);
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouter mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouter
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouter	2017-03-16 08:30:48.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouter	2017-03-16 08:30:48.000000000 +0900
+@@ -15,0 +16 @@
++  public android.support.v7.media.MediaRouter$RouteInfo getBluetoothRoute();
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouter$RouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouter$RouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouter$RouteInfo	2017-03-16 08:30:48.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouter$RouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -23,0 +24,2 @@
++  public boolean isBluetooth();
++  public boolean isDeviceSpeaker();
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterApi24$RouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterApi24$RouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterApi24$RouteInfo	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterApi24$RouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v7.media.MediaRouterApi24$RouteInfo {
++  public android.support.v7.media.MediaRouterApi24$RouteInfo();
++  public static int getDeviceType(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$Callback mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$Callback
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$Callback	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$Callback	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,10 @@
++public interface android.support.v7.media.MediaRouterJellybean$Callback {
++  public abstract void onRouteSelected(int, java.lang.Object);
++  public abstract void onRouteUnselected(int, java.lang.Object);
++  public abstract void onRouteAdded(java.lang.Object);
++  public abstract void onRouteRemoved(java.lang.Object);
++  public abstract void onRouteChanged(java.lang.Object);
++  public abstract void onRouteGrouped(java.lang.Object, java.lang.Object, int);
++  public abstract void onRouteUngrouped(java.lang.Object, java.lang.Object);
++  public abstract void onRouteVolumeChanged(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$GetDefaultRouteWorkaround mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$GetDefaultRouteWorkaround
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$GetDefaultRouteWorkaround	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$GetDefaultRouteWorkaround	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v7.media.MediaRouterJellybean$GetDefaultRouteWorkaround {
++  public android.support.v7.media.MediaRouterJellybean$GetDefaultRouteWorkaround();
++  public java.lang.Object getDefaultRoute(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$RouteCategory mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$RouteCategory
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$RouteCategory	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$RouteCategory	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,7 @@
++public final class android.support.v7.media.MediaRouterJellybean$RouteCategory {
++  public android.support.v7.media.MediaRouterJellybean$RouteCategory();
++  public static java.lang.CharSequence getName(java.lang.Object, android.content.Context);
++  public static java.util.List getRoutes(java.lang.Object);
++  public static int getSupportedTypes(java.lang.Object);
++  public static boolean isGroupable(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$RouteGroup mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$RouteGroup
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$RouteGroup	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$RouteGroup	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v7.media.MediaRouterJellybean$RouteGroup {
++  public android.support.v7.media.MediaRouterJellybean$RouteGroup();
++  public static java.util.List getGroupedRoutes(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$RouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$RouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$RouteInfo	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$RouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,19 @@
++public final class android.support.v7.media.MediaRouterJellybean$RouteInfo {
++  public android.support.v7.media.MediaRouterJellybean$RouteInfo();
++  public static java.lang.CharSequence getName(java.lang.Object, android.content.Context);
++  public static java.lang.CharSequence getStatus(java.lang.Object);
++  public static int getSupportedTypes(java.lang.Object);
++  public static java.lang.Object getCategory(java.lang.Object);
++  public static android.graphics.drawable.Drawable getIconDrawable(java.lang.Object);
++  public static int getPlaybackType(java.lang.Object);
++  public static int getPlaybackStream(java.lang.Object);
++  public static int getVolume(java.lang.Object);
++  public static int getVolumeMax(java.lang.Object);
++  public static int getVolumeHandling(java.lang.Object);
++  public static java.lang.Object getTag(java.lang.Object);
++  public static void setTag(java.lang.Object, java.lang.Object);
++  public static void requestSetVolume(java.lang.Object, int);
++  public static void requestUpdateVolume(java.lang.Object, int);
++  public static java.lang.Object getGroup(java.lang.Object);
++  public static boolean isGroup(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$SelectRouteWorkaround mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$SelectRouteWorkaround
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$SelectRouteWorkaround	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$SelectRouteWorkaround	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v7.media.MediaRouterJellybean$SelectRouteWorkaround {
++  public android.support.v7.media.MediaRouterJellybean$SelectRouteWorkaround();
++  public void selectRoute(java.lang.Object, int, java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$UserRouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$UserRouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$UserRouteInfo	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$UserRouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,13 @@
++public final class android.support.v7.media.MediaRouterJellybean$UserRouteInfo {
++  public android.support.v7.media.MediaRouterJellybean$UserRouteInfo();
++  public static void setName(java.lang.Object, java.lang.CharSequence);
++  public static void setStatus(java.lang.Object, java.lang.CharSequence);
++  public static void setIconDrawable(java.lang.Object, android.graphics.drawable.Drawable);
++  public static void setPlaybackType(java.lang.Object, int);
++  public static void setPlaybackStream(java.lang.Object, int);
++  public static void setVolume(java.lang.Object, int);
++  public static void setVolumeMax(java.lang.Object, int);
++  public static void setVolumeHandling(java.lang.Object, int);
++  public static void setVolumeCallback(java.lang.Object, java.lang.Object);
++  public static void setRemoteControlClient(java.lang.Object, java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$VolumeCallback mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$VolumeCallback
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybean$VolumeCallback	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybean$VolumeCallback	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v7.media.MediaRouterJellybean$VolumeCallback {
++  public abstract void onVolumeSetRequest(java.lang.Object, int);
++  public abstract void onVolumeUpdateRequest(java.lang.Object, int);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$ActiveScanWorkaround mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$ActiveScanWorkaround
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$ActiveScanWorkaround	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$ActiveScanWorkaround	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v7.media.MediaRouterJellybeanMr1$ActiveScanWorkaround implements java.lang.Runnable {
++  public android.support.v7.media.MediaRouterJellybeanMr1$ActiveScanWorkaround(android.content.Context, android.os.Handler);
++  public void setActiveScanRouteTypes(int);
++  public void run();
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$Callback mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$Callback
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$Callback	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$Callback	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,3 @@
++public interface android.support.v7.media.MediaRouterJellybeanMr1$Callback extends android.support.v7.media.MediaRouterJellybean$Callback {
++  public abstract void onRoutePresentationDisplayChanged(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$IsConnectingWorkaround mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$IsConnectingWorkaround
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$IsConnectingWorkaround	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$IsConnectingWorkaround	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v7.media.MediaRouterJellybeanMr1$IsConnectingWorkaround {
++  public android.support.v7.media.MediaRouterJellybeanMr1$IsConnectingWorkaround();
++  public boolean isConnecting(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$RouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$RouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr1$RouteInfo	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr1$RouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v7.media.MediaRouterJellybeanMr1$RouteInfo {
++  public android.support.v7.media.MediaRouterJellybeanMr1$RouteInfo();
++  public static boolean isEnabled(java.lang.Object);
++  public static android.view.Display getPresentationDisplay(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr2$RouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr2$RouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr2$RouteInfo	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr2$RouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,5 @@
++public final class android.support.v7.media.MediaRouterJellybeanMr2$RouteInfo {
++  public android.support.v7.media.MediaRouterJellybeanMr2$RouteInfo();
++  public static java.lang.CharSequence getDescription(java.lang.Object);
++  public static boolean isConnecting(java.lang.Object);
++}
+diff -U 0 -N mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr2$UserRouteInfo mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr2$UserRouteInfo
+--- mediarouter-v7-25.0.1_568bff56/android.support.v7.media.MediaRouterJellybeanMr2$UserRouteInfo	1970-01-01 09:00:00.000000000 +0900
++++ mediarouter-v7-25.2.0_cc19a5f6/android.support.v7.media.MediaRouterJellybeanMr2$UserRouteInfo	2017-03-16 08:30:48.000000000 +0900
+@@ -0,0 +1,4 @@
++public final class android.support.v7.media.MediaRouterJellybeanMr2$UserRouteInfo {
++  public android.support.v7.media.MediaRouterJellybeanMr2$UserRouteInfo();
++  public static void setDescription(java.lang.Object, java.lang.CharSequence);
++}

@@ -1,0 +1,6 @@
+diff -U 0 -N appcompat-v7-25.2.0_e112234e/android.support.v7.app.ActionBarDrawerToggle appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.app.ActionBarDrawerToggle
+--- appcompat-v7-25.2.0_e112234e/android.support.v7.app.ActionBarDrawerToggle	2017-03-16 08:30:59.000000000 +0900
++++ appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.app.ActionBarDrawerToggle	2017-03-16 08:30:58.000000000 +0900
+@@ -12,0 +13,2 @@
++  public void setDrawerSlideAnimationEnabled(boolean);
++  public boolean isDrawerSlideAnimationEnabled();

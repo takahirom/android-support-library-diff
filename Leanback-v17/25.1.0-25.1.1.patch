@@ -1,0 +1,15 @@
+diff -U 0 -N leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragment leanback-v17-25.1.1_35ebe98e/android.support.v17.leanback.app.PlaybackFragment
+--- leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackFragment	2017-01-31 21:07:57.000000000 +0900
++++ leanback-v17-25.1.1_35ebe98e/android.support.v17.leanback.app.PlaybackFragment	2017-01-31 21:07:57.000000000 +0900
+@@ -25,0 +26 @@
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
+diff -U 0 -N leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragment leanback-v17-25.1.1_35ebe98e/android.support.v17.leanback.app.PlaybackSupportFragment
+--- leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.app.PlaybackSupportFragment	2017-01-31 21:07:57.000000000 +0900
++++ leanback-v17-25.1.1_35ebe98e/android.support.v17.leanback.app.PlaybackSupportFragment	2017-01-31 21:07:57.000000000 +0900
+@@ -25,0 +26 @@
++  public void setOnItemViewSelectedListener(android.support.v17.leanback.widget.BaseOnItemViewSelectedListener);
+diff -U 0 -N leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder leanback-v17-25.1.1_35ebe98e/android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder
+--- leanback-v17-25.1.0_1e30c426/android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder	2017-01-31 21:07:57.000000000 +0900
++++ leanback-v17-25.1.1_35ebe98e/android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder	2017-01-31 21:07:57.000000000 +0900
+@@ -2,0 +3 @@
++  public android.support.v17.leanback.widget.RowHeaderPresenter$ViewHolder(android.support.v17.leanback.widget.RowHeaderView);

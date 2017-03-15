@@ -1,0 +1,84 @@
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsCallback customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsCallback
+--- customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsCallback	2017-03-16 08:31:01.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsCallback	2017-03-16 08:31:01.000000000 +0900
+@@ -10,0 +11,2 @@
++  public void onMessageChannelReady(android.os.Bundle);
++  public void onPostMessage(java.lang.String, android.os.Bundle);
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsService customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsService
+--- customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsService	2017-03-16 08:31:01.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsService	2017-03-16 08:31:01.000000000 +0900
+@@ -3,0 +4,4 @@
++  public static final int RESULT_SUCCESS;
++  public static final int RESULT_FAILURE_DISALLOWED;
++  public static final int RESULT_FAILURE_REMOTE_ERROR;
++  public static final int RESULT_FAILURE_MESSAGING_ERROR;
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsService$Result customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsService$Result
+--- customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsService$Result	1970-01-01 09:00:00.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsService$Result	2017-03-16 08:31:01.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.customtabs.CustomTabsService$Result extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsSession customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsSession
+--- customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsSession	2017-03-16 08:31:01.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsSession	2017-03-16 08:31:01.000000000 +0900
+@@ -5,0 +6,2 @@
++  public boolean requestPostMessageChannel(android.net.Uri);
++  public int postMessage(java.lang.String, android.os.Bundle);
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsSessionToken customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsSessionToken
+--- customtabs-25.2.0_69879d02/android.support.customtabs.CustomTabsSessionToken	2017-03-16 08:31:01.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.CustomTabsSessionToken	2017-03-16 08:31:01.000000000 +0900
+@@ -5,0 +6 @@
++  public boolean isAssociatedWith(android.support.customtabs.CustomTabsSession);
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.ICustomTabsCallback customtabs-25.3.0_67af1232/android.support.customtabs.ICustomTabsCallback
+--- customtabs-25.2.0_69879d02/android.support.customtabs.ICustomTabsCallback	2017-03-16 08:31:01.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.ICustomTabsCallback	2017-03-16 08:31:01.000000000 +0900
+@@ -3,0 +4,2 @@
++  public abstract void onMessageChannelReady(android.os.Bundle) throws android.os.RemoteException;
++  public abstract void onPostMessage(java.lang.String, android.os.Bundle) throws android.os.RemoteException;
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.ICustomTabsService customtabs-25.3.0_67af1232/android.support.customtabs.ICustomTabsService
+--- customtabs-25.2.0_69879d02/android.support.customtabs.ICustomTabsService	2017-03-16 08:31:01.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.ICustomTabsService	2017-03-16 08:31:01.000000000 +0900
+@@ -6,0 +7,2 @@
++  public abstract boolean requestPostMessageChannel(android.support.customtabs.ICustomTabsCallback, android.net.Uri) throws android.os.RemoteException;
++  public abstract int postMessage(android.support.customtabs.ICustomTabsCallback, java.lang.String, android.os.Bundle) throws android.os.RemoteException;
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.IPostMessageService customtabs-25.3.0_67af1232/android.support.customtabs.IPostMessageService
+--- customtabs-25.2.0_69879d02/android.support.customtabs.IPostMessageService	1970-01-01 09:00:00.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.IPostMessageService	2017-03-16 08:31:01.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.customtabs.IPostMessageService extends android.os.IInterface {
++  public abstract void onMessageChannelReady(android.support.customtabs.ICustomTabsCallback, android.os.Bundle) throws android.os.RemoteException;
++  public abstract void onPostMessage(android.support.customtabs.ICustomTabsCallback, java.lang.String, android.os.Bundle) throws android.os.RemoteException;
++}
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.IPostMessageService$Stub customtabs-25.3.0_67af1232/android.support.customtabs.IPostMessageService$Stub
+--- customtabs-25.2.0_69879d02/android.support.customtabs.IPostMessageService$Stub	1970-01-01 09:00:00.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.IPostMessageService$Stub	2017-03-16 08:31:01.000000000 +0900
+@@ -0,0 +1,6 @@
++public abstract class android.support.customtabs.IPostMessageService$Stub extends android.os.Binder implements android.support.customtabs.IPostMessageService {
++  public android.support.customtabs.IPostMessageService$Stub();
++  public static android.support.customtabs.IPostMessageService asInterface(android.os.IBinder);
++  public android.os.IBinder asBinder();
++  public boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) throws android.os.RemoteException;
++}
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.PostMessageService customtabs-25.3.0_67af1232/android.support.customtabs.PostMessageService
+--- customtabs-25.2.0_69879d02/android.support.customtabs.PostMessageService	1970-01-01 09:00:00.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.PostMessageService	2017-03-16 08:31:01.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.customtabs.PostMessageService extends android.app.Service {
++  public android.support.customtabs.PostMessageService();
++  public android.os.IBinder onBind(android.content.Intent);
++}
+diff -U 0 -N customtabs-25.2.0_69879d02/android.support.customtabs.PostMessageServiceConnection customtabs-25.3.0_67af1232/android.support.customtabs.PostMessageServiceConnection
+--- customtabs-25.2.0_69879d02/android.support.customtabs.PostMessageServiceConnection	1970-01-01 09:00:00.000000000 +0900
++++ customtabs-25.3.0_67af1232/android.support.customtabs.PostMessageServiceConnection	2017-03-16 08:31:01.000000000 +0900
+@@ -0,0 +1,11 @@
++public abstract class android.support.customtabs.PostMessageServiceConnection implements android.content.ServiceConnection {
++  public android.support.customtabs.PostMessageServiceConnection(android.support.customtabs.CustomTabsSessionToken);
++  public boolean bindSessionToPostMessageService(android.content.Context, java.lang.String);
++  public void unbindFromContext(android.content.Context);
++  public final void onServiceConnected(android.content.ComponentName, android.os.IBinder);
++  public final void onServiceDisconnected(android.content.ComponentName);
++  public final boolean notifyMessageChannelReady(android.os.Bundle);
++  public final boolean postMessage(java.lang.String, android.os.Bundle);
++  public void onPostMessageServiceConnected();
++  public void onPostMessageServiceDisconnected();
++}

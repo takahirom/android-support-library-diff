@@ -1,0 +1,31 @@
+diff -U 0 -N animated-vector-drawable-25.2.0_4db3aefe/android.support.graphics.drawable.Animatable2Compat animated-vector-drawable-25.3.0_815aa456/android.support.graphics.drawable.Animatable2Compat
+--- animated-vector-drawable-25.2.0_4db3aefe/android.support.graphics.drawable.Animatable2Compat	1970-01-01 09:00:00.000000000 +0900
++++ animated-vector-drawable-25.3.0_815aa456/android.support.graphics.drawable.Animatable2Compat	2017-03-16 08:30:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public interface android.support.graphics.drawable.Animatable2Compat extends android.graphics.drawable.Animatable {
++  public abstract void registerAnimationCallback(android.support.graphics.drawable.Animatable2Compat$AnimationCallback);
++  public abstract boolean unregisterAnimationCallback(android.support.graphics.drawable.Animatable2Compat$AnimationCallback);
++  public abstract void clearAnimationCallbacks();
++}
+diff -U 0 -N animated-vector-drawable-25.2.0_4db3aefe/android.support.graphics.drawable.Animatable2Compat$AnimationCallback animated-vector-drawable-25.3.0_815aa456/android.support.graphics.drawable.Animatable2Compat$AnimationCallback
+--- animated-vector-drawable-25.2.0_4db3aefe/android.support.graphics.drawable.Animatable2Compat$AnimationCallback	1970-01-01 09:00:00.000000000 +0900
++++ animated-vector-drawable-25.3.0_815aa456/android.support.graphics.drawable.Animatable2Compat$AnimationCallback	2017-03-16 08:30:57.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.graphics.drawable.Animatable2Compat$AnimationCallback {
++  public android.support.graphics.drawable.Animatable2Compat$AnimationCallback();
++  public void onAnimationStart(android.graphics.drawable.Drawable);
++  public void onAnimationEnd(android.graphics.drawable.Drawable);
++}
+diff -U 0 -N animated-vector-drawable-25.2.0_4db3aefe/android.support.graphics.drawable.AnimatedVectorDrawableCompat animated-vector-drawable-25.3.0_815aa456/android.support.graphics.drawable.AnimatedVectorDrawableCompat
+--- animated-vector-drawable-25.2.0_4db3aefe/android.support.graphics.drawable.AnimatedVectorDrawableCompat	2017-03-16 08:30:57.000000000 +0900
++++ animated-vector-drawable-25.3.0_815aa456/android.support.graphics.drawable.AnimatedVectorDrawableCompat	2017-03-16 08:30:57.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.graphics.drawable.AnimatedVectorDrawableCompat extends android.support.graphics.drawable.VectorDrawableCommon implements android.graphics.drawable.Animatable {
++public class android.support.graphics.drawable.AnimatedVectorDrawableCompat extends android.support.graphics.drawable.VectorDrawableCommon implements android.support.graphics.drawable.Animatable2Compat {
+@@ -27,0 +28,6 @@
++  public void registerAnimationCallback(android.support.graphics.drawable.Animatable2Compat$AnimationCallback);
++  public boolean unregisterAnimationCallback(android.support.graphics.drawable.Animatable2Compat$AnimationCallback);
++  public void clearAnimationCallbacks();
++  public static void registerAnimationCallback(android.graphics.drawable.Drawable, android.support.graphics.drawable.Animatable2Compat$AnimationCallback);
++  public static boolean unregisterAnimationCallback(android.graphics.drawable.Drawable, android.support.graphics.drawable.Animatable2Compat$AnimationCallback);
++  public static void clearAnimationCallbacks(android.graphics.drawable.Drawable);

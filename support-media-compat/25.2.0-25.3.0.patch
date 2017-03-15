@@ -1,0 +1,128 @@
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaBrowserCompat support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaBrowserCompat
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaBrowserCompat	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaBrowserCompat	2017-03-16 08:30:58.000000000 +0900
+@@ -16,0 +17 @@
++  public void search(java.lang.String, android.os.Bundle, android.support.v4.media.MediaBrowserCompat$SearchCallback);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaBrowserCompat$SearchCallback support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaBrowserCompat$SearchCallback
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaBrowserCompat$SearchCallback	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaBrowserCompat$SearchCallback	2017-03-16 08:30:58.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v4.media.MediaBrowserCompat$SearchCallback {
++  public android.support.v4.media.MediaBrowserCompat$SearchCallback();
++  public void onSearchResult(java.lang.String, android.os.Bundle, java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>);
++  public void onError(java.lang.String, android.os.Bundle);
++}
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaBrowserServiceCompat support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaBrowserServiceCompat
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaBrowserServiceCompat	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaBrowserServiceCompat	2017-03-16 08:30:58.000000000 +0900
+@@ -3,0 +4 @@
++  public static final java.lang.String KEY_SEARCH_RESULTS;
+@@ -11,0 +13 @@
++  public void onSearch(java.lang.String, android.os.Bundle, android.support.v4.media.MediaBrowserServiceCompat$Result<java.util.List<android.support.v4.media.MediaBrowserCompat$MediaItem>>);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaMetadataCompat support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaMetadataCompat
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.MediaMetadataCompat	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.MediaMetadataCompat	2017-03-16 08:30:58.000000000 +0900
+@@ -30,0 +31 @@
++  public static final java.lang.String METADATA_KEY_ADVERTISEMENT;
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.IMediaControllerCallback support-media-compat-25.3.0_7490c716/android.support.v4.media.session.IMediaControllerCallback
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.IMediaControllerCallback	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.IMediaControllerCallback	2017-03-16 08:30:58.000000000 +0900
+@@ -9,0 +10,2 @@
++  public abstract void onRepeatModeChanged(int) throws android.os.RemoteException;
++  public abstract void onShuffleModeChanged(boolean) throws android.os.RemoteException;
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.IMediaSession support-media-compat-25.3.0_7490c716/android.support.v4.media.session.IMediaSession
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.IMediaSession	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.IMediaSession	2017-03-16 08:30:58.000000000 +0900
+@@ -19,0 +20,6 @@
++  public abstract int getRepeatMode() throws android.os.RemoteException;
++  public abstract boolean isShuffleModeEnabled() throws android.os.RemoteException;
++  public abstract void addQueueItem(android.support.v4.media.MediaDescriptionCompat) throws android.os.RemoteException;
++  public abstract void addQueueItemAt(android.support.v4.media.MediaDescriptionCompat, int) throws android.os.RemoteException;
++  public abstract void removeQueueItem(android.support.v4.media.MediaDescriptionCompat) throws android.os.RemoteException;
++  public abstract void removeQueueItemAt(int) throws android.os.RemoteException;
+@@ -36,0 +43,2 @@
++  public abstract void setRepeatMode(int) throws android.os.RemoteException;
++  public abstract void setShuffleModeEnabled(boolean) throws android.os.RemoteException;
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaControllerCompat support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompat
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaControllerCompat	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompat	2017-03-16 08:30:58.000000000 +0900
+@@ -10,0 +11,4 @@
++  public void addQueueItem(android.support.v4.media.MediaDescriptionCompat);
++  public void addQueueItem(android.support.v4.media.MediaDescriptionCompat, int);
++  public void removeQueueItem(android.support.v4.media.MediaDescriptionCompat);
++  public void removeQueueItemAt(int);
+@@ -13,0 +18,2 @@
++  public int getRepeatMode();
++  public boolean isShuffleModeEnabled();
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaControllerCompat$Callback support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompat$Callback
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaControllerCompat$Callback	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompat$Callback	2017-03-16 08:30:58.000000000 +0900
+@@ -10,0 +11,2 @@
++  public void onRepeatModeChanged(int);
++  public void onShuffleModeChanged(boolean);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaControllerCompat$TransportControls support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompat$TransportControls
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaControllerCompat$TransportControls	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompat$TransportControls	2017-03-16 08:30:58.000000000 +0900
+@@ -18,0 +19,2 @@
++  public abstract void setRepeatMode(int);
++  public abstract void setShuffleModeEnabled(boolean);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaSessionCompat support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaSessionCompat
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaSessionCompat	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaSessionCompat	2017-03-16 08:30:58.000000000 +0900
+@@ -3,0 +4 @@
++  public static final int FLAG_HANDLES_QUEUE_COMMANDS;
+@@ -23,0 +25,2 @@
++  public void setRepeatMode(int);
++  public void setShuffleModeEnabled(boolean);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaSessionCompat$Callback support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaSessionCompat$Callback
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.MediaSessionCompat$Callback	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaSessionCompat$Callback	2017-03-16 08:30:58.000000000 +0900
+@@ -21,0 +22,2 @@
++  public void onSetRepeatMode(int);
++  public void onSetShuffleModeEnabled(boolean);
+@@ -22,0 +25,4 @@
++  public void onAddQueueItem(android.support.v4.media.MediaDescriptionCompat);
++  public void onAddQueueItem(android.support.v4.media.MediaDescriptionCompat, int);
++  public void onRemoveQueueItem(android.support.v4.media.MediaDescriptionCompat);
++  public void onRemoveQueueItemAt(int);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat	2017-03-16 08:30:58.000000000 +0900
+@@ -19,0 +20,2 @@
++  public static final long ACTION_SET_REPEAT_MODE;
++  public static final long ACTION_SET_SHUFFLE_MODE_ENABLED;
+@@ -32,0 +35,15 @@
++  public static final int ERROR_CODE_UNKNOWN_ERROR;
++  public static final int ERROR_CODE_APP_ERROR;
++  public static final int ERROR_CODE_NOT_SUPPORTED;
++  public static final int ERROR_CODE_AUTHENTICATION_EXPIRED;
++  public static final int ERROR_CODE_PREMIUM_ACCOUNT_REQUIRED;
++  public static final int ERROR_CODE_CONCURRENT_STREAM_LIMIT;
++  public static final int ERROR_CODE_PARENTAL_CONTROL_RESTRICTED;
++  public static final int ERROR_CODE_NOT_AVAILABLE_IN_REGION;
++  public static final int ERROR_CODE_CONTENT_ALREADY_PLAYING;
++  public static final int ERROR_CODE_SKIP_LIMIT_REACHED;
++  public static final int ERROR_CODE_ACTION_ABORTED;
++  public static final int ERROR_CODE_END_OF_QUEUE;
++  public static final int REPEAT_MODE_NONE;
++  public static final int REPEAT_MODE_ONE;
++  public static final int REPEAT_MODE_ALL;
+@@ -43,0 +61 @@
++  public int getErrorCode();
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat$Builder support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat$Builder
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat$Builder	2017-03-16 08:30:58.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat$Builder	2017-03-16 08:30:58.000000000 +0900
+@@ -11,0 +12 @@
++  public android.support.v4.media.session.PlaybackStateCompat$Builder setErrorMessage(int, java.lang.CharSequence);
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat$ErrorCode support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat$ErrorCode
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat$ErrorCode	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat$ErrorCode	2017-03-16 08:30:58.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v4.media.session.PlaybackStateCompat$ErrorCode extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat$RepeatMode support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat$RepeatMode
+--- support-media-compat-25.2.0_b70e3dde/android.support.v4.media.session.PlaybackStateCompat$RepeatMode	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat$RepeatMode	2017-03-16 08:30:58.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.v4.media.session.PlaybackStateCompat$RepeatMode extends java.lang.annotation.Annotation {
++}

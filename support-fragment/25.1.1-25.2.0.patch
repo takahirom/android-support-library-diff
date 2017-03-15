@@ -1,0 +1,6 @@
+diff -U 0 -N support-fragment-25.1.1_ce93780a/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks support-fragment-25.2.0_186192da/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks
+--- support-fragment-25.1.1_ce93780a/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks	2017-03-16 08:31:06.000000000 +0900
++++ support-fragment-25.2.0_186192da/android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks	2017-03-16 08:31:06.000000000 +0900
+@@ -2 +2 @@
+-  public android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks(android.support.v4.app.FragmentManager);
++  public android.support.v4.app.FragmentManager$FragmentLifecycleCallbacks();
