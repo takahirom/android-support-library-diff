@@ -1,5 +1,5 @@
 cd $1
-ls -F | grep /|grep -v alpha|grep -v beta|awk -v arg=$1 'BEGIN{sub("/","",arg);libraryPrefix=arg}
+ls -F | grep /|awk -v arg=$1 'BEGIN{sub("/","",arg);libraryPrefix=arg}
 NR%2==1 {a=$0;sub("/","",a)}
 NR%2==0 {b=$1;sub("/","",b)}
 NR%2==0 {;print "jardiff.py " libraryPrefix "/" a "/" libraryPrefix "-" a".aar " libraryPrefix "/" b "/" libraryPrefix "-" b ".aar >" libraryPrefix "/" a"-"b".patch\ncp -n " libraryPrefix"/"a"-"b".patch ~/git/android-support-library-diff/" libraryPrefix "/"}
