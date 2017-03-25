@@ -1,0 +1,32 @@
+diff -U 0 -N support-fragment-25.3.0_6f78633e/android.support.v4.app.Fragment support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.Fragment
+--- support-fragment-25.3.0_6f78633e/android.support.v4.app.Fragment	2017-03-24 23:40:37.000000000 +0900
++++ support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.Fragment	2017-03-24 23:40:37.000000000 +0900
+@@ -11,0 +12 @@
++  public final boolean isStateSaved();
+diff -U 0 -N support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentActivity support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentActivity
+--- support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentActivity	2017-03-24 23:40:37.000000000 +0900
++++ support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentActivity	2017-03-24 23:40:37.000000000 +0900
+@@ -4,2 +3,0 @@
+-  public final void setSupportMediaController(android.support.v4.media.session.MediaControllerCompat);
+-  public final android.support.v4.media.session.MediaControllerCompat getSupportMediaController();
+@@ -36 +33,0 @@
+-  public android.view.View onCreateView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet);
+@@ -38,0 +36 @@
++  public android.view.View onCreateView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet);
+diff -U 0 -N support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentContainer support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentContainer
+--- support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentContainer	2017-03-24 23:40:37.000000000 +0900
++++ support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentContainer	2017-03-24 23:40:37.000000000 +0900
+@@ -4,0 +5 @@
++  public android.support.v4.app.Fragment instantiate(android.content.Context, java.lang.String, android.os.Bundle);
+diff -U 0 -N support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentManager support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentManager
+--- support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentManager	2017-03-24 23:40:37.000000000 +0900
++++ support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentManager	2017-03-24 23:40:37.000000000 +0900
+@@ -25,0 +26 @@
++  public abstract android.support.v4.app.Fragment getPrimaryNavigationFragment();
+diff -U 0 -N support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentTransaction support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentTransaction
+--- support-fragment-25.3.0_6f78633e/android.support.v4.app.FragmentTransaction	2017-03-24 23:40:37.000000000 +0900
++++ support-fragment-26.0.0-alpha1_12ff9624/android.support.v4.app.FragmentTransaction	2017-03-24 23:40:37.000000000 +0900
+@@ -19,0 +20 @@
++  public abstract android.support.v4.app.FragmentTransaction setPrimaryNavigationFragment(android.support.v4.app.Fragment);
+@@ -33,0 +35 @@
++  public abstract android.support.v4.app.FragmentTransaction postOnCommit(java.lang.Runnable);

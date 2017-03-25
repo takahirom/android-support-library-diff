@@ -1,0 +1,19 @@
+diff -U 0 -N recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.LinearLayoutManager recyclerview-v7-26.0.0-alpha1_004f26ae/android.support.v7.widget.LinearLayoutManager
+--- recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.LinearLayoutManager	2017-03-24 23:40:39.000000000 +0900
++++ recyclerview-v7-26.0.0-alpha1_004f26ae/android.support.v7.widget.LinearLayoutManager	2017-03-24 23:40:39.000000000 +0900
+@@ -42 +41,0 @@
+-  public int getInitialPrefetchItemCount();
+diff -U 0 -N recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.RecyclerView recyclerview-v7-26.0.0-alpha1_004f26ae/android.support.v7.widget.RecyclerView
+--- recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.RecyclerView	2017-03-24 23:40:39.000000000 +0900
++++ recyclerview-v7-26.0.0-alpha1_004f26ae/android.support.v7.widget.RecyclerView	2017-03-24 23:40:39.000000000 +0900
+@@ -40,0 +41 @@
++  public android.support.v7.widget.RecyclerView$ItemDecoration getItemDecorationAt(int);
+diff -U 0 -N recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.RecyclerViewAccessibilityDelegate$ItemDelegate recyclerview-v7-26.0.0-alpha1_004f26ae/android.support.v7.widget.RecyclerViewAccessibilityDelegate$ItemDelegate
+--- recyclerview-v7-25.3.0_db6e48f0/android.support.v7.widget.RecyclerViewAccessibilityDelegate$ItemDelegate	1970-01-01 09:00:00.000000000 +0900
++++ recyclerview-v7-26.0.0-alpha1_004f26ae/android.support.v7.widget.RecyclerViewAccessibilityDelegate$ItemDelegate	2017-03-24 23:40:39.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v7.widget.RecyclerViewAccessibilityDelegate$ItemDelegate extends android.support.v4.view.AccessibilityDelegateCompat {
++  public android.support.v7.widget.RecyclerViewAccessibilityDelegate$ItemDelegate(android.support.v7.widget.RecyclerViewAccessibilityDelegate);
++  public void onInitializeAccessibilityNodeInfo(android.view.View, android.support.v4.view.accessibility.AccessibilityNodeInfoCompat);
++  public boolean performAccessibilityAction(android.view.View, int, android.os.Bundle);
++}

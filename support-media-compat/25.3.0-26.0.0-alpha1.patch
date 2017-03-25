@@ -1,0 +1,36 @@
+diff -U 0 -N support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompatApi26$Callback support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.MediaControllerCompatApi26$Callback
+--- support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompatApi26$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.MediaControllerCompatApi26$Callback	2017-03-24 23:40:43.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v4.media.session.MediaControllerCompatApi26$Callback extends android.support.v4.media.session.MediaControllerCompatApi21$Callback {
++  public abstract void onRepeatModeChanged(int);
++  public abstract void onShuffleModeChanged(boolean);
++}
+diff -U 0 -N support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompatApi26$TransportControls support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.MediaControllerCompatApi26$TransportControls
+--- support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaControllerCompatApi26$TransportControls	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.MediaControllerCompatApi26$TransportControls	2017-03-24 23:40:43.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v4.media.session.MediaControllerCompatApi26$TransportControls extends android.support.v4.media.session.MediaControllerCompatApi23$TransportControls {
++  public android.support.v4.media.session.MediaControllerCompatApi26$TransportControls();
++  public static void setRepeatMode(java.lang.Object, int);
++  public static void setShuffleModeEnabled(java.lang.Object, boolean);
++}
+diff -U 0 -N support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaSessionCompatApi26$Callback support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.MediaSessionCompatApi26$Callback
+--- support-media-compat-25.3.0_7490c716/android.support.v4.media.session.MediaSessionCompatApi26$Callback	1970-01-01 09:00:00.000000000 +0900
++++ support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.MediaSessionCompatApi26$Callback	2017-03-24 23:40:43.000000000 +0900
+@@ -0,0 +1,4 @@
++public interface android.support.v4.media.session.MediaSessionCompatApi26$Callback extends android.support.v4.media.session.MediaSessionCompatApi24$Callback {
++  public abstract void onSetRepeatMode(int);
++  public abstract void onSetShuffleModeEnabled(boolean);
++}
+diff -U 0 -N support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.PlaybackStateCompat
+--- support-media-compat-25.3.0_7490c716/android.support.v4.media.session.PlaybackStateCompat	2017-03-24 23:40:43.000000000 +0900
++++ support-media-compat-26.0.0-alpha1_32ed9706/android.support.v4.media.session.PlaybackStateCompat	2017-03-24 23:40:43.000000000 +0900
+@@ -34,0 +35,3 @@
++  public static final int REPEAT_MODE_NONE;
++  public static final int REPEAT_MODE_ONE;
++  public static final int REPEAT_MODE_ALL;
+@@ -47,3 +49,0 @@
+-  public static final int REPEAT_MODE_NONE;
+-  public static final int REPEAT_MODE_ONE;
+-  public static final int REPEAT_MODE_ALL;

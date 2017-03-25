@@ -1,0 +1,5 @@
+diff -U 0 -N preference-leanback-v17-25.3.0_2c05b5b4/android.support.v17.preference.LeanbackListPreferenceDialogFragment preference-leanback-v17-26.0.0-alpha1_669b7ad6/android.support.v17.preference.LeanbackListPreferenceDialogFragment
+--- preference-leanback-v17-25.3.0_2c05b5b4/android.support.v17.preference.LeanbackListPreferenceDialogFragment	2017-03-24 23:40:45.000000000 +0900
++++ preference-leanback-v17-26.0.0-alpha1_669b7ad6/android.support.v17.preference.LeanbackListPreferenceDialogFragment	2017-03-24 23:40:45.000000000 +0900
+@@ -5,0 +6 @@
++  public void onSaveInstanceState(android.os.Bundle);

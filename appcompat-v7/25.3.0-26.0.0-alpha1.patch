@@ -1,0 +1,63 @@
+diff -U 0 -N appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.app.ActionBarDrawerToggle appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.app.ActionBarDrawerToggle
+--- appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.app.ActionBarDrawerToggle	2017-03-24 23:40:44.000000000 +0900
++++ appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.app.ActionBarDrawerToggle	2017-03-24 23:40:44.000000000 +0900
+@@ -13,2 +12,0 @@
+-  public void setDrawerSlideAnimationEnabled(boolean);
+-  public boolean isDrawerSlideAnimationEnabled();
+diff -U 0 -N appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.ActionMenuItem appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.ActionMenuItem
+--- appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.ActionMenuItem	2017-03-24 23:40:44.000000000 +0900
++++ appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.ActionMenuItem	2017-03-24 23:40:44.000000000 +0900
+@@ -48 +48,5 @@
+-  public android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat$OnActionExpandListener);
++  public android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.view.MenuItem$OnActionExpandListener);
++  public android.support.v4.internal.view.SupportMenuItem setContentDescription(java.lang.CharSequence);
++  public java.lang.CharSequence getContentDescription();
++  public android.support.v4.internal.view.SupportMenuItem setTooltipText(java.lang.CharSequence);
++  public java.lang.CharSequence getTooltipText();
+@@ -51,0 +56,2 @@
++  public android.view.MenuItem setTooltipText(java.lang.CharSequence);
++  public android.view.MenuItem setContentDescription(java.lang.CharSequence);
+diff -U 0 -N appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.ActionMenuItemView appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.ActionMenuItemView
+--- appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.ActionMenuItemView	2017-03-24 23:40:44.000000000 +0900
++++ appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.ActionMenuItemView	2017-03-24 23:40:44.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v7.view.menu.ActionMenuItemView extends android.support.v7.widget.AppCompatTextView implements android.support.v7.view.menu.MenuView$ItemView,android.view.View$OnClickListener,android.view.View$OnLongClickListener,android.support.v7.widget.ActionMenuView$ActionMenuChildView {
++public class android.support.v7.view.menu.ActionMenuItemView extends android.support.v7.widget.AppCompatTextView implements android.support.v7.view.menu.MenuView$ItemView,android.view.View$OnClickListener,android.support.v7.widget.ActionMenuView$ActionMenuChildView {
+@@ -24 +23,0 @@
+-  public boolean onLongClick(android.view.View);
+diff -U 0 -N appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.MenuItemImpl appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.MenuItemImpl
+--- appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.MenuItemImpl	2017-03-24 23:40:44.000000000 +0900
++++ appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.MenuItemImpl	2017-03-24 23:40:44.000000000 +0900
+@@ -57 +57 @@
+-  public android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat$OnActionExpandListener);
++  public android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.view.MenuItem$OnActionExpandListener);
+@@ -61,0 +62,4 @@
++  public android.support.v4.internal.view.SupportMenuItem setContentDescription(java.lang.CharSequence);
++  public java.lang.CharSequence getContentDescription();
++  public android.support.v4.internal.view.SupportMenuItem setTooltipText(java.lang.CharSequence);
++  public java.lang.CharSequence getTooltipText();
+@@ -64,0 +69,2 @@
++  public android.view.MenuItem setTooltipText(java.lang.CharSequence);
++  public android.view.MenuItem setContentDescription(java.lang.CharSequence);
+diff -U 0 -N appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.MenuItemWrapperICS appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.MenuItemWrapperICS
+--- appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.view.menu.MenuItemWrapperICS	2017-03-24 23:40:44.000000000 +0900
++++ appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.view.menu.MenuItemWrapperICS	2017-03-24 23:40:44.000000000 +0900
+@@ -42,0 +43,4 @@
++  public android.view.MenuItem setContentDescription(java.lang.CharSequence);
++  public java.lang.CharSequence getContentDescription();
++  public android.view.MenuItem setTooltipText(java.lang.CharSequence);
++  public java.lang.CharSequence getTooltipText();
+diff -U 0 -N appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener
+--- appcompat-v7-25.3.0_0c0dd4e2/android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener	2017-03-24 23:40:44.000000000 +0900
++++ appcompat-v7-26.0.0-alpha1_4f4d20ae/android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener	2017-03-24 23:40:44.000000000 +0900
+@@ -1,5 +1,5 @@
+-public class android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener implements android.support.v4.view.ViewPropertyAnimatorListener {
+-  public android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener withFinalVisibility(android.support.v4.view.ViewPropertyAnimatorCompat, int);
+-  public void onAnimationStart(android.view.View);
+-  public void onAnimationEnd(android.view.View);
+-  public void onAnimationCancel(android.view.View);
++public class android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener extends android.animation.AnimatorListenerAdapter {
++  public android.support.v7.widget.ScrollingTabContainerView$VisibilityAnimListener withFinalVisibility(android.view.ViewPropertyAnimator, int);
++  public void onAnimationStart(android.animation.Animator);
++  public void onAnimationEnd(android.animation.Animator);
++  public void onAnimationCancel(android.animation.Animator);

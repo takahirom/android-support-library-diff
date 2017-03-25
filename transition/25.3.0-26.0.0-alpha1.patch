@@ -1,0 +1,211 @@
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.ChangeBounds transition-26.0.0-alpha1_d722724a/android.support.transition.ChangeBounds
+--- transition-25.3.0_cd06de0a/android.support.transition.ChangeBounds	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.ChangeBounds	2017-03-24 23:40:46.000000000 +0900
+@@ -3 +3,2 @@
+-  public void captureEndValues(android.support.transition.TransitionValues);
++  public java.lang.String[] getTransitionProperties();
++  public void setResizeClip(boolean);
+@@ -4,0 +6 @@
++  public void captureEndValues(android.support.transition.TransitionValues);
+@@ -6 +7,0 @@
+-  public void setResizeClip(boolean);
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Fade transition-26.0.0-alpha1_d722724a/android.support.transition.Fade
+--- transition-25.3.0_cd06de0a/android.support.transition.Fade	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Fade	2017-03-24 23:40:46.000000000 +0900
+@@ -6 +5,0 @@
+-  public void captureEndValues(android.support.transition.TransitionValues);
+@@ -8 +7,2 @@
+-  public android.animation.Animator createAnimator(android.view.ViewGroup, android.support.transition.TransitionValues, android.support.transition.TransitionValues);
++  public android.animation.Animator onAppear(android.view.ViewGroup, android.support.transition.TransitionValues, int, android.support.transition.TransitionValues, int);
++  public android.animation.Animator onDisappear(android.view.ViewGroup, android.support.transition.TransitionValues, int, android.support.transition.TransitionValues, int);
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Scene transition-26.0.0-alpha1_d722724a/android.support.transition.Scene
+--- transition-25.3.0_cd06de0a/android.support.transition.Scene	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Scene	2017-03-24 23:40:46.000000000 +0900
+@@ -1,0 +2 @@
++  public static android.support.transition.Scene getSceneForLayout(android.view.ViewGroup, int, android.content.Context);
+@@ -4 +4,0 @@
+-  public static android.support.transition.Scene getSceneForLayout(android.view.ViewGroup, int, android.content.Context);
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Transition transition-26.0.0-alpha1_d722724a/android.support.transition.Transition
+--- transition-25.3.0_cd06de0a/android.support.transition.Transition	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Transition	2017-03-24 23:40:46.000000000 +0900
+@@ -1 +1,5 @@
+-public abstract class android.support.transition.Transition implements android.support.transition.TransitionInterface {
++public abstract class android.support.transition.Transition implements java.lang.Cloneable {
++  public static final int MATCH_INSTANCE;
++  public static final int MATCH_NAME;
++  public static final int MATCH_ID;
++  public static final int MATCH_ITEM_ID;
+@@ -3 +7,11 @@
+-  public android.support.transition.Transition addListener(android.support.transition.Transition$TransitionListener);
++  public android.support.transition.Transition setDuration(long);
++  public long getDuration();
++  public android.support.transition.Transition setStartDelay(long);
++  public long getStartDelay();
++  public android.support.transition.Transition setInterpolator(android.animation.TimeInterpolator);
++  public android.animation.TimeInterpolator getInterpolator();
++  public java.lang.String[] getTransitionProperties();
++  public android.animation.Animator createAnimator(android.view.ViewGroup, android.support.transition.TransitionValues, android.support.transition.TransitionValues);
++  public void setMatchOrder(int...);
++  public abstract void captureStartValues(android.support.transition.TransitionValues);
++  public abstract void captureEndValues(android.support.transition.TransitionValues);
+@@ -6,6 +20,6 @@
+-  public abstract void captureEndValues(android.support.transition.TransitionValues);
+-  public abstract void captureStartValues(android.support.transition.TransitionValues);
+-  public android.animation.Animator createAnimator(android.view.ViewGroup, android.support.transition.TransitionValues, android.support.transition.TransitionValues);
+-  public android.support.transition.Transition excludeChildren(android.view.View, boolean);
+-  public android.support.transition.Transition excludeChildren(int, boolean);
+-  public android.support.transition.Transition excludeChildren(java.lang.Class, boolean);
++  public android.support.transition.Transition addTarget(java.lang.String);
++  public android.support.transition.Transition addTarget(java.lang.Class);
++  public android.support.transition.Transition removeTarget(android.view.View);
++  public android.support.transition.Transition removeTarget(int);
++  public android.support.transition.Transition removeTarget(java.lang.String);
++  public android.support.transition.Transition removeTarget(java.lang.Class);
+@@ -13,0 +28,3 @@
++  public android.support.transition.Transition excludeTarget(java.lang.String, boolean);
++  public android.support.transition.Transition excludeChildren(android.view.View, boolean);
++  public android.support.transition.Transition excludeChildren(int, boolean);
+@@ -15,7 +32 @@
+-  public long getDuration();
+-  public android.support.transition.Transition setDuration(long);
+-  public android.animation.TimeInterpolator getInterpolator();
+-  public android.support.transition.Transition setInterpolator(android.animation.TimeInterpolator);
+-  public java.lang.String getName();
+-  public long getStartDelay();
+-  public android.support.transition.Transition setStartDelay(long);
++  public android.support.transition.Transition excludeChildren(java.lang.Class, boolean);
+@@ -24 +35,2 @@
+-  public java.lang.String[] getTransitionProperties();
++  public java.util.List<java.lang.String> getTargetNames();
++  public java.util.List<java.lang.Class> getTargetTypes();
+@@ -25,0 +38,3 @@
++  public void pause(android.view.View);
++  public void resume(android.view.View);
++  public android.support.transition.Transition addListener(android.support.transition.Transition$TransitionListener);
+@@ -27,2 +41,0 @@
+-  public android.support.transition.Transition removeTarget(android.view.View);
+-  public android.support.transition.Transition removeTarget(int);
+@@ -29,0 +43,3 @@
++  public android.support.transition.Transition clone();
++  public java.lang.String getName();
++  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Transition$MatchOrder transition-26.0.0-alpha1_d722724a/android.support.transition.Transition$MatchOrder
+--- transition-25.3.0_cd06de0a/android.support.transition.Transition$MatchOrder	1970-01-01 09:00:00.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Transition$MatchOrder	2017-03-24 23:40:46.000000000 +0900
+@@ -0,0 +1,2 @@
++public interface android.support.transition.Transition$MatchOrder extends java.lang.annotation.Annotation {
++}
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Transition$TransitionListener transition-26.0.0-alpha1_d722724a/android.support.transition.Transition$TransitionListener
+--- transition-25.3.0_cd06de0a/android.support.transition.Transition$TransitionListener	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Transition$TransitionListener	2017-03-24 23:40:46.000000000 +0900
+@@ -1 +1 @@
+-public interface android.support.transition.Transition$TransitionListener extends android.support.transition.TransitionInterfaceListener<android.support.transition.Transition> {
++public interface android.support.transition.Transition$TransitionListener {
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Transition$TransitionListenerAdapter transition-26.0.0-alpha1_d722724a/android.support.transition.Transition$TransitionListenerAdapter
+--- transition-25.3.0_cd06de0a/android.support.transition.Transition$TransitionListenerAdapter	1970-01-01 09:00:00.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Transition$TransitionListenerAdapter	2017-03-24 23:40:46.000000000 +0900
+@@ -0,0 +1,8 @@
++public class android.support.transition.Transition$TransitionListenerAdapter implements android.support.transition.Transition$TransitionListener {
++  public android.support.transition.Transition$TransitionListenerAdapter();
++  public void onTransitionStart(android.support.transition.Transition);
++  public void onTransitionEnd(android.support.transition.Transition);
++  public void onTransitionCancel(android.support.transition.Transition);
++  public void onTransitionPause(android.support.transition.Transition);
++  public void onTransitionResume(android.support.transition.Transition);
++}
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.TransitionManager transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionManager
+--- transition-25.3.0_cd06de0a/android.support.transition.TransitionManager	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionManager	2017-03-24 23:40:46.000000000 +0900
+@@ -2,0 +3,3 @@
++  public void setTransition(android.support.transition.Scene, android.support.transition.Transition);
++  public void setTransition(android.support.transition.Scene, android.support.transition.Scene, android.support.transition.Transition);
++  public void transitionTo(android.support.transition.Scene);
+@@ -7,3 +9,0 @@
+-  public void setTransition(android.support.transition.Scene, android.support.transition.Transition);
+-  public void setTransition(android.support.transition.Scene, android.support.transition.Scene, android.support.transition.Transition);
+-  public void transitionTo(android.support.transition.Scene);
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.TransitionPort$TransitionListener transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionPort$TransitionListener
+--- transition-25.3.0_cd06de0a/android.support.transition.TransitionPort$TransitionListener	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionPort$TransitionListener	1970-01-01 09:00:00.000000000 +0900
+@@ -1,7 +0,0 @@
+-public interface android.support.transition.TransitionPort$TransitionListener {
+-  public abstract void onTransitionStart(android.support.transition.TransitionPort);
+-  public abstract void onTransitionEnd(android.support.transition.TransitionPort);
+-  public abstract void onTransitionCancel(android.support.transition.TransitionPort);
+-  public abstract void onTransitionPause(android.support.transition.TransitionPort);
+-  public abstract void onTransitionResume(android.support.transition.TransitionPort);
+-}
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.TransitionPort$TransitionListenerAdapter transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionPort$TransitionListenerAdapter
+--- transition-25.3.0_cd06de0a/android.support.transition.TransitionPort$TransitionListenerAdapter	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionPort$TransitionListenerAdapter	1970-01-01 09:00:00.000000000 +0900
+@@ -1,8 +0,0 @@
+-public class android.support.transition.TransitionPort$TransitionListenerAdapter implements android.support.transition.TransitionPort$TransitionListener {
+-  public android.support.transition.TransitionPort$TransitionListenerAdapter();
+-  public void onTransitionStart(android.support.transition.TransitionPort);
+-  public void onTransitionEnd(android.support.transition.TransitionPort);
+-  public void onTransitionCancel(android.support.transition.TransitionPort);
+-  public void onTransitionPause(android.support.transition.TransitionPort);
+-  public void onTransitionResume(android.support.transition.TransitionPort);
+-}
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.TransitionSet transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionSet
+--- transition-25.3.0_cd06de0a/android.support.transition.TransitionSet	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.TransitionSet	2017-03-24 23:40:46.000000000 +0900
+@@ -5 +4,0 @@
+-  public int getOrdering();
+@@ -6,0 +6 @@
++  public int getOrdering();
+@@ -7,0 +8,19 @@
++  public int getTransitionCount();
++  public android.support.transition.Transition getTransitionAt(int);
++  public android.support.transition.TransitionSet setDuration(long);
++  public android.support.transition.TransitionSet setStartDelay(long);
++  public android.support.transition.TransitionSet setInterpolator(android.animation.TimeInterpolator);
++  public android.support.transition.TransitionSet addTarget(android.view.View);
++  public android.support.transition.TransitionSet addTarget(int);
++  public android.support.transition.TransitionSet addTarget(java.lang.String);
++  public android.support.transition.TransitionSet addTarget(java.lang.Class);
++  public android.support.transition.TransitionSet addListener(android.support.transition.Transition$TransitionListener);
++  public android.support.transition.TransitionSet removeTarget(int);
++  public android.support.transition.TransitionSet removeTarget(android.view.View);
++  public android.support.transition.TransitionSet removeTarget(java.lang.Class);
++  public android.support.transition.TransitionSet removeTarget(java.lang.String);
++  public android.support.transition.Transition excludeTarget(android.view.View, boolean);
++  public android.support.transition.Transition excludeTarget(java.lang.String, boolean);
++  public android.support.transition.Transition excludeTarget(int, boolean);
++  public android.support.transition.Transition excludeTarget(java.lang.Class, boolean);
++  public android.support.transition.TransitionSet removeListener(android.support.transition.Transition$TransitionListener);
+@@ -9 +27,0 @@
+-  public void captureEndValues(android.support.transition.TransitionValues);
+@@ -11 +29,18 @@
+-  public android.animation.Animator createAnimator(android.view.ViewGroup, android.support.transition.TransitionValues, android.support.transition.TransitionValues);
++  public void captureEndValues(android.support.transition.TransitionValues);
++  public void pause(android.view.View);
++  public void resume(android.view.View);
++  public android.support.transition.Transition clone();
++  public android.support.transition.Transition removeListener(android.support.transition.Transition$TransitionListener);
++  public android.support.transition.Transition addListener(android.support.transition.Transition$TransitionListener);
++  public android.support.transition.Transition removeTarget(java.lang.Class);
++  public android.support.transition.Transition removeTarget(java.lang.String);
++  public android.support.transition.Transition removeTarget(int);
++  public android.support.transition.Transition removeTarget(android.view.View);
++  public android.support.transition.Transition addTarget(java.lang.Class);
++  public android.support.transition.Transition addTarget(java.lang.String);
++  public android.support.transition.Transition addTarget(int);
++  public android.support.transition.Transition addTarget(android.view.View);
++  public android.support.transition.Transition setInterpolator(android.animation.TimeInterpolator);
++  public android.support.transition.Transition setStartDelay(long);
++  public android.support.transition.Transition setDuration(long);
++  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+diff -U 0 -N transition-25.3.0_cd06de0a/android.support.transition.Visibility transition-26.0.0-alpha1_d722724a/android.support.transition.Visibility
+--- transition-25.3.0_cd06de0a/android.support.transition.Visibility	2017-03-24 23:40:46.000000000 +0900
++++ transition-26.0.0-alpha1_d722724a/android.support.transition.Visibility	2017-03-24 23:40:46.000000000 +0900
+@@ -1 +1 @@
+-public abstract class android.support.transition.Visibility extends android.support.transition.Transition implements android.support.transition.VisibilityInterface {
++public abstract class android.support.transition.Visibility extends android.support.transition.Transition {
+@@ -3 +3 @@
+-  public void captureEndValues(android.support.transition.TransitionValues);
++  public java.lang.String[] getTransitionProperties();
+@@ -4,0 +5 @@
++  public void captureEndValues(android.support.transition.TransitionValues);
+@@ -5,0 +7 @@
++  public android.animation.Animator createAnimator(android.view.ViewGroup, android.support.transition.TransitionValues, android.support.transition.TransitionValues);

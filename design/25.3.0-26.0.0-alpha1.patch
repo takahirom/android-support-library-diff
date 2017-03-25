@@ -1,0 +1,5 @@
+diff -U 0 -N design-25.3.0_4ccc261e/android.support.design.widget.CoordinatorLayout$Behavior<V design-26.0.0-alpha1_264b5d00/android.support.design.widget.CoordinatorLayout$Behavior<V
+--- design-25.3.0_4ccc261e/android.support.design.widget.CoordinatorLayout$Behavior<V	2017-03-24 23:40:47.000000000 +0900
++++ design-26.0.0-alpha1_264b5d00/android.support.design.widget.CoordinatorLayout$Behavior<V	2017-03-24 23:40:47.000000000 +0900
+@@ -14 +13,0 @@
+-  public boolean isDirty(android.support.design.widget.CoordinatorLayout, V);

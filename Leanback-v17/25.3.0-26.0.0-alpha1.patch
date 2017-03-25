@@ -1,0 +1,230 @@
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.app.OnboardingFragment leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.app.OnboardingFragment
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.app.OnboardingFragment	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.app.OnboardingFragment	2017-03-24 23:40:41.000000000 +0900
+@@ -7,0 +8,2 @@
++  public final void setIconResouceId(int);
++  public final int getIconResourceId();
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.app.OnboardingSupportFragment leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.app.OnboardingSupportFragment
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.app.OnboardingSupportFragment	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.app.OnboardingSupportFragment	2017-03-24 23:40:41.000000000 +0900
+@@ -7,0 +8,2 @@
++  public final void setIconResouceId(int);
++  public final int getIconResourceId();
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.graphics.BoundsRule leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.graphics.BoundsRule
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.graphics.BoundsRule	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.graphics.BoundsRule	2017-03-24 23:40:41.000000000 +0900
+@@ -5,0 +6,3 @@
++  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule inheritFromParent(float);
++  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule absoluteValue(int);
++  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule inheritFromParentWithOffset(float, int);
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.graphics.BoundsRule$ValueRule leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.graphics.BoundsRule$ValueRule
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.graphics.BoundsRule$ValueRule	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.graphics.BoundsRule$ValueRule	2017-03-24 23:40:41.000000000 +0900
+@@ -2,3 +1,0 @@
+-  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule inheritFromParent(float);
+-  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule absoluteValue(int);
+-  public static android.support.v17.leanback.graphics.BoundsRule$ValueRule inheritFromParentWithOffset(float, int);
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.HorizontalGridView leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.HorizontalGridView
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.HorizontalGridView	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.HorizontalGridView	2017-03-24 23:40:41.000000000 +0900
+@@ -20 +20 @@
+-  public int getInitialPrefetchItemCount();
++  public int getInitialItemPrefetchCount();
+@@ -22,2 +21,0 @@
+-  public void smoothScrollToPosition(int);
+-  public void scrollToPosition(int);
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$FloatParallax<FloatPropertyT leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$FloatParallax<FloatPropertyT
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$FloatParallax<FloatPropertyT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$FloatParallax<FloatPropertyT	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v17.leanback.widget.Parallax$FloatParallax<FloatPropertyT extends android.support.v17.leanback.widget.Parallax$FloatProperty> extends android.support.v17.leanback.widget.Parallax<FloatPropertyT> {
++  public android.support.v17.leanback.widget.Parallax$FloatParallax();
++  public final float getPropertyValue(int);
++  public final void setPropertyValue(int, float);
++  public abstract float getMaxValue();
++  public final FloatPropertyT addProperty(java.lang.String);
++  public final void verifyProperties() throws java.lang.IllegalStateException;
++  public android.util.Property addProperty(java.lang.String);
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$FloatProperty leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$FloatProperty
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$FloatProperty	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$FloatProperty	2017-03-24 23:40:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.Parallax$FloatProperty extends android.util.Property<android.support.v17.leanback.widget.Parallax, java.lang.Float> {
++public class android.support.v17.leanback.widget.Parallax$FloatProperty extends android.util.Property<android.support.v17.leanback.widget.Parallax$FloatParallax, java.lang.Float> {
+@@ -5,2 +5,2 @@
+-  public final java.lang.Float get(android.support.v17.leanback.widget.Parallax);
+-  public final void set(android.support.v17.leanback.widget.Parallax, java.lang.Float);
++  public final java.lang.Float get(android.support.v17.leanback.widget.Parallax$FloatParallax);
++  public final void set(android.support.v17.leanback.widget.Parallax$FloatParallax, java.lang.Float);
+@@ -8,7 +8,3 @@
+-  public final float getValue(android.support.v17.leanback.widget.Parallax);
+-  public final void setValue(android.support.v17.leanback.widget.Parallax, float);
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atAbsolute(float);
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atMax();
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atMin();
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atFraction(float);
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue at(float, float);
++  public final android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue atAbsolute(float);
++  public final android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue atFraction(float);
++  public final android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue at(float, float);
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue extends android.support.v17.leanback.widget.Parallax$PropertyMarkerValue<android.support.v17.leanback.widget.Parallax$FloatProperty> {
++  public android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue(android.support.v17.leanback.widget.Parallax$FloatProperty, float);
++  public android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue(android.support.v17.leanback.widget.Parallax$FloatProperty, float, float);
++  public final float getMarkerValue(android.support.v17.leanback.widget.Parallax$FloatParallax);
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$IntParallax<IntPropertyT leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$IntParallax<IntPropertyT
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$IntParallax<IntPropertyT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$IntParallax<IntPropertyT	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,9 @@
++public abstract class android.support.v17.leanback.widget.Parallax$IntParallax<IntPropertyT extends android.support.v17.leanback.widget.Parallax$IntProperty> extends android.support.v17.leanback.widget.Parallax<IntPropertyT> {
++  public android.support.v17.leanback.widget.Parallax$IntParallax();
++  public final int getPropertyValue(int);
++  public final void setPropertyValue(int, int);
++  public abstract int getMaxValue();
++  public final IntPropertyT addProperty(java.lang.String);
++  public final void verifyProperties() throws java.lang.IllegalStateException;
++  public android.util.Property addProperty(java.lang.String);
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$IntProperty leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$IntProperty
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$IntProperty	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$IntProperty	2017-03-24 23:40:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.Parallax$IntProperty extends android.util.Property<android.support.v17.leanback.widget.Parallax, java.lang.Integer> {
++public class android.support.v17.leanback.widget.Parallax$IntProperty extends android.util.Property<android.support.v17.leanback.widget.Parallax$IntParallax, java.lang.Integer> {
+@@ -5,2 +5,2 @@
+-  public final java.lang.Integer get(android.support.v17.leanback.widget.Parallax);
+-  public final void set(android.support.v17.leanback.widget.Parallax, java.lang.Integer);
++  public final java.lang.Integer get(android.support.v17.leanback.widget.Parallax$IntParallax);
++  public final void set(android.support.v17.leanback.widget.Parallax$IntParallax, java.lang.Integer);
+@@ -8,7 +8,3 @@
+-  public final int getValue(android.support.v17.leanback.widget.Parallax);
+-  public final void setValue(android.support.v17.leanback.widget.Parallax, int);
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atAbsolute(int);
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atMax();
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atMin();
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue atFraction(float);
+-  public final android.support.v17.leanback.widget.Parallax$PropertyMarkerValue at(int, float);
++  public final android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue atAbsolute(int);
++  public final android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue atFraction(float);
++  public final android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue at(int, float);
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue extends android.support.v17.leanback.widget.Parallax$PropertyMarkerValue<android.support.v17.leanback.widget.Parallax$IntProperty> {
++  public android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue(android.support.v17.leanback.widget.Parallax$IntProperty, int);
++  public android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue(android.support.v17.leanback.widget.Parallax$IntProperty, int, float);
++  public final int getMarkerValue(android.support.v17.leanback.widget.Parallax$IntParallax);
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax<PropertyT leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax<PropertyT
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.Parallax<PropertyT	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.Parallax<PropertyT	2017-03-24 23:40:41.000000000 +0900
+@@ -3,2 +2,0 @@
+-  public abstract float getMaxValue();
+-  public final PropertyT addProperty(java.lang.String);
+@@ -5,0 +4 @@
++  public abstract PropertyT addProperty(java.lang.String);
+@@ -6,0 +6 @@
++  public abstract void verifyProperties() throws java.lang.IllegalStateException;
+@@ -7,0 +8 @@
++  public void addEffect(android.support.v17.leanback.widget.ParallaxEffect);
+@@ -11 +12,2 @@
+-  public android.support.v17.leanback.widget.ParallaxEffect addEffect(android.support.v17.leanback.widget.Parallax$PropertyMarkerValue...);
++  public android.support.v17.leanback.widget.ParallaxEffect addEffect(android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue...);
++  public android.support.v17.leanback.widget.ParallaxEffect addEffect(android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue...);
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect	1970-01-01 09:00:00.000000000 +0900
+@@ -1,14 +0,0 @@
+-public abstract class android.support.v17.leanback.widget.ParallaxEffect {
+-  public final java.util.List<android.support.v17.leanback.widget.Parallax$PropertyMarkerValue> getPropertyRanges();
+-  public final java.util.List<java.lang.Float> getWeights();
+-  public final void setPropertyRanges(android.support.v17.leanback.widget.Parallax$PropertyMarkerValue...);
+-  public final void setWeights(float...);
+-  public final android.support.v17.leanback.widget.ParallaxEffect weights(float...);
+-  public final void addTarget(android.support.v17.leanback.widget.ParallaxTarget);
+-  public final android.support.v17.leanback.widget.ParallaxEffect target(android.support.v17.leanback.widget.ParallaxTarget);
+-  public final android.support.v17.leanback.widget.ParallaxEffect target(java.lang.Object, android.animation.PropertyValuesHolder);
+-  public final <T, V extends java.lang.Number> android.support.v17.leanback.widget.ParallaxEffect target(T, android.util.Property<T, V>);
+-  public final java.util.List<android.support.v17.leanback.widget.ParallaxTarget> getTargets();
+-  public final void removeTarget(android.support.v17.leanback.widget.ParallaxTarget);
+-  public final void performMapping(android.support.v17.leanback.widget.Parallax);
+-}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect$FloatEffect	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v17.leanback.widget.ParallaxEffect$FloatEffect extends android.support.v17.leanback.widget.ParallaxEffect<android.support.v17.leanback.widget.ParallaxEffect$FloatEffect, android.support.v17.leanback.widget.Parallax$FloatPropertyMarkerValue> {
++  public android.support.v17.leanback.widget.ParallaxEffect$FloatEffect();
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect$IntEffect leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect$IntEffect
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect$IntEffect	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect$IntEffect	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,3 @@
++public final class android.support.v17.leanback.widget.ParallaxEffect$IntEffect extends android.support.v17.leanback.widget.ParallaxEffect<android.support.v17.leanback.widget.ParallaxEffect$IntEffect, android.support.v17.leanback.widget.Parallax$IntPropertyMarkerValue> {
++  public android.support.v17.leanback.widget.ParallaxEffect$IntEffect();
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT	1970-01-01 09:00:00.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT	2017-03-24 23:40:41.000000000 +0900
+@@ -0,0 +1,14 @@
++public abstract class android.support.v17.leanback.widget.ParallaxEffect<ParallaxEffectT extends android.support.v17.leanback.widget.ParallaxEffect, PropertyMarkerValueT extends android.support.v17.leanback.widget.Parallax$PropertyMarkerValue> {
++  public android.support.v17.leanback.widget.ParallaxEffect();
++  public final java.util.List<PropertyMarkerValueT> getPropertyRanges();
++  public final java.util.List<java.lang.Float> getWeights();
++  public final void setPropertyRanges(PropertyMarkerValueT...);
++  public final void setWeights(float...);
++  public final android.support.v17.leanback.widget.ParallaxEffect weights(float...);
++  public final void addTarget(android.support.v17.leanback.widget.ParallaxTarget);
++  public final android.support.v17.leanback.widget.ParallaxEffect target(android.support.v17.leanback.widget.ParallaxTarget);
++  public final android.support.v17.leanback.widget.ParallaxEffect target(java.lang.Object, android.animation.PropertyValuesHolder);
++  public final java.util.List<android.support.v17.leanback.widget.ParallaxTarget> getTargets();
++  public final void removeTarget(android.support.v17.leanback.widget.ParallaxTarget);
++  public final void performMapping(android.support.v17.leanback.widget.Parallax);
++}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxTarget leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxTarget
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxTarget	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxTarget	2017-03-24 23:40:41.000000000 +0900
+@@ -3,3 +3,2 @@
+-  public void update(float);
+-  public boolean isDirectMapping();
+-  public void directUpdate(java.lang.Number);
++  public abstract void update(float);
++  public abstract float getFraction();
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxTarget$DirectPropertyTarget<T, leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxTarget$DirectPropertyTarget<T,
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxTarget$DirectPropertyTarget<T,	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxTarget$DirectPropertyTarget<T,	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public final class android.support.v17.leanback.widget.ParallaxTarget$DirectPropertyTarget<T, V extends java.lang.Number> extends android.support.v17.leanback.widget.ParallaxTarget {
+-  public android.support.v17.leanback.widget.ParallaxTarget$DirectPropertyTarget(java.lang.Object, android.util.Property<T, V>);
+-  public boolean isDirectMapping();
+-  public void directUpdate(java.lang.Number);
+-}
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.ParallaxTarget$PropertyValuesHolderTarget	2017-03-24 23:40:41.000000000 +0900
+@@ -3,0 +4 @@
++  public float getFraction();
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.RecyclerViewParallax leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.RecyclerViewParallax
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.RecyclerViewParallax	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.RecyclerViewParallax	2017-03-24 23:40:41.000000000 +0900
+@@ -1 +1 @@
+-public class android.support.v17.leanback.widget.RecyclerViewParallax extends android.support.v17.leanback.widget.Parallax<android.support.v17.leanback.widget.RecyclerViewParallax$ChildPositionProperty> {
++public class android.support.v17.leanback.widget.RecyclerViewParallax extends android.support.v17.leanback.widget.Parallax$IntParallax<android.support.v17.leanback.widget.RecyclerViewParallax$ChildPositionProperty> {
+@@ -4 +4 @@
+-  public float getMaxValue();
++  public int getMaxValue();
+diff -U 0 -N leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.VerticalGridView leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.VerticalGridView
+--- leanback-v17-25.3.0_c012fe4e/android.support.v17.leanback.widget.VerticalGridView	2017-03-24 23:40:41.000000000 +0900
++++ leanback-v17-26.0.0-alpha1_93268c10/android.support.v17.leanback.widget.VerticalGridView	2017-03-24 23:40:41.000000000 +0900
+@@ -7 +7 @@
+-  public int getInitialPrefetchItemCount();
++  public int getInitialItemPrefetchCount();
+@@ -9,2 +8,0 @@
+-  public void smoothScrollToPosition(int);
+-  public void scrollToPosition(int);

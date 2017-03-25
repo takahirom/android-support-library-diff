@@ -1,0 +1,316 @@
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.animation.AnimatorCompatHelper support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.AnimatorCompatHelper
+--- support-compat-25.3.0_a8fca012/android.support.v4.animation.AnimatorCompatHelper	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.AnimatorCompatHelper	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public final class android.support.v4.animation.AnimatorCompatHelper {
+-  public static android.support.v4.animation.ValueAnimatorCompat emptyValueAnimator();
+-  public static void clearInterpolator(android.view.View);
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.animation.AnimatorListenerCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.AnimatorListenerCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.animation.AnimatorListenerCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.AnimatorListenerCompat	1970-01-01 09:00:00.000000000 +0900
+@@ -1,6 +0,0 @@
+-public interface android.support.v4.animation.AnimatorListenerCompat {
+-  public abstract void onAnimationStart(android.support.v4.animation.ValueAnimatorCompat);
+-  public abstract void onAnimationEnd(android.support.v4.animation.ValueAnimatorCompat);
+-  public abstract void onAnimationCancel(android.support.v4.animation.ValueAnimatorCompat);
+-  public abstract void onAnimationRepeat(android.support.v4.animation.ValueAnimatorCompat);
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.animation.AnimatorUpdateListenerCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.AnimatorUpdateListenerCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.animation.AnimatorUpdateListenerCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.AnimatorUpdateListenerCompat	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v4.animation.AnimatorUpdateListenerCompat {
+-  public abstract void onAnimationUpdate(android.support.v4.animation.ValueAnimatorCompat);
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.animation.ValueAnimatorCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.ValueAnimatorCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.animation.ValueAnimatorCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.animation.ValueAnimatorCompat	1970-01-01 09:00:00.000000000 +0900
+@@ -1,9 +0,0 @@
+-public interface android.support.v4.animation.ValueAnimatorCompat {
+-  public abstract void setTarget(android.view.View);
+-  public abstract void addListener(android.support.v4.animation.AnimatorListenerCompat);
+-  public abstract void setDuration(long);
+-  public abstract void start();
+-  public abstract void cancel();
+-  public abstract void addUpdateListener(android.support.v4.animation.AnimatorUpdateListenerCompat);
+-  public abstract float getAnimatedFraction();
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.AlarmManagerCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.AlarmManagerCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.AlarmManagerCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.AlarmManagerCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,6 @@
++public final class android.support.v4.app.AlarmManagerCompat {
++  public static void setAlarmClock(android.app.AlarmManager, long, android.app.PendingIntent, android.app.PendingIntent);
++  public static void setAndAllowWhileIdle(android.app.AlarmManager, int, long, android.app.PendingIntent);
++  public static void setExact(android.app.AlarmManager, int, long, android.app.PendingIntent);
++  public static void setExactAndAllowWhileIdle(android.app.AlarmManager, int, long, android.app.PendingIntent);
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -47,0 +48 @@
++  public static final java.lang.String EXTRA_AUDIO_CONTENTS_URI;
+@@ -75,0 +77 @@
++  public static java.lang.String getChannel(android.app.Notification);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat$Action support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat$Action
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat$Action	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat$Action	2017-03-24 23:40:37.000000000 +0900
+@@ -12,0 +13,2 @@
++  public android.support.v4.app.RemoteInput[] getDataOnlyRemoteInputs();
++  public android.support.v4.app.RemoteInputCompatBase$RemoteInput[] getDataOnlyRemoteInputs();
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat$Builder support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat$Builder
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat$Builder	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat$Builder	2017-03-24 23:40:37.000000000 +0900
+@@ -61,0 +62 @@
++  public android.support.v4.app.NotificationCompat$Builder setChannel(java.lang.String);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat$NotificationCompatBaseImpl$BuilderBase support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat$NotificationCompatBaseImpl$BuilderBase
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompat$NotificationCompatBaseImpl$BuilderBase	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompat$NotificationCompatBaseImpl$BuilderBase	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,4 @@
++public class android.support.v4.app.NotificationCompat$NotificationCompatBaseImpl$BuilderBase implements android.support.v4.app.NotificationBuilderWithBuilderAccessor {
++  public android.app.Notification$Builder getBuilder();
++  public android.app.Notification build();
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatApi26$Builder support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatApi26$Builder
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatApi26$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatApi26$Builder	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,5 @@
++public class android.support.v4.app.NotificationCompatApi26$Builder implements android.support.v4.app.NotificationBuilderWithBuilderAccessor,android.support.v4.app.NotificationBuilderWithActions {
++  public void addAction(android.support.v4.app.NotificationCompatBase$Action);
++  public android.app.Notification$Builder getBuilder();
++  public android.app.Notification build();
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatBase support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatBase
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatBase	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatBase	2017-03-24 23:40:37.000000000 +0900
+@@ -3 +2,0 @@
+-  public static android.app.Notification add(android.app.Notification, android.content.Context, java.lang.CharSequence, java.lang.CharSequence, android.app.PendingIntent, android.app.PendingIntent);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatBase$Action support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatBase$Action
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatBase$Action	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatBase$Action	2017-03-24 23:40:37.000000000 +0900
+@@ -7,0 +8 @@
++  public abstract android.support.v4.app.RemoteInputCompatBase$RemoteInput[] getDataOnlyRemoteInputs();
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatBase$Action$Factory support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatBase$Action$Factory
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatBase$Action$Factory	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatBase$Action$Factory	2017-03-24 23:40:37.000000000 +0900
+@@ -2 +2 @@
+-  public abstract android.support.v4.app.NotificationCompatBase$Action build(int, java.lang.CharSequence, android.app.PendingIntent, android.os.Bundle, android.support.v4.app.RemoteInputCompatBase$RemoteInput[], boolean);
++  public abstract android.support.v4.app.NotificationCompatBase$Action build(int, java.lang.CharSequence, android.app.PendingIntent, android.os.Bundle, android.support.v4.app.RemoteInputCompatBase$RemoteInput[], android.support.v4.app.RemoteInputCompatBase$RemoteInput[], boolean);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatIceCreamSandwich$Builder support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatIceCreamSandwich$Builder
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.NotificationCompatIceCreamSandwich$Builder	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.NotificationCompatIceCreamSandwich$Builder	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public class android.support.v4.app.NotificationCompatIceCreamSandwich$Builder implements android.support.v4.app.NotificationBuilderWithBuilderAccessor {
+-  public android.support.v4.app.NotificationCompatIceCreamSandwich$Builder(android.content.Context, android.app.Notification, java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence, android.widget.RemoteViews, int, android.app.PendingIntent, android.app.PendingIntent, android.graphics.Bitmap, int, int, boolean);
+-  public android.app.Notification$Builder getBuilder();
+-  public android.app.Notification build();
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.RemoteInput support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.RemoteInput
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.RemoteInput	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.RemoteInput	2017-03-24 23:40:37.000000000 +0900
+@@ -7,0 +8,2 @@
++  public java.util.Set<java.lang.String> getAllowedDataTypes();
++  public boolean isDataOnly();
+@@ -9,0 +12 @@
++  public static java.util.Map<java.lang.String, android.net.Uri> getDataResultsFromIntent(android.content.Intent, java.lang.String);
+@@ -11,0 +15 @@
++  public static void addDataResultToIntent(android.support.v4.app.RemoteInput, android.content.Intent, java.util.Map<java.lang.String, android.net.Uri>);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.RemoteInput$Builder support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.RemoteInput$Builder
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.RemoteInput$Builder	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.RemoteInput$Builder	2017-03-24 23:40:37.000000000 +0900
+@@ -4,0 +5 @@
++  public android.support.v4.app.RemoteInput$Builder setAllowDataType(java.lang.String, boolean);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.app.RemoteInputCompatBase$RemoteInput$Factory support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.RemoteInputCompatBase$RemoteInput$Factory
+--- support-compat-25.3.0_a8fca012/android.support.v4.app.RemoteInputCompatBase$RemoteInput$Factory	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.app.RemoteInputCompatBase$RemoteInput$Factory	2017-03-24 23:40:37.000000000 +0900
+@@ -2 +2 @@
+-  public abstract android.support.v4.app.RemoteInputCompatBase$RemoteInput build(java.lang.String, java.lang.CharSequence, java.lang.CharSequence[], boolean, android.os.Bundle);
++  public abstract android.support.v4.app.RemoteInputCompatBase$RemoteInput build(java.lang.String, java.lang.CharSequence, java.lang.CharSequence[], boolean, android.os.Bundle, java.util.Set<java.lang.String>);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.content.pm.ShortcutInfoCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.pm.ShortcutInfoCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.content.pm.ShortcutInfoCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.pm.ShortcutInfoCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,2 @@
++public class android.support.v4.content.pm.ShortcutInfoCompat {
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.content.pm.ShortcutInfoCompat$Builder support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.pm.ShortcutInfoCompat$Builder
+--- support-compat-25.3.0_a8fca012/android.support.v4.content.pm.ShortcutInfoCompat$Builder	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.pm.ShortcutInfoCompat$Builder	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,12 @@
++public class android.support.v4.content.pm.ShortcutInfoCompat$Builder {
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder(android.content.Context, java.lang.String);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setShortLabel(java.lang.CharSequence);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setLongLabel(java.lang.CharSequence);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setDisabledMessage(java.lang.CharSequence);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setIntent(android.content.Intent);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setIntents(android.content.Intent[]);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setIcon(android.graphics.Bitmap);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setIcon(int);
++  public android.support.v4.content.pm.ShortcutInfoCompat$Builder setActivity(android.content.ComponentName);
++  public android.support.v4.content.pm.ShortcutInfoCompat build();
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.content.pm.ShortcutManagerCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.pm.ShortcutManagerCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.content.pm.ShortcutManagerCompat	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.pm.ShortcutManagerCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,6 @@
++public class android.support.v4.content.pm.ShortcutManagerCompat {
++  public android.support.v4.content.pm.ShortcutManagerCompat();
++  public static boolean isRequestPinShortcutSupported(android.content.Context);
++  public static boolean requestPinShortcut(android.content.Context, android.support.v4.content.pm.ShortcutInfoCompat, android.content.IntentSender);
++  public static android.content.Intent createShortcutResultIntent(android.content.Context, android.support.v4.content.pm.ShortcutInfoCompat);
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.content.res.TypedArrayUtils support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.res.TypedArrayUtils
+--- support-compat-25.3.0_a8fca012/android.support.v4.content.res.TypedArrayUtils	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.content.res.TypedArrayUtils	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,16 @@
++public class android.support.v4.content.res.TypedArrayUtils {
++  public android.support.v4.content.res.TypedArrayUtils();
++  public static boolean hasAttribute(org.xmlpull.v1.XmlPullParser, java.lang.String);
++  public static float getNamedFloat(android.content.res.TypedArray, org.xmlpull.v1.XmlPullParser, java.lang.String, int, float);
++  public static boolean getNamedBoolean(android.content.res.TypedArray, org.xmlpull.v1.XmlPullParser, java.lang.String, int, boolean);
++  public static int getNamedInt(android.content.res.TypedArray, org.xmlpull.v1.XmlPullParser, java.lang.String, int, int);
++  public static int getNamedColor(android.content.res.TypedArray, org.xmlpull.v1.XmlPullParser, java.lang.String, int, int);
++  public static boolean getBoolean(android.content.res.TypedArray, int, int, boolean);
++  public static android.graphics.drawable.Drawable getDrawable(android.content.res.TypedArray, int, int);
++  public static int getInt(android.content.res.TypedArray, int, int, int);
++  public static int getResourceId(android.content.res.TypedArray, int, int, int);
++  public static java.lang.String getString(android.content.res.TypedArray, int, int);
++  public static java.lang.CharSequence getText(android.content.res.TypedArray, int, int);
++  public static java.lang.CharSequence[] getTextArray(android.content.res.TypedArray, int, int);
++  public static int getAttr(android.content.Context, int, int);
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.graphics.drawable.DrawableWrapperApi14$DrawableWrapperState support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.graphics.drawable.DrawableWrapperApi14$DrawableWrapperState
+--- support-compat-25.3.0_a8fca012/android.support.v4.graphics.drawable.DrawableWrapperApi14$DrawableWrapperState	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.graphics.drawable.DrawableWrapperApi14$DrawableWrapperState	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,5 @@
++public abstract class android.support.v4.graphics.drawable.DrawableWrapperApi14$DrawableWrapperState extends android.graphics.drawable.Drawable$ConstantState {
++  public android.graphics.drawable.Drawable newDrawable();
++  public abstract android.graphics.drawable.Drawable newDrawable(android.content.res.Resources);
++  public int getChangingConfigurations();
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.graphics.drawable.DrawableWrapperGingerbread$DrawableWrapperState support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.graphics.drawable.DrawableWrapperGingerbread$DrawableWrapperState
+--- support-compat-25.3.0_a8fca012/android.support.v4.graphics.drawable.DrawableWrapperGingerbread$DrawableWrapperState	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.graphics.drawable.DrawableWrapperGingerbread$DrawableWrapperState	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public abstract class android.support.v4.graphics.drawable.DrawableWrapperGingerbread$DrawableWrapperState extends android.graphics.drawable.Drawable$ConstantState {
+-  public android.graphics.drawable.Drawable newDrawable();
+-  public abstract android.graphics.drawable.Drawable newDrawable(android.content.res.Resources);
+-  public int getChangingConfigurations();
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.internal.view.SupportMenuItem support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.internal.view.SupportMenuItem
+--- support-compat-25.3.0_a8fca012/android.support.v4.internal.view.SupportMenuItem	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.internal.view.SupportMenuItem	2017-03-24 23:40:37.000000000 +0900
+@@ -17 +17,5 @@
+-  public abstract android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat$OnActionExpandListener);
++  public abstract android.support.v4.internal.view.SupportMenuItem setSupportOnActionExpandListener(android.view.MenuItem$OnActionExpandListener);
++  public abstract android.support.v4.internal.view.SupportMenuItem setContentDescription(java.lang.CharSequence);
++  public abstract java.lang.CharSequence getContentDescription();
++  public abstract android.support.v4.internal.view.SupportMenuItem setTooltipText(java.lang.CharSequence);
++  public abstract java.lang.CharSequence getTooltipText();
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.net.TrafficStatsCompatApi24 support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.net.TrafficStatsCompatApi24
+--- support-compat-25.3.0_a8fca012/android.support.v4.net.TrafficStatsCompatApi24	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.net.TrafficStatsCompatApi24	1970-01-01 09:00:00.000000000 +0900
+@@ -1,5 +0,0 @@
+-public class android.support.v4.net.TrafficStatsCompatApi24 {
+-  public android.support.v4.net.TrafficStatsCompatApi24();
+-  public static void tagDatagramSocket(java.net.DatagramSocket) throws java.net.SocketException;
+-  public static void untagDatagramSocket(java.net.DatagramSocket) throws java.net.SocketException;
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.util.Preconditions support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.util.Preconditions
+--- support-compat-25.3.0_a8fca012/android.support.v4.util.Preconditions	1970-01-01 09:00:00.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.util.Preconditions	2017-03-24 23:40:37.000000000 +0900
+@@ -0,0 +1,25 @@
++public class android.support.v4.util.Preconditions {
++  public android.support.v4.util.Preconditions();
++  public static void checkArgument(boolean);
++  public static void checkArgument(boolean, java.lang.Object);
++  public static <T extends java.lang.CharSequence> T checkStringNotEmpty(T);
++  public static <T extends java.lang.CharSequence> T checkStringNotEmpty(T, java.lang.Object);
++  public static <T> T checkNotNull(T);
++  public static <T> T checkNotNull(T, java.lang.Object);
++  public static void checkState(boolean, java.lang.String);
++  public static void checkState(boolean);
++  public static int checkFlagsArgument(int, int);
++  public static int checkArgumentNonnegative(int, java.lang.String);
++  public static int checkArgumentNonnegative(int);
++  public static long checkArgumentNonnegative(long);
++  public static long checkArgumentNonnegative(long, java.lang.String);
++  public static int checkArgumentPositive(int, java.lang.String);
++  public static float checkArgumentFinite(float, java.lang.String);
++  public static float checkArgumentInRange(float, float, float, java.lang.String);
++  public static int checkArgumentInRange(int, int, int, java.lang.String);
++  public static long checkArgumentInRange(long, long, long, java.lang.String);
++  public static <T> T[] checkArrayElementsNotNull(T[], java.lang.String);
++  public static <C extends java.util.Collection<T>, T> C checkCollectionElementsNotNull(C, java.lang.String);
++  public static <T> java.util.Collection<T> checkCollectionNotEmpty(java.util.Collection<T>, java.lang.String);
++  public static float[] checkArrayElementsInRange(float[], float, float, java.lang.String);
++}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+--- support-compat-25.3.0_a8fca012/android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge	1970-01-01 09:00:00.000000000 +0900
+@@ -1,9 +0,0 @@
+-public interface android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge {
+-  public abstract boolean dispatchPopulateAccessibilityEvent(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract void onInitializeAccessibilityEvent(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract void onInitializeAccessibilityNodeInfo(android.view.View, java.lang.Object);
+-  public abstract void onPopulateAccessibilityEvent(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract boolean onRequestSendAccessibilityEvent(android.view.ViewGroup, android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract void sendAccessibilityEvent(android.view.View, int);
+-  public abstract void sendAccessibilityEventUnchecked(android.view.View, android.view.accessibility.AccessibilityEvent);
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean
+--- support-compat-25.3.0_a8fca012/android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean	1970-01-01 09:00:00.000000000 +0900
+@@ -1,11 +0,0 @@
+-public interface android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean {
+-  public abstract boolean dispatchPopulateAccessibilityEvent(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract void onInitializeAccessibilityEvent(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract void onInitializeAccessibilityNodeInfo(android.view.View, java.lang.Object);
+-  public abstract void onPopulateAccessibilityEvent(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract boolean onRequestSendAccessibilityEvent(android.view.ViewGroup, android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract void sendAccessibilityEvent(android.view.View, int);
+-  public abstract void sendAccessibilityEventUnchecked(android.view.View, android.view.accessibility.AccessibilityEvent);
+-  public abstract java.lang.Object getAccessibilityNodeProvider(android.view.View);
+-  public abstract boolean performAccessibilityAction(android.view.View, int, android.os.Bundle);
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.view.LayoutInflaterCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.LayoutInflaterCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.view.LayoutInflaterCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.LayoutInflaterCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -2,0 +3 @@
++  public static void setFactory2(android.view.LayoutInflater, android.view.LayoutInflater$Factory2);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.view.MenuItemCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.MenuItemCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.view.MenuItemCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.MenuItemCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -16,0 +17,4 @@
++  public static void setContentDescription(android.view.MenuItem, java.lang.CharSequence);
++  public static java.lang.CharSequence getContentDescription(android.view.MenuItem);
++  public static void setTooltipText(android.view.MenuItem, java.lang.CharSequence);
++  public static java.lang.CharSequence getTooltipText(android.view.MenuItem);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.view.ViewCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.ViewCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.view.ViewCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.ViewCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -149,0 +150,4 @@
++  public static void setTooltipText(android.view.View, java.lang.CharSequence);
++  public static boolean startDragAndDrop(android.view.View, android.content.ClipData, android.view.View$DragShadowBuilder, java.lang.Object, int);
++  public static void cancelDragAndDrop(android.view.View);
++  public static void updateDragShadow(android.view.View, android.view.View$DragShadowBuilder);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.view.ViewCompatLollipop$OnApplyWindowInsetsListenerBridge support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.ViewCompatLollipop$OnApplyWindowInsetsListenerBridge
+--- support-compat-25.3.0_a8fca012/android.support.v4.view.ViewCompatLollipop$OnApplyWindowInsetsListenerBridge	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.view.ViewCompatLollipop$OnApplyWindowInsetsListenerBridge	1970-01-01 09:00:00.000000000 +0900
+@@ -1,3 +0,0 @@
+-public interface android.support.v4.view.ViewCompatLollipop$OnApplyWindowInsetsListenerBridge {
+-  public abstract java.lang.Object onApplyWindowInsets(android.view.View, java.lang.Object);
+-}
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.widget.EdgeEffectCompat support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.widget.EdgeEffectCompat
+--- support-compat-25.3.0_a8fca012/android.support.v4.widget.EdgeEffectCompat	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.widget.EdgeEffectCompat	2017-03-24 23:40:37.000000000 +0900
+@@ -7,0 +8 @@
++  public static void onPull(android.widget.EdgeEffect, float, float);
+diff -U 0 -N support-compat-25.3.0_a8fca012/android.support.v4.widget.SearchViewCompatIcs$MySearchView support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.widget.SearchViewCompatIcs$MySearchView
+--- support-compat-25.3.0_a8fca012/android.support.v4.widget.SearchViewCompatIcs$MySearchView	2017-03-24 23:40:36.000000000 +0900
++++ support-compat-26.0.0-alpha1_bb3c878c/android.support.v4.widget.SearchViewCompatIcs$MySearchView	1970-01-01 09:00:00.000000000 +0900
+@@ -1,4 +0,0 @@
+-public class android.support.v4.widget.SearchViewCompatIcs$MySearchView extends android.widget.SearchView {
+-  public android.support.v4.widget.SearchViewCompatIcs$MySearchView(android.content.Context);
+-  public void onActionViewCollapsed();
+-}

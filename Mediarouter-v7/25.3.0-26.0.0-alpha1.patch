@@ -1,0 +1,5 @@
+diff -U 0 -N mediarouter-v7-25.3.0_07e86d9e/android.support.v7.app.MediaRouteButton mediarouter-v7-26.0.0-alpha1_ec8b2276/android.support.v7.app.MediaRouteButton
+--- mediarouter-v7-25.3.0_07e86d9e/android.support.v7.app.MediaRouteButton	2017-03-24 23:40:38.000000000 +0900
++++ mediarouter-v7-26.0.0-alpha1_ec8b2276/android.support.v7.app.MediaRouteButton	2017-03-24 23:40:38.000000000 +0900
+@@ -11 +10,0 @@
+-  public boolean performLongClick();
